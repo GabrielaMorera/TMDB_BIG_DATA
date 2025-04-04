@@ -1,0 +1,24 @@
+[2025-04-04T18:01:46.140+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2025-04-04T18:01:46.165+0000] {taskinstance.py:2073} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: tmdb_pipeline_v2.generate_visualizations manual__2025-04-04T18:01:18.155298+00:00 [queued]>
+[2025-04-04T18:01:46.174+0000] {taskinstance.py:2073} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: tmdb_pipeline_v2.generate_visualizations manual__2025-04-04T18:01:18.155298+00:00 [queued]>
+[2025-04-04T18:01:46.175+0000] {taskinstance.py:2303} INFO - Starting attempt 1 of 3
+[2025-04-04T18:01:46.188+0000] {taskinstance.py:2327} INFO - Executing <Task(PythonOperator): generate_visualizations> on 2025-04-04 18:01:18.155298+00:00
+[2025-04-04T18:01:46.196+0000] {warnings.py:110} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:61: DeprecationWarning: This process (pid=4924) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2025-04-04T18:01:46.198+0000] {standard_task_runner.py:63} INFO - Started process 4926 to run task
+[2025-04-04T18:01:46.198+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'tmdb_pipeline_v2', 'generate_visualizations', 'manual__2025-04-04T18:01:18.155298+00:00', '--job-id', '131', '--raw', '--subdir', 'DAGS_FOLDER/dag_tmdb.py', '--cfg-path', '/tmp/tmpoi39d5ti']
+[2025-04-04T18:01:46.201+0000] {standard_task_runner.py:91} INFO - Job 131: Subtask generate_visualizations
+[2025-04-04T18:01:46.249+0000] {task_command.py:426} INFO - Running <TaskInstance: tmdb_pipeline_v2.generate_visualizations manual__2025-04-04T18:01:18.155298+00:00 [running]> on host 1b0019c2839f
+[2025-04-04T18:01:46.359+0000] {taskinstance.py:2644} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='gabriela' AIRFLOW_CTX_DAG_ID='tmdb_pipeline_v2' AIRFLOW_CTX_TASK_ID='generate_visualizations' AIRFLOW_CTX_EXECUTION_DATE='2025-04-04T18:01:18.155298+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-04-04T18:01:18.155298+00:00'
+[2025-04-04T18:01:46.361+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2025-04-04T18:01:47.834+0000] {warnings.py:110} WARNING - /opt/***/dags/dag_tmdb.py:700: UserWarning: pandas only supports SQLAlchemy connectable (engine/connection) or database string URI or sqlite3 DBAPI2 connection. Other DBAPI2 objects are not tested. Please consider using SQLAlchemy.
+  results[name] = pd.read_sql(query, conn)
+
+[2025-04-04T18:01:48.911+0000] {dag_tmdb.py:779} INFO - Visualizaciones guardadas en /opt/***/data/movie_analytics/visualizations_v2_20250404_180147
+[2025-04-04T18:01:48.926+0000] {python.py:237} INFO - Done. Returned value was: /opt/***/data/movie_analytics/visualizations_v2_20250404_180147
+[2025-04-04T18:01:48.926+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2025-04-04T18:01:48.947+0000] {taskinstance.py:1205} INFO - Marking task as SUCCESS. dag_id=tmdb_pipeline_v2, task_id=generate_visualizations, execution_date=20250404T180118, start_date=20250404T180146, end_date=20250404T180148
+[2025-04-04T18:01:49.014+0000] {local_task_job_runner.py:240} INFO - Task exited with return code 0
+[2025-04-04T18:01:49.041+0000] {taskinstance.py:3482} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2025-04-04T18:01:49.043+0000] {local_task_job_runner.py:222} INFO - ::endgroup::
