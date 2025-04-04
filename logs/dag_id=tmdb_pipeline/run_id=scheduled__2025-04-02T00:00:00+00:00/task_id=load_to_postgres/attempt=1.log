@@ -1,0 +1,37 @@
+[2025-04-03T14:45:38.156+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2025-04-03T14:45:38.178+0000] {taskinstance.py:2073} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: tmdb_pipeline.load_to_postgres scheduled__2025-04-02T00:00:00+00:00 [queued]>
+[2025-04-03T14:45:38.193+0000] {taskinstance.py:2073} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: tmdb_pipeline.load_to_postgres scheduled__2025-04-02T00:00:00+00:00 [queued]>
+[2025-04-03T14:45:38.194+0000] {taskinstance.py:2303} INFO - Starting attempt 1 of 3
+[2025-04-03T14:45:38.209+0000] {taskinstance.py:2327} INFO - Executing <Task(PythonOperator): load_to_postgres> on 2025-04-02 00:00:00+00:00
+[2025-04-03T14:45:38.215+0000] {warnings.py:110} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:61: DeprecationWarning: This process (pid=198) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2025-04-03T14:45:38.217+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'tmdb_pipeline', 'load_to_postgres', 'scheduled__2025-04-02T00:00:00+00:00', '--job-id', '71', '--raw', '--subdir', 'DAGS_FOLDER/tmdb_pipeline.py', '--cfg-path', '/tmp/tmp5c8d3ubq']
+[2025-04-03T14:45:38.223+0000] {standard_task_runner.py:63} INFO - Started process 200 to run task
+[2025-04-03T14:45:38.223+0000] {standard_task_runner.py:91} INFO - Job 71: Subtask load_to_postgres
+[2025-04-03T14:45:38.278+0000] {task_command.py:426} INFO - Running <TaskInstance: tmdb_pipeline.load_to_postgres scheduled__2025-04-02T00:00:00+00:00 [running]> on host 29a2839b1f8c
+[2025-04-03T14:45:38.380+0000] {taskinstance.py:2644} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='gabriela' AIRFLOW_CTX_DAG_ID='tmdb_pipeline' AIRFLOW_CTX_TASK_ID='load_to_postgres' AIRFLOW_CTX_EXECUTION_DATE='2025-04-02T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2025-04-02T00:00:00+00:00'
+[2025-04-03T14:45:38.382+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2025-04-03T14:45:38.423+0000] {tmdb_pipeline.py:300} INFO - Leyendo 1 registros procesados para cargar en PostgreSQL
+[2025-04-03T14:45:38.425+0000] {tmdb_pipeline.py:485} ERROR - Error al conectar o insertar en PostgreSQL: connection to server at "movie_postgres" (172.19.0.3), port 5433 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+
+[2025-04-03T14:45:38.428+0000] {tmdb_pipeline.py:487} ERROR - Traceback (most recent call last):
+  File "/opt/***/dags/tmdb_pipeline.py", line 304, in load_to_postgres
+    conn = psycopg2.connect(
+           ^^^^^^^^^^^^^^^^^
+  File "/home/***/.local/lib/python3.12/site-packages/psycopg2/__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+psycopg2.OperationalError: connection to server at "movie_postgres" (172.19.0.3), port 5433 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+
+
+[2025-04-03T14:45:38.429+0000] {tmdb_pipeline.py:490} INFO - Intentando método alternativo: guardar resultados como CSV
+[2025-04-03T14:45:38.433+0000] {tmdb_pipeline.py:495} INFO - Resultados guardados en /opt/***/data/movie_analytics/results_data.csv
+[2025-04-03T14:45:38.434+0000] {python.py:237} INFO - Done. Returned value was: 0
+[2025-04-03T14:45:38.435+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2025-04-03T14:45:38.459+0000] {taskinstance.py:1205} INFO - Marking task as SUCCESS. dag_id=tmdb_pipeline, task_id=load_to_postgres, execution_date=20250402T000000, start_date=20250403T144538, end_date=20250403T144538
+[2025-04-03T14:45:38.485+0000] {local_task_job_runner.py:240} INFO - Task exited with return code 0
+[2025-04-03T14:45:38.520+0000] {taskinstance.py:3482} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2025-04-03T14:45:38.521+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

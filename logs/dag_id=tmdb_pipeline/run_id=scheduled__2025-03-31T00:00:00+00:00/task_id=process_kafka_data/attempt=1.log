@@ -1,0 +1,64 @@
+[2025-03-31T22:51:02.990+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2025-03-31T22:51:03.010+0000] {taskinstance.py:2073} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: tmdb_pipeline.process_kafka_data scheduled__2025-03-31T00:00:00+00:00 [queued]>
+[2025-03-31T22:51:03.019+0000] {taskinstance.py:2073} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: tmdb_pipeline.process_kafka_data scheduled__2025-03-31T00:00:00+00:00 [queued]>
+[2025-03-31T22:51:03.020+0000] {taskinstance.py:2303} INFO - Starting attempt 1 of 3
+[2025-03-31T22:51:03.034+0000] {taskinstance.py:2327} INFO - Executing <Task(PythonOperator): process_kafka_data> on 2025-03-31 00:00:00+00:00
+[2025-03-31T22:51:03.042+0000] {warnings.py:110} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:61: DeprecationWarning: This process (pid=371) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2025-03-31T22:51:03.044+0000] {standard_task_runner.py:63} INFO - Started process 373 to run task
+[2025-03-31T22:51:03.044+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'tmdb_pipeline', 'process_kafka_data', 'scheduled__2025-03-31T00:00:00+00:00', '--job-id', '31', '--raw', '--subdir', 'DAGS_FOLDER/tmdb_pipeline.py', '--cfg-path', '/tmp/tmp04vffllb']
+[2025-03-31T22:51:03.047+0000] {standard_task_runner.py:91} INFO - Job 31: Subtask process_kafka_data
+[2025-03-31T22:51:03.092+0000] {task_command.py:426} INFO - Running <TaskInstance: tmdb_pipeline.process_kafka_data scheduled__2025-03-31T00:00:00+00:00 [running]> on host 488700525f48
+[2025-03-31T22:51:03.174+0000] {taskinstance.py:2644} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='gabriela' AIRFLOW_CTX_DAG_ID='tmdb_pipeline' AIRFLOW_CTX_TASK_ID='process_kafka_data' AIRFLOW_CTX_EXECUTION_DATE='2025-03-31T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2025-03-31T00:00:00+00:00'
+[2025-03-31T22:51:03.175+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2025-03-31T22:51:06.024+0000] {proxy.py:85} INFO - To route to workers diagnostics web server please install jupyter-server-proxy: python -m pip install jupyter-server-proxy
+[2025-03-31T22:51:06.057+0000] {scheduler.py:1754} INFO - State start
+[2025-03-31T22:51:06.109+0000] {scheduler.py:4209} INFO -   Scheduler at:     tcp://127.0.0.1:41831
+[2025-03-31T22:51:06.109+0000] {scheduler.py:4224} INFO -   dashboard at:  http://127.0.0.1:8787/status
+[2025-03-31T22:51:06.110+0000] {scheduler.py:8127} INFO - Registering Worker plugin shuffle
+[2025-03-31T22:51:06.125+0000] {nanny.py:368} INFO -         Start Nanny at: 'tcp://127.0.0.1:36129'
+[2025-03-31T22:51:06.136+0000] {nanny.py:368} INFO -         Start Nanny at: 'tcp://127.0.0.1:45855'
+[2025-03-31T22:51:06.138+0000] {nanny.py:454} ERROR - Failed to start process
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/distributed/nanny.py", line 452, in instantiate
+    result = await self.process.start()
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/distributed/nanny.py", line 750, in start
+    await self.process.start()
+  File "/home/airflow/.local/lib/python3.12/site-packages/distributed/process.py", line 55, in _call_and_set_future
+    res = func(*args, **kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/distributed/process.py", line 215, in _start
+    process.start()
+  File "/usr/local/lib/python3.12/multiprocessing/process.py", line 118, in start
+    assert not _current_process._config.get('daemon'), \
+AssertionError: daemonic processes are not allowed to have children
+[2025-03-31T22:51:06.143+0000] {nanny.py:611} INFO - Closing Nanny at 'tcp://127.0.0.1:36129'. Reason: nanny-instantiate-failed
+[2025-03-31T22:51:06.144+0000] {nanny.py:454} ERROR - Failed to start process
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/distributed/nanny.py", line 452, in instantiate
+    result = await self.process.start()
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/distributed/nanny.py", line 750, in start
+    await self.process.start()
+  File "/home/airflow/.local/lib/python3.12/site-packages/distributed/process.py", line 55, in _call_and_set_future
+    res = func(*args, **kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/distributed/process.py", line 215, in _start
+    process.start()
+  File "/usr/local/lib/python3.12/multiprocessing/process.py", line 118, in start
+    assert not _current_process._config.get('daemon'), \
+AssertionError: daemonic processes are not allowed to have children
+[2025-03-31T22:51:06.145+0000] {nanny.py:611} INFO - Closing Nanny at 'tcp://127.0.0.1:45855'. Reason: nanny-instantiate-failed
+[2025-04-01T02:45:02.098+0000] {core.py:608} INFO - Event loop was unresponsive in Scheduler for 269.96s.  This is often caused by long-running GIL-holding functions or moving large chunks of data. This can cause timeouts and instability.
+[2025-04-01T02:45:05.269+0000] {core.py:608} INFO - Event loop was unresponsive in Scheduler for 3.77s.  This is often caused by long-running GIL-holding functions or moving large chunks of data. This can cause timeouts and instability.
+[2025-04-01T04:31:39.346+0000] {core.py:608} INFO - Event loop was unresponsive in Scheduler for 5.54s.  This is often caused by long-running GIL-holding functions or moving large chunks of data. This can cause timeouts and instability.
+[2025-04-01T05:01:30.113+0000] {core.py:608} INFO - Event loop was unresponsive in Scheduler for 1710.52s.  This is often caused by long-running GIL-holding functions or moving large chunks of data. This can cause timeouts and instability.
+[2025-04-01T05:31:32.742+0000] {core.py:608} INFO - Event loop was unresponsive in Scheduler for 1773.10s.  This is often caused by long-running GIL-holding functions or moving large chunks of data. This can cause timeouts and instability.
+[2025-04-01T05:32:18.367+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2025-04-01T05:32:18.880+0000] {taskinstance.py:2063} INFO - Dependencies not met for <TaskInstance: tmdb_pipeline.process_kafka_data scheduled__2025-03-31T00:00:00+00:00 [running]>, dependency 'Task Instance State' FAILED: Task is in the 'running' state.
+[2025-04-01T05:32:18.886+0000] {taskinstance.py:2063} INFO - Dependencies not met for <TaskInstance: tmdb_pipeline.process_kafka_data scheduled__2025-03-31T00:00:00+00:00 [running]>, dependency 'Task Instance Not Running' FAILED: Task is in the running state
+[2025-04-01T05:32:18.896+0000] {local_task_job_runner.py:163} INFO - Task is not able to be run
+[2025-04-01T06:01:46.995+0000] {core.py:608} INFO - Event loop was unresponsive in Scheduler for 297.70s.  This is often caused by long-running GIL-holding functions or moving large chunks of data. This can cause timeouts and instability.
+[2025-04-01T06:07:44.713+0000] {core.py:608} INFO - Event loop was unresponsive in Scheduler for 343.75s.  This is often caused by long-running GIL-holding functions or moving large chunks of data. This can cause timeouts and instability.
