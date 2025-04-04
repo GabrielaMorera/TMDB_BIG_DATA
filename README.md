@@ -163,6 +163,24 @@ open http://localhost:8080
 docker-compose exec airflow-webserver airflow dags trigger tmdb_pipeline_v2
 ```
 
+### 6. Conectarte a PostgreSQL desde la terminal
+
+```bash
+docker-compose exec movie_postgres psql -U postgres -d postgres
+
+# Una vez dentro, listar las tablas
+\dt
+
+# Ver el contenido de una tabla específica
+SELECT * FROM movies LIMIT 5;
+
+# Ver el contenido de la tabla de data warehouse
+SELECT * FROM movie_data_warehouse LIMIT 5;
+
+# Salir de PostgreSQL
+\q
+```
+
 ## Consideraciones Finales
 
 - Reemplaza `tuContraseña` con una contraseña segura
