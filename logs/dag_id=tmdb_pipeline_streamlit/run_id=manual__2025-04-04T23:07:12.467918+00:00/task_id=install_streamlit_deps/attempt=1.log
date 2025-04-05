@@ -1,0 +1,77 @@
+[2025-04-04T23:07:52.103+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2025-04-04T23:07:52.123+0000] {taskinstance.py:2073} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: tmdb_pipeline_streamlit.install_streamlit_deps manual__2025-04-04T23:07:12.467918+00:00 [queued]>
+[2025-04-04T23:07:52.131+0000] {taskinstance.py:2073} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: tmdb_pipeline_streamlit.install_streamlit_deps manual__2025-04-04T23:07:12.467918+00:00 [queued]>
+[2025-04-04T23:07:52.131+0000] {taskinstance.py:2303} INFO - Starting attempt 1 of 3
+[2025-04-04T23:07:52.143+0000] {taskinstance.py:2327} INFO - Executing <Task(BashOperator): install_streamlit_deps> on 2025-04-04 23:07:12.467918+00:00
+[2025-04-04T23:07:52.149+0000] {warnings.py:110} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:61: DeprecationWarning: This process (pid=461) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2025-04-04T23:07:52.151+0000] {standard_task_runner.py:63} INFO - Started process 463 to run task
+[2025-04-04T23:07:52.151+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'tmdb_pipeline_streamlit', 'install_streamlit_deps', 'manual__2025-04-04T23:07:12.467918+00:00', '--job-id', '196', '--raw', '--subdir', 'DAGS_FOLDER/tmdb_pipeline.py', '--cfg-path', '/tmp/tmpw5gxz1fj']
+[2025-04-04T23:07:52.153+0000] {standard_task_runner.py:91} INFO - Job 196: Subtask install_streamlit_deps
+[2025-04-04T23:07:52.196+0000] {task_command.py:426} INFO - Running <TaskInstance: tmdb_pipeline_streamlit.install_streamlit_deps manual__2025-04-04T23:07:12.467918+00:00 [running]> on host c64563070bc7
+[2025-04-04T23:07:52.289+0000] {taskinstance.py:2644} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='gabriela' AIRFLOW_CTX_DAG_ID='tmdb_pipeline_streamlit' AIRFLOW_CTX_TASK_ID='install_streamlit_deps' AIRFLOW_CTX_EXECUTION_DATE='2025-04-04T23:07:12.467918+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-04-04T23:07:12.467918+00:00'
+[2025-04-04T23:07:52.290+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2025-04-04T23:07:52.304+0000] {subprocess.py:63} INFO - Tmp dir root location: /tmp
+[2025-04-04T23:07:52.305+0000] {subprocess.py:75} INFO - Running command: ['/usr/bin/bash', '-c', 'pip install streamlit plotly matplotlib seaborn psycopg2-binary scikit-learn kafka-python']
+[2025-04-04T23:07:52.317+0000] {subprocess.py:86} INFO - Output:
+[2025-04-04T23:07:53.795+0000] {subprocess.py:93} INFO - Requirement already satisfied: streamlit in /home/***/.local/lib/python3.12/site-packages (1.44.1)
+[2025-04-04T23:07:53.797+0000] {subprocess.py:93} INFO - Requirement already satisfied: plotly in /home/***/.local/lib/python3.12/site-packages (6.0.1)
+[2025-04-04T23:07:53.799+0000] {subprocess.py:93} INFO - Requirement already satisfied: matplotlib in /home/***/.local/lib/python3.12/site-packages (3.10.1)
+[2025-04-04T23:07:53.800+0000] {subprocess.py:93} INFO - Requirement already satisfied: seaborn in /home/***/.local/lib/python3.12/site-packages (0.13.2)
+[2025-04-04T23:07:53.801+0000] {subprocess.py:93} INFO - Requirement already satisfied: psycopg2-binary in /home/***/.local/lib/python3.12/site-packages (2.9.9)
+[2025-04-04T23:07:53.804+0000] {subprocess.py:93} INFO - Requirement already satisfied: scikit-learn in /home/***/.local/lib/python3.12/site-packages (1.6.1)
+[2025-04-04T23:07:53.805+0000] {subprocess.py:93} INFO - Requirement already satisfied: kafka-python in /home/***/.local/lib/python3.12/site-packages (2.1.5)
+[2025-04-04T23:07:53.831+0000] {subprocess.py:93} INFO - Requirement already satisfied: altair<6,>=4.0 in /home/***/.local/lib/python3.12/site-packages (from streamlit) (5.5.0)
+[2025-04-04T23:07:53.832+0000] {subprocess.py:93} INFO - Requirement already satisfied: blinker<2,>=1.0.0 in /home/***/.local/lib/python3.12/site-packages (from streamlit) (1.7.0)
+[2025-04-04T23:07:53.834+0000] {subprocess.py:93} INFO - Requirement already satisfied: cachetools<6,>=4.0 in /home/***/.local/lib/python3.12/site-packages (from streamlit) (5.3.3)
+[2025-04-04T23:07:53.835+0000] {subprocess.py:93} INFO - Requirement already satisfied: click<9,>=7.0 in /home/***/.local/lib/python3.12/site-packages (from streamlit) (8.1.7)
+[2025-04-04T23:07:53.843+0000] {subprocess.py:93} INFO - Requirement already satisfied: numpy<3,>=1.23 in /home/***/.local/lib/python3.12/site-packages (from streamlit) (1.26.4)
+[2025-04-04T23:07:53.845+0000] {subprocess.py:93} INFO - Requirement already satisfied: packaging<25,>=20 in /home/***/.local/lib/python3.12/site-packages (from streamlit) (24.0)
+[2025-04-04T23:07:53.848+0000] {subprocess.py:93} INFO - Requirement already satisfied: pandas<3,>=1.4.0 in /home/***/.local/lib/python3.12/site-packages (from streamlit) (2.1.4)
+[2025-04-04T23:07:53.850+0000] {subprocess.py:93} INFO - Requirement already satisfied: pillow<12,>=7.1.0 in /home/***/.local/lib/python3.12/site-packages (from streamlit) (11.1.0)
+[2025-04-04T23:07:53.852+0000] {subprocess.py:93} INFO - Requirement already satisfied: protobuf<6,>=3.20 in /home/***/.local/lib/python3.12/site-packages (from streamlit) (4.25.3)
+[2025-04-04T23:07:53.853+0000] {subprocess.py:93} INFO - Requirement already satisfied: pyarrow>=7.0 in /home/***/.local/lib/python3.12/site-packages (from streamlit) (15.0.2)
+[2025-04-04T23:07:53.871+0000] {subprocess.py:93} INFO - Requirement already satisfied: requests<3,>=2.27 in /home/***/.local/lib/python3.12/site-packages (from streamlit) (2.31.0)
+[2025-04-04T23:07:53.872+0000] {subprocess.py:93} INFO - Requirement already satisfied: tenacity<10,>=8.1.0 in /home/***/.local/lib/python3.12/site-packages (from streamlit) (8.2.3)
+[2025-04-04T23:07:53.874+0000] {subprocess.py:93} INFO - Requirement already satisfied: toml<2,>=0.10.1 in /home/***/.local/lib/python3.12/site-packages (from streamlit) (0.10.2)
+[2025-04-04T23:07:53.875+0000] {subprocess.py:93} INFO - Requirement already satisfied: typing-extensions<5,>=4.4.0 in /home/***/.local/lib/python3.12/site-packages (from streamlit) (4.11.0)
+[2025-04-04T23:07:53.879+0000] {subprocess.py:93} INFO - Requirement already satisfied: watchdog<7,>=2.1.5 in /home/***/.local/lib/python3.12/site-packages (from streamlit) (6.0.0)
+[2025-04-04T23:07:53.881+0000] {subprocess.py:93} INFO - Requirement already satisfied: gitpython!=3.1.19,<4,>=3.0.7 in /home/***/.local/lib/python3.12/site-packages (from streamlit) (3.1.44)
+[2025-04-04T23:07:53.882+0000] {subprocess.py:93} INFO - Requirement already satisfied: pydeck<1,>=0.8.0b4 in /home/***/.local/lib/python3.12/site-packages (from streamlit) (0.9.1)
+[2025-04-04T23:07:53.884+0000] {subprocess.py:93} INFO - Requirement already satisfied: tornado<7,>=6.0.3 in /home/***/.local/lib/python3.12/site-packages (from streamlit) (6.4)
+[2025-04-04T23:07:53.889+0000] {subprocess.py:93} INFO - Requirement already satisfied: narwhals>=1.15.1 in /home/***/.local/lib/python3.12/site-packages (from plotly) (1.33.0)
+[2025-04-04T23:07:53.902+0000] {subprocess.py:93} INFO - Requirement already satisfied: contourpy>=1.0.1 in /home/***/.local/lib/python3.12/site-packages (from matplotlib) (1.3.1)
+[2025-04-04T23:07:53.903+0000] {subprocess.py:93} INFO - Requirement already satisfied: cycler>=0.10 in /home/***/.local/lib/python3.12/site-packages (from matplotlib) (0.12.1)
+[2025-04-04T23:07:53.908+0000] {subprocess.py:93} INFO - Requirement already satisfied: fonttools>=4.22.0 in /home/***/.local/lib/python3.12/site-packages (from matplotlib) (4.57.0)
+[2025-04-04T23:07:53.911+0000] {subprocess.py:93} INFO - Requirement already satisfied: kiwisolver>=1.3.1 in /home/***/.local/lib/python3.12/site-packages (from matplotlib) (1.4.8)
+[2025-04-04T23:07:53.917+0000] {subprocess.py:93} INFO - Requirement already satisfied: pyparsing>=2.3.1 in /home/***/.local/lib/python3.12/site-packages (from matplotlib) (3.1.2)
+[2025-04-04T23:07:53.919+0000] {subprocess.py:93} INFO - Requirement already satisfied: python-dateutil>=2.7 in /home/***/.local/lib/python3.12/site-packages (from matplotlib) (2.9.0.post0)
+[2025-04-04T23:07:54.000+0000] {subprocess.py:93} INFO - Requirement already satisfied: scipy>=1.6.0 in /home/***/.local/lib/python3.12/site-packages (from scikit-learn) (1.15.2)
+[2025-04-04T23:07:54.001+0000] {subprocess.py:93} INFO - Requirement already satisfied: joblib>=1.2.0 in /home/***/.local/lib/python3.12/site-packages (from scikit-learn) (1.4.2)
+[2025-04-04T23:07:54.003+0000] {subprocess.py:93} INFO - Requirement already satisfied: threadpoolctl>=3.1.0 in /home/***/.local/lib/python3.12/site-packages (from scikit-learn) (3.6.0)
+[2025-04-04T23:07:54.048+0000] {subprocess.py:93} INFO - Requirement already satisfied: jinja2 in /home/***/.local/lib/python3.12/site-packages (from altair<6,>=4.0->streamlit) (3.1.3)
+[2025-04-04T23:07:54.050+0000] {subprocess.py:93} INFO - Requirement already satisfied: jsonschema>=3.0 in /home/***/.local/lib/python3.12/site-packages (from altair<6,>=4.0->streamlit) (4.21.1)
+[2025-04-04T23:07:54.138+0000] {subprocess.py:93} INFO - Requirement already satisfied: gitdb<5,>=4.0.1 in /home/***/.local/lib/python3.12/site-packages (from gitpython!=3.1.19,<4,>=3.0.7->streamlit) (4.0.12)
+[2025-04-04T23:07:54.242+0000] {subprocess.py:93} INFO - Requirement already satisfied: pytz>=2020.1 in /home/***/.local/lib/python3.12/site-packages (from pandas<3,>=1.4.0->streamlit) (2024.1)
+[2025-04-04T23:07:54.244+0000] {subprocess.py:93} INFO - Requirement already satisfied: tzdata>=2022.1 in /home/***/.local/lib/python3.12/site-packages (from pandas<3,>=1.4.0->streamlit) (2024.1)
+[2025-04-04T23:07:54.302+0000] {subprocess.py:93} INFO - Requirement already satisfied: six>=1.5 in /home/***/.local/lib/python3.12/site-packages (from python-dateutil>=2.7->matplotlib) (1.16.0)
+[2025-04-04T23:07:54.315+0000] {subprocess.py:93} INFO - Requirement already satisfied: charset-normalizer<4,>=2 in /home/***/.local/lib/python3.12/site-packages (from requests<3,>=2.27->streamlit) (3.3.2)
+[2025-04-04T23:07:54.317+0000] {subprocess.py:93} INFO - Requirement already satisfied: idna<4,>=2.5 in /home/***/.local/lib/python3.12/site-packages (from requests<3,>=2.27->streamlit) (3.6)
+[2025-04-04T23:07:54.321+0000] {subprocess.py:93} INFO - Requirement already satisfied: urllib3<3,>=1.21.1 in /home/***/.local/lib/python3.12/site-packages (from requests<3,>=2.27->streamlit) (1.26.18)
+[2025-04-04T23:07:54.322+0000] {subprocess.py:93} INFO - Requirement already satisfied: certifi>=2017.4.17 in /home/***/.local/lib/python3.12/site-packages (from requests<3,>=2.27->streamlit) (2024.2.2)
+[2025-04-04T23:07:54.429+0000] {subprocess.py:93} INFO - Requirement already satisfied: smmap<6,>=3.0.1 in /home/***/.local/lib/python3.12/site-packages (from gitdb<5,>=4.0.1->gitpython!=3.1.19,<4,>=3.0.7->streamlit) (5.0.2)
+[2025-04-04T23:07:54.447+0000] {subprocess.py:93} INFO - Requirement already satisfied: MarkupSafe>=2.0 in /home/***/.local/lib/python3.12/site-packages (from jinja2->altair<6,>=4.0->streamlit) (2.1.5)
+[2025-04-04T23:07:54.472+0000] {subprocess.py:93} INFO - Requirement already satisfied: attrs>=22.2.0 in /home/***/.local/lib/python3.12/site-packages (from jsonschema>=3.0->altair<6,>=4.0->streamlit) (23.2.0)
+[2025-04-04T23:07:54.474+0000] {subprocess.py:93} INFO - Requirement already satisfied: jsonschema-specifications>=2023.03.6 in /home/***/.local/lib/python3.12/site-packages (from jsonschema>=3.0->altair<6,>=4.0->streamlit) (2023.12.1)
+[2025-04-04T23:07:54.475+0000] {subprocess.py:93} INFO - Requirement already satisfied: referencing>=0.28.4 in /home/***/.local/lib/python3.12/site-packages (from jsonschema>=3.0->altair<6,>=4.0->streamlit) (0.31.1)
+[2025-04-04T23:07:54.477+0000] {subprocess.py:93} INFO - Requirement already satisfied: rpds-py>=0.7.1 in /home/***/.local/lib/python3.12/site-packages (from jsonschema>=3.0->altair<6,>=4.0->streamlit) (0.18.0)
+[2025-04-04T23:07:57.584+0000] {subprocess.py:93} INFO - 
+[2025-04-04T23:07:57.585+0000] {subprocess.py:93} INFO - [notice] A new release of pip is available: 24.0 -> 25.0.1
+[2025-04-04T23:07:57.586+0000] {subprocess.py:93} INFO - [notice] To update, run: pip install --upgrade pip
+[2025-04-04T23:07:57.738+0000] {subprocess.py:97} INFO - Command exited with return code 0
+[2025-04-04T23:07:57.739+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2025-04-04T23:07:57.779+0000] {taskinstance.py:1205} INFO - Marking task as SUCCESS. dag_id=tmdb_pipeline_streamlit, task_id=install_streamlit_deps, execution_date=20250404T230712, start_date=20250404T230752, end_date=20250404T230757
+[2025-04-04T23:07:57.836+0000] {local_task_job_runner.py:240} INFO - Task exited with return code 0
+[2025-04-04T23:07:57.865+0000] {taskinstance.py:3482} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2025-04-04T23:07:57.866+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

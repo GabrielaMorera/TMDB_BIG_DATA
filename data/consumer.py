@@ -16,6 +16,8 @@ import warnings
 import psycopg2
 from datetime import datetime
 import traceback
+import glob
+import pickle
 
 warnings.filterwarnings('ignore')
 
@@ -34,7 +36,7 @@ KAFKA_BROKER = "localhost:9092"  # Usa localhost si estás ejecutando fuera de D
 POSTGRES_DB = "postgres"
 POSTGRES_USER = "postgres"
 POSTGRES_PASSWORD = "Villeta-11"  # Agregada la contraseña correcta
-POSTGRES_HOST = "localhost"
+POSTGRES_HOST = "movie_postgres"
 POSTGRES_PORT = "5433"
 OUTPUT_DIR = "movie_analytics"
 
@@ -165,6 +167,21 @@ class MovieAnalyzer:
             session_timeout_ms=30000,
             heartbeat_interval_ms=10000
         )
+
+                # Cargar el modelo más reciente
+        logger.info("Buscando el modelo más reciente...")
+        model_dir = self.get_most_recent_model_dir()
+        if model_dir:
+            model_path = os.path.join(model_dir, "model.pkl")
+            if os.path.exists(model_path):
+                with open(model_path, "rb") as f:
+                    self.model = pickle.load(f)
+                logger.info(f"Modelo cargado desde: {model_path}")
+            else:
+                logger.warning("No se encontró el archivo 'model.pkl' en el directorio más reciente.")
+        else:
+            logger.warning("No se encontró ningún directorio de modelo.")
+            self.model = None
         
         # Probar conexión a PostgreSQL antes de continuar
         self.test_postgres_connection()
@@ -195,6 +212,22 @@ class MovieAnalyzer:
             logger.error(traceback.format_exc())
             raise
     
+    def get_most_recent_model_dir(self):
+        search_patterns = [
+            'data/movie_analytics/ml_model_v3_*',
+            'data/movie_analytics/ml_model_v2_*',
+            'data/movie_analytics/ml_model_*',
+        ]
+        all_model_paths = []
+        for pattern in search_patterns:
+            all_model_paths.extend(glob.glob(pattern))
+
+        if not all_model_paths:
+            return None
+
+        all_model_paths.sort(key=os.path.getmtime, reverse=True)
+        return all_model_paths[0]
+
     def create_schema_and_tables_raw(self):
         """Crea el esquema y tablas usando psycopg2 directamente, que puede ser más confiable."""
         try:

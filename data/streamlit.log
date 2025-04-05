@@ -1,0 +1,113 @@
+
+  You can now view your Streamlit app in your browser.
+
+  URL: http://0.0.0.0:8502
+
+/opt/airflow/data/tmdb_streamlit_app.py:545: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise in a future error of pandas. Value '5.9/10' has dtype incompatible with float64, please explicitly cast to a compatible dtype first.
+  df_factors.at[i, "Valor en la Película"] = f"{row['Valor en la Película']:.1f}/10"
+2025-04-05 00:51:36.147 Serialization of dataframe to Arrow table was unsuccessful. Applying automatic fixes for column types to make the dataframe Arrow-compatible.
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/streamlit/dataframe_util.py", line 822, in convert_pandas_df_to_arrow_bytes
+    table = pa.Table.from_pandas(df)
+            ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "pyarrow/table.pxi", line 3874, in pyarrow.lib.Table.from_pandas
+  File "/home/airflow/.local/lib/python3.12/site-packages/pyarrow/pandas_compat.py", line 611, in dataframe_to_arrays
+    arrays = [convert_column(c, f)
+              ^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/pyarrow/pandas_compat.py", line 598, in convert_column
+    raise e
+  File "/home/airflow/.local/lib/python3.12/site-packages/pyarrow/pandas_compat.py", line 592, in convert_column
+    result = pa.array(col, type=type_, from_pandas=True, safe=safe)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "pyarrow/array.pxi", line 339, in pyarrow.lib.array
+  File "pyarrow/array.pxi", line 85, in pyarrow.lib._ndarray_to_array
+  File "pyarrow/error.pxi", line 91, in pyarrow.lib.check_status
+pyarrow.lib.ArrowTypeError: ("Expected bytes, got a 'float' object", 'Conversion failed for column Valor en la Película with type object')
+/opt/airflow/data/tmdb_streamlit_app.py:545: FutureWarning:
+
+Setting an item of incompatible dtype is deprecated and will raise in a future error of pandas. Value '0.0/10' has dtype incompatible with float64, please explicitly cast to a compatible dtype first.
+
+2025-04-05 00:51:51.380 Serialization of dataframe to Arrow table was unsuccessful. Applying automatic fixes for column types to make the dataframe Arrow-compatible.
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/streamlit/dataframe_util.py", line 822, in convert_pandas_df_to_arrow_bytes
+    table = pa.Table.from_pandas(df)
+            ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "pyarrow/table.pxi", line 3874, in pyarrow.lib.Table.from_pandas
+  File "/home/airflow/.local/lib/python3.12/site-packages/pyarrow/pandas_compat.py", line 611, in dataframe_to_arrays
+    arrays = [convert_column(c, f)
+              ^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/pyarrow/pandas_compat.py", line 598, in convert_column
+    raise e
+  File "/home/airflow/.local/lib/python3.12/site-packages/pyarrow/pandas_compat.py", line 592, in convert_column
+    result = pa.array(col, type=type_, from_pandas=True, safe=safe)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "pyarrow/array.pxi", line 339, in pyarrow.lib.array
+  File "pyarrow/array.pxi", line 85, in pyarrow.lib._ndarray_to_array
+  File "pyarrow/error.pxi", line 91, in pyarrow.lib.check_status
+pyarrow.lib.ArrowTypeError: ("Expected bytes, got a 'float' object", 'Conversion failed for column Valor en la Película with type object')
+/opt/airflow/data/tmdb_streamlit_app.py:545: FutureWarning:
+
+Setting an item of incompatible dtype is deprecated and will raise in a future error of pandas. Value '0.0/10' has dtype incompatible with float64, please explicitly cast to a compatible dtype first.
+
+2025-04-05 00:52:08.570 Serialization of dataframe to Arrow table was unsuccessful. Applying automatic fixes for column types to make the dataframe Arrow-compatible.
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/streamlit/dataframe_util.py", line 822, in convert_pandas_df_to_arrow_bytes
+    table = pa.Table.from_pandas(df)
+            ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "pyarrow/table.pxi", line 3874, in pyarrow.lib.Table.from_pandas
+  File "/home/airflow/.local/lib/python3.12/site-packages/pyarrow/pandas_compat.py", line 611, in dataframe_to_arrays
+    arrays = [convert_column(c, f)
+              ^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/pyarrow/pandas_compat.py", line 598, in convert_column
+    raise e
+  File "/home/airflow/.local/lib/python3.12/site-packages/pyarrow/pandas_compat.py", line 592, in convert_column
+    result = pa.array(col, type=type_, from_pandas=True, safe=safe)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "pyarrow/array.pxi", line 339, in pyarrow.lib.array
+  File "pyarrow/array.pxi", line 85, in pyarrow.lib._ndarray_to_array
+  File "pyarrow/error.pxi", line 91, in pyarrow.lib.check_status
+pyarrow.lib.ArrowTypeError: ("Expected bytes, got a 'float' object", 'Conversion failed for column Valor en la Película with type object')
+/opt/airflow/data/tmdb_streamlit_app.py:545: FutureWarning:
+
+Setting an item of incompatible dtype is deprecated and will raise in a future error of pandas. Value '7.5/10' has dtype incompatible with float64, please explicitly cast to a compatible dtype first.
+
+2025-04-05 01:06:25.406 Serialization of dataframe to Arrow table was unsuccessful. Applying automatic fixes for column types to make the dataframe Arrow-compatible.
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/streamlit/dataframe_util.py", line 822, in convert_pandas_df_to_arrow_bytes
+    table = pa.Table.from_pandas(df)
+            ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "pyarrow/table.pxi", line 3874, in pyarrow.lib.Table.from_pandas
+  File "/home/airflow/.local/lib/python3.12/site-packages/pyarrow/pandas_compat.py", line 611, in dataframe_to_arrays
+    arrays = [convert_column(c, f)
+              ^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/pyarrow/pandas_compat.py", line 598, in convert_column
+    raise e
+  File "/home/airflow/.local/lib/python3.12/site-packages/pyarrow/pandas_compat.py", line 592, in convert_column
+    result = pa.array(col, type=type_, from_pandas=True, safe=safe)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "pyarrow/array.pxi", line 339, in pyarrow.lib.array
+  File "pyarrow/array.pxi", line 85, in pyarrow.lib._ndarray_to_array
+  File "pyarrow/error.pxi", line 91, in pyarrow.lib.check_status
+pyarrow.lib.ArrowTypeError: ("Expected bytes, got a 'float' object", 'Conversion failed for column Valor en la Película with type object')
+/opt/airflow/data/tmdb_streamlit_app.py:545: FutureWarning:
+
+Setting an item of incompatible dtype is deprecated and will raise in a future error of pandas. Value '0.0/10' has dtype incompatible with float64, please explicitly cast to a compatible dtype first.
+
+2025-04-05 01:06:33.766 Serialization of dataframe to Arrow table was unsuccessful. Applying automatic fixes for column types to make the dataframe Arrow-compatible.
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/streamlit/dataframe_util.py", line 822, in convert_pandas_df_to_arrow_bytes
+    table = pa.Table.from_pandas(df)
+            ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "pyarrow/table.pxi", line 3874, in pyarrow.lib.Table.from_pandas
+  File "/home/airflow/.local/lib/python3.12/site-packages/pyarrow/pandas_compat.py", line 611, in dataframe_to_arrays
+    arrays = [convert_column(c, f)
+              ^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/pyarrow/pandas_compat.py", line 598, in convert_column
+    raise e
+  File "/home/airflow/.local/lib/python3.12/site-packages/pyarrow/pandas_compat.py", line 592, in convert_column
+    result = pa.array(col, type=type_, from_pandas=True, safe=safe)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "pyarrow/array.pxi", line 339, in pyarrow.lib.array
+  File "pyarrow/array.pxi", line 85, in pyarrow.lib._ndarray_to_array
+  File "pyarrow/error.pxi", line 91, in pyarrow.lib.check_status
+pyarrow.lib.ArrowTypeError: ("Expected bytes, got a 'float' object", 'Conversion failed for column Valor en la Película with type object')

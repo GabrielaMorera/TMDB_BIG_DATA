@@ -15,8 +15,8 @@
         "release_date": "2025-03-27",
         "title": "Criminales de lujo",
         "video": false,
-        "vote_average": 7.073,
-        "vote_count": 41,
+        "vote_average": 6.9,
+        "vote_count": 43,
         "budget": 0,
         "revenue": 0,
         "runtime": 97,
@@ -54,8 +54,8 @@
         "release_date": "2025-02-19",
         "title": "Cleaner",
         "video": false,
-        "vote_average": 6.779,
-        "vote_count": 147,
+        "vote_average": 6.758,
+        "vote_count": 149,
         "budget": 0,
         "revenue": 0,
         "runtime": 96,
@@ -80,49 +80,6 @@
     },
     {
         "adult": false,
-        "backdrop_path": "/9OO6I25MHhCDd0XwNk4oZl0fpwB.jpg",
-        "genre_ids": [
-            28,
-            18
-        ],
-        "id": 1261050,
-        "original_language": "da",
-        "original_title": "De lydløse",
-        "overview": "En 2008, un grupo de hombres de Dinamarca y Europa lleva a cabo el mayor atraco de todos los tiempos en suelo danés. Kasper, un boxeador con pocas oportunidades en la vida, recibe la oferta de sus iniciadores extranjeros para planear el robo.",
-        "popularity": 335.4507,
-        "poster_path": "/ywHCbLbTremCJBiHRa63rlrXmWs.jpg",
-        "release_date": "2024-10-31",
-        "title": "Los silenciosos",
-        "video": false,
-        "vote_average": 5.938,
-        "vote_count": 16,
-        "budget": 0,
-        "revenue": 0,
-        "runtime": 110,
-        "genres": [
-            "Acción",
-            "Drama"
-        ],
-        "production_companies": [
-            "Zentropa Entertainments",
-            "Film i Väst",
-            "Zentropa International Sweden",
-            "Kazak Productions",
-            "Zentropa International France"
-        ],
-        "directors": [
-            "Frederik Louis Hviid"
-        ],
-        "cast": [
-            "Gustav Dyekjær Giese",
-            "Reda Kateb",
-            "Amanda Collin",
-            "Christopher Wagelin",
-            "Jens Hultén"
-        ]
-    },
-    {
-        "adult": false,
         "backdrop_path": "/xBrx6O1RIhjtWmVthZIANuQz7Z2.jpg",
         "genre_ids": [
             28,
@@ -139,7 +96,7 @@
         "title": "A Working Man",
         "video": false,
         "vote_average": 6.8,
-        "vote_count": 104,
+        "vote_count": 106,
         "budget": 40000000,
         "revenue": 33392248,
         "runtime": 116,
@@ -170,44 +127,45 @@
     },
     {
         "adult": false,
-        "backdrop_path": "/8eifdha9GQeZAkexgtD45546XKx.jpg",
+        "backdrop_path": "/9OO6I25MHhCDd0XwNk4oZl0fpwB.jpg",
         "genre_ids": [
             28,
-            53,
-            878
+            18
         ],
-        "id": 822119,
-        "original_language": "en",
-        "original_title": "Captain America: Brave New World",
-        "overview": "Tras reunirse con el recién elegido presidente de los EE. UU., Thaddeus Ross, Sam se encuentra en medio de un incidente internacional. Debe descubrir el motivo que se esconde tras un perverso complot global, antes de que su verdadero artífice enfurezca al mundo entero.",
-        "popularity": 326.4753,
-        "poster_path": "/im71UJzBqY03swuGYVR28j0JFM2.jpg",
-        "release_date": "2025-02-12",
-        "title": "Capitán América: Brave New World",
+        "id": 1261050,
+        "original_language": "da",
+        "original_title": "De lydløse",
+        "overview": "En 2008, un grupo de hombres de Dinamarca y Europa lleva a cabo el mayor atraco de todos los tiempos en suelo danés. Kasper, un boxeador con pocas oportunidades en la vida, recibe la oferta de sus iniciadores extranjeros para planear el robo.",
+        "popularity": 335.4507,
+        "poster_path": "/ywHCbLbTremCJBiHRa63rlrXmWs.jpg",
+        "release_date": "2024-10-31",
+        "title": "Los silenciosos",
         "video": false,
-        "vote_average": 6.123,
-        "vote_count": 1195,
-        "budget": 180000000,
-        "revenue": 409278201,
-        "runtime": 119,
+        "vote_average": 5.9,
+        "vote_count": 16,
+        "budget": 0,
+        "revenue": 0,
+        "runtime": 110,
         "genres": [
             "Acción",
-            "Suspense",
-            "Ciencia ficción"
+            "Drama"
         ],
         "production_companies": [
-            "Marvel Studios",
-            "Kevin Feige Productions"
+            "Zentropa Entertainments",
+            "Film i Väst",
+            "Zentropa International Sweden",
+            "Kazak Productions",
+            "Zentropa International France"
         ],
         "directors": [
-            "Julius Onah"
+            "Frederik Louis Hviid"
         ],
         "cast": [
-            "Anthony Mackie",
-            "Harrison Ford",
-            "Danny Ramirez",
-            "Shira Haas",
-            "Tim Blake Nelson"
+            "Gustav Dyekjær Giese",
+            "Reda Kateb",
+            "Amanda Collin",
+            "Christopher Wagelin",
+            "Jens Hultén"
         ]
     },
     {
@@ -228,8 +186,8 @@
         "release_date": "2025-03-31",
         "title": "Una película de Minecraft",
         "video": false,
-        "vote_average": 5.994,
-        "vote_count": 81,
+        "vote_average": 5.82,
+        "vote_count": 97,
         "budget": 150000000,
         "revenue": 0,
         "runtime": 101,
@@ -260,6 +218,90 @@
     },
     {
         "adult": false,
+        "backdrop_path": "/8eifdha9GQeZAkexgtD45546XKx.jpg",
+        "genre_ids": [
+            28,
+            53,
+            878
+        ],
+        "id": 822119,
+        "original_language": "en",
+        "original_title": "Captain America: Brave New World",
+        "overview": "Tras reunirse con el recién elegido presidente de los EE. UU., Thaddeus Ross, Sam se encuentra en medio de un incidente internacional. Debe descubrir el motivo que se esconde tras un perverso complot global, antes de que su verdadero artífice enfurezca al mundo entero.",
+        "popularity": 326.4753,
+        "poster_path": "/im71UJzBqY03swuGYVR28j0JFM2.jpg",
+        "release_date": "2025-02-12",
+        "title": "Capitán América: Brave New World",
+        "video": false,
+        "vote_average": 6.121,
+        "vote_count": 1202,
+        "budget": 180000000,
+        "revenue": 409278201,
+        "runtime": 119,
+        "genres": [
+            "Acción",
+            "Suspense",
+            "Ciencia ficción"
+        ],
+        "production_companies": [
+            "Marvel Studios",
+            "Kevin Feige Productions"
+        ],
+        "directors": [
+            "Julius Onah"
+        ],
+        "cast": [
+            "Anthony Mackie",
+            "Harrison Ford",
+            "Danny Ramirez",
+            "Shira Haas",
+            "Tim Blake Nelson"
+        ]
+    },
+    {
+        "adult": false,
+        "backdrop_path": "/qiVrapzgrDO7c6yQTSvn0dhwsn8.jpg",
+        "genre_ids": [
+            10749,
+            18
+        ],
+        "id": 1252309,
+        "original_language": "es",
+        "original_title": "Pídeme lo que quieras",
+        "overview": "Judith Flores es una chica normal. Tiene un trabajo que le apasiona, muy buenos amigos y un padre encantador. Pero su vida cambia radicalmente cuando conoce a Eric Zimmerman, dueño de la empresa donde ella trabaja. Su relación con Eric está a punto de dinamitar su vida por completo.",
+        "popularity": 273.7269,
+        "poster_path": "/76qnVxU2rPdVvipBN3DPQH6fVYB.jpg",
+        "release_date": "2024-11-29",
+        "title": "Pídeme lo que quieras",
+        "video": false,
+        "vote_average": 5.991,
+        "vote_count": 108,
+        "budget": 0,
+        "revenue": 0,
+        "runtime": 114,
+        "genres": [
+            "Romance",
+            "Drama"
+        ],
+        "production_companies": [
+            "Versus Entertainment",
+            "LyO Media",
+            "Warner Bros. Entertainment España",
+            "4 Cats Pictures"
+        ],
+        "directors": [
+            "Lucía Alemany"
+        ],
+        "cast": [
+            "Gabriela Andrada",
+            "Mario Ermito",
+            "Celia Freijeiro",
+            "David Solans",
+            "Alba Ribas"
+        ]
+    },
+    {
+        "adult": false,
         "backdrop_path": "/m2mzlsJjE3UAqeUB5fLUkpWg4Iq.jpg",
         "genre_ids": [
             53,
@@ -274,8 +316,8 @@
         "release_date": "2023-08-03",
         "title": "Relatos Fantásticos",
         "video": false,
-        "vote_average": 6.9,
-        "vote_count": 27,
+        "vote_average": 6.893,
+        "vote_count": 28,
         "budget": 0,
         "revenue": 0,
         "runtime": 0,
@@ -333,48 +375,6 @@
     },
     {
         "adult": false,
-        "backdrop_path": "/qiVrapzgrDO7c6yQTSvn0dhwsn8.jpg",
-        "genre_ids": [
-            10749,
-            18
-        ],
-        "id": 1252309,
-        "original_language": "es",
-        "original_title": "Pídeme lo que quieras",
-        "overview": "Judith Flores es una chica normal. Tiene un trabajo que le apasiona, muy buenos amigos y un padre encantador. Pero su vida cambia radicalmente cuando conoce a Eric Zimmerman, dueño de la empresa donde ella trabaja. Su relación con Eric está a punto de dinamitar su vida por completo.",
-        "popularity": 273.7269,
-        "poster_path": "/76qnVxU2rPdVvipBN3DPQH6fVYB.jpg",
-        "release_date": "2024-11-29",
-        "title": "Pídeme lo que quieras",
-        "video": false,
-        "vote_average": 6.014,
-        "vote_count": 106,
-        "budget": 0,
-        "revenue": 0,
-        "runtime": 114,
-        "genres": [
-            "Romance",
-            "Drama"
-        ],
-        "production_companies": [
-            "Versus Entertainment",
-            "LyO Media",
-            "Warner Bros. Entertainment España",
-            "4 Cats Pictures"
-        ],
-        "directors": [
-            "Lucía Alemany"
-        ],
-        "cast": [
-            "Gabriela Andrada",
-            "Mario Ermito",
-            "Celia Freijeiro",
-            "David Solans",
-            "Alba Ribas"
-        ]
-    },
-    {
-        "adult": false,
         "backdrop_path": "/nhx0ttmAS2w8e6hyIcKoNvgHoix.jpg",
         "genre_ids": [
             27,
@@ -390,8 +390,8 @@
         "release_date": "2025-01-13",
         "title": "Peter Pan: Pesadilla en Nunca Jamás",
         "video": false,
-        "vote_average": 6.018,
-        "vote_count": 28,
+        "vote_average": 6.1,
+        "vote_count": 30,
         "budget": 250000,
         "revenue": 315648,
         "runtime": 89,

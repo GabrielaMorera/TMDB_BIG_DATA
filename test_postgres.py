@@ -6,7 +6,7 @@ try:
         dbname="postgres",
         user="postgres",
         password="Villeta-11",
-        host="localhost",
+        host="movie_postgres",
         port="5433"  # Cambiado a 5433
     )
     
