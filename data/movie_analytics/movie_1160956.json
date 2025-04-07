@@ -1,0 +1,65 @@
+{
+    "adult": false,
+    "backdrop_path": "/u7AZ5CdT2af8buRjmYCPXNyJssd.jpg",
+    "genre_ids": [
+        28,
+        35
+    ],
+    "id": 1160956,
+    "original_language": "zh",
+    "original_title": "熊猫计划",
+    "overview": "Poco después de que la legendaria estrella del kung fu Jackie Chan sea invitada a adoptar a un querido panda del zoo llamado Hu Hu, un famoso sindicato del crimen internacional pone sus ojos en el famoso oso y ofrece una enorme recompensa por su captura. Ante esta repentina crisis, Jackie Chan recurre a la ayuda de su agente y del feroz cuidador de Hu Hu, y el trío se embarca en una aventura en la que intentarán ser más listos que los malos en todo momento.",
+    "popularity": 61.3559,
+    "poster_path": "/sul3eKDF9rb0wn2Q9wFfv61lOGi.jpg",
+    "release_date": "2024-10-01",
+    "title": "Panda Plan",
+    "video": false,
+    "vote_average": 6.95,
+    "vote_count": 171,
+    "budget": 0,
+    "revenue": 42333207,
+    "runtime": 99,
+    "genres": [
+        "Acción",
+        "Comedia"
+    ],
+    "production_companies": [
+        "Emei Film Studio",
+        "Mandarin Motion Pictures",
+        "Maoyan Entertainment",
+        "Wishart Media"
+    ],
+    "directors": [
+        "張欒"
+    ],
+    "cast": [
+        "Jackie Chan",
+        "Shi Ce",
+        "魏翔",
+        "Han Yanbo",
+        "Danny Ray",
+        "许君聪",
+        "Andy Friend",
+        "黄允桐",
+        "贾冰",
+        "Temur Mamisashvili"
+    ],
+    "keywords": [
+        "assistant",
+        "zoo",
+        "panda",
+        "superstar",
+        "rescue operation",
+        "international superstar"
+    ],
+    "video_count": 0,
+    "similar_count": 20,
+    "roi": 0,
+    "popularity_category": "Muy Alta",
+    "rating_category": "Buena",
+    "genres_str": "Acción,Comedia",
+    "directors_str": "張欒",
+    "cast_str": "Jackie Chan,Shi Ce,魏翔,Han Yanbo,Danny Ray,许君聪,Andy Friend,黄允桐,贾冰,Temur Mamisashvili",
+    "companies_str": "Emei Film Studio,Mandarin Motion Pictures,Maoyan Entertainment,Wishart Media",
+    "keywords_str": "assistant,zoo,panda,superstar,rescue operation,international superstar"
+}

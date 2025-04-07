@@ -1,0 +1,71 @@
+{
+    "adult": false,
+    "backdrop_path": "/au3o84ub27qTZiMiEc9UYzN74V3.jpg",
+    "genre_ids": [
+        28,
+        878,
+        53
+    ],
+    "id": 1035048,
+    "original_language": "en",
+    "original_title": "Elevation",
+    "overview": "Un padre soltero y dos mujeres se aventuran desde la seguridad de sus hogares a enfrentarse a criaturas monstruosas para salvar la vida de un niño.",
+    "popularity": 38.6069,
+    "poster_path": "/92cd9vR6ThBqT6Pe6m5daxX0rAk.jpg",
+    "release_date": "2024-11-07",
+    "title": "Elevation",
+    "video": false,
+    "vote_average": 6.49,
+    "vote_count": 660,
+    "budget": 18000000,
+    "revenue": 3300000,
+    "runtime": 91,
+    "genres": [
+        "Acción",
+        "Ciencia ficción",
+        "Suspense"
+    ],
+    "production_companies": [
+        "Lyrical Media",
+        "Fuller Media",
+        "Inspire Entertainment",
+        "Grinder Monkey",
+        "John Glenn Entertainment"
+    ],
+    "directors": [
+        "George Nolfi"
+    ],
+    "cast": [
+        "Anthony Mackie",
+        "Morena Baccarin",
+        "Maddie Hasson",
+        "Danny Boyd Jr.",
+        "Rachel Nicks",
+        "Shauna Earp",
+        "Tyler Grey",
+        "Drexel Malkoff",
+        "David Malkoff",
+        "Mike Hickman"
+    ],
+    "keywords": [
+        "mine",
+        "colorado",
+        "alien",
+        "hospital",
+        "alien invasion",
+        "ski lift",
+        "abandoned mine",
+        "monsters",
+        "mountains"
+    ],
+    "video_count": 0,
+    "similar_count": 20,
+    "roi": -0.8166666666666667,
+    "popularity_category": "Muy Alta",
+    "rating_category": "Buena",
+    "genres_str": "Acción,Ciencia ficción,Suspense",
+    "directors_str": "George Nolfi",
+    "cast_str": "Anthony Mackie,Morena Baccarin,Maddie Hasson,Danny Boyd Jr.,Rachel Nicks,Shauna Earp,Tyler Grey,Drexel Malkoff,David Malkoff,Mike Hickman",
+    "companies_str": "Lyrical Media,Fuller Media,Inspire Entertainment,Grinder Monkey,John Glenn Entertainment",
+    "keywords_str": "mine,colorado,alien,hospital,alien invasion,ski lift,abandoned mine,monsters,mountains"
+}

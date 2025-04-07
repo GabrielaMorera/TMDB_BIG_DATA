@@ -1,0 +1,64 @@
+{
+    "adult": false,
+    "backdrop_path": "/zBG5Mg29NH9xxpWMMG7BIvKwYhL.jpg",
+    "genre_ids": [
+        10749,
+        18
+    ],
+    "id": 829557,
+    "original_language": "pl",
+    "original_title": "365 dni: Ten dzień",
+    "overview": "Laura y Massimo vuelven más fuertes que nunca, pero las ataduras familiares de Massimo y un misterioso hombre que quiere conquistar a Laura complican su relación.",
+    "popularity": 39.6139,
+    "poster_path": "/k3J2GdYxhR6U2RfsHZOsmHVKW7m.jpg",
+    "release_date": "2022-04-26",
+    "title": "365 días: Aquel día",
+    "video": false,
+    "vote_average": 5.896,
+    "vote_count": 1690,
+    "budget": 0,
+    "revenue": 0,
+    "runtime": 111,
+    "genres": [
+        "Romance",
+        "Drama"
+    ],
+    "production_companies": [
+        "Ekipa",
+        "Open Mind Production"
+    ],
+    "directors": [
+        "Barbara Białowąs",
+        "Tomasz Mandes"
+    ],
+    "cast": [
+        "Anna-Maria Sieklucka",
+        "Michele Morrone",
+        "Simone Susinna",
+        "Magdalena Lamparska",
+        "Otar Saralidze",
+        "Natasza Urbańska",
+        "Ramón Langa",
+        "Ewa Kasprzyk",
+        "Dariusz Jakubowski",
+        "Tomasz Mandes"
+    ],
+    "keywords": [
+        "gangster",
+        "sequel",
+        "bdsm",
+        "rich man poor woman",
+        "sex",
+        "erotique"
+    ],
+    "video_count": 0,
+    "similar_count": 20,
+    "roi": 0,
+    "popularity_category": "Muy Alta",
+    "rating_category": "Regular",
+    "genres_str": "Romance,Drama",
+    "directors_str": "Barbara Białowąs,Tomasz Mandes",
+    "cast_str": "Anna-Maria Sieklucka,Michele Morrone,Simone Susinna,Magdalena Lamparska,Otar Saralidze,Natasza Urbańska,Ramón Langa,Ewa Kasprzyk,Dariusz Jakubowski,Tomasz Mandes",
+    "companies_str": "Ekipa,Open Mind Production",
+    "keywords_str": "gangster,sequel,bdsm,rich man poor woman,sex,erotique"
+}

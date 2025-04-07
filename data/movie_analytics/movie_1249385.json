@@ -1,0 +1,62 @@
+{
+    "adult": false,
+    "backdrop_path": "/zvWnh0ABsJlco2tikliiATEKhLN.jpg",
+    "genre_ids": [
+        27,
+        53
+    ],
+    "id": 1249385,
+    "original_language": "en",
+    "original_title": "Ghost Game",
+    "overview": "",
+    "popularity": 153.2307,
+    "poster_path": "/bampgK31QFyaNHQXmCnQ2m3VLvT.jpg",
+    "release_date": "2024-10-18",
+    "title": "Ghost Game",
+    "video": false,
+    "vote_average": 5.111,
+    "vote_count": 9,
+    "budget": 0,
+    "revenue": 0,
+    "runtime": 86,
+    "genres": [
+        "Terror",
+        "Suspense"
+    ],
+    "production_companies": [
+        "Epic Pictures Group"
+    ],
+    "directors": [
+        "Jill Gevargizian"
+    ],
+    "cast": [
+        "Kia Dorsey",
+        "Zaen Haidar",
+        "Aiden Hughes",
+        "Vienna Maas",
+        "Emily Bennett",
+        "Michael C. Williams",
+        "Sam Lukowski",
+        "Sharrie McCain",
+        "Anita Sharma",
+        "Jesse L. Green"
+    ],
+    "keywords": [
+        "haunted house",
+        "descent into madness",
+        "home invasion",
+        "thrill seeker",
+        "independent film",
+        "social media challenge"
+    ],
+    "video_count": 0,
+    "similar_count": 20,
+    "roi": 0,
+    "popularity_category": "Muy Alta",
+    "rating_category": "Regular",
+    "genres_str": "Terror,Suspense",
+    "directors_str": "Jill Gevargizian",
+    "cast_str": "Kia Dorsey,Zaen Haidar,Aiden Hughes,Vienna Maas,Emily Bennett,Michael C. Williams,Sam Lukowski,Sharrie McCain,Anita Sharma,Jesse L. Green",
+    "companies_str": "Epic Pictures Group",
+    "keywords_str": "haunted house,descent into madness,home invasion,thrill seeker,independent film,social media challenge"
+}

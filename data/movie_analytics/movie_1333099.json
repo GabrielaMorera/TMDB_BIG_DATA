@@ -1,0 +1,59 @@
+{
+    "adult": false,
+    "backdrop_path": "/585hAEHBMNqyCt3pswF5MjImBrR.jpg",
+    "genre_ids": [
+        12,
+        18,
+        14,
+        16
+    ],
+    "id": 1333099,
+    "original_language": "es",
+    "original_title": "Dalia y el libro rojo",
+    "overview": "Cuando los personajes de la novela que su padre nunca pudo terminar cobran vida y amenazan con tomar el control de la historia, Dalia es arrastrada a una fascinante aventura dentro de El Libro Rojo. Con solo 12 horas, una hoja en blanco y una pluma, Dalia, junto a una valiente cabra convertida en guía y compañera de viaje, debe encontrar la manera de escribir el final de la historia y decidir si desea convertirse en escritora, como su padre.",
+    "popularity": 39.3624,
+    "poster_path": "/oyGyAQZOj7NzyLxCZX7FHKYELP1.jpg",
+    "release_date": "2024-10-17",
+    "title": "Dalia y el libro rojo",
+    "video": false,
+    "vote_average": 7.3,
+    "vote_count": 14,
+    "budget": 0,
+    "revenue": 0,
+    "runtime": 106,
+    "genres": [
+        "Aventura",
+        "Drama",
+        "Fantasía",
+        "Animación"
+    ],
+    "production_companies": [
+        "Vista Sur Films",
+        "Golem Studio",
+        "Felipe Producciones",
+        "FilmSharks International",
+        "Signos Studio"
+    ],
+    "directors": [
+        "David Bisbano"
+    ],
+    "cast": [
+        "Agustina Gonzalez Cirulnik",
+        "Gustavo Barrientos",
+        "Mariana Correa",
+        "Andrés Burecovics"
+    ],
+    "keywords": [
+        "animation"
+    ],
+    "video_count": 1,
+    "similar_count": 20,
+    "roi": 0,
+    "popularity_category": "Muy Alta",
+    "rating_category": "Buena",
+    "genres_str": "Aventura,Drama,Fantasía,Animación",
+    "directors_str": "David Bisbano",
+    "cast_str": "Agustina Gonzalez Cirulnik,Gustavo Barrientos,Mariana Correa,Andrés Burecovics",
+    "companies_str": "Vista Sur Films,Golem Studio,Felipe Producciones,FilmSharks International,Signos Studio",
+    "keywords_str": "animation"
+}

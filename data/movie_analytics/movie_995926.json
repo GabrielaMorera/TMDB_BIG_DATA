@@ -1,0 +1,59 @@
+{
+    "adult": false,
+    "backdrop_path": "/bA4Io3xv46oEyP4O51uU0EKbluF.jpg",
+    "genre_ids": [
+        28,
+        80
+    ],
+    "id": 995926,
+    "original_language": "ko",
+    "original_title": "베테랑 2",
+    "overview": "El detective Seo Do-cheol y su División de Investigación de Delitos Graves persiguen incansablemente a los criminales día y noche, a menudo a costa de sus vidas personales. Cuando el asesinato de un profesor revela vínculos con casos anteriores, surgen las sospechas de un asesino en serie, sumiendo al país en la confusión. Mientras Crímenes Prioritarios se adentra en la investigación, el asesino se burla de ellos lanzando públicamente un teaser en Internet, indicando la próxima víctima e intensificando el caos. Para hacer frente a la creciente amenaza, el equipo incorpora al idealista agente novato Park Sun-woo, lo que da lugar a giros inesperados en la trayectoria del caso.",
+    "popularity": 71.6205,
+    "poster_path": "/4o4fh62VZewnBotiVT33d0dvPsX.jpg",
+    "release_date": "2024-09-13",
+    "title": "El ejecutor",
+    "video": false,
+    "vote_average": 7.031,
+    "vote_count": 48,
+    "budget": 0,
+    "revenue": 53453611,
+    "runtime": 118,
+    "genres": [
+        "Acción",
+        "Crimen"
+    ],
+    "production_companies": [
+        "Filmmaker R&K",
+        "CJ Entertainment"
+    ],
+    "directors": [
+        "류승완"
+    ],
+    "cast": [
+        "황정민",
+        "정해인",
+        "오달수",
+        "오대환",
+        "장윤주",
+        "김시후",
+        "진경",
+        "신승환",
+        "정만식",
+        "권해효"
+    ],
+    "keywords": [
+        "sequel",
+        "police chase"
+    ],
+    "video_count": 1,
+    "similar_count": 20,
+    "roi": 0,
+    "popularity_category": "Muy Alta",
+    "rating_category": "Buena",
+    "genres_str": "Acción,Crimen",
+    "directors_str": "류승완",
+    "cast_str": "황정민,정해인,오달수,오대환,장윤주,김시후,진경,신승환,정만식,권해효",
+    "companies_str": "Filmmaker R&K,CJ Entertainment",
+    "keywords_str": "sequel,police chase"
+}

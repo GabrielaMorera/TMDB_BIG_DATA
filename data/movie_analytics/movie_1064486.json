@@ -1,0 +1,67 @@
+{
+    "adult": false,
+    "backdrop_path": "/jl2YIADk391yc6Qjy9JhgCRkHJk.jpg",
+    "genre_ids": [
+        16,
+        18,
+        35
+    ],
+    "id": 1064486,
+    "original_language": "en",
+    "original_title": "Memoir of a Snail",
+    "overview": "",
+    "popularity": 67.8652,
+    "poster_path": "/sJ7bgsuC06tpC7wVl3LUW5cyKmX.jpg",
+    "release_date": "2024-10-17",
+    "title": "Memorias de un caracol",
+    "video": false,
+    "vote_average": 7.996,
+    "vote_count": 354,
+    "budget": 4350000,
+    "revenue": 2251196,
+    "runtime": 94,
+    "genres": [
+        "Animación",
+        "Drama",
+        "Comedia"
+    ],
+    "production_companies": [
+        "Arenamedia",
+        "Screen Australia"
+    ],
+    "directors": [
+        "Adam Elliot"
+    ],
+    "cast": [
+        "Sarah Snook",
+        "Kodi Smit-McPhee",
+        "Jacki Weaver",
+        "Magda Szubanski",
+        "Dominique Pinon",
+        "Tony Armstrong",
+        "Paul Capsis",
+        "Eric Bana",
+        "Bernie Clifford",
+        "Davey Thompson"
+    ],
+    "keywords": [
+        "difficult childhood",
+        "death of father",
+        "stop motion",
+        "adult animation",
+        "death in childbirth",
+        "broken family",
+        "brother sister relationship",
+        "snail"
+    ],
+    "video_count": 0,
+    "similar_count": 20,
+    "roi": -0.4824836781609195,
+    "popularity_category": "Muy Alta",
+    "rating_category": "Buena",
+    "genres_str": "Animación,Drama,Comedia",
+    "directors_str": "Adam Elliot",
+    "cast_str": "Sarah Snook,Kodi Smit-McPhee,Jacki Weaver,Magda Szubanski,Dominique Pinon,Tony Armstrong,Paul Capsis,Eric Bana,Bernie Clifford,Davey Thompson",
+    "companies_str": "Arenamedia,Screen Australia",
+    "keywords_str": "difficult childhood,death of father,stop motion,adult animation,death in childbirth,broken family,brother sister relationship,snail"
+}

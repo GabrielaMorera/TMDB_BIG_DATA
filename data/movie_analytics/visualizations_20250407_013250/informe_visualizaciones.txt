@@ -1,0 +1,11 @@
+INFORME DE VISUALIZACIONES DE DATOS DE PELÍCULAS
+==================================================
+
+Fecha de generación: 2025-04-07 01:32:54
+
+Se generaron 3 visualizaciones:
+- top_peliculas_popularidad.png
+- generos_populares.png
+- presupuesto_vs_ingresos.png
+
+Para ver los gráficos, abra los archivos PNG en el directorio de visualizaciones.

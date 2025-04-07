@@ -1,0 +1,8 @@
+#!/Users/mariagabrielamoreramurcia/Desktop/1er semestre MINE/Big Data/Trabajo_Final/tmdb_api/bin/python
+# -*- coding: UTF-8 -*-
+from __future__ import print_function, division, absolute_import
+
+from numba.misc.numba_entry import main
+
+if __name__ == "__main__":
+    main()

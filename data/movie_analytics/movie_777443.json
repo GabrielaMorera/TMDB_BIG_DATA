@@ -1,0 +1,73 @@
+{
+    "adult": false,
+    "backdrop_path": "/2n7lYEeIbucsEQCswRcVB6ZYmMP.jpg",
+    "genre_ids": [
+        878,
+        12,
+        28
+    ],
+    "id": 777443,
+    "original_language": "en",
+    "original_title": "The Electric State",
+    "overview": "Una adolescente huérfana emprende un viaje para encontrar a su hermano desaparecido junto con un misterioso robot, un cínico contrabandista y su ocurrente compañero.",
+    "popularity": 57.6489,
+    "poster_path": "/nCuSMDWhWGJAPdp9rSDIogG5X82.jpg",
+    "release_date": "2025-03-07",
+    "title": "Estado eléctrico",
+    "video": false,
+    "vote_average": 6.581,
+    "vote_count": 935,
+    "budget": 320000000,
+    "revenue": 0,
+    "runtime": 125,
+    "genres": [
+        "Ciencia ficción",
+        "Aventura",
+        "Acción"
+    ],
+    "production_companies": [
+        "AGBO",
+        "Skybound Entertainment"
+    ],
+    "directors": [
+        "Joe Russo",
+        "Anthony Russo"
+    ],
+    "cast": [
+        "Millie Bobby Brown",
+        "Chris Pratt",
+        "Ke Huy Quan",
+        "Jason Alexander",
+        "Woody Norman",
+        "Giancarlo Esposito",
+        "Stanley Tucci",
+        "Woody Harrelson",
+        "Anthony Mackie",
+        "Brian Cox"
+    ],
+    "keywords": [
+        "man vs machine",
+        "artificial intelligence (a.i.)",
+        "based on novel or book",
+        "technology",
+        "dystopia",
+        "robot",
+        "1990s",
+        "young",
+        "missing brother",
+        "witty",
+        "comedy",
+        "depressing",
+        "baffled"
+    ],
+    "video_count": 1,
+    "similar_count": 20,
+    "roi": -1.0,
+    "popularity_category": "Muy Alta",
+    "rating_category": "Buena",
+    "genres_str": "Ciencia ficción,Aventura,Acción",
+    "directors_str": "Joe Russo,Anthony Russo",
+    "cast_str": "Millie Bobby Brown,Chris Pratt,Ke Huy Quan,Jason Alexander,Woody Norman,Giancarlo Esposito,Stanley Tucci,Woody Harrelson,Anthony Mackie,Brian Cox",
+    "companies_str": "AGBO,Skybound Entertainment",
+    "keywords_str": "man vs machine,artificial intelligence (a.i.),based on novel or book,technology,dystopia,robot,1990s,young,missing brother,witty,comedy,depressing,baffled"
+}

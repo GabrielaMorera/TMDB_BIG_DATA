@@ -1,0 +1,69 @@
+{
+    "adult": false,
+    "backdrop_path": "/v9Du2HC3hlknAvGlWhquRbeifwW.jpg",
+    "genre_ids": [
+        28,
+        12,
+        53
+    ],
+    "id": 539972,
+    "original_language": "en",
+    "original_title": "Kraven the Hunter",
+    "overview": "Kraven, un hombre cuya compleja relación con su despiadado padre, Nikolai Kravinoff, le hace emprender un camino de venganza con brutales consecuencias, motivándole a convertirse no sólo en el mejor cazador del mundo, sino también en uno de los más temidos.",
+    "popularity": 89.1669,
+    "poster_path": "/ytmJ11n9gm34D1v56myjTxMaEDJ.jpg",
+    "release_date": "2024-12-11",
+    "title": "Kraven the Hunter",
+    "video": false,
+    "vote_average": 6.622,
+    "vote_count": 1527,
+    "budget": 120000000,
+    "revenue": 59184643,
+    "runtime": 126,
+    "genres": [
+        "Acción",
+        "Aventura",
+        "Suspense"
+    ],
+    "production_companies": [
+        "Columbia Pictures",
+        "Matt Tolmach Productions",
+        "Arad Productions"
+    ],
+    "directors": [
+        "J.C. Chandor"
+    ],
+    "cast": [
+        "Aaron Taylor-Johnson",
+        "Ariana DeBose",
+        "Fred Hechinger",
+        "Alessandro Nivola",
+        "Christopher Abbott",
+        "Russell Crowe",
+        "Юрий Колокольников",
+        "Levi Miller",
+        "Tom Reed",
+        "Billy Barratt"
+    ],
+    "keywords": [
+        "hunter",
+        "superhero",
+        "villain",
+        "based on comic",
+        "supervillain",
+        "antihero",
+        "intense",
+        "admiring",
+        "antagonistic"
+    ],
+    "video_count": 36,
+    "similar_count": 20,
+    "roi": -0.5067946416666667,
+    "popularity_category": "Muy Alta",
+    "rating_category": "Buena",
+    "genres_str": "Acción,Aventura,Suspense",
+    "directors_str": "J.C. Chandor",
+    "cast_str": "Aaron Taylor-Johnson,Ariana DeBose,Fred Hechinger,Alessandro Nivola,Christopher Abbott,Russell Crowe,Юрий Колокольников,Levi Miller,Tom Reed,Billy Barratt",
+    "companies_str": "Columbia Pictures,Matt Tolmach Productions,Arad Productions",
+    "keywords_str": "hunter,superhero,villain,based on comic,supervillain,antihero,intense,admiring,antagonistic"
+}

@@ -1,0 +1,51 @@
+[2025-04-07T03:35:49.595+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2025-04-07T03:35:49.640+0000] {taskinstance.py:2073} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: tmdb_pipeline_streamlit.fetch_and_send_to_kafka manual__2025-04-07T03:35:43.611449+00:00 [queued]>
+[2025-04-07T03:35:49.704+0000] {taskinstance.py:2073} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: tmdb_pipeline_streamlit.fetch_and_send_to_kafka manual__2025-04-07T03:35:43.611449+00:00 [queued]>
+[2025-04-07T03:35:49.704+0000] {taskinstance.py:2303} INFO - Starting attempt 1 of 3
+[2025-04-07T03:35:49.732+0000] {taskinstance.py:2327} INFO - Executing <Task(PythonOperator): fetch_and_send_to_kafka> on 2025-04-07 03:35:43.611449+00:00
+[2025-04-07T03:35:49.741+0000] {warnings.py:110} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:61: DeprecationWarning: This process (pid=699) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2025-04-07T03:35:49.744+0000] {standard_task_runner.py:63} INFO - Started process 701 to run task
+[2025-04-07T03:35:49.744+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'tmdb_pipeline_streamlit', 'fetch_and_send_to_kafka', 'manual__2025-04-07T03:35:43.611449+00:00', '--job-id', '448', '--raw', '--subdir', 'DAGS_FOLDER/tmdb_pipeline.py', '--cfg-path', '/tmp/tmpf6x6qstx']
+[2025-04-07T03:35:49.748+0000] {standard_task_runner.py:91} INFO - Job 448: Subtask fetch_and_send_to_kafka
+[2025-04-07T03:35:49.814+0000] {task_command.py:426} INFO - Running <TaskInstance: tmdb_pipeline_streamlit.fetch_and_send_to_kafka manual__2025-04-07T03:35:43.611449+00:00 [running]> on host 5f40dfabaa88
+[2025-04-07T03:35:49.954+0000] {taskinstance.py:2644} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='gabriela' AIRFLOW_CTX_DAG_ID='tmdb_pipeline_streamlit' AIRFLOW_CTX_TASK_ID='fetch_and_send_to_kafka' AIRFLOW_CTX_EXECUTION_DATE='2025-04-07T03:35:43.611449+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-04-07T03:35:43.611449+00:00'
+[2025-04-07T03:35:49.956+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2025-04-07T03:35:50.078+0000] {conn.py:395} INFO - <BrokerConnection client_id=kafka-python-producer-1, node_id=bootstrap-0 host=kafka:9093 <connecting> [IPv4 ('172.19.0.7', 9093)]>: connecting to kafka:9093 [('172.19.0.7', 9093) IPv4]
+[2025-04-07T03:35:50.085+0000] {conn.py:615} INFO - <BrokerConnection client_id=kafka-python-producer-1, node_id=bootstrap-0 host=kafka:9093 <checking_api_versions_recv> [IPv4 ('172.19.0.7', 9093)]>: Broker version identified as 2.6
+[2025-04-07T03:35:50.085+0000] {conn.py:456} INFO - <BrokerConnection client_id=kafka-python-producer-1, node_id=bootstrap-0 host=kafka:9093 <connected> [IPv4 ('172.19.0.7', 9093)]>: Connection complete.
+[2025-04-07T03:35:50.087+0000] {tmdb_pipeline.py:1202} INFO - Productor Kafka conectado a kafka:9093
+[2025-04-07T03:35:50.527+0000] {tmdb_pipeline.py:1223} INFO - Obtenidas 20 películas populares
+[2025-04-07T03:35:50.784+0000] {tmdb_pipeline.py:1254} INFO - Procesada película: Una película de Minecraft
+[2025-04-07T03:35:50.786+0000] {conn.py:395} INFO - <BrokerConnection client_id=kafka-python-producer-1, node_id=1001 host=kafka:9093 <connecting> [IPv4 ('172.19.0.7', 9093)]>: connecting to kafka:9093 [('172.19.0.7', 9093) IPv4]
+[2025-04-07T03:35:50.787+0000] {conn.py:456} INFO - <BrokerConnection client_id=kafka-python-producer-1, node_id=1001 host=kafka:9093 <connected> [IPv4 ('172.19.0.7', 9093)]>: Connection complete.
+[2025-04-07T03:35:50.788+0000] {conn.py:936} INFO - <BrokerConnection client_id=kafka-python-producer-1, node_id=bootstrap-0 host=kafka:9093 <connected> [IPv4 ('172.19.0.7', 9093)]>: Closing connection. 
+[2025-04-07T03:35:50.790+0000] {tmdb_pipeline.py:1258} INFO - Enviada a Kafka: Una película de Minecraft
+[2025-04-07T03:35:52.056+0000] {tmdb_pipeline.py:1254} INFO - Procesada película: Criminales de lujo
+[2025-04-07T03:35:52.057+0000] {tmdb_pipeline.py:1258} INFO - Enviada a Kafka: Criminales de lujo
+[2025-04-07T03:35:53.306+0000] {tmdb_pipeline.py:1254} INFO - Procesada película: A Working Man
+[2025-04-07T03:35:53.307+0000] {tmdb_pipeline.py:1258} INFO - Enviada a Kafka: A Working Man
+[2025-04-07T03:35:54.565+0000] {tmdb_pipeline.py:1254} INFO - Procesada película: Cleaner
+[2025-04-07T03:35:54.566+0000] {tmdb_pipeline.py:1258} INFO - Enviada a Kafka: Cleaner
+[2025-04-07T03:35:55.843+0000] {tmdb_pipeline.py:1254} INFO - Procesada película: Capitán América: Brave New World
+[2025-04-07T03:35:55.844+0000] {tmdb_pipeline.py:1258} INFO - Enviada a Kafka: Capitán América: Brave New World
+[2025-04-07T03:35:57.130+0000] {tmdb_pipeline.py:1254} INFO - Procesada película: देवा
+[2025-04-07T03:35:57.131+0000] {tmdb_pipeline.py:1258} INFO - Enviada a Kafka: देवा
+[2025-04-07T03:35:58.383+0000] {tmdb_pipeline.py:1254} INFO - Procesada película: Pídeme lo que quieras
+[2025-04-07T03:35:58.384+0000] {tmdb_pipeline.py:1258} INFO - Enviada a Kafka: Pídeme lo que quieras
+[2025-04-07T03:35:59.643+0000] {tmdb_pipeline.py:1254} INFO - Procesada película: Los silenciosos
+[2025-04-07T03:35:59.644+0000] {tmdb_pipeline.py:1258} INFO - Enviada a Kafka: Los silenciosos
+[2025-04-07T03:36:00.903+0000] {tmdb_pipeline.py:1254} INFO - Procesada película: Peter Pan: Pesadilla en Nunca Jamás
+[2025-04-07T03:36:00.904+0000] {tmdb_pipeline.py:1258} INFO - Enviada a Kafka: Peter Pan: Pesadilla en Nunca Jamás
+[2025-04-07T03:36:02.182+0000] {tmdb_pipeline.py:1254} INFO - Procesada película: Códigos de Guerra
+[2025-04-07T03:36:02.183+0000] {tmdb_pipeline.py:1258} INFO - Enviada a Kafka: Códigos de Guerra
+[2025-04-07T03:36:03.185+0000] {tmdb_pipeline.py:1265} INFO - Enviadas 10 películas a Kafka
+[2025-04-07T03:36:03.202+0000] {kafka.py:511} INFO - Closing the Kafka producer with 9223372036.0 secs timeout.
+[2025-04-07T03:36:03.203+0000] {conn.py:936} INFO - <BrokerConnection client_id=kafka-python-producer-1, node_id=1001 host=kafka:9093 <connected> [IPv4 ('172.19.0.7', 9093)]>: Closing connection. 
+[2025-04-07T03:36:03.206+0000] {python.py:237} INFO - Done. Returned value was: 10
+[2025-04-07T03:36:03.208+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2025-04-07T03:36:03.225+0000] {taskinstance.py:1205} INFO - Marking task as SUCCESS. dag_id=tmdb_pipeline_streamlit, task_id=fetch_and_send_to_kafka, execution_date=20250407T033543, start_date=20250407T033549, end_date=20250407T033603
+[2025-04-07T03:36:03.267+0000] {local_task_job_runner.py:240} INFO - Task exited with return code 0
+[2025-04-07T03:36:03.292+0000] {taskinstance.py:3482} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2025-04-07T03:36:03.293+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

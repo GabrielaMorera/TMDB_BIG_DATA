@@ -1,0 +1,55 @@
+{
+    "adult": false,
+    "backdrop_path": "/is9bmV6uYXu7LjZGJczxrjJDlv8.jpg",
+    "genre_ids": [
+        28,
+        12
+    ],
+    "id": 1229730,
+    "original_language": "fr",
+    "original_title": "Carjackers",
+    "overview": "Por el día, son invisibles: aparcacoches, recepcionistas y camareros de un hotel de lujo. Por la noche, son criminales, una banda de conductores expertos que asalta a clientes ricos en sus coches. Justo cuando planean su último golpe, la directora del hotel contrata a un sicario despiadado para detenerlos. El peligro les acecha, ¿conseguirán Nora, Zoé, Steve y Prestance dar su mayor golpe?",
+    "popularity": 375.5975,
+    "poster_path": "/rpAbueORafYSgTk2oSc2t6ayktb.jpg",
+    "release_date": "2025-03-27",
+    "title": "Criminales de lujo",
+    "video": false,
+    "vote_average": 7.057,
+    "vote_count": 61,
+    "budget": 0,
+    "revenue": 0,
+    "runtime": 97,
+    "genres": [
+        "Acción",
+        "Aventura"
+    ],
+    "production_companies": [
+        "Gaumont"
+    ],
+    "directors": [
+        "Kamel Guemra"
+    ],
+    "cast": [
+        "Zoé Marchal",
+        "Franck Gastambide",
+        "Bosh",
+        "Mareva Ranarivelo",
+        "Alassane Diong",
+        "Sérigne Gueye",
+        "Mylène Jampanoï",
+        "Alix Bénézech",
+        "Hafid F. Benamar",
+        "Zoé Diowo-Ceccaldi"
+    ],
+    "keywords": [],
+    "video_count": 0,
+    "similar_count": 0,
+    "roi": 0,
+    "popularity_category": "Muy Alta",
+    "rating_category": "Buena",
+    "genres_str": "Acción,Aventura",
+    "directors_str": "Kamel Guemra",
+    "cast_str": "Zoé Marchal,Franck Gastambide,Bosh,Mareva Ranarivelo,Alassane Diong,Sérigne Gueye,Mylène Jampanoï,Alix Bénézech,Hafid F. Benamar,Zoé Diowo-Ceccaldi",
+    "companies_str": "Gaumont",
+    "keywords_str": ""
+}

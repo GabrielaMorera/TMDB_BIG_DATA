@@ -1,0 +1,73 @@
+{
+    "adult": false,
+    "backdrop_path": "/vZG7PrX9HmdgL5qfZRjhJsFYEIA.jpg",
+    "genre_ids": [
+        28,
+        878,
+        12
+    ],
+    "id": 912649,
+    "original_language": "en",
+    "original_title": "Venom: The Last Dance",
+    "overview": "Eddie y Venom están a la fuga. Perseguidos por sus sendos mundos y cada vez más cercados, el dúo se ve abocado a tomar una decisión devastadora que hará que caiga el telón sobre el último baile de Venom y Eddie.",
+    "popularity": 79.9906,
+    "poster_path": "/8F74DwgFxTIBNtbqSLjR7zWmnHh.jpg",
+    "release_date": "2024-10-22",
+    "title": "Venom: El último baile",
+    "video": false,
+    "vote_average": 6.786,
+    "vote_count": 3132,
+    "budget": 120000000,
+    "revenue": 478103649,
+    "runtime": 109,
+    "genres": [
+        "Acción",
+        "Ciencia ficción",
+        "Aventura"
+    ],
+    "production_companies": [
+        "Columbia Pictures",
+        "Pascal Pictures",
+        "Matt Tolmach Productions",
+        "Hutch Parker Entertainment",
+        "Arad Productions"
+    ],
+    "directors": [
+        "Kelly Marcel"
+    ],
+    "cast": [
+        "Tom Hardy",
+        "Chiwetel Ejiofor",
+        "Juno Temple",
+        "Rhys Ifans",
+        "Stephen Graham",
+        "Peggy Lu",
+        "Clark Backo",
+        "Alanna Ubach",
+        "Cristo Fernández",
+        "Jared Abrahamson"
+    ],
+    "keywords": [
+        "hero",
+        "superhero",
+        "anti hero",
+        "villain",
+        "alien life-form",
+        "based on comic",
+        "sequel",
+        "aftercreditsstinger",
+        "woman director",
+        "amused",
+        "indifferent"
+    ],
+    "video_count": 41,
+    "similar_count": 20,
+    "roi": 2.984197075,
+    "popularity_category": "Muy Alta",
+    "rating_category": "Buena",
+    "genres_str": "Acción,Ciencia ficción,Aventura",
+    "directors_str": "Kelly Marcel",
+    "cast_str": "Tom Hardy,Chiwetel Ejiofor,Juno Temple,Rhys Ifans,Stephen Graham,Peggy Lu,Clark Backo,Alanna Ubach,Cristo Fernández,Jared Abrahamson",
+    "companies_str": "Columbia Pictures,Pascal Pictures,Matt Tolmach Productions,Hutch Parker Entertainment,Arad Productions",
+    "keywords_str": "hero,superhero,anti hero,villain,alien life-form,based on comic,sequel,aftercreditsstinger,woman director,amused,indifferent"
+}

@@ -1,0 +1,55 @@
+{
+    "adult": false,
+    "backdrop_path": "/mhKQ5ntqlXyck0TWh1pCpn42aAx.jpg",
+    "genre_ids": [
+        28,
+        80,
+        53
+    ],
+    "id": 1217379,
+    "original_language": "en",
+    "original_title": "Hellhound",
+    "overview": "Persigue a un brutal capo, un error lleva a un asesino a sueldo de élite a una espiral descendente que desemboca en una guerra total en las calles de Tailandia.",
+    "popularity": 90.2844,
+    "poster_path": "/n0njyECtGMZmaNk1It44yVE8zEB.jpg",
+    "release_date": "2024-06-20",
+    "title": "Hellhound",
+    "video": false,
+    "vote_average": 6.5,
+    "vote_count": 37,
+    "budget": 1100000,
+    "revenue": 0,
+    "runtime": 103,
+    "genres": [
+        "Acción",
+        "Crimen",
+        "Suspense"
+    ],
+    "production_companies": [],
+    "directors": [
+        "Joshua Dixon"
+    ],
+    "cast": [
+        "Louis Mandylor",
+        "วิทยา ปานศรีงาม",
+        "Van Quattro",
+        "Panya Yimmumphai",
+        "Winai Wiangyangkung",
+        "สลิตา กลิ่นจันทน์",
+        "Jennie Pines",
+        "Jakrin Jaruthongchai",
+        "Ron Smoorenburg",
+        "Tofan Pirani"
+    ],
+    "keywords": [],
+    "video_count": 0,
+    "similar_count": 0,
+    "roi": -1.0,
+    "popularity_category": "Muy Alta",
+    "rating_category": "Buena",
+    "genres_str": "Acción,Crimen,Suspense",
+    "directors_str": "Joshua Dixon",
+    "cast_str": "Louis Mandylor,วิทยา ปานศรีงาม,Van Quattro,Panya Yimmumphai,Winai Wiangyangkung,สลิตา กลิ่นจันทน์,Jennie Pines,Jakrin Jaruthongchai,Ron Smoorenburg,Tofan Pirani",
+    "companies_str": "",
+    "keywords_str": ""
+}

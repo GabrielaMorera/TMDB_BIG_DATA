@@ -1,0 +1,67 @@
+{
+    "adult": false,
+    "backdrop_path": "/9nhjGaFLKtddDPtPaX5EmKqsWdH.jpg",
+    "genre_ids": [
+        10749,
+        878,
+        53
+    ],
+    "id": 950396,
+    "original_language": "en",
+    "original_title": "The Gorge",
+    "overview": "Dos agentes de élite son secretamente asignados a torres de vigilancia en los lados opuestos de un vasto desfiladero, para proteger al mundo de un misterioso mal que acecha en su interior. Se unen en la distancia, pero han de mantenerse alerta para defenderse del enemigo invisible. Cuando se les revela una amenaza fatal para la humanidad, deben trabajar juntos y poner a prueba su fuerza física y mental para mantener el secreto del desfiladero antes de que sea demasiado tarde.",
+    "popularity": 110.7793,
+    "poster_path": "/3s0jkMh0YUhIeIeioH3kt2X4st4.jpg",
+    "release_date": "2025-02-13",
+    "title": "El abismo secreto",
+    "video": false,
+    "vote_average": 7.737,
+    "vote_count": 2274,
+    "budget": 70000000,
+    "revenue": 0,
+    "runtime": 127,
+    "genres": [
+        "Romance",
+        "Ciencia ficción",
+        "Suspense"
+    ],
+    "production_companies": [
+        "Skydance Media",
+        "Crooked Highway",
+        "Apple Studios"
+    ],
+    "directors": [
+        "Scott Derrickson"
+    ],
+    "cast": [
+        "Miles Teller",
+        "Anya Taylor-Joy",
+        "Sigourney Weaver",
+        "Sope Dirisu",
+        "William Houston",
+        "Kobna Holdbrook-Smith",
+        "James Marlowe",
+        "Julianna Kurokawa",
+        "Ruta Gedmintas",
+        "Oliver Trevena"
+    ],
+    "keywords": [
+        "canyon",
+        "fog",
+        "romance",
+        "tower",
+        "elite sniper",
+        "snipers",
+        "long-term observation"
+    ],
+    "video_count": 1,
+    "similar_count": 20,
+    "roi": -1.0,
+    "popularity_category": "Muy Alta",
+    "rating_category": "Buena",
+    "genres_str": "Romance,Ciencia ficción,Suspense",
+    "directors_str": "Scott Derrickson",
+    "cast_str": "Miles Teller,Anya Taylor-Joy,Sigourney Weaver,Sope Dirisu,William Houston,Kobna Holdbrook-Smith,James Marlowe,Julianna Kurokawa,Ruta Gedmintas,Oliver Trevena",
+    "companies_str": "Skydance Media,Crooked Highway,Apple Studios",
+    "keywords_str": "canyon,fog,romance,tower,elite sniper,snipers,long-term observation"
+}

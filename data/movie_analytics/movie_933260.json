@@ -1,0 +1,81 @@
+{
+    "adult": false,
+    "backdrop_path": "/t98L9uphqBSNn2Mkvdm3xSFCQyi.jpg",
+    "genre_ids": [
+        27,
+        878
+    ],
+    "id": 933260,
+    "original_language": "en",
+    "original_title": "The Substance",
+    "overview": "'Tú, pero mejor en todos los sentidos'. Esa es la promesa de la sustancia, un producto revolucionario basado en la división celular, que crea un alter ego más joven, más bello, más perfecto.",
+    "popularity": 50.1865,
+    "poster_path": "/w1PiIqM89r4AM7CiMEP4VLCEFUn.jpg",
+    "release_date": "2024-09-07",
+    "title": "La sustancia",
+    "video": false,
+    "vote_average": 7.1,
+    "vote_count": 4347,
+    "budget": 17500000,
+    "revenue": 76506196,
+    "runtime": 141,
+    "genres": [
+        "Terror",
+        "Ciencia ficción"
+    ],
+    "production_companies": [
+        "Working Title Films",
+        "Blacksmith",
+        "Working Title Films"
+    ],
+    "directors": [
+        "Coralie Fargeat"
+    ],
+    "cast": [
+        "Demi Moore",
+        "Margaret Qualley",
+        "Dennis Quaid",
+        "Edward Hamilton-Clark",
+        "Gore Abrams",
+        "Oscar Lesage",
+        "Christian Erickson",
+        "Robin Greer",
+        "Tom Morton",
+        "Hugo Diego Garcia"
+    ],
+    "keywords": [
+        "new year's eve",
+        "capitalism",
+        "black market",
+        "identity",
+        "beauty",
+        "satire",
+        "aging",
+        "celebrity",
+        "female protagonist",
+        "los angeles, california",
+        "has been",
+        "aerobics",
+        "disfigurement",
+        "woman director",
+        "beauty standards",
+        "insecure woman",
+        "toxic masculinity",
+        "drug",
+        "body horror",
+        "female rage",
+        "youth",
+        "actress",
+        "distressing"
+    ],
+    "video_count": 4,
+    "similar_count": 20,
+    "roi": 3.3717826285714287,
+    "popularity_category": "Muy Alta",
+    "rating_category": "Buena",
+    "genres_str": "Terror,Ciencia ficción",
+    "directors_str": "Coralie Fargeat",
+    "cast_str": "Demi Moore,Margaret Qualley,Dennis Quaid,Edward Hamilton-Clark,Gore Abrams,Oscar Lesage,Christian Erickson,Robin Greer,Tom Morton,Hugo Diego Garcia",
+    "companies_str": "Working Title Films,Blacksmith,Working Title Films",
+    "keywords_str": "new year's eve,capitalism,black market,identity,beauty,satire,aging,celebrity,female protagonist,los angeles, california,has been,aerobics,disfigurement,woman director,beauty standards,insecure woman,toxic masculinity,drug,body horror,female rage,youth,actress,distressing"
+}

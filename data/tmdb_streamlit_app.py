@@ -1,4 +1,3 @@
-
 import streamlit as st
 import pandas as pd
 import numpy as np
@@ -27,7 +26,7 @@ POSTGRES_DB = "postgres"
 POSTGRES_USER = "postgres"
 POSTGRES_PASSWORD = "Villeta-11"
 POSTGRES_HOST = "movie_postgres"
-POSTGRES_PORT = "5433"
+POSTGRES_PORT = "5432"
 
 # Configuración de TMDB API
 TMDB_API_KEY = "e8e1dae84a0345bd3ec23e3030905258"

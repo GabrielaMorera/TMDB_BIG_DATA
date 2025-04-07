@@ -1,0 +1,63 @@
+{
+    "adult": false,
+    "backdrop_path": "/1ApRLGSJ9ShDP1dUMAJQWbWBALz.jpg",
+    "genre_ids": [
+        28,
+        18
+    ],
+    "id": 921436,
+    "original_language": "ko",
+    "original_title": "탈주",
+    "overview": "Después de completar su década obligatoria de servicio militar y ser honrado como un héroe, un sargento norcoreano hace un repentino e impactante intento de desertar al Sur, arriesgando su vida y sus extremidades por la oportunidad de determinar finalmente su propio destino.",
+    "popularity": 38.6766,
+    "poster_path": "/m2pFuNkL9V4lZxtVbBzB9yrYHai.jpg",
+    "release_date": "2024-07-03",
+    "title": "Escape",
+    "video": false,
+    "vote_average": 7.3,
+    "vote_count": 47,
+    "budget": 0,
+    "revenue": 13368094,
+    "runtime": 96,
+    "genres": [
+        "Acción",
+        "Drama"
+    ],
+    "production_companies": [
+        "The LAMP",
+        "Plus M Entertainment"
+    ],
+    "directors": [
+        "이종필"
+    ],
+    "cast": [
+        "이제훈",
+        "구교환",
+        "홍사빈",
+        "서현우",
+        "이성욱",
+        "유태주",
+        "정준원",
+        "장영남",
+        "송강",
+        "이솜"
+    ],
+    "keywords": [
+        "desertion",
+        "dmz",
+        "north korean defector",
+        "korean army",
+        "inter-korean relations",
+        "north korean"
+    ],
+    "video_count": 2,
+    "similar_count": 20,
+    "roi": 0,
+    "popularity_category": "Muy Alta",
+    "rating_category": "Buena",
+    "genres_str": "Acción,Drama",
+    "directors_str": "이종필",
+    "cast_str": "이제훈,구교환,홍사빈,서현우,이성욱,유태주,정준원,장영남,송강,이솜",
+    "companies_str": "The LAMP,Plus M Entertainment",
+    "keywords_str": "desertion,dmz,north korean defector,korean army,inter-korean relations,north korean"
+}

@@ -74,7 +74,7 @@ services:
       POSTGRES_DB: postgres
       POSTGRES_HOST_AUTH_METHOD: trust
     ports:
-      - "5433:5432"  # Cambiado a 5433 para evitar conflicto
+      - "5432:5432"  # Cambiado a 5432 para evitar conflicto
     volumes:
       - movie_postgres_data:/var/lib/postgresql/data
     restart: always

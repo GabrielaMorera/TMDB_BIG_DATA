@@ -1,0 +1,59 @@
+{
+    "adult": false,
+    "backdrop_path": "/9OO6I25MHhCDd0XwNk4oZl0fpwB.jpg",
+    "genre_ids": [
+        28,
+        18
+    ],
+    "id": 1261050,
+    "original_language": "da",
+    "original_title": "De lydløse",
+    "overview": "En 2008, un grupo de hombres de Dinamarca y Europa lleva a cabo el mayor atraco de todos los tiempos en suelo danés. Kasper, un boxeador con pocas oportunidades en la vida, recibe la oferta de sus iniciadores extranjeros para planear el robo.",
+    "popularity": 259.1733,
+    "poster_path": "/ywHCbLbTremCJBiHRa63rlrXmWs.jpg",
+    "release_date": "2024-10-31",
+    "title": "Los silenciosos",
+    "video": false,
+    "vote_average": 6.1,
+    "vote_count": 20,
+    "budget": 0,
+    "revenue": 0,
+    "runtime": 110,
+    "genres": [
+        "Acción",
+        "Drama"
+    ],
+    "production_companies": [
+        "Zentropa Entertainments",
+        "Film i Väst",
+        "Zentropa International Sweden",
+        "Kazak Productions",
+        "Zentropa International France"
+    ],
+    "directors": [
+        "Frederik Louis Hviid"
+    ],
+    "cast": [
+        "Gustav Dyekjær Giese",
+        "Reda Kateb",
+        "Amanda Collin",
+        "Christopher Wagelin",
+        "Jens Hultén",
+        "Granit Rushiti",
+        "Amin Ahmed",
+        "Camilla Lau",
+        "Dagmar Madicken Greve Halse",
+        "Ida Cæcilie Rasmussen"
+    ],
+    "keywords": [],
+    "video_count": 0,
+    "similar_count": 0,
+    "roi": 0,
+    "popularity_category": "Muy Alta",
+    "rating_category": "Buena",
+    "genres_str": "Acción,Drama",
+    "directors_str": "Frederik Louis Hviid",
+    "cast_str": "Gustav Dyekjær Giese,Reda Kateb,Amanda Collin,Christopher Wagelin,Jens Hultén,Granit Rushiti,Amin Ahmed,Camilla Lau,Dagmar Madicken Greve Halse,Ida Cæcilie Rasmussen",
+    "companies_str": "Zentropa Entertainments,Film i Väst,Zentropa International Sweden,Kazak Productions,Zentropa International France",
+    "keywords_str": ""
+}

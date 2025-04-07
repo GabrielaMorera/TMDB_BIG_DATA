@@ -1,0 +1,79 @@
+{
+    "adult": false,
+    "backdrop_path": "/qwK9soQmmJ7kRdjLZVXblw3g7AQ.jpg",
+    "genre_ids": [
+        28,
+        12,
+        53,
+        80
+    ],
+    "id": 7451,
+    "original_language": "en",
+    "original_title": "xXx",
+    "overview": "Xander Cage es XXX, un antiguo ganador de X-Games y atleta profesional de deportes de extremo, que sobrevive vendiendo videos de sus increíbles hazañas, las cuales hacen emitir adrenalina por todo el cuerpo. Pero después de incontables encuentros con la ley, su mundo está a punto de tomar un rumbo aún más extremo... Porque Xander no sabe que ha sido \"espiado\" por Augustus Gibbons, un agente veterano de la Agencia Nacional de Seguridad que se encuentra en una desesperada situación en la distante ciudad de Praga, en donde su operativo secreto ha sido asesinado por una pandilla de mafiosos con un estilo muy propio, que se llaman así mismos Anarchy 99, encabezados por el brutal ex-Comandante del Ejército Ruso Yorgi.",
+    "popularity": 61.4597,
+    "poster_path": "/gd4hRY3pFXRY7YVbMdVBpnKV7wC.jpg",
+    "release_date": "2002-08-09",
+    "title": "xXx",
+    "video": false,
+    "vote_average": 5.938,
+    "vote_count": 4389,
+    "budget": 70000000,
+    "revenue": 277448382,
+    "runtime": 124,
+    "genres": [
+        "Acción",
+        "Aventura",
+        "Suspense",
+        "Crimen"
+    ],
+    "production_companies": [
+        "Columbia Pictures",
+        "Original Film",
+        "Revolution Studios",
+        "Neal H. Moritz Productions"
+    ],
+    "directors": [
+        "Rob Cohen"
+    ],
+    "cast": [
+        "Vin Diesel",
+        "Asia Argento",
+        "Marton Csokas",
+        "Samuel L. Jackson",
+        "Michael Roof",
+        "Richy Müller",
+        "Werner Daehn",
+        "Petr Jákl",
+        "Jan Filipenský",
+        "Tom Everett"
+    ],
+    "keywords": [
+        "mission",
+        "biological weapon",
+        "sports car",
+        "cold war",
+        "prague, czech republic",
+        "nsa agent",
+        "ironic",
+        "adrenaline junkie",
+        "thrill seeker",
+        "wonder",
+        "provocative",
+        "hilarious",
+        "approving",
+        "joyful",
+        "mocking",
+        "pretentious"
+    ],
+    "video_count": 0,
+    "similar_count": 20,
+    "roi": 2.963548314285714,
+    "popularity_category": "Muy Alta",
+    "rating_category": "Regular",
+    "genres_str": "Acción,Aventura,Suspense,Crimen",
+    "directors_str": "Rob Cohen",
+    "cast_str": "Vin Diesel,Asia Argento,Marton Csokas,Samuel L. Jackson,Michael Roof,Richy Müller,Werner Daehn,Petr Jákl,Jan Filipenský,Tom Everett",
+    "companies_str": "Columbia Pictures,Original Film,Revolution Studios,Neal H. Moritz Productions",
+    "keywords_str": "mission,biological weapon,sports car,cold war,prague, czech republic,nsa agent,ironic,adrenaline junkie,thrill seeker,wonder,provocative,hilarious,approving,joyful,mocking,pretentious"
+}

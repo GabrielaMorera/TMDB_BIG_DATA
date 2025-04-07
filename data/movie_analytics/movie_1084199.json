@@ -1,0 +1,80 @@
+{
+    "adult": false,
+    "backdrop_path": "/sc1abgWNXc29wSBaerrjGBih06l.jpg",
+    "genre_ids": [
+        27,
+        878,
+        53
+    ],
+    "id": 1084199,
+    "original_language": "en",
+    "original_title": "Companion",
+    "overview": "La muerte de un multimillonario desencadena una serie de acontecimientos para Iris y sus amigos durante un viaje de fin de semana a su finca junto al lago.",
+    "popularity": 72.9144,
+    "poster_path": "/dZR98C2Tzefugivw21yEfYvp1G9.jpg",
+    "release_date": "2025-01-22",
+    "title": "La acompañante",
+    "video": false,
+    "vote_average": 7.082,
+    "vote_count": 966,
+    "budget": 10000000,
+    "revenue": 36499858,
+    "runtime": 97,
+    "genres": [
+        "Terror",
+        "Ciencia ficción",
+        "Suspense"
+    ],
+    "production_companies": [
+        "BoulderLight Pictures",
+        "New Line Cinema",
+        "Vertigo Entertainment",
+        "Subconscious",
+        "Domain Entertainment",
+        "Warner Bros. Pictures"
+    ],
+    "directors": [
+        "Drew Hancock"
+    ],
+    "cast": [
+        "Sophie Thatcher",
+        "Jack Quaid",
+        "Lukas Gage",
+        "Megan Suri",
+        "Harvey Guillén",
+        "Rupert Friend",
+        "Jaboukie Young-White",
+        "Matthew J. McCarthy",
+        "Marc Menchaca",
+        "Woody Fu"
+    ],
+    "keywords": [
+        "artificial intelligence (a.i.)",
+        "cabin",
+        "robot",
+        "boyfriend girlfriend relationship",
+        "duringcreditsstinger",
+        "robot girl",
+        "weekend getaway",
+        "human android relationship",
+        "toxic relationship",
+        "abusive relationship",
+        "malfunctioning android",
+        "sentient machine",
+        "sinister",
+        "sci-fi horror",
+        "human vs machines",
+        "cybernetics",
+        "android horror"
+    ],
+    "video_count": 8,
+    "similar_count": 20,
+    "roi": 2.6499858,
+    "popularity_category": "Muy Alta",
+    "rating_category": "Buena",
+    "genres_str": "Terror,Ciencia ficción,Suspense",
+    "directors_str": "Drew Hancock",
+    "cast_str": "Sophie Thatcher,Jack Quaid,Lukas Gage,Megan Suri,Harvey Guillén,Rupert Friend,Jaboukie Young-White,Matthew J. McCarthy,Marc Menchaca,Woody Fu",
+    "companies_str": "BoulderLight Pictures,New Line Cinema,Vertigo Entertainment,Subconscious,Domain Entertainment,Warner Bros. Pictures",
+    "keywords_str": "artificial intelligence (a.i.),cabin,robot,boyfriend girlfriend relationship,duringcreditsstinger,robot girl,weekend getaway,human android relationship,toxic relationship,abusive relationship,malfunctioning android,sentient machine,sinister,sci-fi horror,human vs machines,cybernetics,android horror"
+}

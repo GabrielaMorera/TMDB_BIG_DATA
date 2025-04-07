@@ -1,0 +1,62 @@
+{
+    "adult": false,
+    "backdrop_path": "/uJK0jjJ8QDOQw5lcNBwu059ht4D.jpg",
+    "genre_ids": [
+        10749,
+        18
+    ],
+    "id": 1294203,
+    "original_language": "en",
+    "original_title": "My Fault: London",
+    "overview": "Noah, de 18 años, se traslada de Estados Unidos a Londres con su madre, que se ha enamorado recientemente de William, un adinerado hombre de negocios británico. Noah conoce al hijo de William, el malote Nick. Pese a los esfuerzos de ambos por evitarlo, se sienten atraídos. Mientras Noah pasa el verano adaptándose a su nueva vida, su doloroso pasado la irá atrapando a la vez que se va enamorando.",
+    "popularity": 42.6511,
+    "poster_path": "/q0HxfkF9eoa6wSVnzwMhuDSK7ba.jpg",
+    "release_date": "2025-02-12",
+    "title": "Culpa mía: Londres",
+    "video": false,
+    "vote_average": 7.501,
+    "vote_count": 348,
+    "budget": 0,
+    "revenue": 0,
+    "runtime": 119,
+    "genres": [
+        "Romance",
+        "Drama"
+    ],
+    "production_companies": [
+        "42",
+        "Pokeepsie Films",
+        "Metro-Goldwyn-Mayer"
+    ],
+    "directors": [
+        "Dani Girdwood",
+        "Charlotte Fassler"
+    ],
+    "cast": [
+        "Asha Banks",
+        "Matthew Broome",
+        "Eve Macklin",
+        "Ray Fearon",
+        "Enva Lewis",
+        "Jason Flemyng",
+        "Kerim Hassan",
+        "Sam Buchanan",
+        "Amelia Kenworthy",
+        "Harry Gilby"
+    ],
+    "keywords": [
+        "based on novel or book",
+        "release from prison",
+        "estranged father"
+    ],
+    "video_count": 2,
+    "similar_count": 20,
+    "roi": 0,
+    "popularity_category": "Muy Alta",
+    "rating_category": "Buena",
+    "genres_str": "Romance,Drama",
+    "directors_str": "Dani Girdwood,Charlotte Fassler",
+    "cast_str": "Asha Banks,Matthew Broome,Eve Macklin,Ray Fearon,Enva Lewis,Jason Flemyng,Kerim Hassan,Sam Buchanan,Amelia Kenworthy,Harry Gilby",
+    "companies_str": "42,Pokeepsie Films,Metro-Goldwyn-Mayer",
+    "keywords_str": "based on novel or book,release from prison,estranged father"
+}

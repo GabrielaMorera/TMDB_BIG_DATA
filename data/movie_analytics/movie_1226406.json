@@ -1,0 +1,65 @@
+{
+    "adult": false,
+    "backdrop_path": "/aGgr2Q07AcyiWPGODoofgZDUEHp.jpg",
+    "genre_ids": [
+        28,
+        35,
+        10749
+    ],
+    "id": 1226406,
+    "original_language": "en",
+    "original_title": "Love Hurts",
+    "overview": "Marvin Gable, un agente inmobiliario que trabaja en un barrio a las afueras de Milwaukee, recibe un sobre rojo de Rose, una antigua cómplice a la que daba por muerta y se verá de nuevo arrastrado a un mundo de francotiradores implacables plagado de traiciones y eventos inmobiliarios convertidos en trampas letales.",
+    "popularity": 43.3513,
+    "poster_path": "/z0jwBykM5DgPQ99lVlKI4sA0U0L.jpg",
+    "release_date": "2025-02-06",
+    "title": "Este amor sí que duele",
+    "video": false,
+    "vote_average": 5.927,
+    "vote_count": 144,
+    "budget": 18000000,
+    "revenue": 16958671,
+    "runtime": 83,
+    "genres": [
+        "Acción",
+        "Comedia",
+        "Romance"
+    ],
+    "production_companies": [
+        "87North Productions",
+        "Universal Pictures",
+        "dentsu"
+    ],
+    "directors": [
+        "Jonathan Eusebio"
+    ],
+    "cast": [
+        "Ke Huy Quan",
+        "Ariana DeBose",
+        "吳彥祖",
+        "Mustafa Shakir",
+        "Lio Tipton",
+        "Cam Gigandet",
+        "Rhys Darby",
+        "André Eriksen",
+        "Marshawn Lynch",
+        "Sean Astin"
+    ],
+    "keywords": [
+        "sibling relationship",
+        "hitman",
+        "action comedy",
+        "hidden past",
+        "cliché"
+    ],
+    "video_count": 1,
+    "similar_count": 20,
+    "roi": -0.05785161111111111,
+    "popularity_category": "Muy Alta",
+    "rating_category": "Regular",
+    "genres_str": "Acción,Comedia,Romance",
+    "directors_str": "Jonathan Eusebio",
+    "cast_str": "Ke Huy Quan,Ariana DeBose,吳彥祖,Mustafa Shakir,Lio Tipton,Cam Gigandet,Rhys Darby,André Eriksen,Marshawn Lynch,Sean Astin",
+    "companies_str": "87North Productions,Universal Pictures,dentsu",
+    "keywords_str": "sibling relationship,hitman,action comedy,hidden past,cliché"
+}

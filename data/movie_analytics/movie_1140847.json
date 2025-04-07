@@ -1,0 +1,61 @@
+{
+    "adult": false,
+    "backdrop_path": "/dx8wpD04sWu8g9oDi9j0Vi1ocqQ.jpg",
+    "genre_ids": [
+        14,
+        27
+    ],
+    "id": 1140847,
+    "original_language": "en",
+    "original_title": "Cinderella's Revenge",
+    "overview": "Cenicienta es empujada demasiado lejos por sus malvadas hermanastras y madrastra, lo que hace que cambie sus zapatos de cristal y utilice la ayuda de su Hada Madrina para buscar una venganza sangrienta.",
+    "popularity": 147.6983,
+    "poster_path": "/aViZPvTfDkfFCxuj3fhKgw37lRf.jpg",
+    "release_date": "2024-04-26",
+    "title": "La venganza de Cenicienta",
+    "video": false,
+    "vote_average": 4.308,
+    "vote_count": 13,
+    "budget": 0,
+    "revenue": 0,
+    "runtime": 85,
+    "genres": [
+        "Fantasía",
+        "Terror"
+    ],
+    "production_companies": [
+        "Sobini Films",
+        "Titan Global Entertainment",
+        "EMRJ Entertainment"
+    ],
+    "directors": [
+        "Andy Edwards"
+    ],
+    "cast": [
+        "Lauren Staerck",
+        "Natasha Henstridge",
+        "Stephanie Lodge",
+        "Beatrice Fletcher",
+        "Megan Purvis",
+        "Darrell Griggs",
+        "Stephen Staley",
+        "Jenna N. Wilson",
+        "William Marshall",
+        "Mike Kelson"
+    ],
+    "keywords": [
+        "princess",
+        "revenge",
+        "dark fairy tale"
+    ],
+    "video_count": 0,
+    "similar_count": 20,
+    "roi": 0,
+    "popularity_category": "Muy Alta",
+    "rating_category": "Regular",
+    "genres_str": "Fantasía,Terror",
+    "directors_str": "Andy Edwards",
+    "cast_str": "Lauren Staerck,Natasha Henstridge,Stephanie Lodge,Beatrice Fletcher,Megan Purvis,Darrell Griggs,Stephen Staley,Jenna N. Wilson,William Marshall,Mike Kelson",
+    "companies_str": "Sobini Films,Titan Global Entertainment,EMRJ Entertainment",
+    "keywords_str": "princess,revenge,dark fairy tale"
+}

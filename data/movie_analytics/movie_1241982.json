@@ -1,0 +1,70 @@
+{
+    "adult": false,
+    "backdrop_path": "/zo8CIjJ2nfNOevqNajwMRO6Hwka.jpg",
+    "genre_ids": [
+        16,
+        12,
+        10751,
+        35
+    ],
+    "id": 1241982,
+    "original_language": "en",
+    "original_title": "Moana 2",
+    "overview": "Tras recibir una inesperada llamada de sus antepasados, Vaiana debe viajar a los lejanos mares de Oceanía y adentrarse en peligrosas aguas perdidas para vivir una aventura sin precedentes.",
+    "popularity": 182.5604,
+    "poster_path": "/b1WsCRfomw7tRi12NuseKsAJxYK.jpg",
+    "release_date": "2024-11-21",
+    "title": "Vaiana 2",
+    "video": false,
+    "vote_average": 7.104,
+    "vote_count": 2144,
+    "budget": 150000000,
+    "revenue": 1059544057,
+    "runtime": 99,
+    "genres": [
+        "Animación",
+        "Aventura",
+        "Familia",
+        "Comedia"
+    ],
+    "production_companies": [
+        "Walt Disney Pictures",
+        "Walt Disney Animation Studios",
+        "Walt Disney Animation Studios"
+    ],
+    "directors": [
+        "David G. Derrick Jr.",
+        "Jason Hand",
+        "Dana Ledoux Miller"
+    ],
+    "cast": [
+        "Auliʻi Cravalho",
+        "Dwayne Johnson",
+        "Hualālai Chung",
+        "Rose Matafeo",
+        "David Fane",
+        "Awhimai Fraser",
+        "Khaleesi Lambert-Tsuda",
+        "Temuera Morrison",
+        "Nicole Scherzinger",
+        "Rachel House"
+    ],
+    "keywords": [
+        "sea",
+        "ocean",
+        "villain",
+        "musical",
+        "sequel",
+        "duringcreditsstinger"
+    ],
+    "video_count": 27,
+    "similar_count": 20,
+    "roi": 6.063627046666666,
+    "popularity_category": "Muy Alta",
+    "rating_category": "Buena",
+    "genres_str": "Animación,Aventura,Familia,Comedia",
+    "directors_str": "David G. Derrick Jr.,Jason Hand,Dana Ledoux Miller",
+    "cast_str": "Auliʻi Cravalho,Dwayne Johnson,Hualālai Chung,Rose Matafeo,David Fane,Awhimai Fraser,Khaleesi Lambert-Tsuda,Temuera Morrison,Nicole Scherzinger,Rachel House",
+    "companies_str": "Walt Disney Pictures,Walt Disney Animation Studios,Walt Disney Animation Studios",
+    "keywords_str": "sea,ocean,villain,musical,sequel,duringcreditsstinger"
+}

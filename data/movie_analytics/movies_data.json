@@ -1,175 +1,6 @@
 [
     {
         "adult": false,
-        "backdrop_path": "/is9bmV6uYXu7LjZGJczxrjJDlv8.jpg",
-        "genre_ids": [
-            28,
-            12
-        ],
-        "id": 1229730,
-        "original_language": "fr",
-        "original_title": "Carjackers",
-        "overview": "Por el día, son invisibles: aparcacoches, recepcionistas y camareros de un hotel de lujo. Por la noche, son criminales, una banda de conductores expertos que asalta a clientes ricos en sus coches. Justo cuando planean su último golpe, la directora del hotel contrata a un sicario despiadado para detenerlos. El peligro les acecha, ¿conseguirán Nora, Zoé, Steve y Prestance dar su mayor golpe?",
-        "popularity": 426.0431,
-        "poster_path": "/rpAbueORafYSgTk2oSc2t6ayktb.jpg",
-        "release_date": "2025-03-27",
-        "title": "Criminales de lujo",
-        "video": false,
-        "vote_average": 6.9,
-        "vote_count": 43,
-        "budget": 0,
-        "revenue": 0,
-        "runtime": 97,
-        "genres": [
-            "Acción",
-            "Aventura"
-        ],
-        "production_companies": [
-            "Gaumont"
-        ],
-        "directors": [
-            "Kamel Guemra"
-        ],
-        "cast": [
-            "Zoé Marchal",
-            "Franck Gastambide",
-            "Bosh",
-            "Mareva Ranarivelo",
-            "Alassane Diong"
-        ]
-    },
-    {
-        "adult": false,
-        "backdrop_path": "/gsQJOfeW45KLiQeEIsom94QPQwb.jpg",
-        "genre_ids": [
-            28,
-            53
-        ],
-        "id": 1125899,
-        "original_language": "en",
-        "original_title": "Cleaner",
-        "overview": "Cuando un grupo de activistas radicales se apodera de la gala anual de una empresa energética y toma 300 rehenes, una ex soldado convertida en limpiacristales suspendida 50 pisos en el exterior del edificio debe salvar a los que están atrapados dentro, incluido su hermano pequeño.",
-        "popularity": 395.1497,
-        "poster_path": "/76Xvdqiv8ufGkerQunOpcy98oT7.jpg",
-        "release_date": "2025-02-19",
-        "title": "Cleaner",
-        "video": false,
-        "vote_average": 6.758,
-        "vote_count": 149,
-        "budget": 0,
-        "revenue": 0,
-        "runtime": 96,
-        "genres": [
-            "Acción",
-            "Suspense"
-        ],
-        "production_companies": [
-            "Anton",
-            "Qwerty Films"
-        ],
-        "directors": [
-            "Martin Campbell"
-        ],
-        "cast": [
-            "Daisy Ridley",
-            "Clive Owen",
-            "Taz Skylar",
-            "Flavia Watson",
-            "Ray Fearon"
-        ]
-    },
-    {
-        "adult": false,
-        "backdrop_path": "/xBrx6O1RIhjtWmVthZIANuQz7Z2.jpg",
-        "genre_ids": [
-            28,
-            80,
-            53
-        ],
-        "id": 1197306,
-        "original_language": "en",
-        "original_title": "A Working Man",
-        "overview": "Levon Cade dejó atrás una condecorada carrera militar en las operaciones encubiertas para vivir una vida sencilla trabajando en la construcción. Pero cuando la hija de su jefe, que para él es como de la familia, es secuestrada por traficantes de personas, su búsqueda para traerla a casa descubre un mundo de corrupción mucho mayor de lo que jamás podría haber imaginado.",
-        "popularity": 361.4478,
-        "poster_path": "/aG50Ad3UV8cCQWpNWSHHUqgKGNB.jpg",
-        "release_date": "2025-03-26",
-        "title": "A Working Man",
-        "video": false,
-        "vote_average": 6.8,
-        "vote_count": 106,
-        "budget": 40000000,
-        "revenue": 33392248,
-        "runtime": 116,
-        "genres": [
-            "Acción",
-            "Crimen",
-            "Suspense"
-        ],
-        "production_companies": [
-            "Cedar Park Entertainment",
-            "BlockFilm",
-            "Punch Palace Productions",
-            "Balboa Productions",
-            "Black Bear Pictures",
-            "Fifth Season",
-            "CAT5"
-        ],
-        "directors": [
-            "David Ayer"
-        ],
-        "cast": [
-            "Jason Statham",
-            "David Harbour",
-            "Michael Peña",
-            "Jason Flemyng",
-            "Arianna Rivas"
-        ]
-    },
-    {
-        "adult": false,
-        "backdrop_path": "/9OO6I25MHhCDd0XwNk4oZl0fpwB.jpg",
-        "genre_ids": [
-            28,
-            18
-        ],
-        "id": 1261050,
-        "original_language": "da",
-        "original_title": "De lydløse",
-        "overview": "En 2008, un grupo de hombres de Dinamarca y Europa lleva a cabo el mayor atraco de todos los tiempos en suelo danés. Kasper, un boxeador con pocas oportunidades en la vida, recibe la oferta de sus iniciadores extranjeros para planear el robo.",
-        "popularity": 335.4507,
-        "poster_path": "/ywHCbLbTremCJBiHRa63rlrXmWs.jpg",
-        "release_date": "2024-10-31",
-        "title": "Los silenciosos",
-        "video": false,
-        "vote_average": 5.9,
-        "vote_count": 16,
-        "budget": 0,
-        "revenue": 0,
-        "runtime": 110,
-        "genres": [
-            "Acción",
-            "Drama"
-        ],
-        "production_companies": [
-            "Zentropa Entertainments",
-            "Film i Väst",
-            "Zentropa International Sweden",
-            "Kazak Productions",
-            "Zentropa International France"
-        ],
-        "directors": [
-            "Frederik Louis Hviid"
-        ],
-        "cast": [
-            "Gustav Dyekjær Giese",
-            "Reda Kateb",
-            "Amanda Collin",
-            "Christopher Wagelin",
-            "Jens Hultén"
-        ]
-    },
-    {
-        "adult": false,
         "backdrop_path": "/2Nti3gYAX513wvhp8IiLL6ZDyOm.jpg",
         "genre_ids": [
             10751,
@@ -181,15 +12,15 @@
         "original_language": "en",
         "original_title": "A Minecraft Movie",
         "overview": "Cuatro inadaptados se encuentran luchando con problemas ordinarios cuando de repente se ven arrastrados a través de un misterioso portal al Mundo Exterior: un extraño país de las maravillas cúbico que se nutre de la imaginación. Para volver a casa, tendrán que dominar este mundo mientras se embarcan en una búsqueda mágica con un inesperado experto artesano, Steve.",
-        "popularity": 333.9632,
-        "poster_path": "/m3paT74qJ1TkDYMihmni3OFdcjZ.jpg",
+        "popularity": 878.5405,
+        "poster_path": "/qNEmbTNjf5hVzecPq96pxGfBhbX.jpg",
         "release_date": "2025-03-31",
         "title": "Una película de Minecraft",
         "video": false,
-        "vote_average": 5.82,
-        "vote_count": 97,
+        "vote_average": 6.047,
+        "vote_count": 222,
         "budget": 150000000,
-        "revenue": 0,
+        "revenue": 301000000,
         "runtime": 101,
         "genres": [
             "Familia",
@@ -218,6 +49,132 @@
     },
     {
         "adult": false,
+        "backdrop_path": "/is9bmV6uYXu7LjZGJczxrjJDlv8.jpg",
+        "genre_ids": [
+            28,
+            12
+        ],
+        "id": 1229730,
+        "original_language": "fr",
+        "original_title": "Carjackers",
+        "overview": "Por el día, son invisibles: aparcacoches, recepcionistas y camareros de un hotel de lujo. Por la noche, son criminales, una banda de conductores expertos que asalta a clientes ricos en sus coches. Justo cuando planean su último golpe, la directora del hotel contrata a un sicario despiadado para detenerlos. El peligro les acecha, ¿conseguirán Nora, Zoé, Steve y Prestance dar su mayor golpe?",
+        "popularity": 375.5975,
+        "poster_path": "/rpAbueORafYSgTk2oSc2t6ayktb.jpg",
+        "release_date": "2025-03-27",
+        "title": "Criminales de lujo",
+        "video": false,
+        "vote_average": 7.057,
+        "vote_count": 61,
+        "budget": 0,
+        "revenue": 0,
+        "runtime": 97,
+        "genres": [
+            "Acción",
+            "Aventura"
+        ],
+        "production_companies": [
+            "Gaumont"
+        ],
+        "directors": [
+            "Kamel Guemra"
+        ],
+        "cast": [
+            "Zoé Marchal",
+            "Franck Gastambide",
+            "Bosh",
+            "Mareva Ranarivelo",
+            "Alassane Diong"
+        ]
+    },
+    {
+        "adult": false,
+        "backdrop_path": "/xBrx6O1RIhjtWmVthZIANuQz7Z2.jpg",
+        "genre_ids": [
+            28,
+            80,
+            53
+        ],
+        "id": 1197306,
+        "original_language": "en",
+        "original_title": "A Working Man",
+        "overview": "Levon Cade dejó atrás una condecorada carrera militar en las operaciones encubiertas para vivir una vida sencilla trabajando en la construcción. Pero cuando la hija de su jefe, que para él es como de la familia, es secuestrada por traficantes de personas, su búsqueda para traerla a casa descubre un mundo de corrupción mucho mayor de lo que jamás podría haber imaginado.",
+        "popularity": 340.7598,
+        "poster_path": "/aG50Ad3UV8cCQWpNWSHHUqgKGNB.jpg",
+        "release_date": "2025-03-26",
+        "title": "A Working Man",
+        "video": false,
+        "vote_average": 6.853,
+        "vote_count": 133,
+        "budget": 40000000,
+        "revenue": 44417000,
+        "runtime": 116,
+        "genres": [
+            "Acción",
+            "Crimen",
+            "Suspense"
+        ],
+        "production_companies": [
+            "Cedar Park Entertainment",
+            "BlockFilm",
+            "Punch Palace Productions",
+            "Balboa Productions",
+            "Black Bear Pictures",
+            "Fifth Season",
+            "CAT5"
+        ],
+        "directors": [
+            "David Ayer"
+        ],
+        "cast": [
+            "Jason Statham",
+            "David Harbour",
+            "Michael Peña",
+            "Jason Flemyng",
+            "Arianna Rivas"
+        ]
+    },
+    {
+        "adult": false,
+        "backdrop_path": "/gsQJOfeW45KLiQeEIsom94QPQwb.jpg",
+        "genre_ids": [
+            28,
+            53
+        ],
+        "id": 1125899,
+        "original_language": "en",
+        "original_title": "Cleaner",
+        "overview": "Después de que un grupo de activistas se apodere de la gala anual de una compañía energética para denunciar su corrupción, su justa causa es secuestrada por un extremista dispuesto a asesinar a las 300 personas presentes en el edificio para transmitir su mensaje anárquico. Una ex soldado convertida en limpiacristales, suspendida 50 pisos en el exterior del rascacielos londinense, es la encargada de intentar salvar a los que están atrapados dentro, incluido su hermano pequeño.",
+        "popularity": 336.5277,
+        "poster_path": "/76Xvdqiv8ufGkerQunOpcy98oT7.jpg",
+        "release_date": "2025-02-19",
+        "title": "Cleaner",
+        "video": false,
+        "vote_average": 6.776,
+        "vote_count": 161,
+        "budget": 0,
+        "revenue": 0,
+        "runtime": 96,
+        "genres": [
+            "Acción",
+            "Suspense"
+        ],
+        "production_companies": [
+            "Anton",
+            "Qwerty Films"
+        ],
+        "directors": [
+            "Martin Campbell"
+        ],
+        "cast": [
+            "Daisy Ridley",
+            "Clive Owen",
+            "Taz Skylar",
+            "Flavia Watson",
+            "Ray Fearon"
+        ]
+    },
+    {
+        "adult": false,
         "backdrop_path": "/8eifdha9GQeZAkexgtD45546XKx.jpg",
         "genre_ids": [
             28,
@@ -228,15 +185,15 @@
         "original_language": "en",
         "original_title": "Captain America: Brave New World",
         "overview": "Tras reunirse con el recién elegido presidente de los EE. UU., Thaddeus Ross, Sam se encuentra en medio de un incidente internacional. Debe descubrir el motivo que se esconde tras un perverso complot global, antes de que su verdadero artífice enfurezca al mundo entero.",
-        "popularity": 326.4753,
+        "popularity": 302.1208,
         "poster_path": "/im71UJzBqY03swuGYVR28j0JFM2.jpg",
         "release_date": "2025-02-12",
         "title": "Capitán América: Brave New World",
         "video": false,
-        "vote_average": 6.121,
-        "vote_count": 1202,
+        "vote_average": 6.119,
+        "vote_count": 1212,
         "budget": 180000000,
-        "revenue": 409278201,
+        "revenue": 411409721,
         "runtime": 119,
         "genres": [
             "Acción",
@@ -260,6 +217,50 @@
     },
     {
         "adult": false,
+        "backdrop_path": "/lqHt4icP1GTaNBeVTxTrwTZdoAW.jpg",
+        "genre_ids": [
+            28,
+            53,
+            9648,
+            80
+        ],
+        "id": 1195430,
+        "original_language": "hi",
+        "original_title": "देवा",
+        "overview": "",
+        "popularity": 286.6674,
+        "poster_path": "/4wKpglgZYMYpISMdThgdqS1TSQc.jpg",
+        "release_date": "2025-01-31",
+        "title": "देवा",
+        "video": false,
+        "vote_average": 6.8,
+        "vote_count": 5,
+        "budget": 9895000,
+        "revenue": 0,
+        "runtime": 155,
+        "genres": [
+            "Acción",
+            "Suspense",
+            "Misterio",
+            "Crimen"
+        ],
+        "production_companies": [
+            "Zee Studios",
+            "Roy Kapur Films"
+        ],
+        "directors": [
+            "Rosshan Andrrews"
+        ],
+        "cast": [
+            "Shahid Kapoor",
+            "Pooja Hegde",
+            "Pavail Gulati",
+            "Pravessh Rana",
+            "Girish Kulkarni"
+        ]
+    },
+    {
+        "adult": false,
         "backdrop_path": "/qiVrapzgrDO7c6yQTSvn0dhwsn8.jpg",
         "genre_ids": [
             10749,
@@ -269,13 +270,13 @@
         "original_language": "es",
         "original_title": "Pídeme lo que quieras",
         "overview": "Judith Flores es una chica normal. Tiene un trabajo que le apasiona, muy buenos amigos y un padre encantador. Pero su vida cambia radicalmente cuando conoce a Eric Zimmerman, dueño de la empresa donde ella trabaja. Su relación con Eric está a punto de dinamitar su vida por completo.",
-        "popularity": 273.7269,
+        "popularity": 285.6244,
         "poster_path": "/76qnVxU2rPdVvipBN3DPQH6fVYB.jpg",
         "release_date": "2024-11-29",
         "title": "Pídeme lo que quieras",
         "video": false,
-        "vote_average": 5.991,
-        "vote_count": 108,
+        "vote_average": 6.027,
+        "vote_count": 110,
         "budget": 0,
         "revenue": 0,
         "runtime": 114,
@@ -302,75 +303,45 @@
     },
     {
         "adult": false,
-        "backdrop_path": "/m2mzlsJjE3UAqeUB5fLUkpWg4Iq.jpg",
-        "genre_ids": [
-            53,
-            878
-        ],
-        "id": 1165067,
-        "original_language": "en",
-        "original_title": "Cosmic Chaos",
-        "overview": "Batallas en realidad virtual, supervivencia en un páramo postapocalíptico, una nave espacial soviética que emite una señal de socorro... Historias fantásticas creadas con avanzados efectos especiales y pasión.",
-        "popularity": 260.8825,
-        "poster_path": "/mClzWv7gBqgXfjZXp49Enyoex1v.jpg",
-        "release_date": "2023-08-03",
-        "title": "Relatos Fantásticos",
-        "video": false,
-        "vote_average": 6.893,
-        "vote_count": 28,
-        "budget": 0,
-        "revenue": 0,
-        "runtime": 0,
-        "genres": [
-            "Suspense",
-            "Ciencia ficción"
-        ],
-        "production_companies": [
-            "Hewes Pictures"
-        ],
-        "directors": [],
-        "cast": [
-            "Curtis Bechdholt",
-            "Caroline Dhavernas",
-            "Ken Godmere",
-            "Jeananne Goossen",
-            "Samantha Neale"
-        ]
-    },
-    {
-        "adult": false,
-        "backdrop_path": "/ibF5XVxTzf1ayzZrmiJqgeQ39Qk.jpg",
+        "backdrop_path": "/9OO6I25MHhCDd0XwNk4oZl0fpwB.jpg",
         "genre_ids": [
             28,
-            10752
+            18
         ],
-        "id": 1373723,
-        "original_language": "en",
-        "original_title": "The Codes of War",
-        "overview": "Las historias de guerra sobre la familia, la ética y el honor incluyen la historia real de dos marines estadounidenses que, en un lapso de seis segundos, deben mantenerse firmes para detener un camión bomba suicida, un soldado de la Marina que intenta aferrarse a su humanidad y un soldado de la Segunda Guerra Mundial que se separa de su escuadrón y se ve obligado a reevaluar su código.",
-        "popularity": 249.5926,
-        "poster_path": "/oXeiQAfRK90pxxhP5iKPXQqAIN1.jpg",
-        "release_date": "2025-03-20",
-        "title": "Códigos de Guerra",
+        "id": 1261050,
+        "original_language": "da",
+        "original_title": "De lydløse",
+        "overview": "En 2008, un grupo de hombres de Dinamarca y Europa lleva a cabo el mayor atraco de todos los tiempos en suelo danés. Kasper, un boxeador con pocas oportunidades en la vida, recibe la oferta de sus iniciadores extranjeros para planear el robo.",
+        "popularity": 259.1733,
+        "poster_path": "/ywHCbLbTremCJBiHRa63rlrXmWs.jpg",
+        "release_date": "2024-10-31",
+        "title": "Los silenciosos",
         "video": false,
-        "vote_average": 7.481,
-        "vote_count": 27,
+        "vote_average": 6.1,
+        "vote_count": 20,
         "budget": 0,
         "revenue": 0,
-        "runtime": 92,
+        "runtime": 110,
         "genres": [
             "Acción",
-            "Bélica"
+            "Drama"
         ],
-        "production_companies": [],
+        "production_companies": [
+            "Zentropa Entertainments",
+            "Film i Väst",
+            "Zentropa International Sweden",
+            "Kazak Productions",
+            "Zentropa International France"
+        ],
         "directors": [
-            "Paul Anderson",
-            "Joshua DeFour",
-            "Marielle Woods"
+            "Frederik Louis Hviid"
         ],
         "cast": [
-            "Noah Gray-Cabey",
-            "Michael Grant"
+            "Gustav Dyekjær Giese",
+            "Reda Kateb",
+            "Amanda Collin",
+            "Christopher Wagelin",
+            "Jens Hultén"
         ]
     },
     {
@@ -385,13 +356,13 @@
         "original_language": "en",
         "original_title": "Peter Pan's Neverland Nightmare",
         "overview": "Sigue a Wendy Darling en su intento de rescatar a su hermano Michael de \"las garras del malvado Peter Pan\". Por el camino conoce a Campanilla, que en esta retorcida versión del cuento se verá tomando heroína, convencida de que es polvo de hadas. La famosa historia de Peter Pan reinventada como un film de terror por Jagged Edge Productions, productora de \"Winnie the Pooh: Blood and Honey\".",
-        "popularity": 215.0996,
+        "popularity": 237.4173,
         "poster_path": "/m5jtX2J0VswgslOyx04l4edo3nJ.jpg",
         "release_date": "2025-01-13",
         "title": "Peter Pan: Pesadilla en Nunca Jamás",
         "video": false,
-        "vote_average": 6.1,
-        "vote_count": 30,
+        "vote_average": 6.121,
+        "vote_count": 33,
         "budget": 250000,
         "revenue": 315648,
         "runtime": 89,
@@ -412,6 +383,42 @@
             "Kit Green",
             "Peter DeSouza-Feighoney",
             "Charity Kase"
+        ]
+    },
+    {
+        "adult": false,
+        "backdrop_path": "/ibF5XVxTzf1ayzZrmiJqgeQ39Qk.jpg",
+        "genre_ids": [
+            28,
+            10752
+        ],
+        "id": 1373723,
+        "original_language": "en",
+        "original_title": "The Codes of War",
+        "overview": "Las historias de guerra sobre la familia, la ética y el honor incluyen la historia real de dos marines estadounidenses que, en un lapso de seis segundos, deben mantenerse firmes para detener un camión bomba suicida, un soldado de la Marina que intenta aferrarse a su humanidad y un soldado de la Segunda Guerra Mundial que se separa de su escuadrón y se ve obligado a reevaluar su código.",
+        "popularity": 218.6954,
+        "poster_path": "/oXeiQAfRK90pxxhP5iKPXQqAIN1.jpg",
+        "release_date": "2025-03-20",
+        "title": "Códigos de Guerra",
+        "video": false,
+        "vote_average": 7.328,
+        "vote_count": 29,
+        "budget": 0,
+        "revenue": 0,
+        "runtime": 92,
+        "genres": [
+            "Acción",
+            "Bélica"
+        ],
+        "production_companies": [],
+        "directors": [
+            "Paul Anderson",
+            "Joshua DeFour",
+            "Marielle Woods"
+        ],
+        "cast": [
+            "Noah Gray-Cabey",
+            "Michael Grant"
         ]
     }
 ]

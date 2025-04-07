@@ -1,0 +1,65 @@
+{
+    "adult": false,
+    "backdrop_path": "/qSOMdbZ6AOdHR999HWwVAh6ALFI.jpg",
+    "genre_ids": [
+        28,
+        80,
+        53
+    ],
+    "id": 1249289,
+    "original_language": "en",
+    "original_title": "Alarum",
+    "overview": "Un matrimonio de espías, en el punto de mira de una red de inteligencia internacional, no se detendrá ante nada para obtener un activo crítico. Joe y Lara son agentes que viven fuera de la red y cuyo tranquilo retiro en una estación invernal salta por los aires cuando miembros de la vieja guardia sospechan que ambos pueden haberse unido a un equipo de élite de espías deshonestos, conocido como Alarum.",
+    "popularity": 43.3637,
+    "poster_path": "/cjDs56iwx4i29VQ1RbSkqO9RUyU.jpg",
+    "release_date": "2025-01-16",
+    "title": "Doble espionaje",
+    "video": false,
+    "vote_average": 5.8,
+    "vote_count": 241,
+    "budget": 20000000,
+    "revenue": 0,
+    "runtime": 95,
+    "genres": [
+        "Acción",
+        "Crimen",
+        "Suspense"
+    ],
+    "production_companies": [
+        "BondIt Media Capital",
+        "Buffalo 8 Productions",
+        "Convergence Entertainment",
+        "Highland Film Group",
+        "Signature Entertainment",
+        "Dream Team Films",
+        "Grindstone Entertainment Group",
+        "Taurus Film",
+        "Lionsgate"
+    ],
+    "directors": [
+        "Michael Polish"
+    ],
+    "cast": [
+        "Scott Eastwood",
+        "Sylvester Stallone",
+        "Willa Fitzgerald",
+        "Mike Colter",
+        "D.W. Moffett",
+        "Isis Valverde",
+        "Joel Cohen",
+        "Mark Polish",
+        "Anton Narinskiy",
+        "Patrick Millin"
+    ],
+    "keywords": [],
+    "video_count": 1,
+    "similar_count": 0,
+    "roi": -1.0,
+    "popularity_category": "Muy Alta",
+    "rating_category": "Regular",
+    "genres_str": "Acción,Crimen,Suspense",
+    "directors_str": "Michael Polish",
+    "cast_str": "Scott Eastwood,Sylvester Stallone,Willa Fitzgerald,Mike Colter,D.W. Moffett,Isis Valverde,Joel Cohen,Mark Polish,Anton Narinskiy,Patrick Millin",
+    "companies_str": "BondIt Media Capital,Buffalo 8 Productions,Convergence Entertainment,Highland Film Group,Signature Entertainment,Dream Team Films,Grindstone Entertainment Group,Taurus Film,Lionsgate",
+    "keywords_str": ""
+}

@@ -1,0 +1,64 @@
+{
+    "adult": false,
+    "backdrop_path": "/xqO4sV74bfXpk4Yh5K9Yqa11Jcj.jpg",
+    "genre_ids": [
+        10749,
+        18,
+        878
+    ],
+    "id": 1167366,
+    "original_language": "th",
+    "original_title": "ยูเรนัส 2324",
+    "overview": "Unidas en su juventud y separadas por la tragedia, una astronauta y una buceadora libre doblan las leyes del espacio y el tiempo en sus esfuerzos por estar juntas nuevamente.",
+    "popularity": 96.5964,
+    "poster_path": "/gZiUK88EQoe3pseBYNl8vJRRHMj.jpg",
+    "release_date": "2024-07-04",
+    "title": "ยูเรนัส 2324",
+    "video": false,
+    "vote_average": 6.4,
+    "vote_count": 28,
+    "budget": 0,
+    "revenue": 0,
+    "runtime": 148,
+    "genres": [
+        "Romance",
+        "Drama",
+        "Ciencia ficción"
+    ],
+    "production_companies": [
+        "VelCurve Studio"
+    ],
+    "directors": [
+        "Thanadol Nuansut"
+    ],
+    "cast": [
+        "สโรชา จันทร์กิมฮะ",
+        "Becky Armstrong",
+        "ทอฝัน ทวีมา",
+        "Siriam Pakdeedumrongrit",
+        "อัมรินทร์ นิติพน",
+        "Ninnart Sinchai",
+        "So Takei",
+        "Usha Seamkhum",
+        "Erich Fleshman",
+        "Christophe Gerber"
+    ],
+    "keywords": [
+        "galaxy",
+        "space",
+        "planet",
+        "lesbian",
+        "girls love",
+        "science fiction"
+    ],
+    "video_count": 1,
+    "similar_count": 20,
+    "roi": 0,
+    "popularity_category": "Muy Alta",
+    "rating_category": "Buena",
+    "genres_str": "Romance,Drama,Ciencia ficción",
+    "directors_str": "Thanadol Nuansut",
+    "cast_str": "สโรชา จันทร์กิมฮะ,Becky Armstrong,ทอฝัน ทวีมา,Siriam Pakdeedumrongrit,อัมรินทร์ นิติพน,Ninnart Sinchai,So Takei,Usha Seamkhum,Erich Fleshman,Christophe Gerber",
+    "companies_str": "VelCurve Studio",
+    "keywords_str": "galaxy,space,planet,lesbian,girls love,science fiction"
+}

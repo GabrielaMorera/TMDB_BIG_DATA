@@ -1,0 +1,80 @@
+{
+    "adult": false,
+    "backdrop_path": "/3bWUP9kyf9BxVc0hmZdqXB2w4UP.jpg",
+    "genre_ids": [
+        878,
+        18
+    ],
+    "id": 335984,
+    "original_language": "en",
+    "original_title": "Blade Runner 2049",
+    "overview": "Han pasado 30 años desde los acontecimientos ocurridos en Blade Runner (1982). El oficial K, un blade runner caza-replicantes del Departamento de Policía de Los Ángeles, descubre un secreto que ha estado enterrado durante mucho tiempo y que tiene el potencial de llevar a la sociedad al caos. Su investigación le conducirá a la búsqueda del legendario Rick Deckard, un antiguo blade runner en paradero desconocido, que lleva desaparecido 30 años.",
+    "popularity": 41.289,
+    "poster_path": "/cOt8SQwrxpoTv9Bc3kyce3etkZX.jpg",
+    "release_date": "2017-10-04",
+    "title": "Blade Runner 2049",
+    "video": false,
+    "vote_average": 7.6,
+    "vote_count": 14011,
+    "budget": 150000000,
+    "revenue": 259239658,
+    "runtime": 164,
+    "genres": [
+        "Ciencia ficción",
+        "Drama"
+    ],
+    "production_companies": [
+        "Alcon Entertainment",
+        "Columbia Pictures",
+        "Scott Free Productions",
+        "Bud Yorkin Productions",
+        "Torridon Films",
+        "16:14 Entertainment"
+    ],
+    "directors": [
+        "Denis Villeneuve"
+    ],
+    "cast": [
+        "Ryan Gosling",
+        "Harrison Ford",
+        "Ana de Armas",
+        "Dave Bautista",
+        "Robin Wright",
+        "Sylvia Hoeks",
+        "Mackenzie Davis",
+        "Jared Leto",
+        "Carla Juri",
+        "Hiam Abbass"
+    ],
+    "keywords": [
+        "future",
+        "android",
+        "bounty hunter",
+        "artificial intelligence (a.i.)",
+        "genetics",
+        "dystopia",
+        "sequel",
+        "cyberpunk",
+        "los angeles, california",
+        "las vegas",
+        "tech noir",
+        "meditative",
+        "human cloning",
+        "blade runner",
+        "complex",
+        "2040s",
+        "cautionary",
+        "audacious",
+        "compassionate"
+    ],
+    "video_count": 4,
+    "similar_count": 20,
+    "roi": 0.7282643866666667,
+    "popularity_category": "Muy Alta",
+    "rating_category": "Buena",
+    "genres_str": "Ciencia ficción,Drama",
+    "directors_str": "Denis Villeneuve",
+    "cast_str": "Ryan Gosling,Harrison Ford,Ana de Armas,Dave Bautista,Robin Wright,Sylvia Hoeks,Mackenzie Davis,Jared Leto,Carla Juri,Hiam Abbass",
+    "companies_str": "Alcon Entertainment,Columbia Pictures,Scott Free Productions,Bud Yorkin Productions,Torridon Films,16:14 Entertainment",
+    "keywords_str": "future,android,bounty hunter,artificial intelligence (a.i.),genetics,dystopia,sequel,cyberpunk,los angeles, california,las vegas,tech noir,meditative,human cloning,blade runner,complex,2040s,cautionary,audacious,compassionate"
+}

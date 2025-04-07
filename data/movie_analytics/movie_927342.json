@@ -1,0 +1,75 @@
+{
+    "adult": false,
+    "backdrop_path": "/7cNE2qydew1c8fqnlhWjkE3DHc2.jpg",
+    "genre_ids": [
+        28,
+        18,
+        12,
+        10752
+    ],
+    "id": 927342,
+    "original_language": "ta",
+    "original_title": "அமரன்",
+    "overview": "La heroica historia del Major Mukund Varadarajan, un oficial del ejército indio que demostró una valentía extraordinaria durante una misión antiterrorista en el distrito de Shopian, en Cachemira.  La película captura su coraje al proteger a su nación y la devoción de su esposa Indhu Rebecaa Varghese.",
+    "popularity": 80.6957,
+    "poster_path": "/jVP3rAtgBMFH6RrSa6r4aP4wv1T.jpg",
+    "release_date": "2024-10-31",
+    "title": "Amaran",
+    "video": false,
+    "vote_average": 7.385,
+    "vote_count": 205,
+    "budget": 21000000,
+    "revenue": 0,
+    "runtime": 169,
+    "genres": [
+        "Acción",
+        "Drama",
+        "Aventura",
+        "Bélica"
+    ],
+    "production_companies": [
+        "Raajkamal Films International",
+        "Sony Pictures International Productions"
+    ],
+    "directors": [
+        "Rajkumar Periasamy"
+    ],
+    "cast": [
+        "Sivakarthikeyan",
+        "Sai Pallavi",
+        "Rahul Bose",
+        "Bhuvan Arora",
+        "Lallu Prasath",
+        "Shyam Mohan",
+        "Mir Salman",
+        "Shyamaprasad",
+        "Geetha Kailasam",
+        "Gaurav Venkatesh"
+    ],
+    "keywords": [
+        "based on novel or book",
+        "affectation",
+        "based on true story",
+        "martyr",
+        "indian army",
+        "counterterrorism",
+        "loving",
+        "2010s",
+        "indian history",
+        "admiring",
+        "hopeful",
+        "based on real person",
+        "ashoka chakra",
+        "indian military"
+    ],
+    "video_count": 0,
+    "similar_count": 20,
+    "roi": -1.0,
+    "popularity_category": "Muy Alta",
+    "rating_category": "Buena",
+    "genres_str": "Acción,Drama,Aventura,Bélica",
+    "directors_str": "Rajkumar Periasamy",
+    "cast_str": "Sivakarthikeyan,Sai Pallavi,Rahul Bose,Bhuvan Arora,Lallu Prasath,Shyam Mohan,Mir Salman,Shyamaprasad,Geetha Kailasam,Gaurav Venkatesh",
+    "companies_str": "Raajkamal Films International,Sony Pictures International Productions",
+    "keywords_str": "based on novel or book,affectation,based on true story,martyr,indian army,counterterrorism,loving,2010s,indian history,admiring,hopeful,based on real person,ashoka chakra,indian military"
+}

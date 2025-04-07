@@ -1,0 +1,67 @@
+{
+    "adult": false,
+    "backdrop_path": "/gjqtmaKgZCZhCYgMJwsd3JHIAUt.jpg",
+    "genre_ids": [
+        27
+    ],
+    "id": 937393,
+    "original_language": "en",
+    "original_title": "Bloat",
+    "overview": "",
+    "popularity": 31.227,
+    "poster_path": "/nlutnb8dO390fo5zkRayYiVuKdU.jpg",
+    "release_date": "2025-03-07",
+    "title": "Bloat",
+    "video": false,
+    "vote_average": 4.6,
+    "vote_count": 12,
+    "budget": 0,
+    "revenue": 0,
+    "runtime": 87,
+    "genres": [
+        "Terror"
+    ],
+    "production_companies": [
+        "Pulsar Content",
+        "flag",
+        "Okko",
+        "Bazelevs Entertainment",
+        "Overland Pictures"
+    ],
+    "directors": [
+        "Pablo Absento"
+    ],
+    "cast": [
+        "Ben McKenzie",
+        "Bojana Novaković",
+        "Sawyer Jones",
+        "Malcolm Fuller",
+        "ケイン・コスギ",
+        "Royce Johnson",
+        "David Gibson",
+        "David Lavine",
+        "Ethan Herschenfeld",
+        "Asha Etchison"
+    ],
+    "keywords": [
+        "drowning",
+        "military officer",
+        "vacation",
+        "demon",
+        "demonic possession",
+        "found footage",
+        "japanese folklore",
+        "near-death experience",
+        "screenlife"
+    ],
+    "video_count": 0,
+    "similar_count": 20,
+    "roi": 0,
+    "popularity_category": "Muy Alta",
+    "rating_category": "Regular",
+    "genres_str": "Terror",
+    "directors_str": "Pablo Absento",
+    "cast_str": "Ben McKenzie,Bojana Novaković,Sawyer Jones,Malcolm Fuller,ケイン・コスギ,Royce Johnson,David Gibson,David Lavine,Ethan Herschenfeld,Asha Etchison",
+    "companies_str": "Pulsar Content,flag,Okko,Bazelevs Entertainment,Overland Pictures",
+    "keywords_str": "drowning,military officer,vacation,demon,demonic possession,found footage,japanese folklore,near-death experience,screenlife"
+}

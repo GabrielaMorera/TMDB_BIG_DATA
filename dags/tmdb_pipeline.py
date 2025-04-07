@@ -72,7 +72,7 @@ POSTGRES_DB = "postgres"
 POSTGRES_USER = "postgres"
 POSTGRES_PASSWORD = "Villeta-11"
 POSTGRES_HOST = "movie_postgres"  # Nombre del servicio en Docker
-POSTGRES_PORT = "5433"  # Puerto dentro de Docker
+POSTGRES_PORT = "5432"  # Puerto dentro de Docker
 OUTPUT_DIR = "/opt/airflow/data/movie_analytics"
 STREAMLIT_PATH = "/opt/airflow/data/tmdb_streamlit_app.py"
 
@@ -1801,14 +1801,19 @@ def generate_visualizations(**kwargs):
 
 # Función 5: Entrenar modelo ML
 def train_ml_model(**kwargs):
-    """Entrena un modelo de Machine Learning básico"""
+    """Entrena un modelo de Machine Learning para predecir el éxito de películas."""
     from sklearn.model_selection import train_test_split
-    from sklearn.linear_model import LinearRegression
+    from sklearn.ensemble import RandomForestRegressor
     from sklearn.metrics import mean_squared_error, r2_score
     import pickle
     import matplotlib.pyplot as plt
     import seaborn as sns
-    
+    import pandas as pd
+    import os
+    import json
+    from datetime import datetime
+    import traceback
+
     try:
         # Intentar leer datos de PostgreSQL
         try:
@@ -1851,71 +1856,66 @@ def train_ml_model(**kwargs):
             logger.warning("No hay suficientes datos para entrenar un modelo ML")
             return None
         
-        # Preparar datos
         df = df.fillna(0)
-        
-        # Target: popularidad
-        df['target'] = df['popularity']
-        
-        # Features
-        features = ['vote_average', 'vote_count', 'runtime']
-        if 'budget' in df.columns:
-            features.append('budget')
-        
+
+        # Crear nuevo target: éxito de película
+        df['success_score'] = df['popularity'] * 0.7 + df['vote_average'] * 10 * 0.3
+
+        # Features seleccionadas
+        features = ['budget', 'runtime', 'vote_count', 'revenue']
         X = df[features]
-        y = df['target']
-        
+        y = df['success_score']
+
         # División de datos
         X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
-        
+
         # Entrenar modelo
-        model = LinearRegression()
+        model = RandomForestRegressor(n_estimators=100, random_state=42)
         model.fit(X_train, y_train)
-        
+
         # Evaluar modelo
         y_pred = model.predict(X_test)
         mse = mean_squared_error(y_test, y_pred)
         r2 = r2_score(y_test, y_pred)
-        
+
         # Guardar métricas
         metrics = {
             'mse': float(mse),
             'r2': float(r2),
-            'feature_importance': dict(zip(features, model.coef_))
+            'feature_importance': dict(zip(features, model.feature_importances_))
         }
-        
-        # Guardar modelo y resultados
+
+        # Guardar modelo
         model_dir = f"{OUTPUT_DIR}/ml_model_v3_{datetime.now().strftime('%Y%m%d_%H%M%S')}"
         os.makedirs(model_dir, exist_ok=True)
-        
+
         with open(f"{model_dir}/model.pkl", 'wb') as f:
             pickle.dump(model, f)
-        
+
         with open(f"{model_dir}/metrics.json", 'w') as f:
             json.dump(metrics, f, indent=4)
-        
-        # Visualizar importancia de características
+
+        # Guardar gráfica de importancia de características
         plt.figure(figsize=(10, 6))
         feat_importances = pd.DataFrame({
             'feature': features,
-            'importance': model.coef_
+            'importance': model.feature_importances_
         }).sort_values('importance', ascending=False)
-        
+
         sns.barplot(x='importance', y='feature', data=feat_importances)
         plt.title('Importancia de Características')
         plt.tight_layout()
         plt.savefig(f"{model_dir}/feature_importance.png")
         plt.close()
-        
+
         logger.info(f"Modelo ML entrenado y guardado en {model_dir}")
         logger.info(f"Métricas del modelo - MSE: {mse:.4f}, R²: {r2:.4f}")
-        
-        # Pasar información a la siguiente tarea
+
         kwargs['ti'].xcom_push(key='model_dir', value=model_dir)
         kwargs['ti'].xcom_push(key='model_metrics', value=metrics)
-        
+
         return model_dir
-    
+
     except Exception as e:
         logger.error(f"Error al entrenar modelo ML: {e}")
         logger.error(traceback.format_exc())

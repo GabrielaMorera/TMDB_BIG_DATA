@@ -1,0 +1,64 @@
+{
+    "adult": false,
+    "backdrop_path": "/iXU87IdtNsYt7n6OigPJBDdbFf1.jpg",
+    "genre_ids": [
+        10751,
+        16,
+        35,
+        28
+    ],
+    "id": 774370,
+    "original_language": "en",
+    "original_title": "Dog Man",
+    "overview": "Un perro y un agente de policía resultan heridos juntos en el trabajo. Una operación quirúrgica que les salva la vida cambia el curso de la historia cuando nace Policán. Mitad perro, mitad hombre, Policán ha jurado proteger y servir -siempre que no le distraigan las ardillas- mientras persigue tenazmente a su archienemigo: el supervillano felino Petey el Gato. Pero la rivalidad entre Policán y Petey se ve alterada por la llegada de un adorable gatito clon de Petey, Lil Petey, que cambia las reglas del juego para ambos.",
+    "popularity": 43.2006,
+    "poster_path": "/cUzwACFxvpbsD8kBr1IUI4JtXz0.jpg",
+    "release_date": "2025-01-24",
+    "title": "Policán",
+    "video": false,
+    "vote_average": 7.778,
+    "vote_count": 189,
+    "budget": 40000000,
+    "revenue": 114192145,
+    "runtime": 89,
+    "genres": [
+        "Familia",
+        "Animación",
+        "Comedia",
+        "Acción"
+    ],
+    "production_companies": [
+        "DreamWorks Animation"
+    ],
+    "directors": [
+        "Peter Hastings"
+    ],
+    "cast": [
+        "Peter Hastings",
+        "Pete Davidson",
+        "Lil Rel Howery",
+        "Isla Fisher",
+        "Lucas Hopkins Calderon",
+        "Ricky Gervais",
+        "Poppy Liu",
+        "Stephen Root",
+        "Billy Boyd",
+        "Luenell"
+    ],
+    "keywords": [
+        "villain",
+        "based on children's book",
+        "police dog",
+        "human animal hybrid"
+    ],
+    "video_count": 5,
+    "similar_count": 20,
+    "roi": 1.854803625,
+    "popularity_category": "Muy Alta",
+    "rating_category": "Buena",
+    "genres_str": "Familia,Animación,Comedia,Acción",
+    "directors_str": "Peter Hastings",
+    "cast_str": "Peter Hastings,Pete Davidson,Lil Rel Howery,Isla Fisher,Lucas Hopkins Calderon,Ricky Gervais,Poppy Liu,Stephen Root,Billy Boyd,Luenell",
+    "companies_str": "DreamWorks Animation",
+    "keywords_str": "villain,based on children's book,police dog,human animal hybrid"
+}

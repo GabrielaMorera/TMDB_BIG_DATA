@@ -1,0 +1,64 @@
+{
+    "adult": false,
+    "backdrop_path": "/deUWVEgNh2IGjShyymZhaYP40ye.jpg",
+    "genre_ids": [
+        28,
+        12,
+        53
+    ],
+    "id": 1356039,
+    "original_language": "es",
+    "original_title": "Contraataque",
+    "overview": "En una misión de rescate de rehenes, el capitán Guerrero y sus soldados de élite sufren una emboscada de un despiadado cártel de la droga.",
+    "popularity": 118.1721,
+    "poster_path": "/kxnFdLJhi37ZVFDCL1ka0yeQVU5.jpg",
+    "release_date": "2025-02-27",
+    "title": "Contraataque",
+    "video": false,
+    "vote_average": 8.4,
+    "vote_count": 597,
+    "budget": 0,
+    "revenue": 0,
+    "runtime": 85,
+    "genres": [
+        "Acción",
+        "Aventura",
+        "Suspense"
+    ],
+    "production_companies": [
+        "Draco Films"
+    ],
+    "directors": [
+        "Chava Cartas"
+    ],
+    "cast": [
+        "Luis Alberti",
+        "Noé Hernández",
+        "Leonardo Alonso",
+        "Luis Curiel",
+        "Guillermo Nava",
+        "David Calderón León",
+        "Mayra Batalla",
+        "Israel Islas",
+        "Ishbel Bautista",
+        "Frida Jiser"
+    ],
+    "keywords": [
+        "mexico",
+        "usa–mexico border",
+        "special forces",
+        "military",
+        "narcos",
+        "murcielagos"
+    ],
+    "video_count": 0,
+    "similar_count": 20,
+    "roi": 0,
+    "popularity_category": "Muy Alta",
+    "rating_category": "Excelente",
+    "genres_str": "Acción,Aventura,Suspense",
+    "directors_str": "Chava Cartas",
+    "cast_str": "Luis Alberti,Noé Hernández,Leonardo Alonso,Luis Curiel,Guillermo Nava,David Calderón León,Mayra Batalla,Israel Islas,Ishbel Bautista,Frida Jiser",
+    "companies_str": "Draco Films",
+    "keywords_str": "mexico,usa–mexico border,special forces,military,narcos,murcielagos"
+}

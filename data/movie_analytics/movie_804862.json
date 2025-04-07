@@ -1,0 +1,68 @@
+{
+    "adult": false,
+    "backdrop_path": "/om7apkYMeZMsZ60RsR9DGitTkPy.jpg",
+    "genre_ids": [
+        18,
+        53
+    ],
+    "id": 804862,
+    "original_language": "en",
+    "original_title": "Bring Them Down",
+    "overview": "Michael, el último hijo de una familia de pastores, vive con su padre enfermo, Ray. A medida que un conflicto con un granjero rival, Gary, y su hijo, Jack, aumenta de intensidad, una devastadora cadena de eventos altera permanentemente a ambas familias.",
+    "popularity": 37.3073,
+    "poster_path": "/2jskL5eOFTQknpRalJ4chVYyuFo.jpg",
+    "release_date": "2025-02-06",
+    "title": "Acaba con ellos",
+    "video": false,
+    "vote_average": 6.864,
+    "vote_count": 22,
+    "budget": 0,
+    "revenue": 0,
+    "runtime": 105,
+    "genres": [
+        "Drama",
+        "Suspense"
+    ],
+    "production_companies": [
+        "MUBI",
+        "Fís Éireann/Screen Ireland",
+        "Tailored Films",
+        "Wild Swim Films",
+        "Frakas Productions",
+        "Shelter Prod",
+        "VOO & Be tv",
+        "UK Global Screen Fund",
+        "Coimisiún na Meán",
+        "RTÉ"
+    ],
+    "directors": [
+        "Christopher Andrews"
+    ],
+    "cast": [
+        "Barry Keoghan",
+        "Christopher Abbott",
+        "Colm Meaney",
+        "Nora-Jane Noone",
+        "Paul Ready",
+        "Susan Lynch",
+        "Conor MacNeill",
+        "Youssef Quinn",
+        "Aaron Heffernan",
+        "Adam Behan"
+    ],
+    "keywords": [
+        "farm",
+        "feud",
+        "ireland"
+    ],
+    "video_count": 0,
+    "similar_count": 20,
+    "roi": 0,
+    "popularity_category": "Muy Alta",
+    "rating_category": "Buena",
+    "genres_str": "Drama,Suspense",
+    "directors_str": "Christopher Andrews",
+    "cast_str": "Barry Keoghan,Christopher Abbott,Colm Meaney,Nora-Jane Noone,Paul Ready,Susan Lynch,Conor MacNeill,Youssef Quinn,Aaron Heffernan,Adam Behan",
+    "companies_str": "MUBI,Fís Éireann/Screen Ireland,Tailored Films,Wild Swim Films,Frakas Productions,Shelter Prod,VOO & Be tv,UK Global Screen Fund,Coimisiún na Meán,RTÉ",
+    "keywords_str": "farm,feud,ireland"
+}

@@ -37,7 +37,7 @@ POSTGRES_DB = "postgres"
 POSTGRES_USER = "postgres"
 POSTGRES_PASSWORD = "Villeta-11"  # Agregada la contraseña correcta
 POSTGRES_HOST = "movie_postgres"
-POSTGRES_PORT = "5433"
+POSTGRES_PORT = "5432"
 OUTPUT_DIR = "movie_analytics"
 
 # Crear directorio para las visualizaciones
@@ -754,85 +754,111 @@ class MovieAnalyzer:
         from sklearn.ensemble import RandomForestRegressor
         from sklearn.metrics import mean_squared_error, r2_score
         import pickle
-        
+        import ast
+
         logger.info("Entrenando modelo de ML para predicción de éxito de películas...")
         output_path = f"{OUTPUT_DIR}/batch_{batch_number}"
         os.makedirs(output_path, exist_ok=True)
-        
-        # Consultar datos para el entrenamiento
+
         query = """
             SELECT m.tmdb_id, m.title, m.popularity, m.vote_average, m.vote_count, 
-                   m.budget, m.revenue, m.runtime, 
-                   CASE WHEN m.budget > 0 THEN m.revenue::float / m.budget ELSE 0 END AS roi
+                m.budget, m.revenue, m.runtime, m.release_date, 
+                m.genres, m.original_language, 
+                CASE WHEN m.budget > 0 THEN m.revenue::float / m.budget ELSE 0 END AS roi
             FROM movies m
             WHERE m.vote_count > 0
         """
-        
+
         try:
             with self.engine.connect() as conn:
                 df = pd.read_sql(query, conn)
-            
+
             if len(df) < 10:
                 logger.warning("No hay suficientes datos para entrenar un modelo")
                 return None
-            
+
             logger.info(f"Datos cargados para entrenamiento: {len(df)} registros")
-            
-            # Crear target: combinar popularidad y calificación
-            df['success_score'] = df['popularity'] * 0.7 + df['vote_average'] * 10 * 0.3
-            
-            # Preparar datos
-            features = ['budget', 'runtime', 'vote_count', 'revenue']
-            X = df[features]
+
+            # Procesamiento de columnas adicionales
+            df['release_year'] = pd.to_datetime(df['release_date'], errors='coerce').dt.year.fillna(0).astype(int)
+            df['roi'] = df['roi'].clip(0, 10)
+
+            # Extraer género principal
+            def extract_main_genre(g):
+                try:
+                    genres = ast.literal_eval(g)
+                    return genres[0]['name'] if genres else 'Unknown'
+                except:
+                    return 'Unknown'
+
+            df['genre_main'] = df['genres'].apply(extract_main_genre)
+
+            # Crear target: éxito ponderado
+            df['success_score'] = (
+                df['popularity'] * 0.4 +
+                df['vote_average'] * 10 * 0.3 +
+                df['roi'] * 0.3
+            )
+
+            # Variables predictoras
+            features = [
+                'budget', 'runtime', 'vote_count', 'revenue',
+                'release_year', 'roi', 'original_language', 'genre_main'
+            ]
+
+            df = df[features + ['success_score', 'title']].fillna(0)
+
+            # Codificación de variables categóricas
+            df = pd.get_dummies(df, columns=['original_language', 'genre_main'], drop_first=True)
+
+            X = df.drop(columns=['success_score', 'title'])
             y = df['success_score']
-            
-            # Dividir en conjuntos de entrenamiento y prueba
+
+            # Entrenamiento y prueba
             X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
-            
-            # Entrenar modelo
+
             model = RandomForestRegressor(n_estimators=100, random_state=42)
             model.fit(X_train, y_train)
-            
-            # Evaluar modelo
+
+            # Evaluación
             y_pred = model.predict(X_test)
             mse = mean_squared_error(y_test, y_pred)
             r2 = r2_score(y_test, y_pred)
-            
+
             logger.info(f"Métricas del modelo - MSE: {mse:.4f}, R²: {r2:.4f}")
-            
+
             # Guardar modelo
             with open(f"{output_path}/movie_success_model.pkl", 'wb') as f:
                 pickle.dump(model, f)
-            
-            # Guardar importancia de características
+
+            # Importancia de características
             feature_importance = pd.DataFrame({
-                'feature': features,
+                'feature': X.columns,
                 'importance': model.feature_importances_
             }).sort_values('importance', ascending=False)
-            
+
             feature_importance.to_csv(f"{output_path}/feature_importance.csv", index=False)
-            
-            # Visualizar importancia de características
+
+            # Visualización de importancia
             plt.figure(figsize=(10, 6))
-            sns.barplot(x='importance', y='feature', data=feature_importance)
+            sns.barplot(x='importance', y='feature', data=feature_importance.head(15))
             plt.title('Importancia de Características')
             plt.tight_layout()
             plt.savefig(f"{output_path}/feature_importance.png")
             plt.close()
-            
-            # Predicciones
-            df['predicted_success'] = model.predict(df[features])
-            
-            # Top 10 películas con mayor éxito predicho
-            top_predicted = df.sort_values('predicted_success', ascending=False).head(10)
-            
+
+            # Predicciones y top 10
+            df['predicted_success'] = model.predict(X)
+
+            top_predicted = df[['title', 'predicted_success']].sort_values('predicted_success', ascending=False).head(10)
+
             plt.figure(figsize=(12, 8))
             sns.barplot(x='predicted_success', y='title', data=top_predicted)
             plt.title('Top 10 Películas con Mayor Éxito Predicho')
             plt.tight_layout()
             plt.savefig(f"{output_path}/top_predicted.png")
             plt.close()
-            
+
             logger.info(f"Modelo ML entrenado y guardado en {output_path}")
             return {
                 'mse': mse,
@@ -840,7 +866,7 @@ class MovieAnalyzer:
                 'feature_importance': feature_importance.to_dict('records'),
                 'top_predicted': top_predicted['title'].tolist()
             }
-            
+
         except Exception as e:
             logger.error(f"Error al entrenar modelo: {e}")
             logger.error(traceback.format_exc())

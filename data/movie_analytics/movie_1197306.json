@@ -1,0 +1,71 @@
+{
+    "adult": false,
+    "backdrop_path": "/xBrx6O1RIhjtWmVthZIANuQz7Z2.jpg",
+    "genre_ids": [
+        28,
+        80,
+        53
+    ],
+    "id": 1197306,
+    "original_language": "en",
+    "original_title": "A Working Man",
+    "overview": "Levon Cade dejó atrás una condecorada carrera militar en las operaciones encubiertas para vivir una vida sencilla trabajando en la construcción. Pero cuando la hija de su jefe, que para él es como de la familia, es secuestrada por traficantes de personas, su búsqueda para traerla a casa descubre un mundo de corrupción mucho mayor de lo que jamás podría haber imaginado.",
+    "popularity": 340.7598,
+    "poster_path": "/aG50Ad3UV8cCQWpNWSHHUqgKGNB.jpg",
+    "release_date": "2025-03-26",
+    "title": "A Working Man",
+    "video": false,
+    "vote_average": 6.853,
+    "vote_count": 133,
+    "budget": 40000000,
+    "revenue": 44417000,
+    "runtime": 116,
+    "genres": [
+        "Acción",
+        "Crimen",
+        "Suspense"
+    ],
+    "production_companies": [
+        "Cedar Park Entertainment",
+        "BlockFilm",
+        "Punch Palace Productions",
+        "Balboa Productions",
+        "Black Bear Pictures",
+        "Fifth Season",
+        "CAT5"
+    ],
+    "directors": [
+        "David Ayer"
+    ],
+    "cast": [
+        "Jason Statham",
+        "David Harbour",
+        "Michael Peña",
+        "Jason Flemyng",
+        "Arianna Rivas",
+        "Noemi Gonzalez",
+        "Emmett Scanlan",
+        "Eve Mauro",
+        "Maximilian Osinski",
+        "Kristina Poli"
+    ],
+    "keywords": [
+        "based on novel or book",
+        "kidnapping",
+        "vigilante",
+        "missing person",
+        "black ops",
+        "construction worker",
+        "criminal conspiracy"
+    ],
+    "video_count": 2,
+    "similar_count": 20,
+    "roi": 0.110425,
+    "popularity_category": "Muy Alta",
+    "rating_category": "Buena",
+    "genres_str": "Acción,Crimen,Suspense",
+    "directors_str": "David Ayer",
+    "cast_str": "Jason Statham,David Harbour,Michael Peña,Jason Flemyng,Arianna Rivas,Noemi Gonzalez,Emmett Scanlan,Eve Mauro,Maximilian Osinski,Kristina Poli",
+    "companies_str": "Cedar Park Entertainment,BlockFilm,Punch Palace Productions,Balboa Productions,Black Bear Pictures,Fifth Season,CAT5",
+    "keywords_str": "based on novel or book,kidnapping,vigilante,missing person,black ops,construction worker,criminal conspiracy"
+}

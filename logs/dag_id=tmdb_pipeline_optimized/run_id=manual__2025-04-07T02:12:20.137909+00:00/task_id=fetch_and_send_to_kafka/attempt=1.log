@@ -1,0 +1,96 @@
+[2025-04-07T02:12:29.522+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2025-04-07T02:12:29.545+0000] {taskinstance.py:2073} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: tmdb_pipeline_optimized.fetch_and_send_to_kafka manual__2025-04-07T02:12:20.137909+00:00 [queued]>
+[2025-04-07T02:12:29.553+0000] {taskinstance.py:2073} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: tmdb_pipeline_optimized.fetch_and_send_to_kafka manual__2025-04-07T02:12:20.137909+00:00 [queued]>
+[2025-04-07T02:12:29.554+0000] {taskinstance.py:2303} INFO - Starting attempt 1 of 2
+[2025-04-07T02:12:29.567+0000] {taskinstance.py:2327} INFO - Executing <Task(PythonOperator): fetch_and_send_to_kafka> on 2025-04-07 02:12:20.137909+00:00
+[2025-04-07T02:12:29.576+0000] {warnings.py:110} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:61: DeprecationWarning: This process (pid=592) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2025-04-07T02:12:29.577+0000] {standard_task_runner.py:63} INFO - Started process 609 to run task
+[2025-04-07T02:12:29.578+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'tmdb_pipeline_optimized', 'fetch_and_send_to_kafka', 'manual__2025-04-07T02:12:20.137909+00:00', '--job-id', '372', '--raw', '--subdir', 'DAGS_FOLDER/tmdb_pipeline.py', '--cfg-path', '/tmp/tmp31_zpmhd']
+[2025-04-07T02:12:29.581+0000] {standard_task_runner.py:91} INFO - Job 372: Subtask fetch_and_send_to_kafka
+[2025-04-07T02:12:29.632+0000] {task_command.py:426} INFO - Running <TaskInstance: tmdb_pipeline_optimized.fetch_and_send_to_kafka manual__2025-04-07T02:12:20.137909+00:00 [running]> on host 9b742febb797
+[2025-04-07T02:12:29.746+0000] {taskinstance.py:2644} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='gabriela' AIRFLOW_CTX_DAG_ID='tmdb_pipeline_optimized' AIRFLOW_CTX_TASK_ID='fetch_and_send_to_kafka' AIRFLOW_CTX_EXECUTION_DATE='2025-04-07T02:12:20.137909+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-04-07T02:12:20.137909+00:00'
+[2025-04-07T02:12:29.748+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2025-04-07T02:12:30.518+0000] {conn.py:395} INFO - <BrokerConnection client_id=kafka-python-producer-1, node_id=bootstrap-0 host=kafka:9093 <connecting> [IPv4 ('172.19.0.6', 9093)]>: connecting to kafka:9093 [('172.19.0.6', 9093) IPv4]
+[2025-04-07T02:12:30.541+0000] {conn.py:615} INFO - <BrokerConnection client_id=kafka-python-producer-1, node_id=bootstrap-0 host=kafka:9093 <checking_api_versions_recv> [IPv4 ('172.19.0.6', 9093)]>: Broker version identified as 2.6
+[2025-04-07T02:12:30.542+0000] {conn.py:456} INFO - <BrokerConnection client_id=kafka-python-producer-1, node_id=bootstrap-0 host=kafka:9093 <connected> [IPv4 ('172.19.0.6', 9093)]>: Connection complete.
+[2025-04-07T02:12:30.545+0000] {tmdb_pipeline.py:1569} INFO - Productor Kafka conectado a kafka:9093
+[2025-04-07T02:12:30.545+0000] {tmdb_pipeline.py:1700} INFO - Obteniendo página 1 de películas populares...
+[2025-04-07T02:12:30.998+0000] {tmdb_pipeline.py:1587} INFO - Obtenidas 20 películas de la página 1
+[2025-04-07T02:12:31.443+0000] {conn.py:395} INFO - <BrokerConnection client_id=kafka-python-producer-1, node_id=1001 host=kafka:9093 <connecting> [IPv4 ('172.19.0.6', 9093)]>: connecting to kafka:9093 [('172.19.0.6', 9093) IPv4]
+[2025-04-07T02:12:31.444+0000] {conn.py:456} INFO - <BrokerConnection client_id=kafka-python-producer-1, node_id=1001 host=kafka:9093 <connected> [IPv4 ('172.19.0.6', 9093)]>: Connection complete.
+[2025-04-07T02:12:31.445+0000] {conn.py:936} INFO - <BrokerConnection client_id=kafka-python-producer-1, node_id=bootstrap-0 host=kafka:9093 <connected> [IPv4 ('172.19.0.6', 9093)]>: Closing connection. 
+[2025-04-07T02:12:31.482+0000] {tmdb_pipeline.py:1678} INFO - Enviado a Kafka: Una película de Minecraft (Partición: 0, Offset: 20)
+[2025-04-07T02:12:32.286+0000] {tmdb_pipeline.py:1678} INFO - Enviado a Kafka: Criminales de lujo (Partición: 0, Offset: 21)
+[2025-04-07T02:12:32.985+0000] {tmdb_pipeline.py:1678} INFO - Enviado a Kafka: A Working Man (Partición: 0, Offset: 22)
+[2025-04-07T02:12:33.616+0000] {tmdb_pipeline.py:1678} INFO - Enviado a Kafka: Cleaner (Partición: 0, Offset: 23)
+[2025-04-07T02:12:34.450+0000] {tmdb_pipeline.py:1678} INFO - Enviado a Kafka: Capitán América: Brave New World (Partición: 0, Offset: 24)
+[2025-04-07T02:12:35.034+0000] {tmdb_pipeline.py:1678} INFO - Enviado a Kafka: देवा (Partición: 0, Offset: 25)
+[2025-04-07T02:12:35.609+0000] {tmdb_pipeline.py:1678} INFO - Enviado a Kafka: Pídeme lo que quieras (Partición: 0, Offset: 26)
+[2025-04-07T02:12:36.489+0000] {tmdb_pipeline.py:1678} INFO - Enviado a Kafka: Los silenciosos (Partición: 0, Offset: 27)
+[2025-04-07T02:12:37.187+0000] {tmdb_pipeline.py:1678} INFO - Enviado a Kafka: Peter Pan: Pesadilla en Nunca Jamás (Partición: 0, Offset: 28)
+[2025-04-07T02:12:37.999+0000] {tmdb_pipeline.py:1678} INFO - Enviado a Kafka: Códigos de Guerra (Partición: 0, Offset: 29)
+[2025-04-07T02:12:38.592+0000] {tmdb_pipeline.py:1678} INFO - Enviado a Kafka: Relatos Fantásticos (Partición: 0, Offset: 30)
+[2025-04-07T02:12:39.206+0000] {tmdb_pipeline.py:1678} INFO - Enviado a Kafka: Fight or Flight (Partición: 0, Offset: 31)
+[2025-04-07T02:12:40.203+0000] {tmdb_pipeline.py:1678} INFO - Enviado a Kafka: Vaiana 2 (Partición: 0, Offset: 32)
+[2025-04-07T02:12:40.972+0000] {tmdb_pipeline.py:1678} INFO - Enviado a Kafka: Mufasa: El rey león (Partición: 0, Offset: 33)
+[2025-04-07T02:12:41.559+0000] {tmdb_pipeline.py:1678} INFO - Enviado a Kafka: Confidencial (Black Bag) (Partición: 0, Offset: 34)
+[2025-04-07T02:12:42.186+0000] {tmdb_pipeline.py:1678} INFO - Enviado a Kafka: Mickey 17 (Partición: 0, Offset: 35)
+[2025-04-07T02:12:42.774+0000] {tmdb_pipeline.py:1678} INFO - Enviado a Kafka: Popeye the Slayer Man (Partición: 0, Offset: 36)
+[2025-04-07T02:12:43.557+0000] {tmdb_pipeline.py:1678} INFO - Enviado a Kafka: Mi lista de deseos (Partición: 0, Offset: 37)
+[2025-04-07T02:12:44.187+0000] {tmdb_pipeline.py:1678} INFO - Enviado a Kafka: Ghost Game (Partición: 0, Offset: 38)
+[2025-04-07T02:12:44.850+0000] {tmdb_pipeline.py:1678} INFO - Enviado a Kafka: Blancanieves (Partición: 0, Offset: 39)
+[2025-04-07T02:12:45.353+0000] {tmdb_pipeline.py:1700} INFO - Obteniendo página 2 de películas populares...
+[2025-04-07T02:12:45.475+0000] {tmdb_pipeline.py:1587} INFO - Obtenidas 20 películas de la página 2
+[2025-04-07T02:12:45.941+0000] {tmdb_pipeline.py:1678} INFO - Enviado a Kafka: La venganza de Cenicienta (Partición: 0, Offset: 40)
+[2025-04-07T02:12:46.836+0000] {tmdb_pipeline.py:1678} INFO - Enviado a Kafka: Sonic 3: La película (Partición: 0, Offset: 41)
+[2025-04-07T02:12:47.458+0000] {tmdb_pipeline.py:1678} INFO - Enviado a Kafka: Amenaza en el aire (Partición: 0, Offset: 42)
+[2025-04-07T02:12:48.088+0000] {tmdb_pipeline.py:1678} INFO - Enviado a Kafka: Contraataque (Partición: 0, Offset: 43)
+[2025-04-07T02:12:48.670+0000] {tmdb_pipeline.py:1678} INFO - Enviado a Kafka: Batman Ninja vs. Yakuza League (Partición: 0, Offset: 44)
+[2025-04-07T02:12:49.253+0000] {tmdb_pipeline.py:1678} INFO - Enviado a Kafka: El abismo secreto (Partición: 0, Offset: 45)
+[2025-04-07T02:12:49.838+0000] {tmdb_pipeline.py:1678} INFO - Enviado a Kafka: Breathing In (Partición: 0, Offset: 46)
+[2025-04-07T02:12:50.436+0000] {tmdb_pipeline.py:1678} INFO - Enviado a Kafka: Holland (Partición: 0, Offset: 47)
+[2025-04-07T02:12:51.058+0000] {tmdb_pipeline.py:1678} INFO - Enviado a Kafka: Opus (Partición: 0, Offset: 48)
+[2025-04-07T02:12:51.675+0000] {tmdb_pipeline.py:1678} INFO - Enviado a Kafka: ยูเรนัส 2324 (Partición: 0, Offset: 49)
+[2025-04-07T02:12:52.303+0000] {tmdb_pipeline.py:1678} INFO - Enviado a Kafka: Oni-Goroshi: Ciudad de los demonios (Partición: 0, Offset: 50)
+[2025-04-07T02:12:52.880+0000] {tmdb_pipeline.py:1678} INFO - Enviado a Kafka: Hellhound (Partición: 0, Offset: 51)
+[2025-04-07T02:12:53.550+0000] {tmdb_pipeline.py:1678} INFO - Enviado a Kafka: Z Zone (Partición: 0, Offset: 52)
+[2025-04-07T02:12:54.195+0000] {tmdb_pipeline.py:1678} INFO - Enviado a Kafka: Kraven the Hunter (Partición: 0, Offset: 53)
+[2025-04-07T02:12:54.814+0000] {tmdb_pipeline.py:1678} INFO - Enviado a Kafka: DJ encubierto (Partición: 0, Offset: 54)
+[2025-04-07T02:12:55.415+0000] {tmdb_pipeline.py:1678} INFO - Enviado a Kafka: Amaran (Partición: 0, Offset: 55)
+[2025-04-07T02:12:56.085+0000] {tmdb_pipeline.py:1678} INFO - Enviado a Kafka: El maestro del crimen (Partición: 0, Offset: 56)
+[2025-04-07T02:12:56.676+0000] {tmdb_pipeline.py:1678} INFO - Enviado a Kafka: Venom: El último baile (Partición: 0, Offset: 57)
+[2025-04-07T02:12:57.398+0000] {tmdb_pipeline.py:1678} INFO - Enviado a Kafka: The Monkey (Partición: 0, Offset: 58)
+[2025-04-07T02:12:58.298+0000] {tmdb_pipeline.py:1678} INFO - Enviado a Kafka: Plankton, la película (Partición: 0, Offset: 59)
+[2025-04-07T02:12:58.896+0000] {tmdb_pipeline.py:1700} INFO - Obteniendo página 3 de películas populares...
+[2025-04-07T02:12:58.967+0000] {tmdb_pipeline.py:1587} INFO - Obtenidas 20 películas de la página 3
+[2025-04-07T02:12:59.104+0000] {tmdb_pipeline.py:1678} INFO - Enviado a Kafka: La acompañante (Partición: 0, Offset: 60)
+[2025-04-07T02:12:59.817+0000] {tmdb_pipeline.py:1678} INFO - Enviado a Kafka: El ejecutor (Partición: 0, Offset: 61)
+[2025-04-07T02:13:00.420+0000] {tmdb_pipeline.py:1678} INFO - Enviado a Kafka: Gladiator II (Partición: 0, Offset: 62)
+[2025-04-07T02:13:01.351+0000] {tmdb_pipeline.py:1678} INFO - Enviado a Kafka: Dark Match (Partición: 0, Offset: 63)
+[2025-04-07T02:13:01.946+0000] {tmdb_pipeline.py:1678} INFO - Enviado a Kafka: Memorias de un caracol (Partición: 0, Offset: 64)
+[2025-04-07T02:13:02.526+0000] {tmdb_pipeline.py:1678} INFO - Enviado a Kafka: स्काई फ़ोर्स (Partición: 0, Offset: 65)
+[2025-04-07T02:13:03.101+0000] {tmdb_pipeline.py:1678} INFO - Enviado a Kafka: Giro final (Partición: 0, Offset: 66)
+[2025-04-07T02:13:03.859+0000] {tmdb_pipeline.py:1678} INFO - Enviado a Kafka: Gru 4. Mi villano favorito (Partición: 0, Offset: 67)
+[2025-04-07T02:13:04.488+0000] {tmdb_pipeline.py:1678} INFO - Enviado a Kafka: Robot salvaje (Partición: 0, Offset: 68)
+[2025-04-07T02:13:05.098+0000] {tmdb_pipeline.py:1678} INFO - Enviado a Kafka: xXx (Partición: 0, Offset: 69)
+[2025-04-07T02:13:05.843+0000] {tmdb_pipeline.py:1678} INFO - Enviado a Kafka: Deadpool y Lobezno (Partición: 0, Offset: 70)
+[2025-04-07T02:13:06.431+0000] {tmdb_pipeline.py:1678} INFO - Enviado a Kafka: Panda Plan (Partición: 0, Offset: 71)
+[2025-04-07T02:13:07.035+0000] {tmdb_pipeline.py:1678} INFO - Enviado a Kafka: Solo Leveling: ReAwakening (Partición: 0, Offset: 72)
+[2025-04-07T02:13:07.608+0000] {tmdb_pipeline.py:1678} INFO - Enviado a Kafka: El último disparo (Partición: 0, Offset: 73)
+[2025-04-07T02:13:08.238+0000] {tmdb_pipeline.py:1678} INFO - Enviado a Kafka: Culpa mía (Partición: 0, Offset: 74)
+[2025-04-07T02:13:09.010+0000] {tmdb_pipeline.py:1678} INFO - Enviado a Kafka: Estado eléctrico (Partición: 0, Offset: 75)
+[2025-04-07T02:13:09.828+0000] {tmdb_pipeline.py:1678} INFO - Enviado a Kafka: Peace Maker Kurogane Movie 1: Omou Michi (Partición: 0, Offset: 76)
+[2025-04-07T02:13:11.658+0000] {tmdb_pipeline.py:1678} INFO - Enviado a Kafka: Flow, un mundo que salvar (Partición: 0, Offset: 77)
+[2025-04-07T02:13:12.961+0000] {tmdb_pipeline.py:1678} INFO - Enviado a Kafka: Frogman (Partición: 0, Offset: 78)
+[2025-04-07T02:13:13.916+0000] {tmdb_pipeline.py:1678} INFO - Enviado a Kafka: Anora (Partición: 0, Offset: 79)
+[2025-04-07T02:13:14.419+0000] {tmdb_pipeline.py:1715} INFO - Proceso completado: 60 películas enviadas a Kafka, 0 errores
+[2025-04-07T02:13:14.436+0000] {kafka.py:511} INFO - Closing the Kafka producer with 9223372036.0 secs timeout.
+[2025-04-07T02:13:14.437+0000] {conn.py:936} INFO - <BrokerConnection client_id=kafka-python-producer-1, node_id=1001 host=kafka:9093 <connected> [IPv4 ('172.19.0.6', 9093)]>: Closing connection. 
+[2025-04-07T02:13:14.440+0000] {python.py:237} INFO - Done. Returned value was: 60
+[2025-04-07T02:13:14.441+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2025-04-07T02:13:14.458+0000] {taskinstance.py:1205} INFO - Marking task as SUCCESS. dag_id=tmdb_pipeline_optimized, task_id=fetch_and_send_to_kafka, execution_date=20250407T021220, start_date=20250407T021229, end_date=20250407T021314
+[2025-04-07T02:13:14.482+0000] {local_task_job_runner.py:240} INFO - Task exited with return code 0
+[2025-04-07T02:13:14.510+0000] {taskinstance.py:3482} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2025-04-07T02:13:14.512+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

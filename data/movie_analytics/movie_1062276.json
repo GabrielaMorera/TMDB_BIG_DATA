@@ -1,0 +1,62 @@
+{
+    "adult": false,
+    "backdrop_path": "/7q5RVohE85yuQ9uZWXEXlHmfUOE.jpg",
+    "genre_ids": [
+        28,
+        27
+    ],
+    "id": 1062276,
+    "original_language": "en",
+    "original_title": "Dark Match",
+    "overview": "Una pequeña empresa de espectáculos de lucha libre acepta un trabajo bien pagado en un pueblo remoto. Sus miembros descubren, demasiado tarde, que la comunidad está dirigida por un misterioso líder.",
+    "popularity": 68.9694,
+    "poster_path": "/6E6fBED3ix7FmrWUWZdeYG4vqK8.jpg",
+    "release_date": "2024-07-21",
+    "title": "Dark Match",
+    "video": false,
+    "vote_average": 4.8,
+    "vote_count": 10,
+    "budget": 0,
+    "revenue": 0,
+    "runtime": 94,
+    "genres": [
+        "Acción",
+        "Terror"
+    ],
+    "production_companies": [
+        "Dept.9 Studios"
+    ],
+    "directors": [
+        "Lowell Dean"
+    ],
+    "cast": [
+        "Ayisha Issa",
+        "Steven Ogg",
+        "Mo Jabari",
+        "Sara Canning",
+        "Chris Irvine",
+        "Jonathan Cherry",
+        "Michael Eklund",
+        "Stephanie Wolfe",
+        "Leo Fafard",
+        "Mitchell Clarke"
+    ],
+    "keywords": [
+        "wrestling",
+        "cult",
+        "backwoods",
+        "cult leader",
+        "pro wrestling",
+        "rural"
+    ],
+    "video_count": 0,
+    "similar_count": 20,
+    "roi": 0,
+    "popularity_category": "Muy Alta",
+    "rating_category": "Regular",
+    "genres_str": "Acción,Terror",
+    "directors_str": "Lowell Dean",
+    "cast_str": "Ayisha Issa,Steven Ogg,Mo Jabari,Sara Canning,Chris Irvine,Jonathan Cherry,Michael Eklund,Stephanie Wolfe,Leo Fafard,Mitchell Clarke",
+    "companies_str": "Dept.9 Studios",
+    "keywords_str": "wrestling,cult,backwoods,cult leader,pro wrestling,rural"
+}

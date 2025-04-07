@@ -1,0 +1,66 @@
+{
+    "adult": false,
+    "backdrop_path": "/nhx0ttmAS2w8e6hyIcKoNvgHoix.jpg",
+    "genre_ids": [
+        27,
+        53,
+        14
+    ],
+    "id": 1020414,
+    "original_language": "en",
+    "original_title": "Peter Pan's Neverland Nightmare",
+    "overview": "Sigue a Wendy Darling en su intento de rescatar a su hermano Michael de \"las garras del malvado Peter Pan\". Por el camino conoce a Campanilla, que en esta retorcida versión del cuento se verá tomando heroína, convencida de que es polvo de hadas. La famosa historia de Peter Pan reinventada como un film de terror por Jagged Edge Productions, productora de \"Winnie the Pooh: Blood and Honey\".",
+    "popularity": 237.4173,
+    "poster_path": "/m5jtX2J0VswgslOyx04l4edo3nJ.jpg",
+    "release_date": "2025-01-13",
+    "title": "Peter Pan: Pesadilla en Nunca Jamás",
+    "video": false,
+    "vote_average": 6.121,
+    "vote_count": 33,
+    "budget": 250000,
+    "revenue": 315648,
+    "runtime": 89,
+    "genres": [
+        "Terror",
+        "Suspense",
+        "Fantasía"
+    ],
+    "production_companies": [
+        "Jagged Edge Productions"
+    ],
+    "directors": [
+        "Scott Chambers"
+    ],
+    "cast": [
+        "Martin Portlock",
+        "Megan Placito",
+        "Kit Green",
+        "Peter DeSouza-Feighoney",
+        "Charity Kase",
+        "Teresa Banham",
+        "Campbell Wallace",
+        "Ardy Yusuf",
+        "Olumide Olorunfemi",
+        "Nicholas Woodeson"
+    ],
+    "keywords": [
+        "peter pan",
+        "slasher",
+        "based on children's book",
+        "child abduction",
+        "magic land",
+        "independent film",
+        "violence against a child",
+        "the twisted childhood universe"
+    ],
+    "video_count": 0,
+    "similar_count": 20,
+    "roi": 0.262592,
+    "popularity_category": "Muy Alta",
+    "rating_category": "Buena",
+    "genres_str": "Terror,Suspense,Fantasía",
+    "directors_str": "Scott Chambers",
+    "cast_str": "Martin Portlock,Megan Placito,Kit Green,Peter DeSouza-Feighoney,Charity Kase,Teresa Banham,Campbell Wallace,Ardy Yusuf,Olumide Olorunfemi,Nicholas Woodeson",
+    "companies_str": "Jagged Edge Productions",
+    "keywords_str": "peter pan,slasher,based on children's book,child abduction,magic land,independent film,violence against a child,the twisted childhood universe"
+}

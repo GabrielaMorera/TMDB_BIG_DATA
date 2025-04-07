@@ -1,0 +1,48 @@
+{
+    "adult": false,
+    "backdrop_path": "/m2mzlsJjE3UAqeUB5fLUkpWg4Iq.jpg",
+    "genre_ids": [
+        53,
+        878
+    ],
+    "id": 1165067,
+    "original_language": "en",
+    "original_title": "Cosmic Chaos",
+    "overview": "Batallas en realidad virtual, supervivencia en un páramo postapocalíptico, una nave espacial soviética que emite una señal de socorro... Historias fantásticas creadas con avanzados efectos especiales y pasión.",
+    "popularity": 218.1429,
+    "poster_path": "/mClzWv7gBqgXfjZXp49Enyoex1v.jpg",
+    "release_date": "2023-08-03",
+    "title": "Relatos Fantásticos",
+    "video": false,
+    "vote_average": 7.0,
+    "vote_count": 29,
+    "budget": 0,
+    "revenue": 0,
+    "runtime": 0,
+    "genres": [
+        "Suspense",
+        "Ciencia ficción"
+    ],
+    "production_companies": [
+        "Hewes Pictures"
+    ],
+    "directors": [],
+    "cast": [
+        "Curtis Bechdholt",
+        "Caroline Dhavernas",
+        "Ken Godmere",
+        "Jeananne Goossen",
+        "Samantha Neale"
+    ],
+    "keywords": [],
+    "video_count": 0,
+    "similar_count": 0,
+    "roi": 0,
+    "popularity_category": "Muy Alta",
+    "rating_category": "Buena",
+    "genres_str": "Suspense,Ciencia ficción",
+    "directors_str": "",
+    "cast_str": "Curtis Bechdholt,Caroline Dhavernas,Ken Godmere,Jeananne Goossen,Samantha Neale",
+    "companies_str": "Hewes Pictures",
+    "keywords_str": ""
+}

@@ -1,0 +1,109 @@
+[2025-04-06T18:11:58.008+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2025-04-06T18:11:58.048+0000] {taskinstance.py:2073} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: tmdb_pipeline_optimized.process_kafka_data manual__2025-04-06T18:11:09.140894+00:00 [queued]>
+[2025-04-06T18:11:58.058+0000] {taskinstance.py:2073} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: tmdb_pipeline_optimized.process_kafka_data manual__2025-04-06T18:11:09.140894+00:00 [queued]>
+[2025-04-06T18:11:58.063+0000] {taskinstance.py:2303} INFO - Starting attempt 1 of 2
+[2025-04-06T18:11:58.081+0000] {taskinstance.py:2327} INFO - Executing <Task(PythonOperator): process_kafka_data> on 2025-04-06 18:11:09.140894+00:00
+[2025-04-06T18:11:58.094+0000] {warnings.py:110} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:61: DeprecationWarning: This process (pid=180) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2025-04-06T18:11:58.096+0000] {standard_task_runner.py:63} INFO - Started process 197 to run task
+[2025-04-06T18:11:58.099+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'tmdb_pipeline_optimized', 'process_kafka_data', 'manual__2025-04-06T18:11:09.140894+00:00', '--job-id', '308', '--raw', '--subdir', 'DAGS_FOLDER/tmdb_pipeline.py', '--cfg-path', '/tmp/tmpx4yfhjkg']
+[2025-04-06T18:11:58.102+0000] {standard_task_runner.py:91} INFO - Job 308: Subtask process_kafka_data
+[2025-04-06T18:11:58.162+0000] {task_command.py:426} INFO - Running <TaskInstance: tmdb_pipeline_optimized.process_kafka_data manual__2025-04-06T18:11:09.140894+00:00 [running]> on host 7d967108bc90
+[2025-04-06T18:11:58.242+0000] {taskinstance.py:2644} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='gabriela' AIRFLOW_CTX_DAG_ID='tmdb_pipeline_optimized' AIRFLOW_CTX_TASK_ID='process_kafka_data' AIRFLOW_CTX_EXECUTION_DATE='2025-04-06T18:11:09.140894+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-04-06T18:11:09.140894+00:00'
+[2025-04-06T18:11:58.244+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2025-04-06T18:11:58.534+0000] {tmdb_pipeline.py:1739} INFO - Iniciando proceso de consumo de datos de Kafka
+[2025-04-06T18:11:58.536+0000] {conn.py:395} INFO - <BrokerConnection client_id=kafka-python-2.1.5, node_id=bootstrap-0 host=kafka:9093 <connecting> [IPv4 ('172.19.0.6', 9093)]>: connecting to kafka:9093 [('172.19.0.6', 9093) IPv4]
+[2025-04-06T18:11:58.540+0000] {conn.py:615} INFO - <BrokerConnection client_id=kafka-python-2.1.5, node_id=bootstrap-0 host=kafka:9093 <checking_api_versions_recv> [IPv4 ('172.19.0.6', 9093)]>: Broker version identified as 2.6
+[2025-04-06T18:11:58.540+0000] {conn.py:456} INFO - <BrokerConnection client_id=kafka-python-2.1.5, node_id=bootstrap-0 host=kafka:9093 <connected> [IPv4 ('172.19.0.6', 9093)]>: Connection complete.
+[2025-04-06T18:11:58.541+0000] {subscription_state.py:182} INFO - Updating subscribed topics to: ('tmdb_data',)
+[2025-04-06T18:11:58.542+0000] {tmdb_pipeline.py:1751} INFO - Consumidor conectado a Kafka, esperando mensajes en 'tmdb_data'...
+[2025-04-06T18:11:58.543+0000] {tmdb_pipeline.py:1763} INFO - Intento 1/5 de obtener mensajes
+[2025-04-06T18:11:58.545+0000] {conn.py:395} INFO - <BrokerConnection client_id=kafka-python-2.1.5, node_id=1001 host=kafka:9093 <connecting> [IPv4 ('172.19.0.6', 9093)]>: connecting to kafka:9093 [('172.19.0.6', 9093) IPv4]
+[2025-04-06T18:11:58.546+0000] {conn.py:456} INFO - <BrokerConnection client_id=kafka-python-2.1.5, node_id=1001 host=kafka:9093 <connected> [IPv4 ('172.19.0.6', 9093)]>: Connection complete.
+[2025-04-06T18:11:58.546+0000] {conn.py:936} INFO - <BrokerConnection client_id=kafka-python-2.1.5, node_id=bootstrap-0 host=kafka:9093 <connected> [IPv4 ('172.19.0.6', 9093)]>: Closing connection. 
+[2025-04-06T18:11:58.652+0000] {cluster.py:393} INFO - Group coordinator for ***_consumer_group_v4 is ('coordinator-1001', 'kafka', 9093, None)
+[2025-04-06T18:11:58.653+0000] {base.py:729} INFO - Discovered coordinator coordinator-1001 for group ***_consumer_group_v4
+[2025-04-06T18:11:58.653+0000] {base.py:780} INFO - Starting new heartbeat thread
+[2025-04-06T18:11:58.654+0000] {consumer.py:361} INFO - Revoking previously assigned partitions () for group ***_consumer_group_v4
+[2025-04-06T18:11:58.655+0000] {conn.py:395} INFO - <BrokerConnection client_id=kafka-python-2.1.5, node_id=coordinator-1001 host=kafka:9093 <connecting> [IPv4 ('172.19.0.6', 9093)]>: connecting to kafka:9093 [('172.19.0.6', 9093) IPv4]
+[2025-04-06T18:11:58.656+0000] {conn.py:456} INFO - <BrokerConnection client_id=kafka-python-2.1.5, node_id=coordinator-1001 host=kafka:9093 <connected> [IPv4 ('172.19.0.6', 9093)]>: Connection complete.
+[2025-04-06T18:11:58.758+0000] {base.py:489} INFO - (Re-)joining group ***_consumer_group_v4
+[2025-04-06T18:11:58.782+0000] {base.py:552} INFO - Elected group leader -- performing partition assignments using range
+[2025-04-06T18:11:58.802+0000] {base.py:380} INFO - Successfully joined group ***_consumer_group_v4 with generation 3
+[2025-04-06T18:11:58.803+0000] {subscription_state.py:254} INFO - Updated partition assignment: [('tmdb_data', 0)]
+[2025-04-06T18:11:58.803+0000] {consumer.py:252} INFO - Setting newly assigned partitions (('tmdb_data', 0),) for group ***_consumer_group_v4
+[2025-04-06T18:11:58.862+0000] {tmdb_pipeline.py:1772} INFO - Recibido mensaje: Una película de Minecraft
+[2025-04-06T18:11:58.863+0000] {tmdb_pipeline.py:1772} INFO - Recibido mensaje: Criminales de lujo
+[2025-04-06T18:11:58.863+0000] {tmdb_pipeline.py:1772} INFO - Recibido mensaje: A Working Man
+[2025-04-06T18:11:58.864+0000] {tmdb_pipeline.py:1772} INFO - Recibido mensaje: Cleaner
+[2025-04-06T18:11:58.864+0000] {tmdb_pipeline.py:1772} INFO - Recibido mensaje: Capitán América: Brave New World
+[2025-04-06T18:11:58.864+0000] {tmdb_pipeline.py:1772} INFO - Recibido mensaje: देवा
+[2025-04-06T18:11:58.865+0000] {tmdb_pipeline.py:1772} INFO - Recibido mensaje: Pídeme lo que quieras
+[2025-04-06T18:11:58.865+0000] {tmdb_pipeline.py:1772} INFO - Recibido mensaje: Los silenciosos
+[2025-04-06T18:11:58.866+0000] {tmdb_pipeline.py:1772} INFO - Recibido mensaje: Peter Pan: Pesadilla en Nunca Jamás
+[2025-04-06T18:11:58.866+0000] {tmdb_pipeline.py:1772} INFO - Recibido mensaje: Códigos de Guerra
+[2025-04-06T18:11:58.866+0000] {tmdb_pipeline.py:1772} INFO - Recibido mensaje: Relatos Fantásticos
+[2025-04-06T18:11:58.866+0000] {tmdb_pipeline.py:1772} INFO - Recibido mensaje: Fight or Flight
+[2025-04-06T18:11:58.867+0000] {tmdb_pipeline.py:1772} INFO - Recibido mensaje: Vaiana 2
+[2025-04-06T18:11:58.867+0000] {tmdb_pipeline.py:1772} INFO - Recibido mensaje: Mufasa: El rey león
+[2025-04-06T18:11:58.867+0000] {tmdb_pipeline.py:1772} INFO - Recibido mensaje: Confidencial (Black Bag)
+[2025-04-06T18:11:58.868+0000] {tmdb_pipeline.py:1772} INFO - Recibido mensaje: Mickey 17
+[2025-04-06T18:11:58.868+0000] {tmdb_pipeline.py:1772} INFO - Recibido mensaje: Popeye the Slayer Man
+[2025-04-06T18:11:58.868+0000] {tmdb_pipeline.py:1772} INFO - Recibido mensaje: Mi lista de deseos
+[2025-04-06T18:11:58.869+0000] {tmdb_pipeline.py:1772} INFO - Recibido mensaje: Ghost Game
+[2025-04-06T18:11:58.869+0000] {tmdb_pipeline.py:1772} INFO - Recibido mensaje: Blancanieves
+[2025-04-06T18:11:58.869+0000] {tmdb_pipeline.py:1772} INFO - Recibido mensaje: La venganza de Cenicienta
+[2025-04-06T18:11:58.869+0000] {tmdb_pipeline.py:1772} INFO - Recibido mensaje: Sonic 3: La película
+[2025-04-06T18:11:58.870+0000] {tmdb_pipeline.py:1772} INFO - Recibido mensaje: Amenaza en el aire
+[2025-04-06T18:11:58.870+0000] {tmdb_pipeline.py:1772} INFO - Recibido mensaje: Contraataque
+[2025-04-06T18:11:58.870+0000] {tmdb_pipeline.py:1772} INFO - Recibido mensaje: Batman Ninja vs. Yakuza League
+[2025-04-06T18:11:58.871+0000] {tmdb_pipeline.py:1772} INFO - Recibido mensaje: El abismo secreto
+[2025-04-06T18:11:58.871+0000] {tmdb_pipeline.py:1772} INFO - Recibido mensaje: Breathing In
+[2025-04-06T18:11:58.871+0000] {tmdb_pipeline.py:1772} INFO - Recibido mensaje: Holland
+[2025-04-06T18:11:58.871+0000] {tmdb_pipeline.py:1772} INFO - Recibido mensaje: Opus
+[2025-04-06T18:11:58.872+0000] {tmdb_pipeline.py:1772} INFO - Recibido mensaje: ยูเรนัส 2324
+[2025-04-06T18:11:58.872+0000] {tmdb_pipeline.py:1772} INFO - Recibido mensaje: Oni-Goroshi: Ciudad de los demonios
+[2025-04-06T18:11:58.872+0000] {tmdb_pipeline.py:1772} INFO - Recibido mensaje: Hellhound
+[2025-04-06T18:11:58.873+0000] {tmdb_pipeline.py:1772} INFO - Recibido mensaje: Z Zone
+[2025-04-06T18:11:58.873+0000] {tmdb_pipeline.py:1772} INFO - Recibido mensaje: Kraven the Hunter
+[2025-04-06T18:11:58.873+0000] {tmdb_pipeline.py:1772} INFO - Recibido mensaje: DJ encubierto
+[2025-04-06T18:11:58.874+0000] {tmdb_pipeline.py:1772} INFO - Recibido mensaje: Amaran
+[2025-04-06T18:11:58.874+0000] {tmdb_pipeline.py:1772} INFO - Recibido mensaje: El maestro del crimen
+[2025-04-06T18:11:58.874+0000] {tmdb_pipeline.py:1772} INFO - Recibido mensaje: Venom: El último baile
+[2025-04-06T18:11:58.874+0000] {tmdb_pipeline.py:1772} INFO - Recibido mensaje: The Monkey
+[2025-04-06T18:11:58.875+0000] {tmdb_pipeline.py:1772} INFO - Recibido mensaje: Plankton, la película
+[2025-04-06T18:11:58.875+0000] {tmdb_pipeline.py:1772} INFO - Recibido mensaje: Plankton, la película
+[2025-04-06T18:11:58.875+0000] {tmdb_pipeline.py:1772} INFO - Recibido mensaje: El ejecutor
+[2025-04-06T18:11:58.876+0000] {tmdb_pipeline.py:1772} INFO - Recibido mensaje: स्काई फ़ोर्स
+[2025-04-06T18:11:58.876+0000] {tmdb_pipeline.py:1772} INFO - Recibido mensaje: Puri for Rent
+[2025-04-06T18:11:58.876+0000] {tmdb_pipeline.py:1772} INFO - Recibido mensaje: Flow, un mundo que salvar
+[2025-04-06T18:11:58.877+0000] {tmdb_pipeline.py:1772} INFO - Recibido mensaje: La venganza de Cenicienta
+[2025-04-06T18:11:58.877+0000] {tmdb_pipeline.py:1772} INFO - Recibido mensaje: Estado eléctrico
+[2025-04-06T18:11:58.877+0000] {tmdb_pipeline.py:1772} INFO - Recibido mensaje: Robot salvaje
+[2025-04-06T18:11:58.877+0000] {tmdb_pipeline.py:1772} INFO - Recibido mensaje: Deadpool y Lobezno
+[2025-04-06T18:11:58.878+0000] {tmdb_pipeline.py:1772} INFO - Recibido mensaje: Gru 4. Mi villano favorito
+[2025-04-06T18:11:58.878+0000] {tmdb_pipeline.py:1772} INFO - Recibido mensaje: Frogman
+[2025-04-06T18:11:58.878+0000] {tmdb_pipeline.py:1772} INFO - Recibido mensaje: Memorias de un caracol
+[2025-04-06T18:11:58.879+0000] {tmdb_pipeline.py:1772} INFO - Recibido mensaje: Dark Match
+[2025-04-06T18:11:58.879+0000] {tmdb_pipeline.py:1772} INFO - Recibido mensaje: Solo Leveling: ReAwakening
+[2025-04-06T18:11:58.879+0000] {tmdb_pipeline.py:1772} INFO - Recibido mensaje: El último disparo
+[2025-04-06T18:11:58.879+0000] {tmdb_pipeline.py:1772} INFO - Recibido mensaje: xXx
+[2025-04-06T18:11:58.880+0000] {tmdb_pipeline.py:1772} INFO - Recibido mensaje: Panda Plan
+[2025-04-06T18:11:58.880+0000] {tmdb_pipeline.py:1772} INFO - Recibido mensaje: Culpa mía
+[2025-04-06T18:11:58.880+0000] {tmdb_pipeline.py:1772} INFO - Recibido mensaje: Breathing In
+[2025-04-06T18:11:58.881+0000] {tmdb_pipeline.py:1772} INFO - Recibido mensaje: Anora
+[2025-04-06T18:11:58.881+0000] {tmdb_pipeline.py:1774} INFO - Se obtuvieron 60 mensajes en el intento 1
+[2025-04-06T18:11:58.893+0000] {base.py:794} INFO - Stopping heartbeat thread
+[2025-04-06T18:12:01.894+0000] {base.py:995} WARNING - Heartbeat thread did not fully terminate during close
+[2025-04-06T18:12:01.896+0000] {base.py:823} INFO - Leaving consumer group (***_consumer_group_v4).
+[2025-04-06T18:12:01.907+0000] {conn.py:936} INFO - <BrokerConnection client_id=kafka-python-2.1.5, node_id=1001 host=kafka:9093 <connected> [IPv4 ('172.19.0.6', 9093)]>: Closing connection. 
+[2025-04-06T18:12:01.908+0000] {conn.py:936} INFO - <BrokerConnection client_id=kafka-python-2.1.5, node_id=coordinator-1001 host=kafka:9093 <connected> [IPv4 ('172.19.0.6', 9093)]>: Closing connection. 
+[2025-04-06T18:12:01.908+0000] {tmdb_pipeline.py:1799} INFO - Procesando 60 mensajes recibidos
+[2025-04-06T18:12:01.929+0000] {tmdb_pipeline.py:1825} INFO - Datos procesados guardados en /opt/***/data/movie_analytics/processed_movies_latest.csv
+[2025-04-06T18:12:01.951+0000] {python.py:237} INFO - Done. Returned value was: 60
+[2025-04-06T18:12:01.952+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2025-04-06T18:12:01.968+0000] {taskinstance.py:1205} INFO - Marking task as SUCCESS. dag_id=tmdb_pipeline_optimized, task_id=process_kafka_data, execution_date=20250406T181109, start_date=20250406T181158, end_date=20250406T181201
+[2025-04-06T18:12:02.014+0000] {local_task_job_runner.py:240} INFO - Task exited with return code 0
+[2025-04-06T18:12:02.042+0000] {taskinstance.py:3482} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2025-04-06T18:12:02.043+0000] {local_task_job_runner.py:222} INFO - ::endgroup::
