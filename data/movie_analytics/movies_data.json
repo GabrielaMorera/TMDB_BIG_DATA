@@ -12,15 +12,15 @@
         "original_language": "en",
         "original_title": "A Minecraft Movie",
         "overview": "Cuatro inadaptados se encuentran luchando con problemas ordinarios cuando de repente se ven arrastrados a través de un misterioso portal al Mundo Exterior: un extraño país de las maravillas cúbico que se nutre de la imaginación. Para volver a casa, tendrán que dominar este mundo mientras se embarcan en una búsqueda mágica con un inesperado experto artesano, Steve.",
-        "popularity": 878.5405,
-        "poster_path": "/qNEmbTNjf5hVzecPq96pxGfBhbX.jpg",
+        "popularity": 990.9442,
+        "poster_path": "/mFjtmmh4RtK9tLv1aPnUsl6st3m.jpg",
         "release_date": "2025-03-31",
         "title": "Una película de Minecraft",
         "video": false,
-        "vote_average": 6.047,
-        "vote_count": 222,
+        "vote_average": 6.134,
+        "vote_count": 354,
         "budget": 150000000,
-        "revenue": 301000000,
+        "revenue": 323380122,
         "runtime": 101,
         "genres": [
             "Familia",
@@ -49,6 +49,50 @@
     },
     {
         "adult": false,
+        "backdrop_path": "/lqHt4icP1GTaNBeVTxTrwTZdoAW.jpg",
+        "genre_ids": [
+            28,
+            53,
+            9648,
+            80
+        ],
+        "id": 1195430,
+        "original_language": "hi",
+        "original_title": "देवा",
+        "overview": "",
+        "popularity": 353.3204,
+        "poster_path": "/4wKpglgZYMYpISMdThgdqS1TSQc.jpg",
+        "release_date": "2025-01-31",
+        "title": "देवा",
+        "video": false,
+        "vote_average": 5.2,
+        "vote_count": 21,
+        "budget": 9895000,
+        "revenue": 0,
+        "runtime": 155,
+        "genres": [
+            "Acción",
+            "Suspense",
+            "Misterio",
+            "Crimen"
+        ],
+        "production_companies": [
+            "Zee Studios",
+            "Roy Kapur Films"
+        ],
+        "directors": [
+            "Rosshan Andrrews"
+        ],
+        "cast": [
+            "Shahid Kapoor",
+            "Pooja Hegde",
+            "Pavail Gulati",
+            "Pravessh Rana",
+            "Girish Kulkarni"
+        ]
+    },
+    {
+        "adult": false,
         "backdrop_path": "/is9bmV6uYXu7LjZGJczxrjJDlv8.jpg",
         "genre_ids": [
             28,
@@ -58,13 +102,13 @@
         "original_language": "fr",
         "original_title": "Carjackers",
         "overview": "Por el día, son invisibles: aparcacoches, recepcionistas y camareros de un hotel de lujo. Por la noche, son criminales, una banda de conductores expertos que asalta a clientes ricos en sus coches. Justo cuando planean su último golpe, la directora del hotel contrata a un sicario despiadado para detenerlos. El peligro les acecha, ¿conseguirán Nora, Zoé, Steve y Prestance dar su mayor golpe?",
-        "popularity": 375.5975,
+        "popularity": 297.0009,
         "poster_path": "/rpAbueORafYSgTk2oSc2t6ayktb.jpg",
         "release_date": "2025-03-27",
         "title": "Criminales de lujo",
         "video": false,
-        "vote_average": 7.057,
-        "vote_count": 61,
+        "vote_average": 6.2,
+        "vote_count": 95,
         "budget": 0,
         "revenue": 0,
         "runtime": 97,
@@ -88,6 +132,172 @@
     },
     {
         "adult": false,
+        "backdrop_path": "/ce3prrjh9ZehEl5JinNqr4jIeaB.jpg",
+        "genre_ids": [
+            28,
+            53,
+            878
+        ],
+        "id": 822119,
+        "original_language": "en",
+        "original_title": "Captain America: Brave New World",
+        "overview": "Tras reunirse con el recién elegido presidente de los EE. UU., Thaddeus Ross, Sam se encuentra en medio de un incidente internacional. Debe descubrir el motivo que se esconde tras un perverso complot global, antes de que su verdadero artífice enfurezca al mundo entero.",
+        "popularity": 283.1613,
+        "poster_path": "/im71UJzBqY03swuGYVR28j0JFM2.jpg",
+        "release_date": "2025-02-12",
+        "title": "Capitán América: Brave New World",
+        "video": false,
+        "vote_average": 6.096,
+        "vote_count": 1251,
+        "budget": 180000000,
+        "revenue": 411409721,
+        "runtime": 119,
+        "genres": [
+            "Acción",
+            "Suspense",
+            "Ciencia ficción"
+        ],
+        "production_companies": [
+            "Marvel Studios",
+            "Kevin Feige Productions"
+        ],
+        "directors": [
+            "Julius Onah"
+        ],
+        "cast": [
+            "Anthony Mackie",
+            "Harrison Ford",
+            "Danny Ramirez",
+            "Shira Haas",
+            "Tim Blake Nelson"
+        ]
+    },
+    {
+        "adult": false,
+        "backdrop_path": "/gsQJOfeW45KLiQeEIsom94QPQwb.jpg",
+        "genre_ids": [
+            28,
+            53
+        ],
+        "id": 1125899,
+        "original_language": "en",
+        "original_title": "Cleaner",
+        "overview": "Después de que un grupo de activistas se apodere de la gala anual de una compañía energética para denunciar su corrupción, su justa causa es secuestrada por un extremista dispuesto a asesinar a las 300 personas presentes en el edificio para transmitir su mensaje anárquico. Una ex soldado convertida en limpiacristales, suspendida 50 pisos en el exterior del rascacielos londinense, es la encargada de intentar salvar a los que están atrapados dentro, incluido su hermano pequeño.",
+        "popularity": 263.1996,
+        "poster_path": "/76Xvdqiv8ufGkerQunOpcy98oT7.jpg",
+        "release_date": "2025-02-19",
+        "title": "Cleaner",
+        "video": false,
+        "vote_average": 6.503,
+        "vote_count": 179,
+        "budget": 0,
+        "revenue": 0,
+        "runtime": 96,
+        "genres": [
+            "Acción",
+            "Suspense"
+        ],
+        "production_companies": [
+            "Anton",
+            "Qwerty Films"
+        ],
+        "directors": [
+            "Martin Campbell"
+        ],
+        "cast": [
+            "Daisy Ridley",
+            "Clive Owen",
+            "Taz Skylar",
+            "Flavia Watson",
+            "Ray Fearon"
+        ]
+    },
+    {
+        "adult": false,
+        "backdrop_path": "/op3qmNhvwEvyT7UFyPbIfQmKriB.jpg",
+        "genre_ids": [
+            14,
+            12,
+            28
+        ],
+        "id": 324544,
+        "original_language": "en",
+        "original_title": "In the Lost Lands",
+        "overview": "Basada en el relato de George R. R. Martin. Una reina (Amara Okereke), desesperada por encontrar la felicidad en el amor, envía a la poderosa bruja Gray Alys (Milla Jovovich) a las Tierras Perdidas, en busca de un poder mágico que permite a una persona transformarse en un hombre lobo. Con el misterioso cazador Boyce (Dave Bautista), que la apoya en la lucha contra criaturas oscuras y despiadadas, Gray deambula por un mundo inquietante y peligroso. Pero solo ella sabe que, cada deseo que se concede, tiene consecuencias inimaginables.",
+        "popularity": 534.2664,
+        "poster_path": "/sLDxndoqFWwJEq7iEdYQBzPjUDQ.jpg",
+        "release_date": "2025-02-27",
+        "title": "Tierras perdidas",
+        "video": false,
+        "vote_average": 6.1,
+        "vote_count": 49,
+        "budget": 55000000,
+        "revenue": 4755330,
+        "runtime": 102,
+        "genres": [
+            "Fantasía",
+            "Aventura",
+            "Acción"
+        ],
+        "production_companies": [
+            "Constantin Film",
+            "Spark Productions"
+        ],
+        "directors": [
+            "Paul W. S. Anderson"
+        ],
+        "cast": [
+            "Milla Jovovich",
+            "Dave Bautista",
+            "Arly Jover",
+            "Amara Okereke",
+            "Fraser James"
+        ]
+    },
+    {
+        "adult": false,
+        "backdrop_path": "/qiVrapzgrDO7c6yQTSvn0dhwsn8.jpg",
+        "genre_ids": [
+            10749,
+            18
+        ],
+        "id": 1252309,
+        "original_language": "es",
+        "original_title": "Pídeme lo que quieras",
+        "overview": "Judith Flores es una chica normal. Tiene un trabajo que le apasiona, muy buenos amigos y un padre encantador. Pero su vida cambia radicalmente cuando conoce a Eric Zimmerman, dueño de la empresa donde ella trabaja. Su relación con Eric está a punto de dinamitar su vida por completo.",
+        "popularity": 257.2234,
+        "poster_path": "/76qnVxU2rPdVvipBN3DPQH6fVYB.jpg",
+        "release_date": "2024-11-29",
+        "title": "Pídeme lo que quieras",
+        "video": false,
+        "vote_average": 5.754,
+        "vote_count": 124,
+        "budget": 0,
+        "revenue": 0,
+        "runtime": 114,
+        "genres": [
+            "Romance",
+            "Drama"
+        ],
+        "production_companies": [
+            "Versus Entertainment",
+            "LyO Media",
+            "Warner Bros. Entertainment España",
+            "4 Cats Pictures"
+        ],
+        "directors": [
+            "Lucía Alemany"
+        ],
+        "cast": [
+            "Gabriela Andrada",
+            "Mario Ermito",
+            "Celia Freijeiro",
+            "David Solans",
+            "Alba Ribas"
+        ]
+    },
+    {
+        "adult": false,
         "backdrop_path": "/xBrx6O1RIhjtWmVthZIANuQz7Z2.jpg",
         "genre_ids": [
             28,
@@ -98,13 +308,13 @@
         "original_language": "en",
         "original_title": "A Working Man",
         "overview": "Levon Cade dejó atrás una condecorada carrera militar en las operaciones encubiertas para vivir una vida sencilla trabajando en la construcción. Pero cuando la hija de su jefe, que para él es como de la familia, es secuestrada por traficantes de personas, su búsqueda para traerla a casa descubre un mundo de corrupción mucho mayor de lo que jamás podría haber imaginado.",
-        "popularity": 340.7598,
+        "popularity": 215.8897,
         "poster_path": "/aG50Ad3UV8cCQWpNWSHHUqgKGNB.jpg",
         "release_date": "2025-03-26",
         "title": "A Working Man",
         "video": false,
-        "vote_average": 6.853,
-        "vote_count": 133,
+        "vote_average": 6.402,
+        "vote_count": 169,
         "budget": 40000000,
         "revenue": 44417000,
         "runtime": 116,
@@ -135,290 +345,92 @@
     },
     {
         "adult": false,
-        "backdrop_path": "/gsQJOfeW45KLiQeEIsom94QPQwb.jpg",
+        "backdrop_path": "/hGLywNhy1Fo1rNFHsNZsXGS69B8.jpg",
         "genre_ids": [
-            28,
-            53
+            878,
+            35,
+            12
         ],
-        "id": 1125899,
+        "id": 696506,
         "original_language": "en",
-        "original_title": "Cleaner",
-        "overview": "Después de que un grupo de activistas se apodere de la gala anual de una compañía energética para denunciar su corrupción, su justa causa es secuestrada por un extremista dispuesto a asesinar a las 300 personas presentes en el edificio para transmitir su mensaje anárquico. Una ex soldado convertida en limpiacristales, suspendida 50 pisos en el exterior del rascacielos londinense, es la encargada de intentar salvar a los que están atrapados dentro, incluido su hermano pequeño.",
-        "popularity": 336.5277,
-        "poster_path": "/76Xvdqiv8ufGkerQunOpcy98oT7.jpg",
-        "release_date": "2025-02-19",
-        "title": "Cleaner",
+        "original_title": "Mickey 17",
+        "overview": "Mickey 17, un miembro de la tripulación 'expendable' (prescindible) enviado a un planeta helado para colonizarlo, se niega a dejar que su clon de reemplazo, Mickey 18, tome su lugar... Adaptación del libro original de Edward Ashton.",
+        "popularity": 241.9858,
+        "poster_path": "/fjIHkLGIZdjKIKe252gSFt5QzVK.jpg",
+        "release_date": "2025-02-28",
+        "title": "Mickey 17",
         "video": false,
-        "vote_average": 6.776,
-        "vote_count": 161,
-        "budget": 0,
-        "revenue": 0,
-        "runtime": 96,
+        "vote_average": 7.0,
+        "vote_count": 1328,
+        "budget": 118000000,
+        "revenue": 122908117,
+        "runtime": 137,
         "genres": [
-            "Acción",
-            "Suspense"
+            "Ciencia ficción",
+            "Comedia",
+            "Aventura"
         ],
         "production_companies": [
-            "Anton",
-            "Qwerty Films"
+            "Warner Bros. Pictures",
+            "Plan B Entertainment",
+            "Offscreen",
+            "Kate Street Picture Company",
+            "Domain Entertainment"
         ],
         "directors": [
-            "Martin Campbell"
+            "Bong Joon-ho"
         ],
         "cast": [
-            "Daisy Ridley",
-            "Clive Owen",
-            "Taz Skylar",
-            "Flavia Watson",
-            "Ray Fearon"
+            "Robert Pattinson",
+            "Naomi Ackie",
+            "Steven Yeun",
+            "Mark Ruffalo",
+            "Toni Collette"
         ]
     },
     {
         "adult": false,
-        "backdrop_path": "/8eifdha9GQeZAkexgtD45546XKx.jpg",
+        "backdrop_path": "/fzv87rT0jlAkh5Uf9PpIlUj6Nj8.jpg",
         "genre_ids": [
             28,
             53,
-            878
-        ],
-        "id": 822119,
-        "original_language": "en",
-        "original_title": "Captain America: Brave New World",
-        "overview": "Tras reunirse con el recién elegido presidente de los EE. UU., Thaddeus Ross, Sam se encuentra en medio de un incidente internacional. Debe descubrir el motivo que se esconde tras un perverso complot global, antes de que su verdadero artífice enfurezca al mundo entero.",
-        "popularity": 302.1208,
-        "poster_path": "/im71UJzBqY03swuGYVR28j0JFM2.jpg",
-        "release_date": "2025-02-12",
-        "title": "Capitán América: Brave New World",
-        "video": false,
-        "vote_average": 6.119,
-        "vote_count": 1212,
-        "budget": 180000000,
-        "revenue": 411409721,
-        "runtime": 119,
-        "genres": [
-            "Acción",
-            "Suspense",
-            "Ciencia ficción"
-        ],
-        "production_companies": [
-            "Marvel Studios",
-            "Kevin Feige Productions"
-        ],
-        "directors": [
-            "Julius Onah"
-        ],
-        "cast": [
-            "Anthony Mackie",
-            "Harrison Ford",
-            "Danny Ramirez",
-            "Shira Haas",
-            "Tim Blake Nelson"
-        ]
-    },
-    {
-        "adult": false,
-        "backdrop_path": "/lqHt4icP1GTaNBeVTxTrwTZdoAW.jpg",
-        "genre_ids": [
-            28,
-            53,
-            9648,
             80
         ],
-        "id": 1195430,
-        "original_language": "hi",
-        "original_title": "देवा",
+        "id": 1195585,
+        "original_language": "en",
+        "original_title": "The Hard Hit",
         "overview": "",
-        "popularity": 286.6674,
-        "poster_path": "/4wKpglgZYMYpISMdThgdqS1TSQc.jpg",
-        "release_date": "2025-01-31",
-        "title": "देवा",
+        "popularity": 230.7625,
+        "poster_path": "/cQVLFGqzQwFTesSdKsQy1no0Wf4.jpg",
+        "release_date": "2023-10-20",
+        "title": "The Hard Hit",
         "video": false,
-        "vote_average": 6.8,
-        "vote_count": 5,
-        "budget": 9895000,
+        "vote_average": 7.5,
+        "vote_count": 4,
+        "budget": 0,
         "revenue": 0,
-        "runtime": 155,
+        "runtime": 76,
         "genres": [
             "Acción",
             "Suspense",
-            "Misterio",
             "Crimen"
         ],
         "production_companies": [
-            "Zee Studios",
-            "Roy Kapur Films"
+            "Dbuck Films",
+            "Irish Productions",
+            "Ohlsen Productions",
+            "Tc Photography"
         ],
         "directors": [
-            "Rosshan Andrrews"
+            "Omie Blue",
+            "Darien Smith"
         ],
         "cast": [
-            "Shahid Kapoor",
-            "Pooja Hegde",
-            "Pavail Gulati",
-            "Pravessh Rana",
-            "Girish Kulkarni"
-        ]
-    },
-    {
-        "adult": false,
-        "backdrop_path": "/qiVrapzgrDO7c6yQTSvn0dhwsn8.jpg",
-        "genre_ids": [
-            10749,
-            18
-        ],
-        "id": 1252309,
-        "original_language": "es",
-        "original_title": "Pídeme lo que quieras",
-        "overview": "Judith Flores es una chica normal. Tiene un trabajo que le apasiona, muy buenos amigos y un padre encantador. Pero su vida cambia radicalmente cuando conoce a Eric Zimmerman, dueño de la empresa donde ella trabaja. Su relación con Eric está a punto de dinamitar su vida por completo.",
-        "popularity": 285.6244,
-        "poster_path": "/76qnVxU2rPdVvipBN3DPQH6fVYB.jpg",
-        "release_date": "2024-11-29",
-        "title": "Pídeme lo que quieras",
-        "video": false,
-        "vote_average": 6.027,
-        "vote_count": 110,
-        "budget": 0,
-        "revenue": 0,
-        "runtime": 114,
-        "genres": [
-            "Romance",
-            "Drama"
-        ],
-        "production_companies": [
-            "Versus Entertainment",
-            "LyO Media",
-            "Warner Bros. Entertainment España",
-            "4 Cats Pictures"
-        ],
-        "directors": [
-            "Lucía Alemany"
-        ],
-        "cast": [
-            "Gabriela Andrada",
-            "Mario Ermito",
-            "Celia Freijeiro",
-            "David Solans",
-            "Alba Ribas"
-        ]
-    },
-    {
-        "adult": false,
-        "backdrop_path": "/9OO6I25MHhCDd0XwNk4oZl0fpwB.jpg",
-        "genre_ids": [
-            28,
-            18
-        ],
-        "id": 1261050,
-        "original_language": "da",
-        "original_title": "De lydløse",
-        "overview": "En 2008, un grupo de hombres de Dinamarca y Europa lleva a cabo el mayor atraco de todos los tiempos en suelo danés. Kasper, un boxeador con pocas oportunidades en la vida, recibe la oferta de sus iniciadores extranjeros para planear el robo.",
-        "popularity": 259.1733,
-        "poster_path": "/ywHCbLbTremCJBiHRa63rlrXmWs.jpg",
-        "release_date": "2024-10-31",
-        "title": "Los silenciosos",
-        "video": false,
-        "vote_average": 6.1,
-        "vote_count": 20,
-        "budget": 0,
-        "revenue": 0,
-        "runtime": 110,
-        "genres": [
-            "Acción",
-            "Drama"
-        ],
-        "production_companies": [
-            "Zentropa Entertainments",
-            "Film i Väst",
-            "Zentropa International Sweden",
-            "Kazak Productions",
-            "Zentropa International France"
-        ],
-        "directors": [
-            "Frederik Louis Hviid"
-        ],
-        "cast": [
-            "Gustav Dyekjær Giese",
-            "Reda Kateb",
-            "Amanda Collin",
-            "Christopher Wagelin",
-            "Jens Hultén"
-        ]
-    },
-    {
-        "adult": false,
-        "backdrop_path": "/nhx0ttmAS2w8e6hyIcKoNvgHoix.jpg",
-        "genre_ids": [
-            27,
-            53,
-            14
-        ],
-        "id": 1020414,
-        "original_language": "en",
-        "original_title": "Peter Pan's Neverland Nightmare",
-        "overview": "Sigue a Wendy Darling en su intento de rescatar a su hermano Michael de \"las garras del malvado Peter Pan\". Por el camino conoce a Campanilla, que en esta retorcida versión del cuento se verá tomando heroína, convencida de que es polvo de hadas. La famosa historia de Peter Pan reinventada como un film de terror por Jagged Edge Productions, productora de \"Winnie the Pooh: Blood and Honey\".",
-        "popularity": 237.4173,
-        "poster_path": "/m5jtX2J0VswgslOyx04l4edo3nJ.jpg",
-        "release_date": "2025-01-13",
-        "title": "Peter Pan: Pesadilla en Nunca Jamás",
-        "video": false,
-        "vote_average": 6.121,
-        "vote_count": 33,
-        "budget": 250000,
-        "revenue": 315648,
-        "runtime": 89,
-        "genres": [
-            "Terror",
-            "Suspense",
-            "Fantasía"
-        ],
-        "production_companies": [
-            "Jagged Edge Productions"
-        ],
-        "directors": [
-            "Scott Chambers"
-        ],
-        "cast": [
-            "Martin Portlock",
-            "Megan Placito",
-            "Kit Green",
-            "Peter DeSouza-Feighoney",
-            "Charity Kase"
-        ]
-    },
-    {
-        "adult": false,
-        "backdrop_path": "/ibF5XVxTzf1ayzZrmiJqgeQ39Qk.jpg",
-        "genre_ids": [
-            28,
-            10752
-        ],
-        "id": 1373723,
-        "original_language": "en",
-        "original_title": "The Codes of War",
-        "overview": "Las historias de guerra sobre la familia, la ética y el honor incluyen la historia real de dos marines estadounidenses que, en un lapso de seis segundos, deben mantenerse firmes para detener un camión bomba suicida, un soldado de la Marina que intenta aferrarse a su humanidad y un soldado de la Segunda Guerra Mundial que se separa de su escuadrón y se ve obligado a reevaluar su código.",
-        "popularity": 218.6954,
-        "poster_path": "/oXeiQAfRK90pxxhP5iKPXQqAIN1.jpg",
-        "release_date": "2025-03-20",
-        "title": "Códigos de Guerra",
-        "video": false,
-        "vote_average": 7.328,
-        "vote_count": 29,
-        "budget": 0,
-        "revenue": 0,
-        "runtime": 92,
-        "genres": [
-            "Acción",
-            "Bélica"
-        ],
-        "production_companies": [],
-        "directors": [
-            "Paul Anderson",
-            "Joshua DeFour",
-            "Marielle Woods"
-        ],
-        "cast": [
-            "Noah Gray-Cabey",
-            "Michael Grant"
+            "Brian Ronan Mulroy",
+            "Jamie Ohlsen",
+            "Malachi Durant",
+            "Rob LaColla Jr.",
+            "Trae Ireland"
         ]
     }
 ]

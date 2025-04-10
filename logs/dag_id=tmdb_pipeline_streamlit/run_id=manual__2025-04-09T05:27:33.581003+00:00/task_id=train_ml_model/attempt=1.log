@@ -1,0 +1,63 @@
+[2025-04-09T05:30:41.515+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2025-04-09T05:30:41.541+0000] {taskinstance.py:2073} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: tmdb_pipeline_streamlit.train_ml_model manual__2025-04-09T05:27:33.581003+00:00 [queued]>
+[2025-04-09T05:30:41.551+0000] {taskinstance.py:2073} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: tmdb_pipeline_streamlit.train_ml_model manual__2025-04-09T05:27:33.581003+00:00 [queued]>
+[2025-04-09T05:30:41.551+0000] {taskinstance.py:2303} INFO - Starting attempt 1 of 2
+[2025-04-09T05:30:41.565+0000] {taskinstance.py:2327} INFO - Executing <Task(PythonOperator): train_ml_model> on 2025-04-09 05:27:33.581003+00:00
+[2025-04-09T05:30:41.575+0000] {standard_task_runner.py:63} INFO - Started process 417 to run task
+[2025-04-09T05:30:41.578+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'tmdb_pipeline_streamlit', 'train_ml_model', 'manual__2025-04-09T05:27:33.581003+00:00', '--job-id', '971', '--raw', '--subdir', 'DAGS_FOLDER/tmdb_pipeline.py', '--cfg-path', '/tmp/tmpnere3lz5']
+[2025-04-09T05:30:41.581+0000] {standard_task_runner.py:91} INFO - Job 971: Subtask train_ml_model
+[2025-04-09T05:30:41.626+0000] {task_command.py:426} INFO - Running <TaskInstance: tmdb_pipeline_streamlit.train_ml_model manual__2025-04-09T05:27:33.581003+00:00 [running]> on host a24902f77b45
+[2025-04-09T05:30:41.718+0000] {taskinstance.py:2644} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='tmdb_pipeline_streamlit' AIRFLOW_CTX_TASK_ID='train_ml_model' AIRFLOW_CTX_EXECUTION_DATE='2025-04-09T05:27:33.581003+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-04-09T05:27:33.581003+00:00'
+[2025-04-09T05:30:41.720+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2025-04-09T05:30:41.751+0000] {tmdb_pipeline.py:1514} INFO - Datos leídos de PostgreSQL (movie_data_warehouse): 188 películas
+[2025-04-09T05:30:41.751+0000] {tmdb_pipeline.py:1547} INFO - Columnas disponibles: ['tmdb_id', 'title', 'release_date', 'popularity', 'vote_average', 'vote_count', 'budget', 'revenue', 'runtime', 'genre', 'director', 'roi', 'popularity_level', 'rating_level', 'release_year']
+[2025-04-09T05:30:41.781+0000] {tmdb_pipeline.py:1548} INFO - Primeras filas:
+   tmdb_id               title  ... rating_level  release_year
+0  1229730  Criminales de lujo  ...        Buena          2025
+1  1229730  Criminales de lujo  ...        Buena          2025
+
+[2 rows x 15 columns]
+[2025-04-09T05:30:41.781+0000] {tmdb_pipeline.py:1551} INFO - Iniciando preprocesamiento de datos...
+[2025-04-09T05:30:41.790+0000] {tmdb_pipeline.py:1620} INFO - Target creado: 'success_score' combinando popularidad, calificación y ROI
+[2025-04-09T05:30:41.793+0000] {tmdb_pipeline.py:1627} INFO - Estadísticas del target: min=11.34, max=68.06, mean=33.67, median=26.76
+[2025-04-09T05:30:41.793+0000] {tmdb_pipeline.py:1648} INFO - Características seleccionadas: ['budget_million', 'revenue_million', 'runtime', 'vote_count', 'vote_average', 'release_year', 'main_genre']
+[2025-04-09T05:30:41.794+0000] {tmdb_pipeline.py:1649} INFO - Características categóricas: ['main_genre']
+[2025-04-09T05:30:41.797+0000] {tmdb_pipeline.py:1663} INFO - Dataset final: 168 muestras, 7 características
+[2025-04-09T05:30:41.802+0000] {tmdb_pipeline.py:1713} INFO - Entrenando modelo XGBoost...
+[2025-04-09T05:30:42.069+0000] {tmdb_pipeline.py:1723} INFO - Rendimiento del modelo básico:
+[2025-04-09T05:30:42.070+0000] {tmdb_pipeline.py:1724} INFO - - R² Score: 0.9724
+[2025-04-09T05:30:42.073+0000] {tmdb_pipeline.py:1725} INFO - - MSE: 8.9520
+[2025-04-09T05:30:42.074+0000] {tmdb_pipeline.py:1726} INFO - - RMSE: 2.9920
+[2025-04-09T05:30:42.076+0000] {tmdb_pipeline.py:1727} INFO - - MAE: 1.2925
+[2025-04-09T05:30:42.076+0000] {tmdb_pipeline.py:1731} INFO - Iniciando optimización de hiperparámetros con RandomizedSearchCV...
+[2025-04-09T05:30:42.368+0000] {logging_mixin.py:188} INFO - Fitting 5 folds for each of 20 candidates, totalling 100 fits
+[2025-04-09T05:31:07.651+0000] {tmdb_pipeline.py:1772} INFO - Rendimiento del modelo optimizado:
+[2025-04-09T05:31:07.654+0000] {tmdb_pipeline.py:1773} INFO - - R² Score: 0.9791 (mejora: 0.0067)
+[2025-04-09T05:31:07.656+0000] {tmdb_pipeline.py:1774} INFO - - MSE: 6.7839
+[2025-04-09T05:31:07.657+0000] {tmdb_pipeline.py:1775} INFO - - RMSE: 2.6046
+[2025-04-09T05:31:07.659+0000] {tmdb_pipeline.py:1776} INFO - - MAE: 1.5316
+[2025-04-09T05:31:07.660+0000] {tmdb_pipeline.py:1782} INFO - Se utilizará el modelo optimizado
+[2025-04-09T05:31:07.672+0000] {tmdb_pipeline.py:1848} ERROR - Error al extraer importancia de características: list index out of range
+[2025-04-09T05:31:07.675+0000] {tmdb_pipeline.py:1849} ERROR - Traceback (most recent call last):
+  File "/opt/***/dags/tmdb_pipeline.py", line 1810, in train_ml_model
+    transformer = preprocessor.transformers_[len(numeric_features) + i][1]
+                  ~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^
+IndexError: list index out of range
+
+[2025-04-09T05:31:07.705+0000] {tmdb_pipeline.py:1910} INFO - Modelo guardado en: /opt/***/data/movie_analytics/xgb_model_20250409_053107
+[2025-04-09T05:31:07.727+0000] {tmdb_pipeline.py:1910} INFO - Modelo guardado en: /opt/***/data/movie_analytics/xgb_model_latest
+[2025-04-09T05:31:07.760+0000] {tmdb_pipeline.py:1910} INFO - Modelo guardado en: /opt/***/data/movie_analytics/xgb_model_latest
+[2025-04-09T05:31:07.784+0000] {tmdb_pipeline.py:1910} INFO - Modelo guardado en: /opt/***/data/latest_xgboost_model
+[2025-04-09T05:31:07.812+0000] {tmdb_pipeline.py:1910} INFO - Modelo guardado en: /opt/***/data/public_models
+[2025-04-09T05:31:07.818+0000] {tmdb_pipeline.py:1934} INFO - Archivo de ubicación creado: /opt/***/data/movie_analytics/model_location.txt
+[2025-04-09T05:31:07.820+0000] {tmdb_pipeline.py:1934} INFO - Archivo de ubicación creado: /opt/***/data/model_location.txt
+[2025-04-09T05:31:07.821+0000] {tmdb_pipeline.py:1934} INFO - Archivo de ubicación creado: model_location.txt
+[2025-04-09T05:31:07.824+0000] {tmdb_pipeline.py:1946} INFO - Archivo de señalización creado: /opt/***/data/movie_analytics/model_ready.txt
+[2025-04-09T05:31:07.826+0000] {tmdb_pipeline.py:1946} INFO - Archivo de señalización creado: /opt/***/data/model_ready.txt
+[2025-04-09T05:31:07.852+0000] {tmdb_pipeline.py:1956} INFO - Modelo entrenado exitosamente: R² = 0.9791
+[2025-04-09T05:31:07.853+0000] {python.py:237} INFO - Done. Returned value was: /opt/***/data/movie_analytics/xgb_model_20250409_053107
+[2025-04-09T05:31:07.853+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2025-04-09T05:31:07.870+0000] {taskinstance.py:1205} INFO - Marking task as SUCCESS. dag_id=tmdb_pipeline_streamlit, task_id=train_ml_model, execution_date=20250409T052733, start_date=20250409T053041, end_date=20250409T053107
+[2025-04-09T05:31:07.899+0000] {local_task_job_runner.py:240} INFO - Task exited with return code 0
+[2025-04-09T05:31:07.929+0000] {taskinstance.py:3482} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2025-04-09T05:31:07.932+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

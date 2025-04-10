@@ -1,0 +1,34 @@
+[2025-04-08T03:42:31.390+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2025-04-08T03:42:31.412+0000] {taskinstance.py:2073} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: tmdb_pipeline_streamlit.store_ml_model manual__2025-04-08T03:38:55.380630+00:00 [queued]>
+[2025-04-08T03:42:31.428+0000] {taskinstance.py:2073} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: tmdb_pipeline_streamlit.store_ml_model manual__2025-04-08T03:38:55.380630+00:00 [queued]>
+[2025-04-08T03:42:31.429+0000] {taskinstance.py:2303} INFO - Starting attempt 1 of 2
+[2025-04-08T03:42:31.444+0000] {taskinstance.py:2327} INFO - Executing <Task(PythonOperator): store_ml_model> on 2025-04-08 03:38:55.380630+00:00
+[2025-04-08T03:42:31.454+0000] {standard_task_runner.py:63} INFO - Started process 463 to run task
+[2025-04-08T03:42:31.457+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'tmdb_pipeline_streamlit', 'store_ml_model', 'manual__2025-04-08T03:38:55.380630+00:00', '--job-id', '677', '--raw', '--subdir', 'DAGS_FOLDER/tmdb_pipeline.py', '--cfg-path', '/tmp/tmpusz5z07i']
+[2025-04-08T03:42:31.461+0000] {standard_task_runner.py:91} INFO - Job 677: Subtask store_ml_model
+[2025-04-08T03:42:31.508+0000] {task_command.py:426} INFO - Running <TaskInstance: tmdb_pipeline_streamlit.store_ml_model manual__2025-04-08T03:38:55.380630+00:00 [running]> on host 61cd43315408
+[2025-04-08T03:42:31.609+0000] {taskinstance.py:2644} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='tmdb_pipeline_streamlit' AIRFLOW_CTX_TASK_ID='store_ml_model' AIRFLOW_CTX_EXECUTION_DATE='2025-04-08T03:38:55.380630+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-04-08T03:38:55.380630+00:00'
+[2025-04-08T03:42:31.610+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2025-04-08T03:42:31.653+0000] {tmdb_pipeline.py:151} INFO - Removed previous model file: data/movie_analytics/xgb_model_latest/model_final.pkl
+[2025-04-08T03:42:31.654+0000] {tmdb_pipeline.py:151} INFO - Removed previous model file: data/movie_analytics/xgb_model_latest/metrics.json
+[2025-04-08T03:42:31.655+0000] {tmdb_pipeline.py:151} INFO - Removed previous model file: data/movie_analytics/xgb_model_latest/residuals_distribution.png
+[2025-04-08T03:42:31.656+0000] {tmdb_pipeline.py:151} INFO - Removed previous model file: data/movie_analytics/xgb_model_latest/predictions_vs_actual.png
+[2025-04-08T03:42:31.657+0000] {tmdb_pipeline.py:151} INFO - Removed previous model file: data/movie_analytics/xgb_model_latest/feature_importance.csv
+[2025-04-08T03:42:31.658+0000] {tmdb_pipeline.py:151} INFO - Removed previous model file: data/movie_analytics/xgb_model_latest/model.pkl
+[2025-04-08T03:42:31.659+0000] {tmdb_pipeline.py:151} INFO - Removed previous model file: data/movie_analytics/xgb_model_latest/residuals.png
+[2025-04-08T03:42:31.660+0000] {tmdb_pipeline.py:151} INFO - Removed previous model file: data/movie_analytics/xgb_model_latest/feature_importance.png
+[2025-04-08T03:42:31.669+0000] {tmdb_pipeline.py:162} INFO - Copied /opt/***/data/movie_analytics/ensemble_model_20250408_034223/model_final.pkl to data/movie_analytics/xgb_model_latest/model_final.pkl with permissions 666
+[2025-04-08T03:42:31.673+0000] {tmdb_pipeline.py:162} INFO - Copied /opt/***/data/movie_analytics/ensemble_model_20250408_034223/metrics.json to data/movie_analytics/xgb_model_latest/metrics.json with permissions 666
+[2025-04-08T03:42:31.679+0000] {tmdb_pipeline.py:162} INFO - Copied /opt/***/data/movie_analytics/ensemble_model_20250408_034223/residuals_distribution.png to data/movie_analytics/xgb_model_latest/residuals_distribution.png with permissions 666
+[2025-04-08T03:42:31.684+0000] {tmdb_pipeline.py:162} INFO - Copied /opt/***/data/movie_analytics/ensemble_model_20250408_034223/predictions_vs_actual.png to data/movie_analytics/xgb_model_latest/predictions_vs_actual.png with permissions 666
+[2025-04-08T03:42:31.689+0000] {tmdb_pipeline.py:162} INFO - Copied /opt/***/data/movie_analytics/ensemble_model_20250408_034223/feature_importance.csv to data/movie_analytics/xgb_model_latest/feature_importance.csv with permissions 666
+[2025-04-08T03:42:31.694+0000] {tmdb_pipeline.py:162} INFO - Copied /opt/***/data/movie_analytics/ensemble_model_20250408_034223/model.pkl to data/movie_analytics/xgb_model_latest/model.pkl with permissions 666
+[2025-04-08T03:42:31.700+0000] {tmdb_pipeline.py:162} INFO - Copied /opt/***/data/movie_analytics/ensemble_model_20250408_034223/residuals.png to data/movie_analytics/xgb_model_latest/residuals.png with permissions 666
+[2025-04-08T03:42:31.705+0000] {tmdb_pipeline.py:162} INFO - Copied /opt/***/data/movie_analytics/ensemble_model_20250408_034223/feature_importance.png to data/movie_analytics/xgb_model_latest/feature_importance.png with permissions 666
+[2025-04-08T03:42:31.705+0000] {tmdb_pipeline.py:164} INFO - Model stored permanently in data/movie_analytics/xgb_model_latest
+[2025-04-08T03:42:31.706+0000] {python.py:237} INFO - Done. Returned value was: data/movie_analytics/xgb_model_latest
+[2025-04-08T03:42:31.706+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2025-04-08T03:42:31.729+0000] {taskinstance.py:1205} INFO - Marking task as SUCCESS. dag_id=tmdb_pipeline_streamlit, task_id=store_ml_model, execution_date=20250408T033855, start_date=20250408T034231, end_date=20250408T034231
+[2025-04-08T03:42:31.760+0000] {local_task_job_runner.py:240} INFO - Task exited with return code 0
+[2025-04-08T03:42:31.791+0000] {taskinstance.py:3482} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2025-04-08T03:42:31.792+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

@@ -1,0 +1,25 @@
+[2025-04-08T13:52:47.769+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2025-04-08T13:52:47.794+0000] {taskinstance.py:2073} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: tmdb_pipeline_streamlit.setup_environment manual__2025-04-08T13:52:41.470398+00:00 [queued]>
+[2025-04-08T13:52:47.802+0000] {taskinstance.py:2073} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: tmdb_pipeline_streamlit.setup_environment manual__2025-04-08T13:52:41.470398+00:00 [queued]>
+[2025-04-08T13:52:47.802+0000] {taskinstance.py:2303} INFO - Starting attempt 1 of 2
+[2025-04-08T13:52:47.816+0000] {taskinstance.py:2327} INFO - Executing <Task(PythonOperator): setup_environment> on 2025-04-08 13:52:41.470398+00:00
+[2025-04-08T13:52:47.844+0000] {standard_task_runner.py:63} INFO - Started process 248 to run task
+[2025-04-08T13:52:47.849+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'tmdb_pipeline_streamlit', 'setup_environment', 'manual__2025-04-08T13:52:41.470398+00:00', '--job-id', '734', '--raw', '--subdir', 'DAGS_FOLDER/tmdb_pipeline.py', '--cfg-path', '/tmp/tmpg6nntbhf']
+[2025-04-08T13:52:47.855+0000] {standard_task_runner.py:91} INFO - Job 734: Subtask setup_environment
+[2025-04-08T13:52:47.916+0000] {task_command.py:426} INFO - Running <TaskInstance: tmdb_pipeline_streamlit.setup_environment manual__2025-04-08T13:52:41.470398+00:00 [running]> on host ae9950461d91
+[2025-04-08T13:52:48.047+0000] {taskinstance.py:2644} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='tmdb_pipeline_streamlit' AIRFLOW_CTX_TASK_ID='setup_environment' AIRFLOW_CTX_EXECUTION_DATE='2025-04-08T13:52:41.470398+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-04-08T13:52:41.470398+00:00'
+[2025-04-08T13:52:48.048+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2025-04-08T13:52:48.087+0000] {tmdb_pipeline.py:1565} INFO - Directorio de datos creado: /opt/***/data/movie_analytics
+[2025-04-08T13:52:48.089+0000] {tmdb_pipeline.py:1571} INFO - Subdirectorio creado: /opt/***/data/movie_analytics/visualizations
+[2025-04-08T13:52:48.090+0000] {tmdb_pipeline.py:1571} INFO - Subdirectorio creado: /opt/***/data/movie_analytics/ml_models
+[2025-04-08T13:52:48.090+0000] {tmdb_pipeline.py:1571} INFO - Subdirectorio creado: /opt/***/data/movie_analytics/raw_data
+[2025-04-08T13:52:48.091+0000] {tmdb_pipeline.py:1571} INFO - Subdirectorio creado: /opt/***/data/movie_analytics/processed_data
+[2025-04-08T13:52:48.092+0000] {tmdb_pipeline.py:1580} INFO - Dependencias principales verificadas correctamente
+[2025-04-08T13:52:48.101+0000] {tmdb_pipeline.py:1595} INFO - Conexión a PostgreSQL verificada correctamente
+[2025-04-08T13:52:48.113+0000] {tmdb_pipeline.py:1551} INFO - Tablas creadas o verificadas correctamente en PostgreSQL
+[2025-04-08T13:52:48.114+0000] {python.py:237} INFO - Done. Returned value was: Entorno configurado correctamente
+[2025-04-08T13:52:48.115+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2025-04-08T13:52:48.142+0000] {taskinstance.py:1205} INFO - Marking task as SUCCESS. dag_id=tmdb_pipeline_streamlit, task_id=setup_environment, execution_date=20250408T135241, start_date=20250408T135247, end_date=20250408T135248
+[2025-04-08T13:52:48.195+0000] {local_task_job_runner.py:240} INFO - Task exited with return code 0
+[2025-04-08T13:52:48.231+0000] {taskinstance.py:3482} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2025-04-08T13:52:48.232+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

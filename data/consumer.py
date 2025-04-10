@@ -18,6 +18,22 @@ from datetime import datetime
 import traceback
 import glob
 import pickle
+import re
+from sklearn.model_selection import train_test_split, GridSearchCV
+from sklearn.preprocessing import StandardScaler, OneHotEncoder
+from sklearn.compose import ColumnTransformer
+from sklearn.pipeline import Pipeline
+from sklearn.ensemble import GradientBoostingRegressor, RandomForestRegressor
+from sklearn.linear_model import ElasticNet
+from sklearn.metrics import mean_squared_error, r2_score, mean_absolute_error
+from sklearn.feature_selection import SelectFromModel
+from sklearn.impute import SimpleImputer
+import matplotlib.cm as cm
+import matplotlib.gridspec as gridspec
+import plotly.express as px
+import plotly.graph_objects as go
+from wordcloud import WordCloud
+import xgboost as xgb
 
 warnings.filterwarnings('ignore')
 
@@ -32,7 +48,7 @@ logger = logging.getLogger(__name__)
 KAFKA_TOPIC = "tmdb_data"
 KAFKA_BROKER = "localhost:9092"  # Usa localhost si estás ejecutando fuera de Docker
 
-# Configuración de PostgreSQL (ajustada para conexión correcta)
+# Configuración de PostgreSQL
 POSTGRES_DB = "postgres"
 POSTGRES_USER = "postgres"
 POSTGRES_PASSWORD = "Villeta-11"  # Agregada la contraseña correcta
@@ -168,7 +184,7 @@ class MovieAnalyzer:
             heartbeat_interval_ms=10000
         )
 
-                # Cargar el modelo más reciente
+        # Cargar el modelo más reciente
         logger.info("Buscando el modelo más reciente...")
         model_dir = self.get_most_recent_model_dir()
         if model_dir:
@@ -179,6 +195,7 @@ class MovieAnalyzer:
                 logger.info(f"Modelo cargado desde: {model_path}")
             else:
                 logger.warning("No se encontró el archivo 'model.pkl' en el directorio más reciente.")
+                self.model = None
         else:
             logger.warning("No se encontró ningún directorio de modelo.")
             self.model = None
@@ -217,6 +234,9 @@ class MovieAnalyzer:
             'data/movie_analytics/ml_model_v3_*',
             'data/movie_analytics/ml_model_v2_*',
             'data/movie_analytics/ml_model_*',
+            'data/movie_analytics/xgb_model_*',
+            'data/movie_analytics/gb_model_*',
+            'data/movie_analytics/ensemble_model_*',
         ]
         all_model_paths = []
         for pattern in search_patterns:
@@ -453,6 +473,16 @@ class MovieAnalyzer:
             if col not in df.columns:
                 df[col] = None
         
+        # Limpiar y estandarizar fechas de lanzamiento
+        if 'release_date' in df.columns:
+            df['release_year'] = pd.to_datetime(df['release_date'], errors='coerce').dt.year.fillna(0).astype(int)
+        
+        # Convertir valores numéricos
+        numerical_cols = ['budget', 'revenue', 'popularity', 'vote_count', 'vote_average', 'runtime']
+        for col in numerical_cols:
+            if col in df.columns:
+                df[col] = pd.to_numeric(df[col], errors='coerce').fillna(0)
+        
         return df
     
     def calculate_metrics(self, df):
@@ -463,23 +493,37 @@ class MovieAnalyzer:
             axis=1
         )
         
-        # Categorizar películas por popularidad
-        conditions = [
-            (df['popularity'] > 20),
-            (df['popularity'] > 10),
-            (df['popularity'] > 5)
-        ]
-        choices = ['Alta', 'Media', 'Baja']
-        df['popularity_category'] = np.select(conditions, choices, default='Muy Baja')
+        # Calcular ratio ingresos/presupuesto
+        df['revenue_budget_ratio'] = df.apply(
+            lambda row: row['revenue'] / row['budget'] if row['budget'] > 0 else 0,
+            axis=1
+        )
+        
+        # Calcular score de impacto (combinación de popularidad y valoración)
+        df['impact_score'] = (df['popularity'] * 0.6) + (df['vote_average'] * 10 * 0.4)
+        
+        # Calcular score comercial (combinación de ingresos y ROI)
+        df['commercial_score'] = df.apply(
+            lambda row: (np.log1p(row['revenue']) * 0.7) + (min(row['roi'], 10) * 30 * 0.3),
+            axis=1
+        )
+        
+        # Categorizar películas por popularidad usando cuartiles
+        pop_quartiles = [0, 5, 10, 20, float('inf')]
+        pop_labels = ['Muy Baja', 'Baja', 'Media', 'Alta']
+        df['popularity_category'] = pd.cut(df['popularity'], bins=pop_quartiles, labels=pop_labels, right=False)
         
         # Categorizar por calificación
-        conditions = [
-            (df['vote_average'] >= 8),
-            (df['vote_average'] >= 6),
-            (df['vote_average'] >= 4)
-        ]
-        choices = ['Excelente', 'Buena', 'Regular']
-        df['rating_category'] = np.select(conditions, choices, default='Mala')
+        rating_quartiles = [0, 4, 6, 8, 10]
+        rating_labels = ['Mala', 'Regular', 'Buena', 'Excelente']
+        df['rating_category'] = pd.cut(df['vote_average'], bins=rating_quartiles, labels=rating_labels, right=False)
+        
+        # Convertir categorías a string para compatibilidad con la base de datos
+        df['popularity_category'] = df['popularity_category'].astype(str)
+        df['rating_category'] = df['rating_category'].astype(str)
+        
+        # Calcular índice de rentabilidad
+        df['is_profitable'] = df['revenue'] > df['budget']
         
         return df
     
@@ -570,9 +614,9 @@ class MovieAnalyzer:
         try:
             # Extraer año de lanzamiento
             release_year = None
-            if movie_data.get('release_date') and len(movie_data.get('release_date')) >= 4:
+            if movie_data.get('release_date') and len(str(movie_data.get('release_date'))) >= 4:
                 try:
-                    release_year = int(movie_data.get('release_date')[:4])
+                    release_year = int(str(movie_data.get('release_date'))[:4])
                 except:
                     pass
             
@@ -661,6 +705,32 @@ class MovieAnalyzer:
                 FROM movie_data_warehouse
                 GROUP BY genre
                 ORDER BY count DESC;
+            """,
+            "Correlación presupuesto-ingresos": """
+                SELECT title, budget/1000000 as budget_millions, revenue/1000000 as revenue_millions, 
+                       popularity, vote_average
+                FROM movies
+                WHERE budget > 0 AND revenue > 0
+                ORDER BY budget DESC
+                LIMIT 30;
+            """,
+            "Distribución por año": """
+                SELECT 
+                    EXTRACT(YEAR FROM TO_DATE(release_date, 'YYYY-MM-DD')) as year,
+                    COUNT(*) as movie_count,
+                    AVG(popularity) as avg_popularity,
+                    AVG(vote_average) as avg_rating
+                FROM movies
+                WHERE release_date IS NOT NULL AND release_date != ''
+                GROUP BY year
+                ORDER BY year DESC;
+            """,
+            "Películas de mayor impacto": """
+                SELECT title, (popularity * 0.6 + vote_average * 10 * 0.4) as impact_score,
+                       popularity, vote_average, release_date
+                FROM movies
+                ORDER BY impact_score DESC
+                LIMIT 15;
             """
         }
         
@@ -674,203 +744,836 @@ class MovieAnalyzer:
                 except Exception as e:
                     logger.error(f"Error en consulta '{name}': {e}")
         
+        # Consulta adicional para obtener todos los datos para análisis avanzado
+        try:
+            all_movies_query = """
+                SELECT m.tmdb_id, m.title, m.release_date, m.popularity, m.vote_average, 
+                       m.vote_count, m.budget, m.revenue, m.runtime, 
+                       string_agg(DISTINCT g.name, ',') as genres
+                FROM movies m
+                LEFT JOIN movie_genres mg ON m.id = mg.movie_id
+                LEFT JOIN genres g ON mg.genre_id = g.id
+                GROUP BY m.tmdb_id, m.title, m.release_date, m.popularity, m.vote_average, 
+                         m.vote_count, m.budget, m.revenue, m.runtime
+            """
+            with self.engine.connect() as conn:
+                all_movies = pd.read_sql(all_movies_query, conn)
+                results["all_movies"] = all_movies
+                logger.info(f"Datos completos obtenidos: {len(all_movies)} películas")
+        except Exception as e:
+            logger.error(f"Error al obtener datos completos: {e}")
+        
         return results
     
     def generate_visualizations(self, results, batch_number):
-        """Genera visualizaciones a partir de los resultados del análisis."""
+        """Genera visualizaciones avanzadas a partir de los resultados del análisis."""
         logger.info("Generando visualizaciones...")
         output_path = f"{OUTPUT_DIR}/batch_{batch_number}"
         os.makedirs(output_path, exist_ok=True)
         
         # Visualización 1: Top 10 películas por popularidad
-        if "Top 10 películas por popularidad" in results:
-            plt.figure(figsize=(12, 8))
+        if "Top 10 películas por popularidad" in results and not results["Top 10 películas por popularidad"].empty:
+            plt.figure(figsize=(14, 8))
             df = results["Top 10 películas por popularidad"]
             
-            if not df.empty:
-                sns.barplot(x='popularity', y='title', data=df)
-                plt.title('Top 10 Películas por Popularidad')
-                plt.tight_layout()
-                plt.savefig(f"{output_path}/top_peliculas_popularidad.png")
-                plt.close()
-                logger.info(f"Gráfico 'Top 10 películas por popularidad' guardado")
+            # Crear paleta de colores basada en la calificación
+            colors = plt.cm.viridis(df['vote_average'] / 10)
+            
+            ax = sns.barplot(x='popularity', y='title', data=df, palette=colors)
+            
+            # Añadir valores de popularidad y calificación
+            for i, (pop, rating) in enumerate(zip(df['popularity'], df['vote_average'])):
+                ax.text(pop + 0.5, i, f"Pop: {pop:.1f} | Rating: {rating:.1f}", va='center')
+            
+            plt.title('Top 10 Películas por Popularidad', fontsize=16, fontweight='bold')
+            plt.xlabel('Índice de Popularidad', fontsize=12)
+            plt.ylabel('Película', fontsize=12)
+            plt.tight_layout()
+            plt.savefig(f"{output_path}/top_peliculas_popularidad.png", dpi=300, bbox_inches='tight')
+            plt.close()
+            logger.info(f"Gráfico 'Top 10 películas por popularidad' guardado")
+            
+            # Gráfico interactivo con Plotly
+            try:
+                fig = px.bar(
+                    df, x='popularity', y='title', 
+                    color='vote_average', color_continuous_scale='viridis',
+                    hover_data=['vote_count'],
+                    labels={'popularity': 'Índice de Popularidad', 'title': 'Película', 
+                            'vote_average': 'Calificación', 'vote_count': 'Total de Votos'},
+                    title='Top 10 Películas por Popularidad'
+                )
+                fig.update_layout(yaxis={'categoryorder': 'total ascending'})
+                fig.write_html(f"{output_path}/top_peliculas_popularidad_interactive.html")
+            except Exception as e:
+                logger.error(f"Error al crear gráfico interactivo: {e}")
         
         # Visualización 2: Géneros más populares
-        if "Géneros más populares" in results:
+        if "Géneros más populares" in results and not results["Géneros más populares"].empty:
             plt.figure(figsize=(14, 8))
             df = results["Géneros más populares"]
             
-            if not df.empty:
-                sns.barplot(x='movie_count', y='name', data=df)
-                plt.title('Géneros más Populares por Número de Películas')
-                plt.tight_layout()
-                plt.savefig(f"{output_path}/generos_populares.png")
-                plt.close()
-                
-                # Segunda visualización de géneros
-                plt.figure(figsize=(14, 8))
-                sns.scatterplot(x='movie_count', y='avg_rating', size='movie_count', 
-                               sizes=(50, 400), data=df)
-                for _, row in df.iterrows():
-                    plt.text(row['movie_count'], row['avg_rating'], row['name'])
-                plt.title('Relación entre Cantidad de Películas y Valoración Media por Género')
-                plt.xlabel('Cantidad de Películas')
-                plt.ylabel('Valoración Media')
-                plt.tight_layout()
-                plt.savefig(f"{output_path}/generos_valoracion.png")
-                plt.close()
-                logger.info(f"Gráficos de géneros guardados")
-        
-        # Visualización 3: Análisis del data warehouse
-        if "Análisis de data warehouse" in results:
-            plt.figure(figsize=(14, 8))
-            df = results["Análisis de data warehouse"]
+            # Paleta de colores basada en la calificación media
+            colors = plt.cm.plasma(df['avg_rating'] / 10)
             
-            if not df.empty:
-                # Filtrar solo los géneros principales para mejor visualización
-                top_genres = df.head(10)
+            ax = sns.barplot(x='movie_count', y='name', data=df, palette=colors)
+            
+            # Añadir calificación media como texto
+            for i, rating in enumerate(df['avg_rating']):
+                ax.text(df['movie_count'].iloc[i] + 0.5, i, f"Rating: {rating:.1f}", va='center')
+            
+            plt.title('Géneros Cinematográficos por Popularidad', fontsize=16, fontweight='bold')
+            plt.xlabel('Número de Películas', fontsize=12)
+            plt.ylabel('Género', fontsize=12)
+            plt.tight_layout()
+            plt.savefig(f"{output_path}/generos_popularidad.png", dpi=300, bbox_inches='tight')
+            plt.close()
+            
+            # Gráfico de burbujas para relación entre cantidad y calificación
+            plt.figure(figsize=(14, 10))
+            
+            # Calcular el tamaño de las burbujas (normalizado)
+            sizes = df['movie_count'] / df['movie_count'].max() * 1000
+            
+            scatter = plt.scatter(df['movie_count'], df['avg_rating'], 
+                                  s=sizes, c=range(len(df)), cmap='viridis', alpha=0.7)
+            
+            # Añadir etiquetas a cada burbuja
+            for i, name in enumerate(df['name']):
+                plt.annotate(name, (df['movie_count'].iloc[i], df['avg_rating'].iloc[i]),
+                            ha='center', va='center', fontsize=9, fontweight='bold')
+            
+            plt.title('Relación entre Cantidad de Películas y Calificación Media por Género', fontsize=16, fontweight='bold')
+            plt.xlabel('Cantidad de Películas', fontsize=12)
+            plt.ylabel('Calificación Media', fontsize=12)
+            plt.grid(True, linestyle='--', alpha=0.7)
+            plt.tight_layout()
+            plt.savefig(f"{output_path}/generos_calificacion_burbujas.png", dpi=300, bbox_inches='tight')
+            plt.close()
+            
+            logger.info(f"Gráficos de géneros guardados")
+            
+            # Nube de palabras para géneros
+            try:
+                wordcloud = WordCloud(width=800, height=400, background_color='white', 
+                                      colormap='viridis', max_words=100)
                 
-                # Gráfico de barras para cantidad de películas por género
-                plt.subplot(1, 2, 1)
-                sns.barplot(x='count', y='genre', data=top_genres)
-                plt.title('Número de Películas por Género')
+                genre_freq = dict(zip(df['name'], df['movie_count']))
+                wordcloud.generate_from_frequencies(genre_freq)
                 
-                # Gráfico de barras para valoración media por género
-                plt.subplot(1, 2, 2)
-                sns.barplot(x='avg_rating', y='genre', data=top_genres)
-                plt.title('Valoración Media por Género')
-                
+                plt.figure(figsize=(16, 8))
+                plt.imshow(wordcloud, interpolation='bilinear')
+                plt.axis('off')
+                plt.title('Nube de Palabras de Géneros Cinematográficos', fontsize=16, fontweight='bold')
                 plt.tight_layout()
-                plt.savefig(f"{output_path}/analisis_warehouse.png")
+                plt.savefig(f"{output_path}/generos_nube.png", dpi=300, bbox_inches='tight')
                 plt.close()
-                logger.info(f"Gráfico de análisis del data warehouse guardado")
+            except Exception as e:
+                logger.error(f"Error al crear nube de palabras: {e}")
+        
+        # Visualización 3: Correlación presupuesto-ingresos
+        if "Correlación presupuesto-ingresos" in results and not results["Correlación presupuesto-ingresos"].empty:
+            plt.figure(figsize=(14, 10))
+            df = results["Correlación presupuesto-ingresos"]
+            
+            # Gráfico de dispersión con línea de tendencia
+            sns.set_style("whitegrid")
+            scatter = sns.regplot(x='budget_millions', y='revenue_millions', data=df, 
+                                 scatter_kws={'s': df['popularity']*5, 'alpha': 0.7},
+                                 line_kws={'color': 'red'})
+            
+            # Colorear puntos según calificación
+            scatter_plot = plt.scatter(df['budget_millions'], df['revenue_millions'], 
+                                      s=df['popularity']*5, c=df['vote_average'], 
+                                      cmap='viridis', alpha=0.7)
+            
+            # Añadir barra de color
+            cbar = plt.colorbar(scatter_plot)
+            cbar.set_label('Calificación (0-10)', fontsize=10)
+            
+            # Marcar la línea de equilibrio (ingresos = presupuesto)
+            max_val = max(df['budget_millions'].max(), df['revenue_millions'].max())
+            plt.plot([0, max_val], [0, max_val], 'k--', alpha=0.5, label='Punto de equilibrio')
+            
+            # Anotar algunas películas destacadas
+            for i, row in df.iterrows():
+                if (row['revenue_millions'] > row['budget_millions']*3) or (row['budget_millions'] > 100):
+                    plt.annotate(row['title'], (row['budget_millions'], row['revenue_millions']),
+                                fontsize=8, ha='center', va='bottom', 
+                                bbox=dict(boxstyle='round,pad=0.3', fc='yellow', alpha=0.3))
+            
+            plt.title('Relación entre Presupuesto e Ingresos de Películas', fontsize=16, fontweight='bold')
+            plt.xlabel('Presupuesto (Millones $)', fontsize=12)
+            plt.ylabel('Ingresos (Millones $)', fontsize=12)
+            plt.legend()
+            plt.tight_layout()
+            plt.savefig(f"{output_path}/presupuesto_ingresos.png", dpi=300, bbox_inches='tight')
+            plt.close()
+            logger.info(f"Gráfico de correlación presupuesto-ingresos guardado")
+        
+        # Visualización 4: Análisis de películas de mayor impacto
+        if "Películas de mayor impacto" in results and not results["Películas de mayor impacto"].empty:
+            plt.figure(figsize=(14, 10))
+            df = results["Películas de mayor impacto"].head(10)  # Top 10
+            
+            # Crear gráfico horizontal con impacto desglosado
+            plt.figure(figsize=(14, 10))
+            
+            # Preparar datos desglosados
+            df = df.sort_values('impact_score', ascending=True)  # Para que la mayor esté arriba
+            popularity_contribution = df['popularity'] * 0.6
+            rating_contribution = df['vote_average'] * 10 * 0.4
+            
+            # Crear barras apiladas
+            x_pos = range(len(df))
+            plt.barh(x_pos, popularity_contribution, color='#1976D2', alpha=0.8, label='Contribución de Popularidad')
+            plt.barh(x_pos, rating_contribution, left=popularity_contribution, color='#FFC107', alpha=0.8, 
+                    label='Contribución de Calificación')
+            
+            # Añadir títulos de películas
+            plt.yticks(x_pos, df['title'])
+            
+            # Añadir texto de valores
+            for i, row in enumerate(df.itertuples()):
+                # Texto para popularidad
+                plt.text(popularity_contribution.iloc[i]/2, i, f"Pop: {row.popularity:.1f}", 
+                        ha='center', va='center', fontsize=9, fontweight='bold', color='white')
+                
+                # Texto para calificación
+                plt.text(popularity_contribution.iloc[i] + rating_contribution.iloc[i]/2, i, f"Rating: {row.vote_average:.1f}", 
+                        ha='center', va='center', fontsize=9, fontweight='bold', color='black')
+                
+                # Texto para score total
+                plt.text(row.impact_score + 1, i, f"Score: {row.impact_score:.1f}", 
+                        ha='left', va='center', fontsize=10)
+            
+            plt.title('Top 10 Películas de Mayor Impacto', fontsize=16, fontweight='bold')
+            plt.xlabel('Score de Impacto (Contribución de Popularidad + Calificación)', fontsize=12)
+            plt.legend(loc='lower right')
+            plt.grid(axis='x', linestyle='--', alpha=0.3)
+            plt.tight_layout()
+            plt.savefig(f"{output_path}/peliculas_mayor_impacto.png", dpi=300, bbox_inches='tight')
+            plt.close()
+            logger.info(f"Gráfico de películas de mayor impacto guardado")
+        
+        # Visualización 5: Distribución por año
+        if "Distribución por año" in results and not results["Distribución por año"].empty:
+            plt.figure(figsize=(16, 10))
+            df = results["Distribución por año"]
+            
+            # Filtrar años válidos y recientes
+            df = df[df['year'] > 1950].sort_values('year')
+            
+            # Crear figura con dos subplots
+            fig, (ax1, ax2) = plt.subplots(2, 1, figsize=(16, 12), sharex=True)
+            
+            # Gráfico 1: Cantidad de películas por año
+            ax1.plot(df['year'], df['movie_count'], 'b-o', linewidth=2, markersize=6)
+            ax1.set_ylabel('Número de Películas', fontsize=12, color='blue')
+            ax1.tick_params(axis='y', labelcolor='blue')
+            ax1.grid(True, linestyle='--', alpha=0.3)
+            ax1.set_title('Evolución del Cine a lo Largo del Tiempo', fontsize=16, fontweight='bold')
+            
+            # Gráfico 2: Popularidad y calificación media por año
+            ax2.plot(df['year'], df['avg_popularity'], 'r-o', linewidth=2, markersize=6, label='Popularidad Media')
+            
+            # Añadir segundo eje Y para calificación
+            ax3 = ax2.twinx()
+            ax3.plot(df['year'], df['avg_rating'], 'g-o', linewidth=2, markersize=6, label='Calificación Media')
+            
+            # Configurar ejes
+            ax2.set_xlabel('Año', fontsize=12)
+            ax2.set_ylabel('Popularidad Media', fontsize=12, color='red')
+            ax3.set_ylabel('Calificación Media', fontsize=12, color='green')
+            
+            ax2.tick_params(axis='y', labelcolor='red')
+            ax3.tick_params(axis='y', labelcolor='green')
+            
+            # Añadir leyenda combinada
+            lines1, labels1 = ax2.get_legend_handles_labels()
+            lines2, labels2 = ax3.get_legend_handles_labels()
+            ax2.legend(lines1 + lines2, labels1 + labels2, loc='upper left')
+            
+            ax2.grid(True, linestyle='--', alpha=0.3)
+            
+            # Mejorar apariencia
+            plt.tight_layout()
+            fig.subplots_adjust(hspace=0.1)
+            
+            # Guardar figura
+            plt.savefig(f"{output_path}/evolucion_cine.png", dpi=300, bbox_inches='tight')
+            plt.close()
+            logger.info(f"Gráfico de evolución del cine guardado")
+        
+        # Visualización 6: Panel de métricas generales si tenemos todos los datos
+        if "all_movies" in results and not results["all_movies"].empty:
+            df = results["all_movies"].copy()
+            
+            # Limpiar y transformar datos
+            df['release_year'] = pd.to_datetime(df['release_date'], errors='coerce').dt.year
+            df = df.dropna(subset=['release_year'])
+            df['release_year'] = df['release_year'].astype(int)
+            
+            # Calcular ROI y otras métricas
+            df['roi'] = df.apply(lambda x: (x['revenue'] - x['budget'])/x['budget'] if x['budget'] > 0 else 0, axis=1)
+            df['is_profitable'] = df['revenue'] > df['budget']
+            
+            # Crear figura con subplots
+            fig = plt.figure(figsize=(20, 20))
+            gs = gridspec.GridSpec(3, 2, figure=fig)
+            
+            # 1. Distribución de popularidad
+            ax1 = fig.add_subplot(gs[0, 0])
+            sns.histplot(df['popularity'], bins=30, kde=True, color='blue', ax=ax1)
+            ax1.set_title('Distribución de Popularidad', fontsize=14, fontweight='bold')
+            ax1.set_xlabel('Popularidad', fontsize=12)
+            ax1.set_ylabel('Frecuencia', fontsize=12)
+            
+            # 2. Distribución de calificaciones
+            ax2 = fig.add_subplot(gs[0, 1])
+            sns.histplot(df['vote_average'], bins=20, kde=True, color='green', ax=ax2)
+            ax2.set_title('Distribución de Calificaciones', fontsize=14, fontweight='bold')
+            ax2.set_xlabel('Calificación', fontsize=12)
+            ax2.set_ylabel('Frecuencia', fontsize=12)
+            
+            # 3. Scatter plot presupuesto vs ingresos con ROI
+            ax3 = fig.add_subplot(gs[1, 0])
+            profitable = df[df['is_profitable']]
+            unprofitable = df[~df['is_profitable']]
+            
+            # Limitar a películas con presupuesto >0 para evitar distorsiones
+            profitable = profitable[profitable['budget'] > 0]
+            unprofitable = unprofitable[unprofitable['budget'] > 0]
+            
+            # Convertir a millones para mejor visualización
+            ax3.scatter(profitable['budget']/1e6, profitable['revenue']/1e6, label='Rentable', 
+                       alpha=0.6, c='green', s=30)
+            ax3.scatter(unprofitable['budget']/1e6, unprofitable['revenue']/1e6, label='No Rentable', 
+                       alpha=0.6, c='red', s=30)
+            
+            # Línea de equilibrio
+            max_val = max(df['budget'].max(), df['revenue'].max()) / 1e6
+            ax3.plot([0, max_val], [0, max_val], 'k--', alpha=0.5)
+            
+            ax3.set_title('Presupuesto vs Ingresos', fontsize=14, fontweight='bold')
+            ax3.set_xlabel('Presupuesto (Millones $)', fontsize=12)
+            ax3.set_ylabel('Ingresos (Millones $)', fontsize=12)
+            ax3.legend()
+            ax3.grid(True, alpha=0.3)
+            
+            # 4. Boxplot de popularidad por género
+            ax4 = fig.add_subplot(gs[1, 1])
+            
+            # Procesar géneros (están en formato de lista como string)
+            genre_data = []
+            for _, row in df.iterrows():
+                if pd.notna(row['genres']) and row['genres']:
+                    genres = row['genres'].split(',')
+                    for genre in genres:
+                        if genre.strip():
+                            genre_data.append({
+                                'title': row['title'],
+                                'genre': genre.strip(),
+                                'popularity': row['popularity'],
+                                'vote_average': row['vote_average']
+                            })
+            
+            if genre_data:
+                genre_df = pd.DataFrame(genre_data)
+                
+                # Agregar por género y obtener los principales
+                top_genres = genre_df.groupby('genre')['popularity'].count().reset_index()
+                top_genres = top_genres.sort_values('popularity', ascending=False).head(10)['genre'].tolist()
+                
+                # Filtrar solo los géneros principales
+                genre_df_filtered = genre_df[genre_df['genre'].isin(top_genres)]
+                
+                # Crear boxplot
+                sns.boxplot(x='genre', y='popularity', data=genre_df_filtered, ax=ax4)
+                ax4.set_title('Distribución de Popularidad por Género', fontsize=14, fontweight='bold')
+                ax4.set_xlabel('Género', fontsize=12)
+                ax4.set_ylabel('Popularidad', fontsize=12)
+                ax4.tick_params(axis='x', rotation=45)
+            
+            # 5. Evolución de calificaciones por año
+            ax5 = fig.add_subplot(gs[2, 0])
+            
+            # Agrupar por año
+            year_data = df.groupby('release_year').agg({
+                'popularity': 'mean',
+                'vote_average': 'mean',
+                'vote_count': 'mean',
+                'budget': 'mean',
+                'revenue': 'mean',
+                'tmdb_id': 'count'
+            }).reset_index()
+            
+            year_data = year_data[(year_data['release_year'] >= 1980) & (year_data['release_year'] <= 2023)]
+            
+            ax5.plot(year_data['release_year'], year_data['vote_average'], 'b-o', linewidth=2)
+            ax5.set_title('Evolución de Calificaciones por Año', fontsize=14, fontweight='bold')
+            ax5.set_xlabel('Año', fontsize=12)
+            ax5.set_ylabel('Calificación Media', fontsize=12)
+            ax5.grid(True, alpha=0.3)
+            
+            # 6. Relación entre número de votos y calificación
+            ax6 = fig.add_subplot(gs[2, 1])
+            ax6.scatter(df['vote_count'], df['vote_average'], alpha=0.5, c=df['popularity'], cmap='viridis')
+            ax6.set_title('Relación entre Número de Votos y Calificación', fontsize=14, fontweight='bold')
+            ax6.set_xlabel('Número de Votos', fontsize=12)
+            ax6.set_ylabel('Calificación', fontsize=12)
+            ax6.set_xscale('log')  # Escala logarítmica para mejor visualización
+            ax6.grid(True, alpha=0.3)
+            
+            # Ajustar espaciado y guardar
+            plt.tight_layout()
+            plt.savefig(f"{output_path}/dashboard_metricas.png", dpi=300, bbox_inches='tight')
+            plt.close()
+            logger.info(f"Dashboard de métricas guardado")
         
         logger.info(f"Visualizaciones guardadas en {output_path}")
         return output_path
     
     def train_ml_model(self, results, batch_number):
-        """Entrena un modelo de Machine Learning para predecir el éxito de películas."""
-        from sklearn.model_selection import train_test_split
-        from sklearn.ensemble import RandomForestRegressor
-        from sklearn.metrics import mean_squared_error, r2_score
-        import pickle
-        import ast
-
-        logger.info("Entrenando modelo de ML para predicción de éxito de películas...")
+        """Entrena modelos avanzados de Machine Learning para predecir el éxito de películas."""
+        logger.info("Entrenando modelos avanzados para predicción de éxito de películas...")
         output_path = f"{OUTPUT_DIR}/batch_{batch_number}"
         os.makedirs(output_path, exist_ok=True)
 
-        query = """
-            SELECT m.tmdb_id, m.title, m.popularity, m.vote_average, m.vote_count, 
-                m.budget, m.revenue, m.runtime, m.release_date, 
-                m.genres, m.original_language, 
-                CASE WHEN m.budget > 0 THEN m.revenue::float / m.budget ELSE 0 END AS roi
-            FROM movies m
-            WHERE m.vote_count > 0
-        """
-
-        try:
-            with self.engine.connect() as conn:
-                df = pd.read_sql(query, conn)
-
-            if len(df) < 10:
-                logger.warning("No hay suficientes datos para entrenar un modelo")
+        # Si no tenemos datos completos, intentamos obtenerlos
+        if "all_movies" not in results or results["all_movies"].empty:
+            try:
+                with self.engine.connect() as conn:
+                    query = """
+                        SELECT 
+                            m.tmdb_id, m.title, m.release_date, m.popularity, m.vote_average, 
+                            m.vote_count, m.budget, m.revenue, m.runtime, genre, director,
+                            roi, popularity_level, rating_level, release_year
+                        FROM movie_data_warehouse m
+                    """
+                    all_movies = pd.read_sql(query, conn)
+                    results["all_movies"] = all_movies
+                    logger.info(f"Datos completos obtenidos: {len(all_movies)} películas")
+            except Exception as e:
+                logger.error(f"Error al obtener datos completos: {e}")
+                logger.error(traceback.format_exc())
                 return None
 
-            logger.info(f"Datos cargados para entrenamiento: {len(df)} registros")
+        df = results["all_movies"]
+        
+        if len(df) < 20:
+            logger.warning("No hay suficientes datos para entrenar un modelo robusto")
+            return None
 
-            # Procesamiento de columnas adicionales
-            df['release_year'] = pd.to_datetime(df['release_date'], errors='coerce').dt.year.fillna(0).astype(int)
-            df['roi'] = df['roi'].clip(0, 10)
-
-            # Extraer género principal
-            def extract_main_genre(g):
-                try:
-                    genres = ast.literal_eval(g)
-                    return genres[0]['name'] if genres else 'Unknown'
-                except:
-                    return 'Unknown'
-
-            df['genre_main'] = df['genres'].apply(extract_main_genre)
-
-            # Crear target: éxito ponderado
+        try:
+            # Preprocesamiento de datos
+            logger.info("Iniciando preprocesamiento de datos...")
+            
+            # Limpiar y transformar datos
+            df = df.copy()
+            df = df.fillna(0)
+            
+            # Convertir a tipos numéricos apropiados
+            numeric_cols = ['popularity', 'vote_average', 'vote_count', 'budget', 'revenue', 'runtime', 'roi']
+            for col in numeric_cols:
+                if col in df.columns:
+                    df[col] = pd.to_numeric(df[col], errors='coerce').fillna(0)
+            
+            # Extraer o asegurar que tenemos año de lanzamiento
+            if 'release_year' not in df.columns and 'release_date' in df.columns:
+                df['release_year'] = pd.to_datetime(df['release_date'], errors='coerce').dt.year
+                df['release_year'] = df['release_year'].fillna(2000).astype(int)
+            elif 'release_year' in df.columns:
+                df['release_year'] = pd.to_numeric(df['release_year'], errors='coerce').fillna(2000).astype(int)
+            
+            # Crear características adicionales para el modelo
+            df['budget_million'] = df['budget'] / 1_000_000
+            df['revenue_million'] = df['revenue'] / 1_000_000
+            
+            # Asegurar que tenemos el género principal como 'main_genre'
+            if 'main_genre' not in df.columns:
+                if 'genre' in df.columns:
+                    df['main_genre'] = df['genre'].fillna('Unknown')
+                elif 'genres' in df.columns:
+                    # Si genres es una cadena separada por comas
+                    if isinstance(df['genres'].iloc[0], str):
+                        df['main_genre'] = df['genres'].apply(lambda x: x.split(',')[0].strip() if pd.notna(x) and x else 'Unknown')
+                    # Si genres es una lista
+                    elif isinstance(df['genres'].iloc[0], list):
+                        df['main_genre'] = df['genres'].apply(lambda x: x[0] if x and len(x) > 0 else 'Unknown')
+                    else:
+                        df['main_genre'] = 'Unknown'
+                else:
+                    df['main_genre'] = 'Unknown'
+            
+            # Crear una métrica compuesta de éxito
+            # Primero normalizar componentes entre 0 y 1
+            pop_max = df['popularity'].max()
+            rating_max = 10  # Escala estándar
+            roi_max = df['roi'].clip(0, 3).max()  # Limitar ROI extremos
+            
+            df['popularity_norm'] = df['popularity'] / pop_max if pop_max > 0 else df['popularity']
+            df['rating_norm'] = df['vote_average'] / rating_max
+            df['roi_norm'] = df['roi'].clip(0, 3) / 3  # Normalizar ROI y recortar valores extremos
+            
+            # Métrica compuesta con pesos ajustados
             df['success_score'] = (
-                df['popularity'] * 0.4 +
-                df['vote_average'] * 10 * 0.3 +
-                df['roi'] * 0.3
-            )
-
-            # Variables predictoras
-            features = [
-                'budget', 'runtime', 'vote_count', 'revenue',
-                'release_year', 'roi', 'original_language', 'genre_main'
-            ]
-
-            df = df[features + ['success_score', 'title']].fillna(0)
-
-            # Codificación de variables categóricas
-            df = pd.get_dummies(df, columns=['original_language', 'genre_main'], drop_first=True)
-
-            X = df.drop(columns=['success_score', 'title'])
+                0.5 * df['popularity_norm'] + 
+                0.3 * df['rating_norm'] + 
+                0.2 * df['roi_norm']
+            ) * 100  # Escalar a 0-100 para mejor interpretación
+            
+            # Filtrar filas con valores válidos
+            df = df.dropna(subset=['success_score'])
+            df = df[df['vote_count'] > 10]  # Filtrar películas con pocos votos
+            
+            if len(df) < 20:
+                logger.warning("Datos insuficientes después de filtrar")
+                return None
+            
+            # Seleccionar características para el modelo
+            features = []
+            
+            # Añadir características numéricas disponibles
+            for feature in ['budget_million', 'revenue_million', 'runtime', 'vote_count', 
+                        'vote_average', 'release_year']:
+                if feature in df.columns:
+                    features.append(feature)
+            
+            # Añadir características categóricas
+            categorical_features = []
+            if 'main_genre' in df.columns:
+                categorical_features.append('main_genre')
+                features.append('main_genre')
+            
+            # Separar variables y target
+            X = df[features]
             y = df['success_score']
-
-            # Entrenamiento y prueba
+            
+            # Dividir en conjuntos de entrenamiento y prueba
             X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
-
-            model = RandomForestRegressor(n_estimators=100, random_state=42)
-            model.fit(X_train, y_train)
-
-            # Evaluación
-            y_pred = model.predict(X_test)
-            mse = mean_squared_error(y_test, y_pred)
+            
+            logger.info(f"Datos de entrenamiento: {X_train.shape[0]} muestras, {X_train.shape[1]} características")
+            
+            # Preprocesadores para diferentes tipos de características
+            numeric_features = [f for f in features if f not in categorical_features]
+            
+            # Crear preprocesadores
+            numeric_transformer = Pipeline(steps=[
+                ('imputer', SimpleImputer(strategy='median')),
+                ('scaler', StandardScaler())
+            ])
+            
+            transformers = [('num', numeric_transformer, numeric_features)]
+            
+            if categorical_features:
+                categorical_transformer = Pipeline(steps=[
+                    ('imputer', SimpleImputer(strategy='constant', fill_value='Unknown')),
+                    ('onehot', OneHotEncoder(handle_unknown='ignore'))
+                ])
+                transformers.append(('cat', categorical_transformer, categorical_features))
+            
+            # Combinar preprocesadores
+            preprocessor = ColumnTransformer(transformers=transformers)
+            
+            # Modelo XGBoost optimizado
+            xgb_model = xgb.XGBRegressor(
+                objective='reg:squarederror',
+                n_estimators=300,
+                max_depth=6,
+                learning_rate=0.03,
+                subsample=0.8,
+                colsample_bytree=0.8,
+                min_child_weight=3,
+                gamma=0.1,
+                reg_alpha=0.1,  # Regularización L1
+                reg_lambda=1.0,  # Regularización L2
+                random_state=42
+            )
+            
+            # Crear pipeline completo
+            pipeline = Pipeline(steps=[
+                ('preprocessor', preprocessor),
+                ('model', xgb_model)
+            ])
+            
+            # Entrenar el modelo
+            logger.info("Entrenando modelo XGBoost...")
+            pipeline.fit(X_train, y_train)
+            
+            # Evaluar modelo en conjunto de prueba
+            y_pred = pipeline.predict(X_test)
             r2 = r2_score(y_test, y_pred)
-
-            logger.info(f"Métricas del modelo - MSE: {mse:.4f}, R²: {r2:.4f}")
-
+            mse = mean_squared_error(y_test, y_pred)
+            mae = mean_absolute_error(y_test, y_pred)
+            rmse = np.sqrt(mse)
+            
+            logger.info(f"Rendimiento del modelo:")
+            logger.info(f"- R² Score: {r2:.4f}")
+            logger.info(f"- MSE: {mse:.4f}")
+            logger.info(f"- RMSE: {rmse:.4f}")
+            logger.info(f"- MAE: {mae:.4f}")
+            
+            # Extraer información de importancia de características
+            try:
+                # Obtener el modelo del pipeline
+                model = pipeline.named_steps['model']
+                
+                # Preprocesar datos para obtener nombres de características
+                preprocessor = pipeline.named_steps['preprocessor']
+                X_transformed = preprocessor.transform(X_train)
+                
+                # Obtener nombres de características
+                all_feature_names = []
+                
+                # Para características numéricas
+                for name in numeric_features:
+                    all_feature_names.append(name)
+                
+                # Para características categóricas
+                if categorical_features:
+                    cat_transformer = preprocessor.named_transformers_['cat'] if 'cat' in preprocessor.named_transformers_ else None
+                    if cat_transformer:
+                        onehot = cat_transformer.named_steps['onehot']
+                        categories = onehot.categories_
+                        for i, feature in enumerate(categorical_features):
+                            for category in categories[i]:
+                                all_feature_names.append(f"{feature}_{category}")
+                
+                # Ajustar longitud si es necesario
+                feature_importances = model.feature_importances_
+                if len(all_feature_names) != len(feature_importances):
+                    logger.warning(f"Discrepancia de nombres de características: {len(all_feature_names)} vs {len(feature_importances)}")
+                    # Ajustar all_feature_names
+                    if len(all_feature_names) > len(feature_importances):
+                        all_feature_names = all_feature_names[:len(feature_importances)]
+                    else:
+                        all_feature_names.extend([f"feature_{i}" for i in range(len(all_feature_names), len(feature_importances))])
+                
+                # Crear DataFrame de importancia
+                feature_importance = pd.DataFrame({
+                    'feature': all_feature_names,
+                    'importance': feature_importances
+                })
+                
+                # Normalizar importancias
+                feature_importance['importance'] = feature_importance['importance'] / feature_importance['importance'].sum()
+                
+                # Ordenar por importancia
+                feature_importance = feature_importance.sort_values('importance', ascending=False)
+                
+            except Exception as e:
+                logger.error(f"Error al extraer importancia de características: {e}")
+                logger.error(traceback.format_exc())
+                
+                # Crear importancia predeterminada si falla
+                feature_importance = pd.DataFrame({
+                    'feature': features,
+                    'importance': [1/len(features)] * len(features)
+                })
+            
+            # Guardar modelo y métricas
+            model_timestamp = datetime.now().strftime('%Y%m%d_%H%M%S')
+            model_dir = f"{output_path}/movie_success_model"
+            os.makedirs(model_dir, exist_ok=True)
+            
+            # También guardar en directorios adicionales para redundancia
+            permanent_dirs = [
+                f"{OUTPUT_DIR}/xgb_model_latest",
+                f"{OUTPUT_DIR}/ml_models/latest_model",
+                "data/movie_analytics/xgb_model_latest",
+                "data/latest_xgboost_model",
+                "data/public_models"
+            ]
+            
+            for dir_path in permanent_dirs:
+                os.makedirs(dir_path, exist_ok=True)
+                logger.info(f"Creado directorio: {dir_path}")
+                
+                # Limpiar directorios de destino para evitar archivos antiguos
+                try:
+                    for existing_file in os.listdir(dir_path):
+                        file_path = os.path.join(dir_path, existing_file)
+                        if os.path.isfile(file_path):
+                            os.remove(file_path)
+                            logger.info(f"Eliminado archivo anterior: {file_path}")
+                except Exception as e:
+                    logger.error(f"Error al limpiar {dir_path}: {e}")
+            
             # Guardar modelo
-            with open(f"{output_path}/movie_success_model.pkl", 'wb') as f:
-                pickle.dump(model, f)
-
-            # Importancia de características
-            feature_importance = pd.DataFrame({
-                'feature': X.columns,
-                'importance': model.feature_importances_
-            }).sort_values('importance', ascending=False)
-
-            feature_importance.to_csv(f"{output_path}/feature_importance.csv", index=False)
-
-            # Visualización de importancia
-            plt.figure(figsize=(10, 6))
-            sns.barplot(x='importance', y='feature', data=feature_importance.head(15))
-            plt.title('Importancia de Características')
-            plt.tight_layout()
-            plt.savefig(f"{output_path}/feature_importance.png")
-            plt.close()
-
-            # Predicciones y top 10
-            df['predicted_success'] = model.predict(X)
-
-            top_predicted = df[['title', 'predicted_success']].sort_values('predicted_success', ascending=False).head(10)
-
-            plt.figure(figsize=(12, 8))
-            sns.barplot(x='predicted_success', y='title', data=top_predicted)
-            plt.title('Top 10 Películas con Mayor Éxito Predicho')
-            plt.tight_layout()
-            plt.savefig(f"{output_path}/top_predicted.png")
-            plt.close()
-
-            logger.info(f"Modelo ML entrenado y guardado en {output_path}")
-            return {
-                'mse': mse,
-                'r2': r2,
-                'feature_importance': feature_importance.to_dict('records'),
-                'top_predicted': top_predicted['title'].tolist()
+            model_files = {
+                "model.pkl": pipeline,
+                "model_final.pkl": pipeline  # Duplicado para compatibilidad
             }
-
+            
+            for filename, model_obj in model_files.items():
+                # Guardar en el directorio original
+                original_path = os.path.join(model_dir, filename)
+                with open(original_path, 'wb') as f:
+                    pickle.dump(model_obj, f)
+                logger.info(f"Modelo guardado en: {original_path}")
+                
+                # Copiar a los directorios permanentes
+                for perm_dir in permanent_dirs:
+                    perm_path = os.path.join(perm_dir, filename)
+                    try:
+                        # Guardar directamente
+                        with open(perm_path, 'wb') as f:
+                            pickle.dump(model_obj, f)
+                        
+                        # Establecer permisos amplios
+                        os.chmod(perm_path, 0o777)
+                        logger.info(f"Modelo guardado y permisos establecidos en: {perm_path}")
+                    except Exception as e:
+                        logger.error(f"Error al guardar en {perm_path}: {e}")
+            
+            # Guardar métricas y feature importance
+            metrics = {
+                'model_type': 'XGBoost',
+                'r2': float(r2),
+                'mse': float(mse),
+                'rmse': float(rmse),
+                'mae': float(mae),
+                'feature_importance': feature_importance.to_dict('records'),
+                'timestamp': model_timestamp
+            }
+            
+            for perm_dir in [model_dir] + permanent_dirs:
+                metrics_path = os.path.join(perm_dir, "metrics.json")
+                feature_path = os.path.join(perm_dir, "feature_importance.csv")
+                
+                try:
+                    with open(metrics_path, 'w') as f:
+                        json.dump(metrics, f, indent=4)
+                    os.chmod(metrics_path, 0o777)
+                    
+                    feature_importance.to_csv(feature_path, index=False)
+                    os.chmod(feature_path, 0o777)
+                    
+                    logger.info(f"Métricas y características guardadas en: {perm_dir}")
+                except Exception as e:
+                    logger.error(f"Error al guardar métricas en {perm_dir}: {e}")
+            
+            # Crear archivo de ubicación del modelo
+            model_info_paths = [
+                f"{OUTPUT_DIR}/model_location.txt",
+                "data/model_location.txt",
+                "model_location.txt"
+            ]
+            
+            model_info_content = (
+                "data/latest_xgboost_model/model_final.pkl\n"
+                f"{datetime.now().strftime('%Y-%m-%d %H:%M:%S')}\n"
+                "xgboost\n"
+                "data/public_models/model_final.pkl\n"
+            )
+            
+            for info_path in model_info_paths:
+                try:
+                    with open(info_path, 'w') as f:
+                        f.write(model_info_content)
+                    os.chmod(info_path, 0o777)
+                    logger.info(f"Creado archivo de ubicación de modelo en: {info_path}")
+                except Exception as e:
+                    logger.error(f"Error al crear archivo de ubicación en {info_path}: {e}")
+            
+            # Crear archivo de señalización
+            try:
+                with open(f"{OUTPUT_DIR}/model_ready.txt", 'w') as f:
+                    f.write("yes")
+                os.chmod(f"{OUTPUT_DIR}/model_ready.txt", 0o777)
+                
+                with open("data/model_ready.txt", 'w') as f:
+                    f.write("yes")
+                os.chmod("data/model_ready.txt", 0o777)
+                
+                logger.info("Archivos de señalización creados")
+            except Exception as e:
+                logger.error(f"Error al crear archivos de señalización: {e}")
+            
+            # Generar visualizaciones para el modelo
+            self.generate_model_visualizations(pipeline, feature_importance, X_test, y_test, y_pred, model_dir)
+            
+            logger.info(f"Modelo entrenado y guardado en múltiples ubicaciones")
+            
+            return metrics
+        
         except Exception as e:
-            logger.error(f"Error al entrenar modelo: {e}")
+            logger.error(f"Error en el entrenamiento del modelo: {e}")
             logger.error(traceback.format_exc())
             return None
+    
+    def generate_model_visualizations(self, model, feature_importance, X_test, y_test, y_pred, output_dir):
+        """Genera visualizaciones para evaluar el rendimiento del modelo."""
+        try:
+            # 1. Gráfico de importancia de características
+            plt.figure(figsize=(12, 8))
+            
+            # Tomar top 15 características
+            top_features = feature_importance.head(15)
+            
+            # Crear gráfico de barras horizontales
+            sns.barplot(x='importance', y='feature', data=top_features, palette='viridis')
+            
+            plt.title('Importancia de Características en la Predicción', fontsize=16, fontweight='bold')
+            plt.xlabel('Importancia Relativa', fontsize=12)
+            plt.ylabel('Característica', fontsize=12)
+            plt.tight_layout()
+            plt.savefig(f"{output_dir}/feature_importance.png", dpi=300, bbox_inches='tight')
+            plt.close()
+            
+            # 2. Gráfico de predicciones vs reales
+            plt.figure(figsize=(10, 8))
+            
+            plt.scatter(y_test, y_pred, alpha=0.5)
+            
+            # Línea de predicción perfecta
+            min_val = min(y_test.min(), y_pred.min())
+            max_val = max(y_test.max(), y_pred.max())
+            plt.plot([min_val, max_val], [min_val, max_val], 'r--')
+            
+            plt.title('Valores Reales vs. Predicciones', fontsize=16, fontweight='bold')
+            plt.xlabel('Valores Reales', fontsize=12)
+            plt.ylabel('Predicciones', fontsize=12)
+            plt.grid(True, linestyle='--', alpha=0.7)
+            plt.tight_layout()
+            plt.savefig(f"{output_dir}/predictions_vs_actual.png", dpi=300, bbox_inches='tight')
+            plt.close()
+            
+            # 3. Gráfico de residuos
+            plt.figure(figsize=(10, 8))
+            
+            residuals = y_test - y_pred
+            
+            plt.scatter(y_pred, residuals, alpha=0.5)
+            plt.axhline(y=0, color='r', linestyle='--')
+            
+            plt.title('Gráfico de Residuos', fontsize=16, fontweight='bold')
+            plt.xlabel('Predicciones', fontsize=12)
+            plt.ylabel('Residuos', fontsize=12)
+            plt.grid(True, linestyle='--', alpha=0.7)
+            plt.tight_layout()
+            plt.savefig(f"{output_dir}/residuals.png", dpi=300, bbox_inches='tight')
+            plt.close()
+            
+            # 4. Histograma de residuos
+            plt.figure(figsize=(10, 8))
+            
+            sns.histplot(residuals, kde=True)
+            
+            plt.title('Distribución de Residuos', fontsize=16, fontweight='bold')
+            plt.xlabel('Residuo', fontsize=12)
+            plt.ylabel('Frecuencia', fontsize=12)
+            plt.grid(True, linestyle='--', alpha=0.7)
+            plt.tight_layout()
+            plt.savefig(f"{output_dir}/residuals_distribution.png", dpi=300, bbox_inches='tight')
+            plt.close()
+            
+            logger.info(f"Visualizaciones del modelo guardadas en {output_dir}")
+            
+        except Exception as e:
+            logger.error(f"Error al generar visualizaciones del modelo: {e}")
+            logger.error(traceback.format_exc())
     
     def process_data(self):
         """Procesa continuamente los datos de Kafka."""

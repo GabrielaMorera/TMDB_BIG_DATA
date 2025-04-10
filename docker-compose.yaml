@@ -94,7 +94,7 @@ services:
       AIRFLOW__CORE__LOAD_EXAMPLES: 'false'
       AIRFLOW__API__AUTH_BACKENDS: 'airflow.api.auth.backend.basic_auth,airflow.api.auth.backend.session'
       AIRFLOW__SCHEDULER__ENABLE_HEALTH_CHECK: 'true'
-      _PIP_ADDITIONAL_REQUIREMENTS: 'dask[complete] distributed scikit-learn matplotlib seaborn pandas psycopg2-binary kafka-python'
+      _PIP_ADDITIONAL_REQUIREMENTS: 'dask[complete] distributed scikit-learn matplotlib seaborn pandas psycopg2-binary kafka-python plotly wordcloud xgboost'
     command: webserver
     ports:
       - "8080:8080"
@@ -131,7 +131,7 @@ services:
       AIRFLOW__CORE__LOAD_EXAMPLES: 'false'
       AIRFLOW__API__AUTH_BACKENDS: 'airflow.api.auth.backend.basic_auth,airflow.api.auth.backend.session'
       AIRFLOW__SCHEDULER__ENABLE_HEALTH_CHECK: 'true'
-      _PIP_ADDITIONAL_REQUIREMENTS: 'dask[complete] distributed scikit-learn matplotlib seaborn pandas psycopg2-binary kafka-python'
+      _PIP_ADDITIONAL_REQUIREMENTS: 'dask[complete] distributed scikit-learn matplotlib seaborn pandas psycopg2-binary kafka-python plotly wordcloud xgboost'
     command: scheduler
     volumes:
       - ./dags:/opt/airflow/dags
@@ -168,7 +168,7 @@ services:
       AIRFLOW__CORE__LOAD_EXAMPLES: 'false'
       AIRFLOW__API__AUTH_BACKENDS: 'airflow.api.auth.backend.basic_auth,airflow.api.auth.backend.session'
       DUMB_INIT_SETSID: "0"
-      _PIP_ADDITIONAL_REQUIREMENTS: 'dask[complete] distributed scikit-learn matplotlib seaborn pandas psycopg2-binary kafka-python'
+      _PIP_ADDITIONAL_REQUIREMENTS: 'dask[complete] distributed scikit-learn matplotlib seaborn pandas psycopg2-binary kafka-python plotly wordcloud xgboost'
     command: celery worker
     volumes:
       - ./dags:/opt/airflow/dags
@@ -208,7 +208,7 @@ services:
       _AIRFLOW_WWW_USER_CREATE: 'true'
       _AIRFLOW_WWW_USER_USERNAME: 'admin'
       _AIRFLOW_WWW_USER_PASSWORD: 'admin'
-      _PIP_ADDITIONAL_REQUIREMENTS: 'dask[complete] distributed scikit-learn matplotlib seaborn pandas psycopg2-binary kafka-python'
+      _PIP_ADDITIONAL_REQUIREMENTS: 'dask[complete] distributed scikit-learn matplotlib seaborn pandas psycopg2-binary kafka-python plotly wordcloud xgboost'
     user: "0:0"
     entrypoint: /bin/bash
     command:

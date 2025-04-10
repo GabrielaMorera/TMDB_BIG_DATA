@@ -1,0 +1,131 @@
+[2025-04-09T12:12:12.821+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2025-04-09T12:12:12.943+0000] {taskinstance.py:2073} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: tmdb_pipeline_v2.process_kafka_data scheduled__2025-04-09T00:00:00+00:00 [queued]>
+[2025-04-09T12:12:12.991+0000] {taskinstance.py:2073} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: tmdb_pipeline_v2.process_kafka_data scheduled__2025-04-09T00:00:00+00:00 [queued]>
+[2025-04-09T12:12:12.993+0000] {taskinstance.py:2303} INFO - Starting attempt 3 of 3
+[2025-04-09T12:12:13.077+0000] {taskinstance.py:2327} INFO - Executing <Task(PythonOperator): process_kafka_data> on 2025-04-09 00:00:00+00:00
+[2025-04-09T12:12:13.102+0000] {warnings.py:110} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:61: DeprecationWarning: This process (pid=3054) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2025-04-09T12:12:13.110+0000] {standard_task_runner.py:63} INFO - Started process 3072 to run task
+[2025-04-09T12:12:13.113+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'tmdb_pipeline_v2', 'process_kafka_data', 'scheduled__2025-04-09T00:00:00+00:00', '--job-id', '987', '--raw', '--subdir', 'DAGS_FOLDER/dag_tmdb.py', '--cfg-path', '/tmp/tmpt7_ekij_']
+[2025-04-09T12:12:13.129+0000] {standard_task_runner.py:91} INFO - Job 987: Subtask process_kafka_data
+[2025-04-09T12:12:13.362+0000] {task_command.py:426} INFO - Running <TaskInstance: tmdb_pipeline_v2.process_kafka_data scheduled__2025-04-09T00:00:00+00:00 [running]> on host a24902f77b45
+[2025-04-09T12:12:13.882+0000] {taskinstance.py:2644} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='gabriela' AIRFLOW_CTX_DAG_ID='tmdb_pipeline_v2' AIRFLOW_CTX_TASK_ID='process_kafka_data' AIRFLOW_CTX_EXECUTION_DATE='2025-04-09T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='3' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2025-04-09T00:00:00+00:00'
+[2025-04-09T12:12:13.887+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2025-04-09T12:12:14.559+0000] {dag_tmdb.py:283} INFO - Iniciando proceso de consumo de datos de Kafka
+[2025-04-09T12:12:14.570+0000] {conn.py:395} INFO - <BrokerConnection client_id=kafka-python-2.1.5, node_id=bootstrap-0 host=kafka:9093 <connecting> [IPv4 ('172.19.0.6', 9093)]>: connecting to kafka:9093 [('172.19.0.6', 9093) IPv4]
+[2025-04-09T12:12:14.584+0000] {conn.py:615} INFO - <BrokerConnection client_id=kafka-python-2.1.5, node_id=bootstrap-0 host=kafka:9093 <checking_api_versions_recv> [IPv4 ('172.19.0.6', 9093)]>: Broker version identified as 2.6
+[2025-04-09T12:12:14.587+0000] {conn.py:456} INFO - <BrokerConnection client_id=kafka-python-2.1.5, node_id=bootstrap-0 host=kafka:9093 <connected> [IPv4 ('172.19.0.6', 9093)]>: Connection complete.
+[2025-04-09T12:12:14.592+0000] {subscription_state.py:182} INFO - Updating subscribed topics to: ('tmdb_data',)
+[2025-04-09T12:12:14.595+0000] {dag_tmdb.py:295} INFO - Consumidor conectado a Kafka, esperando mensajes en 'tmdb_data'...
+[2025-04-09T12:12:14.597+0000] {dag_tmdb.py:339} INFO - Intento 1/3 de obtener mensajes
+[2025-04-09T12:12:14.608+0000] {conn.py:395} INFO - <BrokerConnection client_id=kafka-python-2.1.5, node_id=1001 host=kafka:9093 <connecting> [IPv4 ('172.19.0.6', 9093)]>: connecting to kafka:9093 [('172.19.0.6', 9093) IPv4]
+[2025-04-09T12:12:14.612+0000] {conn.py:456} INFO - <BrokerConnection client_id=kafka-python-2.1.5, node_id=1001 host=kafka:9093 <connected> [IPv4 ('172.19.0.6', 9093)]>: Connection complete.
+[2025-04-09T12:12:14.615+0000] {conn.py:936} INFO - <BrokerConnection client_id=kafka-python-2.1.5, node_id=bootstrap-0 host=kafka:9093 <connected> [IPv4 ('172.19.0.6', 9093)]>: Closing connection. 
+[2025-04-09T12:12:14.726+0000] {cluster.py:393} INFO - Group coordinator for ***_consumer_group_v2 is ('coordinator-1001', 'kafka', 9093, None)
+[2025-04-09T12:12:14.729+0000] {base.py:729} INFO - Discovered coordinator coordinator-1001 for group ***_consumer_group_v2
+[2025-04-09T12:12:14.732+0000] {base.py:780} INFO - Starting new heartbeat thread
+[2025-04-09T12:12:14.737+0000] {consumer.py:361} INFO - Revoking previously assigned partitions () for group ***_consumer_group_v2
+[2025-04-09T12:12:14.744+0000] {conn.py:395} INFO - <BrokerConnection client_id=kafka-python-2.1.5, node_id=coordinator-1001 host=kafka:9093 <connecting> [IPv4 ('172.19.0.6', 9093)]>: connecting to kafka:9093 [('172.19.0.6', 9093) IPv4]
+[2025-04-09T12:12:14.747+0000] {conn.py:456} INFO - <BrokerConnection client_id=kafka-python-2.1.5, node_id=coordinator-1001 host=kafka:9093 <connected> [IPv4 ('172.19.0.6', 9093)]>: Connection complete.
+[2025-04-09T12:12:14.852+0000] {base.py:489} INFO - (Re-)joining group ***_consumer_group_v2
+[2025-04-09T12:12:14.874+0000] {base.py:552} INFO - Elected group leader -- performing partition assignments using range
+[2025-04-09T12:12:14.890+0000] {base.py:380} INFO - Successfully joined group ***_consumer_group_v2 with generation 5
+[2025-04-09T12:12:14.896+0000] {subscription_state.py:254} INFO - Updated partition assignment: [('tmdb_data', 0)]
+[2025-04-09T12:12:14.900+0000] {consumer.py:252} INFO - Setting newly assigned partitions (('tmdb_data', 0),) for group ***_consumer_group_v2
+[2025-04-09T12:12:14.966+0000] {dag_tmdb.py:346} INFO - Recibido mensaje: Deadpool y Lobezno
+[2025-04-09T12:12:14.968+0000] {dag_tmdb.py:346} INFO - Recibido mensaje: Robot salvaje
+[2025-04-09T12:12:14.970+0000] {dag_tmdb.py:346} INFO - Recibido mensaje: Blindado
+[2025-04-09T12:12:14.971+0000] {dag_tmdb.py:346} INFO - Recibido mensaje: Érase una vez un estudio
+[2025-04-09T12:12:14.973+0000] {dag_tmdb.py:346} INFO - Recibido mensaje: Screamboat
+[2025-04-09T12:12:14.975+0000] {dag_tmdb.py:346} INFO - Recibido mensaje: Josee, el tigre y los peces
+[2025-04-09T12:12:14.977+0000] {dag_tmdb.py:346} INFO - Recibido mensaje: Capitán América: Brave New World
+[2025-04-09T12:12:14.978+0000] {dag_tmdb.py:346} INFO - Recibido mensaje: Érase una vez en América
+[2025-04-09T12:12:14.980+0000] {dag_tmdb.py:346} INFO - Recibido mensaje: Memorias de un caracol
+[2025-04-09T12:12:14.982+0000] {dag_tmdb.py:346} INFO - Recibido mensaje: Pabrik Gula
+[2025-04-09T12:12:14.983+0000] {dag_tmdb.py:346} INFO - Recibido mensaje: Culpa mía: Londres
+[2025-04-09T12:12:14.985+0000] {dag_tmdb.py:346} INFO - Recibido mensaje: Alguien voló sobre el nido del cuco
+[2025-04-09T12:12:14.987+0000] {dag_tmdb.py:346} INFO - Recibido mensaje: La leyenda de Hei
+[2025-04-09T12:12:14.988+0000] {dag_tmdb.py:346} INFO - Recibido mensaje: El abismo secreto
+[2025-04-09T12:12:14.990+0000] {dag_tmdb.py:346} INFO - Recibido mensaje: Milagro en la celda 7
+[2025-04-09T12:12:14.992+0000] {dag_tmdb.py:346} INFO - Recibido mensaje: Enfermera para todo
+[2025-04-09T12:12:14.994+0000] {dag_tmdb.py:346} INFO - Recibido mensaje: Culpa tuya
+[2025-04-09T12:12:14.995+0000] {dag_tmdb.py:349} INFO - Recibidos 17 mensajes, procediendo a procesar
+[2025-04-09T12:12:14.997+0000] {dag_tmdb.py:378} INFO - Procesando 17 mensajes con Pandas
+[2025-04-09T12:12:15.039+0000] {dag_tmdb.py:439} ERROR - Error en el procesamiento: sequence item 0: expected str instance, dict found
+[2025-04-09T12:12:15.062+0000] {dag_tmdb.py:440} ERROR - Traceback (most recent call last):
+  File "/opt/***/dags/dag_tmdb.py", line 401, in process_kafka_data
+    df['cast_str'] = df['cast'].apply(lambda x: ','.join(x) if isinstance(x, list) else '')
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/***/.local/lib/python3.12/site-packages/pandas/core/series.py", line 4764, in apply
+    ).apply()
+      ^^^^^^^
+  File "/home/***/.local/lib/python3.12/site-packages/pandas/core/apply.py", line 1209, in apply
+    return self.apply_standard()
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/***/.local/lib/python3.12/site-packages/pandas/core/apply.py", line 1289, in apply_standard
+    mapped = obj._map_values(
+             ^^^^^^^^^^^^^^^^
+  File "/home/***/.local/lib/python3.12/site-packages/pandas/core/base.py", line 921, in _map_values
+    return algorithms.map_array(arr, mapper, na_action=na_action, convert=convert)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/***/.local/lib/python3.12/site-packages/pandas/core/algorithms.py", line 1814, in map_array
+    return lib.map_infer(values, mapper, convert=convert)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "lib.pyx", line 2926, in pandas._libs.lib.map_infer
+  File "/opt/***/dags/dag_tmdb.py", line 401, in <lambda>
+    df['cast_str'] = df['cast'].apply(lambda x: ','.join(x) if isinstance(x, list) else '')
+                                                ^^^^^^^^^^^
+TypeError: sequence item 0: expected str instance, dict found
+
+[2025-04-09T12:12:15.075+0000] {base.py:794} INFO - Stopping heartbeat thread
+[2025-04-09T12:12:18.079+0000] {base.py:995} WARNING - Heartbeat thread did not fully terminate during close
+[2025-04-09T12:12:18.082+0000] {base.py:823} INFO - Leaving consumer group (***_consumer_group_v2).
+[2025-04-09T12:12:18.095+0000] {conn.py:936} INFO - <BrokerConnection client_id=kafka-python-2.1.5, node_id=1001 host=kafka:9093 <connected> [IPv4 ('172.19.0.6', 9093)]>: Closing connection. 
+[2025-04-09T12:12:18.101+0000] {conn.py:936} INFO - <BrokerConnection client_id=kafka-python-2.1.5, node_id=coordinator-1001 host=kafka:9093 <connected> [IPv4 ('172.19.0.6', 9093)]>: Closing connection. 
+[2025-04-09T12:12:18.104+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2025-04-09T12:12:18.107+0000] {taskinstance.py:2890} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 465, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 432, in _execute_callable
+    return execute_callable(context=context, **execute_callable_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/baseoperator.py", line 400, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/operators/python.py", line 235, in execute
+    return_value = self.execute_callable()
+                   ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/operators/python.py", line 252, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/airflow/dags/dag_tmdb.py", line 401, in process_kafka_data
+    df['cast_str'] = df['cast'].apply(lambda x: ','.join(x) if isinstance(x, list) else '')
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/pandas/core/series.py", line 4764, in apply
+    ).apply()
+      ^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/pandas/core/apply.py", line 1209, in apply
+    return self.apply_standard()
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/pandas/core/apply.py", line 1289, in apply_standard
+    mapped = obj._map_values(
+             ^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/pandas/core/base.py", line 921, in _map_values
+    return algorithms.map_array(arr, mapper, na_action=na_action, convert=convert)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/pandas/core/algorithms.py", line 1814, in map_array
+    return lib.map_infer(values, mapper, convert=convert)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "lib.pyx", line 2926, in pandas._libs.lib.map_infer
+  File "/opt/airflow/dags/dag_tmdb.py", line 401, in <lambda>
+    df['cast_str'] = df['cast'].apply(lambda x: ','.join(x) if isinstance(x, list) else '')
+                                                ^^^^^^^^^^^
+TypeError: sequence item 0: expected str instance, dict found
+[2025-04-09T12:12:18.154+0000] {taskinstance.py:1205} INFO - Marking task as FAILED. dag_id=tmdb_pipeline_v2, task_id=process_kafka_data, execution_date=20250409T000000, start_date=20250409T121212, end_date=20250409T121218
+[2025-04-09T12:12:18.224+0000] {standard_task_runner.py:110} ERROR - Failed to execute job 987 for task process_kafka_data (sequence item 0: expected str instance, dict found; 3072)
+[2025-04-09T12:12:18.262+0000] {local_task_job_runner.py:240} INFO - Task exited with return code 1
+[2025-04-09T12:12:18.375+0000] {taskinstance.py:3482} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2025-04-09T12:12:18.390+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

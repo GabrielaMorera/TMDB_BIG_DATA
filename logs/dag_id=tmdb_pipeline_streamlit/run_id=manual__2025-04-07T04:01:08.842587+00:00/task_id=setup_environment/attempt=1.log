@@ -1,0 +1,30 @@
+[2025-04-07T04:01:13.363+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2025-04-07T04:01:13.394+0000] {taskinstance.py:2073} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: tmdb_pipeline_streamlit.setup_environment manual__2025-04-07T04:01:08.842587+00:00 [queued]>
+[2025-04-07T04:01:13.402+0000] {taskinstance.py:2073} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: tmdb_pipeline_streamlit.setup_environment manual__2025-04-07T04:01:08.842587+00:00 [queued]>
+[2025-04-07T04:01:13.402+0000] {taskinstance.py:2303} INFO - Starting attempt 1 of 3
+[2025-04-07T04:01:13.415+0000] {taskinstance.py:2327} INFO - Executing <Task(PythonOperator): setup_environment> on 2025-04-07 04:01:08.842587+00:00
+[2025-04-07T04:01:13.423+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'tmdb_pipeline_streamlit', 'setup_environment', 'manual__2025-04-07T04:01:08.842587+00:00', '--job-id', '459', '--raw', '--subdir', 'DAGS_FOLDER/tmdb_pipeline.py', '--cfg-path', '/tmp/tmpueknpocf']
+[2025-04-07T04:01:13.421+0000] {warnings.py:110} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:61: DeprecationWarning: This process (pid=140) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2025-04-07T04:01:13.426+0000] {standard_task_runner.py:63} INFO - Started process 142 to run task
+[2025-04-07T04:01:13.426+0000] {standard_task_runner.py:91} INFO - Job 459: Subtask setup_environment
+[2025-04-07T04:01:13.567+0000] {task_command.py:426} INFO - Running <TaskInstance: tmdb_pipeline_streamlit.setup_environment manual__2025-04-07T04:01:08.842587+00:00 [running]> on host 9672cb286478
+[2025-04-07T04:01:13.749+0000] {taskinstance.py:2644} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='gabriela' AIRFLOW_CTX_DAG_ID='tmdb_pipeline_streamlit' AIRFLOW_CTX_TASK_ID='setup_environment' AIRFLOW_CTX_EXECUTION_DATE='2025-04-07T04:01:08.842587+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-04-07T04:01:08.842587+00:00'
+[2025-04-07T04:01:13.750+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2025-04-07T04:01:13.814+0000] {tmdb_pipeline.py:1114} INFO - Preparando entorno para el pipeline TMDB...
+[2025-04-07T04:01:13.815+0000] {tmdb_pipeline.py:1118} INFO - Directorio de salida creado: /opt/***/data/movie_analytics
+[2025-04-07T04:01:13.840+0000] {tmdb_pipeline.py:1090} INFO - Tablas verificadas y creadas en PostgreSQL
+[2025-04-07T04:01:13.854+0000] {tmdb_pipeline.py:1095} INFO - Tablas existentes:
+[2025-04-07T04:01:13.855+0000] {tmdb_pipeline.py:1097} INFO - - movies
+[2025-04-07T04:01:13.855+0000] {tmdb_pipeline.py:1097} INFO - - genres
+[2025-04-07T04:01:13.856+0000] {tmdb_pipeline.py:1097} INFO - - directors
+[2025-04-07T04:01:13.856+0000] {tmdb_pipeline.py:1097} INFO - - actors
+[2025-04-07T04:01:13.857+0000] {tmdb_pipeline.py:1097} INFO - - movie_data_warehouse
+[2025-04-07T04:01:13.858+0000] {tmdb_pipeline.py:1124} INFO - Entorno preparado correctamente
+[2025-04-07T04:01:13.858+0000] {python.py:237} INFO - Done. Returned value was: setup_completed
+[2025-04-07T04:01:13.859+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2025-04-07T04:01:13.897+0000] {taskinstance.py:1205} INFO - Marking task as SUCCESS. dag_id=tmdb_pipeline_streamlit, task_id=setup_environment, execution_date=20250407T040108, start_date=20250407T040113, end_date=20250407T040113
+[2025-04-07T04:01:13.934+0000] {local_task_job_runner.py:240} INFO - Task exited with return code 0
+[2025-04-07T04:01:13.964+0000] {taskinstance.py:3482} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2025-04-07T04:01:13.966+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

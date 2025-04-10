@@ -1,0 +1,1 @@
+/opt/airflow/data/latest_xgboost_model/model.pkl
