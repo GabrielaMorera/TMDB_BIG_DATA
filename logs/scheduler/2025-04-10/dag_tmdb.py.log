@@ -3141,3 +3141,38 @@
 [2025-04-10T16:10:49.073+0000] {logging_mixin.py:188} INFO - [2025-04-10T16:10:49.072+0000] {dag.py:3096} INFO - Sync 1 DAGs
 [2025-04-10T16:10:49.096+0000] {logging_mixin.py:188} INFO - [2025-04-10T16:10:49.095+0000] {dag.py:3954} INFO - Setting next_dagrun for tmdb_pipeline_v2 to 2025-04-10 12:00:00+00:00, run_after=2025-04-11 00:00:00+00:00
 [2025-04-10T16:10:49.120+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dag_tmdb.py took 0.388 seconds
+[2025-04-10T16:11:19.355+0000] {processor.py:161} INFO - Started process (PID=6883) to work on /opt/airflow/dags/dag_tmdb.py
+[2025-04-10T16:11:19.357+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dag_tmdb.py for tasks to queue
+[2025-04-10T16:11:19.359+0000] {logging_mixin.py:188} INFO - [2025-04-10T16:11:19.359+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/dag_tmdb.py
+[2025-04-10T16:11:19.652+0000] {processor.py:840} INFO - DAG(s) 'tmdb_pipeline_v2' retrieved from /opt/airflow/dags/dag_tmdb.py
+[2025-04-10T16:11:19.679+0000] {logging_mixin.py:188} INFO - [2025-04-10T16:11:19.679+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-04-10T16:11:19.700+0000] {logging_mixin.py:188} INFO - [2025-04-10T16:11:19.700+0000] {dag.py:3954} INFO - Setting next_dagrun for tmdb_pipeline_v2 to 2025-04-10 12:00:00+00:00, run_after=2025-04-11 00:00:00+00:00
+[2025-04-10T16:11:19.717+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dag_tmdb.py took 0.369 seconds
+[2025-04-10T16:11:50.651+0000] {processor.py:161} INFO - Started process (PID=6908) to work on /opt/airflow/dags/dag_tmdb.py
+[2025-04-10T16:11:50.656+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dag_tmdb.py for tasks to queue
+[2025-04-10T16:11:50.659+0000] {logging_mixin.py:188} INFO - [2025-04-10T16:11:50.658+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/dag_tmdb.py
+[2025-04-10T16:11:51.034+0000] {processor.py:840} INFO - DAG(s) 'tmdb_pipeline_v2' retrieved from /opt/airflow/dags/dag_tmdb.py
+[2025-04-10T16:11:51.067+0000] {logging_mixin.py:188} INFO - [2025-04-10T16:11:51.066+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-04-10T16:11:51.091+0000] {logging_mixin.py:188} INFO - [2025-04-10T16:11:51.091+0000] {dag.py:3954} INFO - Setting next_dagrun for tmdb_pipeline_v2 to 2025-04-10 12:00:00+00:00, run_after=2025-04-11 00:00:00+00:00
+[2025-04-10T16:11:51.109+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dag_tmdb.py took 0.465 seconds
+[2025-04-10T16:12:21.299+0000] {processor.py:161} INFO - Started process (PID=6933) to work on /opt/airflow/dags/dag_tmdb.py
+[2025-04-10T16:12:21.302+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dag_tmdb.py for tasks to queue
+[2025-04-10T16:12:21.305+0000] {logging_mixin.py:188} INFO - [2025-04-10T16:12:21.305+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/dag_tmdb.py
+[2025-04-10T16:12:21.603+0000] {processor.py:840} INFO - DAG(s) 'tmdb_pipeline_v2' retrieved from /opt/airflow/dags/dag_tmdb.py
+[2025-04-10T16:12:21.633+0000] {logging_mixin.py:188} INFO - [2025-04-10T16:12:21.632+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-04-10T16:12:21.654+0000] {logging_mixin.py:188} INFO - [2025-04-10T16:12:21.654+0000] {dag.py:3954} INFO - Setting next_dagrun for tmdb_pipeline_v2 to 2025-04-10 12:00:00+00:00, run_after=2025-04-11 00:00:00+00:00
+[2025-04-10T16:12:21.673+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dag_tmdb.py took 0.381 seconds
+[2025-04-10T16:12:51.920+0000] {processor.py:161} INFO - Started process (PID=6958) to work on /opt/airflow/dags/dag_tmdb.py
+[2025-04-10T16:12:51.924+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dag_tmdb.py for tasks to queue
+[2025-04-10T16:12:51.927+0000] {logging_mixin.py:188} INFO - [2025-04-10T16:12:51.927+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/dag_tmdb.py
+[2025-04-10T16:12:52.229+0000] {processor.py:840} INFO - DAG(s) 'tmdb_pipeline_v2' retrieved from /opt/airflow/dags/dag_tmdb.py
+[2025-04-10T16:12:52.257+0000] {logging_mixin.py:188} INFO - [2025-04-10T16:12:52.256+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-04-10T16:12:52.280+0000] {logging_mixin.py:188} INFO - [2025-04-10T16:12:52.279+0000] {dag.py:3954} INFO - Setting next_dagrun for tmdb_pipeline_v2 to 2025-04-10 12:00:00+00:00, run_after=2025-04-11 00:00:00+00:00
+[2025-04-10T16:12:52.298+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dag_tmdb.py took 0.388 seconds
+[2025-04-10T16:13:22.497+0000] {processor.py:161} INFO - Started process (PID=6983) to work on /opt/airflow/dags/dag_tmdb.py
+[2025-04-10T16:13:22.500+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dag_tmdb.py for tasks to queue
+[2025-04-10T16:13:22.502+0000] {logging_mixin.py:188} INFO - [2025-04-10T16:13:22.502+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/dag_tmdb.py
+[2025-04-10T16:13:22.820+0000] {processor.py:840} INFO - DAG(s) 'tmdb_pipeline_v2' retrieved from /opt/airflow/dags/dag_tmdb.py
+[2025-04-10T16:13:22.851+0000] {logging_mixin.py:188} INFO - [2025-04-10T16:13:22.850+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-04-10T16:13:22.873+0000] {logging_mixin.py:188} INFO - [2025-04-10T16:13:22.873+0000] {dag.py:3954} INFO - Setting next_dagrun for tmdb_pipeline_v2 to 2025-04-10 12:00:00+00:00, run_after=2025-04-11 00:00:00+00:00
+[2025-04-10T16:13:22.891+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dag_tmdb.py took 0.402 seconds
