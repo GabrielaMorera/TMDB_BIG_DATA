@@ -1,0 +1,62 @@
+{
+    "adult": false,
+    "backdrop_path": "/e807jDKiFcntZS32ze88X6I96OD.jpg",
+    "genre_ids": [
+        16,
+        28
+    ],
+    "id": 1297763,
+    "original_language": "ja",
+    "original_title": "ニンジャバットマン対ヤクザリーグ",
+    "overview": "Sólo un día después de regresar del pasado, Batman y sus aliados descubren que el mundo no es exactamente el mismo que dejaron. Toda la isla de Japón ya no existe y los héroes de la Liga de la Justicia tampoco. Pero antes de que puedan comprender lo que está pasando, los yakuza empiezan a llover literalmente del cielo. Secuela de la película anime 3D \"Batman Ninja\".",
+    "popularity": 115.6258,
+    "poster_path": "/3hVjnB5FE4gBrR5rqk42qiBFgGe.jpg",
+    "release_date": "2025-03-17",
+    "title": "Batman Ninja vs. Yakuza League",
+    "video": false,
+    "vote_average": 6.8,
+    "vote_count": 113,
+    "budget": 0,
+    "revenue": 0,
+    "runtime": 90,
+    "genres": [
+        "Animación",
+        "Acción"
+    ],
+    "production_companies": [
+        "Kamikaze Douga",
+        "Warner Bros. Japan",
+        "DC",
+        "Warner Bros. Animation"
+    ],
+    "directors": [
+        "水﨑淳平",
+        "Shinji Takagi"
+    ],
+    "cast": [
+        "Koichi Yamadera",
+        "Yuki Kaji",
+        "Kengo Kawanishi",
+        "Daisuke Ono",
+        "Akira Ishida",
+        "Ayane Sakura",
+        "Akio Otsuka",
+        "檜山修之",
+        "Romi Park",
+        "Rie Kugimiya"
+    ],
+    "keywords": [
+        "based on comic",
+        "duringcreditsstinger"
+    ],
+    "video_count": 0,
+    "similar_count": 20,
+    "roi": 0,
+    "popularity_category": "Muy Alta",
+    "rating_category": "Buena",
+    "genres_str": "Animación,Acción",
+    "directors_str": "水﨑淳平,Shinji Takagi",
+    "cast_str": "Koichi Yamadera,Yuki Kaji,Kengo Kawanishi,Daisuke Ono,Akira Ishida,Ayane Sakura,Akio Otsuka,檜山修之,Romi Park,Rie Kugimiya",
+    "companies_str": "Kamikaze Douga,Warner Bros. Japan,DC,Warner Bros. Animation",
+    "keywords_str": "based on comic,duringcreditsstinger"
+}

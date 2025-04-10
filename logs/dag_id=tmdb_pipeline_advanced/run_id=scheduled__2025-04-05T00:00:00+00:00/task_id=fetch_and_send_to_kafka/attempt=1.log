@@ -1,0 +1,337 @@
+[2025-04-05T15:22:52.935+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2025-04-05T15:22:52.959+0000] {taskinstance.py:2073} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: tmdb_pipeline_advanced.fetch_and_send_to_kafka scheduled__2025-04-05T00:00:00+00:00 [queued]>
+[2025-04-05T15:22:52.969+0000] {taskinstance.py:2073} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: tmdb_pipeline_advanced.fetch_and_send_to_kafka scheduled__2025-04-05T00:00:00+00:00 [queued]>
+[2025-04-05T15:22:52.971+0000] {taskinstance.py:2303} INFO - Starting attempt 1 of 3
+[2025-04-05T15:22:52.987+0000] {taskinstance.py:2327} INFO - Executing <Task(PythonOperator): fetch_and_send_to_kafka> on 2025-04-05 00:00:00+00:00
+[2025-04-05T15:22:53.000+0000] {standard_task_runner.py:63} INFO - Started process 314 to run task
+[2025-04-05T15:22:53.003+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'tmdb_pipeline_advanced', 'fetch_and_send_to_kafka', 'scheduled__2025-04-05T00:00:00+00:00', '--job-id', '292', '--raw', '--subdir', 'DAGS_FOLDER/tmdb_pipeline.py', '--cfg-path', '/tmp/tmp18l102ew']
+[2025-04-05T15:22:53.006+0000] {standard_task_runner.py:91} INFO - Job 292: Subtask fetch_and_send_to_kafka
+[2025-04-05T15:22:53.059+0000] {task_command.py:426} INFO - Running <TaskInstance: tmdb_pipeline_advanced.fetch_and_send_to_kafka scheduled__2025-04-05T00:00:00+00:00 [running]> on host 11624d9102e2
+[2025-04-05T15:22:53.157+0000] {taskinstance.py:2644} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='gabriela' AIRFLOW_CTX_DAG_ID='tmdb_pipeline_advanced' AIRFLOW_CTX_TASK_ID='fetch_and_send_to_kafka' AIRFLOW_CTX_EXECUTION_DATE='2025-04-05T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2025-04-05T00:00:00+00:00'
+[2025-04-05T15:22:53.159+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2025-04-05T15:22:53.858+0000] {conn.py:395} INFO - <BrokerConnection client_id=kafka-python-producer-1, node_id=bootstrap-0 host=kafka:9093 <connecting> [IPv4 ('172.19.0.7', 9093)]>: connecting to kafka:9093 [('172.19.0.7', 9093) IPv4]
+[2025-04-05T15:22:54.195+0000] {conn.py:615} INFO - <BrokerConnection client_id=kafka-python-producer-1, node_id=bootstrap-0 host=kafka:9093 <checking_api_versions_recv> [IPv4 ('172.19.0.7', 9093)]>: Broker version identified as 2.6
+[2025-04-05T15:22:54.196+0000] {conn.py:456} INFO - <BrokerConnection client_id=kafka-python-producer-1, node_id=bootstrap-0 host=kafka:9093 <connected> [IPv4 ('172.19.0.7', 9093)]>: Connection complete.
+[2025-04-05T15:22:54.199+0000] {tmdb_pipeline.py:1777} INFO - Productor Kafka conectado a kafka:9093
+[2025-04-05T15:22:54.482+0000] {tmdb_pipeline.py:1795} INFO - Página 1: recuperadas 20 películas
+[2025-04-05T15:22:55.585+0000] {tmdb_pipeline.py:1795} INFO - Página 2: recuperadas 20 películas
+[2025-04-05T15:22:56.693+0000] {tmdb_pipeline.py:1795} INFO - Página 3: recuperadas 20 películas
+[2025-04-05T15:22:57.805+0000] {tmdb_pipeline.py:1795} INFO - Página 4: recuperadas 20 películas
+[2025-04-05T15:22:58.974+0000] {tmdb_pipeline.py:1795} INFO - Página 5: recuperadas 20 películas
+[2025-04-05T15:22:59.975+0000] {tmdb_pipeline.py:1914} INFO - Total de películas a procesar: 100
+[2025-04-05T15:23:00.097+0000] {tmdb_pipeline.py:1865} INFO - Detalles obtenidos para: Una película de Minecraft (ID: 950387)
+[2025-04-05T15:23:00.100+0000] {conn.py:395} INFO - <BrokerConnection client_id=kafka-python-producer-1, node_id=1001 host=kafka:9093 <connecting> [IPv4 ('172.19.0.7', 9093)]>: connecting to kafka:9093 [('172.19.0.7', 9093) IPv4]
+[2025-04-05T15:23:00.101+0000] {conn.py:456} INFO - <BrokerConnection client_id=kafka-python-producer-1, node_id=1001 host=kafka:9093 <connected> [IPv4 ('172.19.0.7', 9093)]>: Connection complete.
+[2025-04-05T15:23:00.102+0000] {conn.py:936} INFO - <BrokerConnection client_id=kafka-python-producer-1, node_id=bootstrap-0 host=kafka:9093 <connected> [IPv4 ('172.19.0.7', 9093)]>: Closing connection. 
+[2025-04-05T15:23:00.332+0000] {tmdb_pipeline.py:1865} INFO - Detalles obtenidos para: Criminales de lujo (ID: 1229730)
+[2025-04-05T15:23:00.333+0000] {tmdb_pipeline.py:1865} INFO - Detalles obtenidos para: Cleaner (ID: 1125899)
+[2025-04-05T15:23:00.342+0000] {tmdb_pipeline.py:1865} INFO - Detalles obtenidos para: A Working Man (ID: 1197306)
+[2025-04-05T15:23:00.398+0000] {tmdb_pipeline.py:1865} INFO - Detalles obtenidos para: Los silenciosos (ID: 1261050)
+[2025-04-05T15:23:00.555+0000] {tmdb_pipeline.py:1887} INFO - Enviada a Kafka: Una película de Minecraft (Offset: 0)
+[2025-04-05T15:23:00.559+0000] {tmdb_pipeline.py:1931} INFO - Procesado con éxito: Una película de Minecraft
+[2025-04-05T15:23:00.563+0000] {tmdb_pipeline.py:1887} INFO - Enviada a Kafka: Criminales de lujo (Offset: 1)
+[2025-04-05T15:23:00.569+0000] {tmdb_pipeline.py:1931} INFO - Procesado con éxito: Criminales de lujo
+[2025-04-05T15:23:00.570+0000] {tmdb_pipeline.py:1887} INFO - Enviada a Kafka: Cleaner (Offset: 2)
+[2025-04-05T15:23:00.573+0000] {tmdb_pipeline.py:1887} INFO - Enviada a Kafka: A Working Man (Offset: 3)
+[2025-04-05T15:23:00.573+0000] {tmdb_pipeline.py:1931} INFO - Procesado con éxito: Cleaner
+[2025-04-05T15:23:00.576+0000] {tmdb_pipeline.py:1887} INFO - Enviada a Kafka: Los silenciosos (Offset: 4)
+[2025-04-05T15:23:00.577+0000] {tmdb_pipeline.py:1931} INFO - Procesado con éxito: A Working Man
+[2025-04-05T15:23:00.578+0000] {tmdb_pipeline.py:1931} INFO - Procesado con éxito: Los silenciosos
+[2025-04-05T15:23:00.690+0000] {tmdb_pipeline.py:1865} INFO - Detalles obtenidos para: Pídeme lo que quieras (ID: 1252309)
+[2025-04-05T15:23:00.691+0000] {tmdb_pipeline.py:1865} INFO - Detalles obtenidos para: Relatos Fantásticos (ID: 1165067)
+[2025-04-05T15:23:00.697+0000] {tmdb_pipeline.py:1865} INFO - Detalles obtenidos para: Capitán América: Brave New World (ID: 822119)
+[2025-04-05T15:23:00.705+0000] {tmdb_pipeline.py:1887} INFO - Enviada a Kafka: Pídeme lo que quieras (Offset: 5)
+[2025-04-05T15:23:00.708+0000] {tmdb_pipeline.py:1931} INFO - Procesado con éxito: Pídeme lo que quieras
+[2025-04-05T15:23:00.709+0000] {tmdb_pipeline.py:1887} INFO - Enviada a Kafka: Relatos Fantásticos (Offset: 6)
+[2025-04-05T15:23:00.712+0000] {tmdb_pipeline.py:1931} INFO - Procesado con éxito: Relatos Fantásticos
+[2025-04-05T15:23:00.713+0000] {tmdb_pipeline.py:1887} INFO - Enviada a Kafka: Capitán América: Brave New World (Offset: 7)
+[2025-04-05T15:23:00.716+0000] {tmdb_pipeline.py:1931} INFO - Procesado con éxito: Capitán América: Brave New World
+[2025-04-05T15:23:00.736+0000] {tmdb_pipeline.py:1865} INFO - Detalles obtenidos para: Códigos de Guerra (ID: 1373723)
+[2025-04-05T15:23:00.741+0000] {tmdb_pipeline.py:1887} INFO - Enviada a Kafka: Códigos de Guerra (Offset: 8)
+[2025-04-05T15:23:00.743+0000] {tmdb_pipeline.py:1931} INFO - Procesado con éxito: Códigos de Guerra
+[2025-04-05T15:23:00.827+0000] {tmdb_pipeline.py:1865} INFO - Detalles obtenidos para: Mufasa: El rey león (ID: 762509)
+[2025-04-05T15:23:00.830+0000] {tmdb_pipeline.py:1865} INFO - Detalles obtenidos para: Mi lista de deseos (ID: 1254786)
+[2025-04-05T15:23:00.834+0000] {tmdb_pipeline.py:1887} INFO - Enviada a Kafka: Mufasa: El rey león (Offset: 9)
+[2025-04-05T15:23:00.838+0000] {tmdb_pipeline.py:1931} INFO - Procesado con éxito: Mufasa: El rey león
+[2025-04-05T15:23:00.839+0000] {tmdb_pipeline.py:1887} INFO - Enviada a Kafka: Mi lista de deseos (Offset: 10)
+[2025-04-05T15:23:00.841+0000] {tmdb_pipeline.py:1931} INFO - Procesado con éxito: Mi lista de deseos
+[2025-04-05T15:23:00.848+0000] {tmdb_pipeline.py:1865} INFO - Detalles obtenidos para: Fight or Flight (ID: 1212855)
+[2025-04-05T15:23:00.855+0000] {tmdb_pipeline.py:1887} INFO - Enviada a Kafka: Fight or Flight (Offset: 11)
+[2025-04-05T15:23:00.858+0000] {tmdb_pipeline.py:1931} INFO - Procesado con éxito: Fight or Flight
+[2025-04-05T15:23:00.897+0000] {tmdb_pipeline.py:1865} INFO - Detalles obtenidos para: Vaiana 2 (ID: 1241982)
+[2025-04-05T15:23:00.905+0000] {tmdb_pipeline.py:1887} INFO - Enviada a Kafka: Vaiana 2 (Offset: 12)
+[2025-04-05T15:23:00.910+0000] {tmdb_pipeline.py:1931} INFO - Procesado con éxito: Vaiana 2
+[2025-04-05T15:23:00.948+0000] {tmdb_pipeline.py:1865} INFO - Detalles obtenidos para: Confidencial (Black Bag) (ID: 1233575)
+[2025-04-05T15:23:00.955+0000] {tmdb_pipeline.py:1887} INFO - Enviada a Kafka: Confidencial (Black Bag) (Offset: 13)
+[2025-04-05T15:23:00.959+0000] {tmdb_pipeline.py:1931} INFO - Procesado con éxito: Confidencial (Black Bag)
+[2025-04-05T15:23:01.027+0000] {tmdb_pipeline.py:1865} INFO - Detalles obtenidos para: Holland (ID: 257094)
+[2025-04-05T15:23:01.032+0000] {tmdb_pipeline.py:1887} INFO - Enviada a Kafka: Holland (Offset: 14)
+[2025-04-05T15:23:01.035+0000] {tmdb_pipeline.py:1931} INFO - Procesado con éxito: Holland
+[2025-04-05T15:23:01.098+0000] {tmdb_pipeline.py:1865} INFO - Detalles obtenidos para: देवा (ID: 1195430)
+[2025-04-05T15:23:01.102+0000] {tmdb_pipeline.py:1865} INFO - Detalles obtenidos para: Blancanieves (ID: 447273)
+[2025-04-05T15:23:01.104+0000] {tmdb_pipeline.py:1887} INFO - Enviada a Kafka: देवा (Offset: 15)
+[2025-04-05T15:23:01.107+0000] {tmdb_pipeline.py:1931} INFO - Procesado con éxito: देवा
+[2025-04-05T15:23:01.107+0000] {tmdb_pipeline.py:1887} INFO - Enviada a Kafka: Blancanieves (Offset: 16)
+[2025-04-05T15:23:01.111+0000] {tmdb_pipeline.py:1931} INFO - Procesado con éxito: Blancanieves
+[2025-04-05T15:23:01.244+0000] {tmdb_pipeline.py:1865} INFO - Detalles obtenidos para: Sonic 3: La película (ID: 939243)
+[2025-04-05T15:23:01.247+0000] {tmdb_pipeline.py:1865} INFO - Detalles obtenidos para: Contraataque (ID: 1356039)
+[2025-04-05T15:23:01.251+0000] {tmdb_pipeline.py:1865} INFO - Detalles obtenidos para: Mickey 17 (ID: 696506)
+[2025-04-05T15:23:01.254+0000] {tmdb_pipeline.py:1887} INFO - Enviada a Kafka: Sonic 3: La película (Offset: 17)
+[2025-04-05T15:23:01.260+0000] {tmdb_pipeline.py:1887} INFO - Enviada a Kafka: Contraataque (Offset: 18)
+[2025-04-05T15:23:01.258+0000] {tmdb_pipeline.py:1931} INFO - Procesado con éxito: Sonic 3: La película
+[2025-04-05T15:23:01.262+0000] {tmdb_pipeline.py:1887} INFO - Enviada a Kafka: Mickey 17 (Offset: 19)
+[2025-04-05T15:23:01.265+0000] {tmdb_pipeline.py:1931} INFO - Procesado con éxito: Contraataque
+[2025-04-05T15:23:01.268+0000] {tmdb_pipeline.py:1931} INFO - Procesado con éxito: Mickey 17
+[2025-04-05T15:23:01.375+0000] {tmdb_pipeline.py:1865} INFO - Detalles obtenidos para: Amenaza en el aire (ID: 1126166)
+[2025-04-05T15:23:01.376+0000] {tmdb_pipeline.py:1865} INFO - Detalles obtenidos para: Batman Ninja vs. Yakuza League (ID: 1297763)
+[2025-04-05T15:23:01.383+0000] {tmdb_pipeline.py:1887} INFO - Enviada a Kafka: Amenaza en el aire (Offset: 20)
+[2025-04-05T15:23:01.385+0000] {tmdb_pipeline.py:1887} INFO - Enviada a Kafka: Batman Ninja vs. Yakuza League (Offset: 21)
+[2025-04-05T15:23:01.385+0000] {tmdb_pipeline.py:1931} INFO - Procesado con éxito: Amenaza en el aire
+[2025-04-05T15:23:01.389+0000] {tmdb_pipeline.py:1931} INFO - Procesado con éxito: Batman Ninja vs. Yakuza League
+[2025-04-05T15:23:01.450+0000] {tmdb_pipeline.py:1865} INFO - Detalles obtenidos para: El abismo secreto (ID: 950396)
+[2025-04-05T15:23:01.458+0000] {tmdb_pipeline.py:1887} INFO - Enviada a Kafka: El abismo secreto (Offset: 22)
+[2025-04-05T15:23:01.461+0000] {tmdb_pipeline.py:1931} INFO - Procesado con éxito: El abismo secreto
+[2025-04-05T15:23:01.541+0000] {tmdb_pipeline.py:1865} INFO - Detalles obtenidos para: Opus (ID: 1202479)
+[2025-04-05T15:23:01.545+0000] {tmdb_pipeline.py:1887} INFO - Enviada a Kafka: Opus (Offset: 23)
+[2025-04-05T15:23:01.548+0000] {tmdb_pipeline.py:1931} INFO - Procesado con éxito: Opus
+[2025-04-05T15:23:01.648+0000] {tmdb_pipeline.py:1865} INFO - Detalles obtenidos para: Oni-Goroshi: Ciudad de los demonios (ID: 1405338)
+[2025-04-05T15:23:01.650+0000] {tmdb_pipeline.py:1865} INFO - Detalles obtenidos para: Z Zone (ID: 1301650)
+[2025-04-05T15:23:01.654+0000] {tmdb_pipeline.py:1887} INFO - Enviada a Kafka: Oni-Goroshi: Ciudad de los demonios (Offset: 24)
+[2025-04-05T15:23:01.656+0000] {tmdb_pipeline.py:1887} INFO - Enviada a Kafka: Z Zone (Offset: 25)
+[2025-04-05T15:23:01.658+0000] {tmdb_pipeline.py:1931} INFO - Procesado con éxito: Oni-Goroshi: Ciudad de los demonios
+[2025-04-05T15:23:01.660+0000] {tmdb_pipeline.py:1931} INFO - Procesado con éxito: Z Zone
+[2025-04-05T15:23:01.680+0000] {tmdb_pipeline.py:1865} INFO - Detalles obtenidos para: Kraven the Hunter (ID: 539972)
+[2025-04-05T15:23:01.686+0000] {tmdb_pipeline.py:1887} INFO - Enviada a Kafka: Kraven the Hunter (Offset: 26)
+[2025-04-05T15:23:01.689+0000] {tmdb_pipeline.py:1931} INFO - Procesado con éxito: Kraven the Hunter
+[2025-04-05T15:23:01.759+0000] {tmdb_pipeline.py:1865} INFO - Detalles obtenidos para: Giro final (ID: 1441734)
+[2025-04-05T15:23:01.764+0000] {tmdb_pipeline.py:1887} INFO - Enviada a Kafka: Giro final (Offset: 27)
+[2025-04-05T15:23:01.767+0000] {tmdb_pipeline.py:1931} INFO - Procesado con éxito: Giro final
+[2025-04-05T15:23:01.838+0000] {tmdb_pipeline.py:1865} INFO - Detalles obtenidos para: El maestro del crimen (ID: 1077782)
+[2025-04-05T15:23:01.844+0000] {tmdb_pipeline.py:1887} INFO - Enviada a Kafka: El maestro del crimen (Offset: 28)
+[2025-04-05T15:23:01.847+0000] {tmdb_pipeline.py:1931} INFO - Procesado con éxito: El maestro del crimen
+[2025-04-05T15:23:01.878+0000] {tmdb_pipeline.py:1865} INFO - Detalles obtenidos para: La acompañante (ID: 1084199)
+[2025-04-05T15:23:01.884+0000] {tmdb_pipeline.py:1887} INFO - Enviada a Kafka: La acompañante (Offset: 29)
+[2025-04-05T15:23:01.886+0000] {tmdb_pipeline.py:1931} INFO - Procesado con éxito: La acompañante
+[2025-04-05T15:23:01.906+0000] {tmdb_pipeline.py:1865} INFO - Detalles obtenidos para: Hellhound (ID: 1217379)
+[2025-04-05T15:23:01.911+0000] {tmdb_pipeline.py:1887} INFO - Enviada a Kafka: Hellhound (Offset: 30)
+[2025-04-05T15:23:01.913+0000] {tmdb_pipeline.py:1931} INFO - Procesado con éxito: Hellhound
+[2025-04-05T15:23:01.953+0000] {tmdb_pipeline.py:1865} INFO - Detalles obtenidos para: Amaran (ID: 927342)
+[2025-04-05T15:23:01.961+0000] {tmdb_pipeline.py:1887} INFO - Enviada a Kafka: Amaran (Offset: 31)
+[2025-04-05T15:23:01.965+0000] {tmdb_pipeline.py:1931} INFO - Procesado con éxito: Amaran
+[2025-04-05T15:23:02.001+0000] {tmdb_pipeline.py:1865} INFO - Detalles obtenidos para: Venom: El último baile (ID: 912649)
+[2025-04-05T15:23:02.007+0000] {tmdb_pipeline.py:1887} INFO - Enviada a Kafka: Venom: El último baile (Offset: 32)
+[2025-04-05T15:23:02.011+0000] {tmdb_pipeline.py:1931} INFO - Procesado con éxito: Venom: El último baile
+[2025-04-05T15:23:02.024+0000] {tmdb_pipeline.py:1865} INFO - Detalles obtenidos para: DJ encubierto (ID: 1265623)
+[2025-04-05T15:23:02.029+0000] {tmdb_pipeline.py:1887} INFO - Enviada a Kafka: DJ encubierto (Offset: 33)
+[2025-04-05T15:23:02.031+0000] {tmdb_pipeline.py:1931} INFO - Procesado con éxito: DJ encubierto
+[2025-04-05T15:23:02.086+0000] {tmdb_pipeline.py:1865} INFO - Detalles obtenidos para: Gladiator II (ID: 558449)
+[2025-04-05T15:23:02.091+0000] {tmdb_pipeline.py:1887} INFO - Enviada a Kafka: Gladiator II (Offset: 34)
+[2025-04-05T15:23:02.093+0000] {tmdb_pipeline.py:1931} INFO - Procesado con éxito: Gladiator II
+[2025-04-05T15:23:02.137+0000] {tmdb_pipeline.py:1865} INFO - Detalles obtenidos para: Ghost Game (ID: 1249385)
+[2025-04-05T15:23:02.145+0000] {tmdb_pipeline.py:1865} INFO - Detalles obtenidos para: Dark Match (ID: 1062276)
+[2025-04-05T15:23:02.146+0000] {tmdb_pipeline.py:1887} INFO - Enviada a Kafka: Ghost Game (Offset: 35)
+[2025-04-05T15:23:02.150+0000] {tmdb_pipeline.py:1887} INFO - Enviada a Kafka: Dark Match (Offset: 36)
+[2025-04-05T15:23:02.151+0000] {tmdb_pipeline.py:1931} INFO - Procesado con éxito: Ghost Game
+[2025-04-05T15:23:02.155+0000] {tmdb_pipeline.py:1931} INFO - Procesado con éxito: Dark Match
+[2025-04-05T15:23:02.213+0000] {tmdb_pipeline.py:1865} INFO - Detalles obtenidos para: El ejecutor (ID: 995926)
+[2025-04-05T15:23:02.218+0000] {tmdb_pipeline.py:1887} INFO - Enviada a Kafka: El ejecutor (Offset: 37)
+[2025-04-05T15:23:02.222+0000] {tmdb_pipeline.py:1931} INFO - Procesado con éxito: El ejecutor
+[2025-04-05T15:23:02.279+0000] {tmdb_pipeline.py:1865} INFO - Detalles obtenidos para: Plankton, la película (ID: 1104845)
+[2025-04-05T15:23:02.284+0000] {tmdb_pipeline.py:1887} INFO - Enviada a Kafka: Plankton, la película (Offset: 38)
+[2025-04-05T15:23:02.285+0000] {tmdb_pipeline.py:1931} INFO - Procesado con éxito: Plankton, la película
+[2025-04-05T15:23:02.354+0000] {tmdb_pipeline.py:1865} INFO - Detalles obtenidos para: Estado eléctrico (ID: 777443)
+[2025-04-05T15:23:02.360+0000] {tmdb_pipeline.py:1865} INFO - Detalles obtenidos para: Frogman (ID: 1139937)
+[2025-04-05T15:23:02.361+0000] {tmdb_pipeline.py:1887} INFO - Enviada a Kafka: Estado eléctrico (Offset: 39)
+[2025-04-05T15:23:02.363+0000] {tmdb_pipeline.py:1931} INFO - Procesado con éxito: Estado eléctrico
+[2025-04-05T15:23:02.365+0000] {tmdb_pipeline.py:1887} INFO - Enviada a Kafka: Frogman (Offset: 40)
+[2025-04-05T15:23:02.368+0000] {tmdb_pipeline.py:1931} INFO - Procesado con éxito: Frogman
+[2025-04-05T15:23:02.438+0000] {tmdb_pipeline.py:1865} INFO - Detalles obtenidos para: Дур тачаалын эрэлд 3 (ID: 1433371)
+[2025-04-05T15:23:02.444+0000] {tmdb_pipeline.py:1887} INFO - Enviada a Kafka: Дур тачаалын эрэлд 3 (Offset: 41)
+[2025-04-05T15:23:02.447+0000] {tmdb_pipeline.py:1931} INFO - Procesado con éxito: Дур тачаалын эрэлд 3
+[2025-04-05T15:23:02.476+0000] {tmdb_pipeline.py:1865} INFO - Detalles obtenidos para: Flow, un mundo que salvar (ID: 823219)
+[2025-04-05T15:23:02.477+0000] {tmdb_pipeline.py:1865} INFO - Detalles obtenidos para: स्काई फ़ोर्स (ID: 1143407)
+[2025-04-05T15:23:02.481+0000] {tmdb_pipeline.py:1887} INFO - Enviada a Kafka: Flow, un mundo que salvar (Offset: 42)
+[2025-04-05T15:23:02.482+0000] {tmdb_pipeline.py:1887} INFO - Enviada a Kafka: स्काई फ़ोर्स (Offset: 43)
+[2025-04-05T15:23:02.483+0000] {tmdb_pipeline.py:1931} INFO - Procesado con éxito: Flow, un mundo que salvar
+[2025-04-05T15:23:02.486+0000] {tmdb_pipeline.py:1931} INFO - Procesado con éxito: स्काई फ़ोर्स
+[2025-04-05T15:23:02.555+0000] {tmdb_pipeline.py:1865} INFO - Detalles obtenidos para: Mar.IA (ID: 912032)
+[2025-04-05T15:23:02.561+0000] {tmdb_pipeline.py:1887} INFO - Enviada a Kafka: Mar.IA (Offset: 44)
+[2025-04-05T15:23:02.566+0000] {tmdb_pipeline.py:1931} INFO - Procesado con éxito: Mar.IA
+[2025-04-05T15:23:02.621+0000] {tmdb_pipeline.py:1865} INFO - Detalles obtenidos para: El último disparo (ID: 1151470)
+[2025-04-05T15:23:02.625+0000] {tmdb_pipeline.py:1887} INFO - Enviada a Kafka: El último disparo (Offset: 45)
+[2025-04-05T15:23:02.627+0000] {tmdb_pipeline.py:1931} INFO - Procesado con éxito: El último disparo
+[2025-04-05T15:23:02.642+0000] {tmdb_pipeline.py:1865} INFO - Detalles obtenidos para: Solo Leveling: ReAwakening (ID: 1357633)
+[2025-04-05T15:23:02.647+0000] {tmdb_pipeline.py:1887} INFO - Enviada a Kafka: Solo Leveling: ReAwakening (Offset: 46)
+[2025-04-05T15:23:02.649+0000] {tmdb_pipeline.py:1931} INFO - Procesado con éxito: Solo Leveling: ReAwakening
+[2025-04-05T15:23:02.702+0000] {tmdb_pipeline.py:1865} INFO - Detalles obtenidos para: Memorias de un caracol (ID: 1064486)
+[2025-04-05T15:23:02.707+0000] {tmdb_pipeline.py:1887} INFO - Enviada a Kafka: Memorias de un caracol (Offset: 47)
+[2025-04-05T15:23:02.710+0000] {tmdb_pipeline.py:1931} INFO - Procesado con éxito: Memorias de un caracol
+[2025-04-05T15:23:02.763+0000] {tmdb_pipeline.py:1865} INFO - Detalles obtenidos para: Deadpool y Lobezno (ID: 533535)
+[2025-04-05T15:23:02.767+0000] {tmdb_pipeline.py:1865} INFO - Detalles obtenidos para: Robot salvaje (ID: 1184918)
+[2025-04-05T15:23:02.769+0000] {tmdb_pipeline.py:1887} INFO - Enviada a Kafka: Deadpool y Lobezno (Offset: 48)
+[2025-04-05T15:23:02.771+0000] {tmdb_pipeline.py:1931} INFO - Procesado con éxito: Deadpool y Lobezno
+[2025-04-05T15:23:02.773+0000] {tmdb_pipeline.py:1887} INFO - Enviada a Kafka: Robot salvaje (Offset: 49)
+[2025-04-05T15:23:02.776+0000] {tmdb_pipeline.py:1931} INFO - Procesado con éxito: Robot salvaje
+[2025-04-05T15:23:02.826+0000] {tmdb_pipeline.py:1865} INFO - Detalles obtenidos para: Gru 4. Mi villano favorito (ID: 519182)
+[2025-04-05T15:23:02.831+0000] {tmdb_pipeline.py:1887} INFO - Enviada a Kafka: Gru 4. Mi villano favorito (Offset: 50)
+[2025-04-05T15:23:02.833+0000] {tmdb_pipeline.py:1931} INFO - Procesado con éxito: Gru 4. Mi villano favorito
+[2025-04-05T15:23:02.882+0000] {tmdb_pipeline.py:1865} INFO - Detalles obtenidos para: The Monkey (ID: 1124620)
+[2025-04-05T15:23:02.887+0000] {tmdb_pipeline.py:1887} INFO - Enviada a Kafka: The Monkey (Offset: 51)
+[2025-04-05T15:23:02.890+0000] {tmdb_pipeline.py:1865} INFO - Detalles obtenidos para: Panda Plan (ID: 1160956)
+[2025-04-05T15:23:02.894+0000] {tmdb_pipeline.py:1931} INFO - Procesado con éxito: The Monkey
+[2025-04-05T15:23:02.895+0000] {tmdb_pipeline.py:1887} INFO - Enviada a Kafka: Panda Plan (Offset: 52)
+[2025-04-05T15:23:02.898+0000] {tmdb_pipeline.py:1931} INFO - Procesado con éxito: Panda Plan
+[2025-04-05T15:23:02.969+0000] {tmdb_pipeline.py:1865} INFO - Detalles obtenidos para: xXx (ID: 7451)
+[2025-04-05T15:23:02.975+0000] {tmdb_pipeline.py:1887} INFO - Enviada a Kafka: xXx (Offset: 53)
+[2025-04-05T15:23:02.981+0000] {tmdb_pipeline.py:1931} INFO - Procesado con éxito: xXx
+[2025-04-05T15:23:03.000+0000] {tmdb_pipeline.py:1865} INFO - Detalles obtenidos para: Culpa mía (ID: 1010581)
+[2025-04-05T15:23:03.004+0000] {tmdb_pipeline.py:1887} INFO - Enviada a Kafka: Culpa mía (Offset: 54)
+[2025-04-05T15:23:03.007+0000] {tmdb_pipeline.py:1931} INFO - Procesado con éxito: Culpa mía
+[2025-04-05T15:23:03.011+0000] {tmdb_pipeline.py:1865} INFO - Detalles obtenidos para: ¿Quién es quién? (ID: 1187294)
+[2025-04-05T15:23:03.016+0000] {tmdb_pipeline.py:1887} INFO - Enviada a Kafka: ¿Quién es quién? (Offset: 55)
+[2025-04-05T15:23:03.018+0000] {tmdb_pipeline.py:1931} INFO - Procesado con éxito: ¿Quién es quién?
+[2025-04-05T15:23:03.112+0000] {tmdb_pipeline.py:1865} INFO - Detalles obtenidos para: Presence (ID: 1140535)
+[2025-04-05T15:23:03.116+0000] {tmdb_pipeline.py:1887} INFO - Enviada a Kafka: Presence (Offset: 56)
+[2025-04-05T15:23:03.119+0000] {tmdb_pipeline.py:1931} INFO - Procesado con éxito: Presence
+[2025-04-05T15:23:03.123+0000] {tmdb_pipeline.py:1865} INFO - Detalles obtenidos para: 痴漢電車 あの娘にタッチ (ID: 981044)
+[2025-04-05T15:23:03.127+0000] {tmdb_pipeline.py:1887} INFO - Enviada a Kafka: 痴漢電車 あの娘にタッチ (Offset: 57)
+[2025-04-05T15:23:03.131+0000] {tmdb_pipeline.py:1931} INFO - Procesado con éxito: 痴漢電車 あの娘にタッチ
+[2025-04-05T15:23:03.193+0000] {tmdb_pipeline.py:1865} INFO - Detalles obtenidos para: Anora (ID: 1064213)
+[2025-04-05T15:23:03.199+0000] {tmdb_pipeline.py:1887} INFO - Enviada a Kafka: Anora (Offset: 58)
+[2025-04-05T15:23:03.219+0000] {tmdb_pipeline.py:1931} INFO - Procesado con éxito: Anora
+[2025-04-05T15:23:03.241+0000] {tmdb_pipeline.py:1865} INFO - Detalles obtenidos para: Del revés 2 (Inside Out 2) (ID: 1022789)
+[2025-04-05T15:23:03.247+0000] {tmdb_pipeline.py:1887} INFO - Enviada a Kafka: Del revés 2 (Inside Out 2) (Offset: 59)
+[2025-04-05T15:23:03.251+0000] {tmdb_pipeline.py:1931} INFO - Procesado con éxito: Del revés 2 (Inside Out 2)
+[2025-04-05T15:23:03.255+0000] {tmdb_pipeline.py:1865} INFO - Detalles obtenidos para: Los Frikis (ID: 980296)
+[2025-04-05T15:23:03.263+0000] {tmdb_pipeline.py:1887} INFO - Enviada a Kafka: Los Frikis (Offset: 60)
+[2025-04-05T15:23:03.267+0000] {tmdb_pipeline.py:1931} INFO - Procesado con éxito: Los Frikis
+[2025-04-05T15:23:03.331+0000] {tmdb_pipeline.py:1865} INFO - Detalles obtenidos para: ยูเรนัส 2324 (ID: 1167366)
+[2025-04-05T15:23:03.336+0000] {tmdb_pipeline.py:1887} INFO - Enviada a Kafka: ยูเรนัส 2324 (Offset: 61)
+[2025-04-05T15:23:03.340+0000] {tmdb_pipeline.py:1931} INFO - Procesado con éxito: ยูเรนัส 2324
+[2025-04-05T15:23:03.369+0000] {tmdb_pipeline.py:1865} INFO - Detalles obtenidos para: La sustancia (ID: 933260)
+[2025-04-05T15:23:03.374+0000] {tmdb_pipeline.py:1887} INFO - Enviada a Kafka: La sustancia (Offset: 62)
+[2025-04-05T15:23:03.378+0000] {tmdb_pipeline.py:1931} INFO - Procesado con éxito: La sustancia
+[2025-04-05T15:23:03.436+0000] {tmdb_pipeline.py:1865} INFO - Detalles obtenidos para: Presence (ID: 1140535)
+[2025-04-05T15:23:03.438+0000] {tmdb_pipeline.py:1865} INFO - Detalles obtenidos para: Henry Danger: La película (ID: 926670)
+[2025-04-05T15:23:03.444+0000] {tmdb_pipeline.py:1887} INFO - Enviada a Kafka: Presence (Offset: 63)
+[2025-04-05T15:23:03.448+0000] {tmdb_pipeline.py:1931} INFO - Procesado con éxito: Presence
+[2025-04-05T15:23:03.450+0000] {tmdb_pipeline.py:1887} INFO - Enviada a Kafka: Henry Danger: La película (Offset: 64)
+[2025-04-05T15:23:03.454+0000] {tmdb_pipeline.py:1931} INFO - Procesado con éxito: Henry Danger: La película
+[2025-04-05T15:23:03.563+0000] {tmdb_pipeline.py:1865} INFO - Detalles obtenidos para: El padrino (ID: 238)
+[2025-04-05T15:23:03.570+0000] {tmdb_pipeline.py:1887} INFO - Enviada a Kafka: El padrino (Offset: 65)
+[2025-04-05T15:23:03.573+0000] {tmdb_pipeline.py:1931} INFO - Procesado con éxito: El padrino
+[2025-04-05T15:23:03.646+0000] {tmdb_pipeline.py:1865} INFO - Detalles obtenidos para: Este amor sí que duele (ID: 1226406)
+[2025-04-05T15:23:03.651+0000] {tmdb_pipeline.py:1887} INFO - Enviada a Kafka: Este amor sí que duele (Offset: 66)
+[2025-04-05T15:23:03.654+0000] {tmdb_pipeline.py:1931} INFO - Procesado con éxito: Este amor sí que duele
+[2025-04-05T15:23:03.713+0000] {tmdb_pipeline.py:1865} INFO - Detalles obtenidos para: Blade Runner 2049 (ID: 335984)
+[2025-04-05T15:23:03.718+0000] {tmdb_pipeline.py:1887} INFO - Enviada a Kafka: Blade Runner 2049 (Offset: 67)
+[2025-04-05T15:23:03.721+0000] {tmdb_pipeline.py:1931} INFO - Procesado con éxito: Blade Runner 2049
+[2025-04-05T15:23:03.809+0000] {tmdb_pipeline.py:1865} INFO - Detalles obtenidos para: Doble espionaje (ID: 1249289)
+[2025-04-05T15:23:03.812+0000] {tmdb_pipeline.py:1887} INFO - Enviada a Kafka: Doble espionaje (Offset: 68)
+[2025-04-05T15:23:03.815+0000] {tmdb_pipeline.py:1931} INFO - Procesado con éxito: Doble espionaje
+[2025-04-05T15:23:03.871+0000] {tmdb_pipeline.py:1865} INFO - Detalles obtenidos para: Vengadores: Infinity War (ID: 299536)
+[2025-04-05T15:23:03.876+0000] {tmdb_pipeline.py:1887} INFO - Enviada a Kafka: Vengadores: Infinity War (Offset: 69)
+[2025-04-05T15:23:03.879+0000] {tmdb_pipeline.py:1931} INFO - Procesado con éxito: Vengadores: Infinity War
+[2025-04-05T15:23:03.949+0000] {tmdb_pipeline.py:1865} INFO - Detalles obtenidos para: Interstellar (ID: 157336)
+[2025-04-05T15:23:03.953+0000] {tmdb_pipeline.py:1887} INFO - Enviada a Kafka: Interstellar (Offset: 70)
+[2025-04-05T15:23:03.957+0000] {tmdb_pipeline.py:1931} INFO - Procesado con éxito: Interstellar
+[2025-04-05T15:23:04.076+0000] {tmdb_pipeline.py:1865} INFO - Detalles obtenidos para: Policán (ID: 774370)
+[2025-04-05T15:23:04.150+0000] {tmdb_pipeline.py:1887} INFO - Enviada a Kafka: Policán (Offset: 71)
+[2025-04-05T15:23:04.152+0000] {tmdb_pipeline.py:1865} INFO - Detalles obtenidos para: Cadena perpetua (ID: 278)
+[2025-04-05T15:23:04.154+0000] {tmdb_pipeline.py:1931} INFO - Procesado con éxito: Policán
+[2025-04-05T15:23:04.159+0000] {tmdb_pipeline.py:1887} INFO - Enviada a Kafka: Cadena perpetua (Offset: 72)
+[2025-04-05T15:23:04.161+0000] {tmdb_pipeline.py:1931} INFO - Procesado con éxito: Cadena perpetua
+[2025-04-05T15:23:04.264+0000] {tmdb_pipeline.py:1865} INFO - Detalles obtenidos para: Culpa mía: Londres (ID: 1294203)
+[2025-04-05T15:23:04.269+0000] {tmdb_pipeline.py:1887} INFO - Enviada a Kafka: Culpa mía: Londres (Offset: 73)
+[2025-04-05T15:23:04.271+0000] {tmdb_pipeline.py:1931} INFO - Procesado con éxito: Culpa mía: Londres
+[2025-04-05T15:23:04.274+0000] {tmdb_pipeline.py:1865} INFO - Detalles obtenidos para: Uppercut (ID: 1391385)
+[2025-04-05T15:23:04.280+0000] {tmdb_pipeline.py:1887} INFO - Enviada a Kafka: Uppercut (Offset: 74)
+[2025-04-05T15:23:04.283+0000] {tmdb_pipeline.py:1931} INFO - Procesado con éxito: Uppercut
+[2025-04-05T15:23:04.381+0000] {tmdb_pipeline.py:1865} INFO - Detalles obtenidos para: Culpa tuya (ID: 1156593)
+[2025-04-05T15:23:04.385+0000] {tmdb_pipeline.py:1887} INFO - Enviada a Kafka: Culpa tuya (Offset: 75)
+[2025-04-05T15:23:04.387+0000] {tmdb_pipeline.py:1931} INFO - Procesado con éxito: Culpa tuya
+[2025-04-05T15:23:04.404+0000] {tmdb_pipeline.py:1865} INFO - Detalles obtenidos para: Heretic (ID: 1138194)
+[2025-04-05T15:23:04.408+0000] {tmdb_pipeline.py:1887} INFO - Enviada a Kafka: Heretic (Offset: 76)
+[2025-04-05T15:23:04.411+0000] {tmdb_pipeline.py:1931} INFO - Procesado con éxito: Heretic
+[2025-04-05T15:23:04.501+0000] {tmdb_pipeline.py:1865} INFO - Detalles obtenidos para: Sin oxígeno (ID: 972533)
+[2025-04-05T15:23:04.538+0000] {tmdb_pipeline.py:1887} INFO - Enviada a Kafka: Sin oxígeno (Offset: 77)
+[2025-04-05T15:23:04.557+0000] {tmdb_pipeline.py:1931} INFO - Procesado con éxito: Sin oxígeno
+[2025-04-05T15:23:04.701+0000] {tmdb_pipeline.py:1865} INFO - Detalles obtenidos para: Bastion 36 (ID: 1230208)
+[2025-04-05T15:23:04.746+0000] {tmdb_pipeline.py:1887} INFO - Enviada a Kafka: Bastion 36 (Offset: 78)
+[2025-04-05T15:23:04.749+0000] {tmdb_pipeline.py:1931} INFO - Procesado con éxito: Bastion 36
+[2025-04-05T15:23:04.875+0000] {tmdb_pipeline.py:1865} INFO - Detalles obtenidos para: Kiskisan (ID: 1337395)
+[2025-04-05T15:23:04.891+0000] {tmdb_pipeline.py:1887} INFO - Enviada a Kafka: Kiskisan (Offset: 79)
+[2025-04-05T15:23:04.893+0000] {tmdb_pipeline.py:1931} INFO - Procesado con éxito: Kiskisan
+[2025-04-05T15:23:05.049+0000] {tmdb_pipeline.py:1865} INFO - Detalles obtenidos para: Le Clitoris (ID: 426889)
+[2025-04-05T15:23:05.055+0000] {tmdb_pipeline.py:1887} INFO - Enviada a Kafka: Le Clitoris (Offset: 80)
+[2025-04-05T15:23:05.058+0000] {tmdb_pipeline.py:1931} INFO - Procesado con éxito: Le Clitoris
+[2025-04-05T15:23:05.169+0000] {tmdb_pipeline.py:1865} INFO - Detalles obtenidos para: Acaba con ellos (ID: 804862)
+[2025-04-05T15:23:05.177+0000] {tmdb_pipeline.py:1887} INFO - Enviada a Kafka: Acaba con ellos (Offset: 81)
+[2025-04-05T15:23:05.181+0000] {tmdb_pipeline.py:1931} INFO - Procesado con éxito: Acaba con ellos
+[2025-04-05T15:23:05.290+0000] {tmdb_pipeline.py:1865} INFO - Detalles obtenidos para: Robotia, la película (ID: 1229646)
+[2025-04-05T15:23:05.295+0000] {tmdb_pipeline.py:1887} INFO - Enviada a Kafka: Robotia, la película (Offset: 82)
+[2025-04-05T15:23:05.298+0000] {tmdb_pipeline.py:1931} INFO - Procesado con éxito: Robotia, la película
+[2025-04-05T15:23:05.402+0000] {tmdb_pipeline.py:1865} INFO - Detalles obtenidos para: Elevation (ID: 1035048)
+[2025-04-05T15:23:05.407+0000] {tmdb_pipeline.py:1887} INFO - Enviada a Kafka: Elevation (Offset: 83)
+[2025-04-05T15:23:05.410+0000] {tmdb_pipeline.py:1931} INFO - Procesado con éxito: Elevation
+[2025-04-05T15:23:05.565+0000] {tmdb_pipeline.py:1865} INFO - Detalles obtenidos para: Dalia y el libro rojo (ID: 1333099)
+[2025-04-05T15:23:05.569+0000] {tmdb_pipeline.py:1887} INFO - Enviada a Kafka: Dalia y el libro rojo (Offset: 84)
+[2025-04-05T15:23:05.572+0000] {tmdb_pipeline.py:1931} INFO - Procesado con éxito: Dalia y el libro rojo
+[2025-04-05T15:23:05.690+0000] {tmdb_pipeline.py:1865} INFO - Detalles obtenidos para: El viaje de Chihiro (ID: 129)
+[2025-04-05T15:23:05.725+0000] {tmdb_pipeline.py:1887} INFO - Enviada a Kafka: El viaje de Chihiro (Offset: 85)
+[2025-04-05T15:23:05.727+0000] {tmdb_pipeline.py:1931} INFO - Procesado con éxito: El viaje de Chihiro
+[2025-04-05T15:23:05.838+0000] {tmdb_pipeline.py:1865} INFO - Detalles obtenidos para: Operación Zombie: Resurrección (ID: 1244361)
+[2025-04-05T15:23:05.843+0000] {tmdb_pipeline.py:1887} INFO - Enviada a Kafka: Operación Zombie: Resurrección (Offset: 86)
+[2025-04-05T15:23:05.846+0000] {tmdb_pipeline.py:1931} INFO - Procesado con éxito: Operación Zombie: Resurrección
+[2025-04-05T15:23:06.063+0000] {tmdb_pipeline.py:1865} INFO - Detalles obtenidos para: Red One (ID: 845781)
+[2025-04-05T15:23:06.067+0000] {tmdb_pipeline.py:1887} INFO - Enviada a Kafka: Red One (Offset: 87)
+[2025-04-05T15:23:06.071+0000] {tmdb_pipeline.py:1931} INFO - Procesado con éxito: Red One
+[2025-04-05T15:23:06.216+0000] {tmdb_pipeline.py:1865} INFO - Detalles obtenidos para: 痴漢電車 あの娘にタッチ (ID: 981044)
+[2025-04-05T15:23:06.220+0000] {tmdb_pipeline.py:1887} INFO - Enviada a Kafka: 痴漢電車 あの娘にタッチ (Offset: 88)
+[2025-04-05T15:23:06.222+0000] {tmdb_pipeline.py:1931} INFO - Procesado con éxito: 痴漢電車 あの娘にタッチ
+[2025-04-05T15:23:06.330+0000] {tmdb_pipeline.py:1865} INFO - Detalles obtenidos para: Control Freak (ID: 1286663)
+[2025-04-05T15:23:06.334+0000] {tmdb_pipeline.py:1887} INFO - Enviada a Kafka: Control Freak (Offset: 89)
+[2025-04-05T15:23:06.337+0000] {tmdb_pipeline.py:1931} INFO - Procesado con éxito: Control Freak
+[2025-04-05T15:23:06.443+0000] {tmdb_pipeline.py:1865} INFO - Detalles obtenidos para: 365 días: Aquel día (ID: 829557)
+[2025-04-05T15:23:06.447+0000] {tmdb_pipeline.py:1887} INFO - Enviada a Kafka: 365 días: Aquel día (Offset: 90)
+[2025-04-05T15:23:06.449+0000] {tmdb_pipeline.py:1931} INFO - Procesado con éxito: 365 días: Aquel día
+[2025-04-05T15:23:06.557+0000] {tmdb_pipeline.py:1865} INFO - Detalles obtenidos para: Revelación (ID: 1210938)
+[2025-04-05T15:23:06.561+0000] {tmdb_pipeline.py:1887} INFO - Enviada a Kafka: Revelación (Offset: 91)
+[2025-04-05T15:23:06.565+0000] {tmdb_pipeline.py:1931} INFO - Procesado con éxito: Revelación
+[2025-04-05T15:23:06.819+0000] {tmdb_pipeline.py:1865} INFO - Detalles obtenidos para: Wicked (ID: 402431)
+[2025-04-05T15:23:06.824+0000] {tmdb_pipeline.py:1887} INFO - Enviada a Kafka: Wicked (Offset: 94)
+[2025-04-05T15:23:06.827+0000] {tmdb_pipeline.py:1931} INFO - Procesado con éxito: Wicked
+[2025-04-05T15:23:06.988+0000] {tmdb_pipeline.py:1865} INFO - Detalles obtenidos para: Habitación en Roma (ID: 48650)
+[2025-04-05T15:23:06.991+0000] {tmdb_pipeline.py:1887} INFO - Enviada a Kafka: Habitación en Roma (Offset: 105)
+[2025-04-05T15:23:06.993+0000] {tmdb_pipeline.py:1931} INFO - Procesado con éxito: Habitación en Roma
+[2025-04-05T15:23:07.235+0000] {tmdb_pipeline.py:1865} INFO - Detalles obtenidos para: Top Gun: Maverick (ID: 361743)
+[2025-04-05T15:23:07.240+0000] {tmdb_pipeline.py:1887} INFO - Enviada a Kafka: Top Gun: Maverick (Offset: 115)
+[2025-04-05T15:23:07.242+0000] {tmdb_pipeline.py:1931} INFO - Procesado con éxito: Top Gun: Maverick
+[2025-04-05T15:23:07.351+0000] {tmdb_pipeline.py:1865} INFO - Detalles obtenidos para: Bloat (ID: 937393)
+[2025-04-05T15:23:07.356+0000] {tmdb_pipeline.py:1887} INFO - Enviada a Kafka: Bloat (Offset: 121)
+[2025-04-05T15:23:07.358+0000] {tmdb_pipeline.py:1931} INFO - Procesado con éxito: Bloat
+[2025-04-05T15:23:15.589+0000] {connectionpool.py:824} WARNING - Retrying (Retry(total=4, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='api.themoviedb.org', port=443): Read timed out. (read timeout=15)")': /3/movie/1020414?language=es-ES&append_to_response=credits%2Ckeywords%2Cvideos%2Csimilar
+[2025-04-05T15:23:15.852+0000] {connectionpool.py:824} WARNING - Retrying (Retry(total=4, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='api.themoviedb.org', port=443): Read timed out. (read timeout=15)")': /3/movie/1388366?language=es-ES&append_to_response=credits%2Ckeywords%2Cvideos%2Csimilar
+[2025-04-05T15:23:15.884+0000] {tmdb_pipeline.py:1865} INFO - Detalles obtenidos para: Peter Pan: Pesadilla en Nunca Jamás (ID: 1020414)
+[2025-04-05T15:23:15.892+0000] {tmdb_pipeline.py:1887} INFO - Enviada a Kafka: Peter Pan: Pesadilla en Nunca Jamás (Offset: 195)
+[2025-04-05T15:23:15.894+0000] {tmdb_pipeline.py:1931} INFO - Procesado con éxito: Peter Pan: Pesadilla en Nunca Jamás
+[2025-04-05T15:23:16.132+0000] {tmdb_pipeline.py:1865} INFO - Detalles obtenidos para: Popeye the Slayer Man (ID: 1388366)
+[2025-04-05T15:23:16.138+0000] {tmdb_pipeline.py:1887} INFO - Enviada a Kafka: Popeye the Slayer Man (Offset: 196)
+[2025-04-05T15:23:16.140+0000] {tmdb_pipeline.py:1931} INFO - Procesado con éxito: Popeye the Slayer Man
+[2025-04-05T15:23:18.395+0000] {connectionpool.py:824} WARNING - Retrying (Retry(total=4, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='api.themoviedb.org', port=443): Read timed out. (read timeout=15)")': /3/movie/1422211?language=es-ES&append_to_response=credits%2Ckeywords%2Cvideos%2Csimilar
+[2025-04-05T15:23:19.080+0000] {tmdb_pipeline.py:1865} INFO - Detalles obtenidos para: Дур тачаалын эрэлд (ID: 1422211)
+[2025-04-05T15:23:19.084+0000] {tmdb_pipeline.py:1887} INFO - Enviada a Kafka: Дур тачаалын эрэлд (Offset: 197)
+[2025-04-05T15:23:19.086+0000] {tmdb_pipeline.py:1931} INFO - Procesado con éxito: Дур тачаалын эрэлд
+[2025-04-05T15:23:19.428+0000] {connectionpool.py:824} WARNING - Retrying (Retry(total=4, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='api.themoviedb.org', port=443): Read timed out. (read timeout=15)")': /3/movie/921436?language=es-ES&append_to_response=credits%2Ckeywords%2Cvideos%2Csimilar
+[2025-04-05T15:23:19.689+0000] {tmdb_pipeline.py:1865} INFO - Detalles obtenidos para: Escape (ID: 921436)
+[2025-04-05T15:23:19.693+0000] {tmdb_pipeline.py:1887} INFO - Enviada a Kafka: Escape (Offset: 198)
+[2025-04-05T15:23:19.695+0000] {tmdb_pipeline.py:1931} INFO - Procesado con éxito: Escape
+[2025-04-05T15:23:19.698+0000] {tmdb_pipeline.py:1939} INFO - Proceso completado: 100 películas enviadas correctamente
+[2025-04-05T15:23:19.754+0000] {kafka.py:511} INFO - Closing the Kafka producer with 9223372036.0 secs timeout.
+[2025-04-05T15:23:19.762+0000] {conn.py:936} INFO - <BrokerConnection client_id=kafka-python-producer-1, node_id=1001 host=kafka:9093 <connected> [IPv4 ('172.19.0.7', 9093)]>: Closing connection. 
+[2025-04-05T15:23:19.766+0000] {python.py:237} INFO - Done. Returned value was: 100
+[2025-04-05T15:23:19.766+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2025-04-05T15:23:19.794+0000] {taskinstance.py:1205} INFO - Marking task as SUCCESS. dag_id=tmdb_pipeline_advanced, task_id=fetch_and_send_to_kafka, execution_date=20250405T000000, start_date=20250405T152252, end_date=20250405T152319
+[2025-04-05T15:23:19.845+0000] {local_task_job_runner.py:240} INFO - Task exited with return code 0
+[2025-04-05T15:23:19.915+0000] {taskinstance.py:3482} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2025-04-05T15:23:19.917+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

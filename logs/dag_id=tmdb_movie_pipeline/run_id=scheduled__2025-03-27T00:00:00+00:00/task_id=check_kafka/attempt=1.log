@@ -1,0 +1,39 @@
+[2025-03-28T19:36:39.229+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2025-03-28T19:36:39.336+0000] {taskinstance.py:2073} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: tmdb_movie_pipeline.check_kafka scheduled__2025-03-27T00:00:00+00:00 [queued]>
+[2025-03-28T19:36:39.363+0000] {taskinstance.py:2073} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: tmdb_movie_pipeline.check_kafka scheduled__2025-03-27T00:00:00+00:00 [queued]>
+[2025-03-28T19:36:39.364+0000] {taskinstance.py:2303} INFO - Starting attempt 1 of 2
+[2025-03-28T19:36:39.393+0000] {taskinstance.py:2327} INFO - Executing <Task(BashOperator): check_kafka> on 2025-03-27 00:00:00+00:00
+[2025-03-28T19:36:39.402+0000] {warnings.py:110} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:61: DeprecationWarning: This process (pid=3462) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2025-03-28T19:36:39.406+0000] {standard_task_runner.py:63} INFO - Started process 3463 to run task
+[2025-03-28T19:36:39.406+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'tmdb_movie_pipeline', 'check_kafka', 'scheduled__2025-03-27T00:00:00+00:00', '--job-id', '2', '--raw', '--subdir', 'DAGS_FOLDER/tmdb_pipeline_dag.py', '--cfg-path', '/tmp/tmplc_yf2dw']
+[2025-03-28T19:36:39.410+0000] {standard_task_runner.py:91} INFO - Job 2: Subtask check_kafka
+[2025-03-28T19:36:39.486+0000] {task_command.py:426} INFO - Running <TaskInstance: tmdb_movie_pipeline.check_kafka scheduled__2025-03-27T00:00:00+00:00 [running]> on host a98be7556e4b
+[2025-03-28T19:36:39.655+0000] {taskinstance.py:2644} INFO - Exporting env vars: AIRFLOW_CTX_DAG_EMAIL='moreragabriela1@gmail.com' AIRFLOW_CTX_DAG_OWNER='gabriela' AIRFLOW_CTX_DAG_ID='tmdb_movie_pipeline' AIRFLOW_CTX_TASK_ID='check_kafka' AIRFLOW_CTX_EXECUTION_DATE='2025-03-27T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2025-03-27T00:00:00+00:00'
+[2025-03-28T19:36:39.660+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2025-03-28T19:36:39.766+0000] {subprocess.py:63} INFO - Tmp dir root location: /tmp
+[2025-03-28T19:36:39.774+0000] {subprocess.py:75} INFO - Running command: ['/usr/bin/bash', '-c', '\n            if ! nc -z localhost 9092; then\n                echo "Kafka no está disponible en el puerto 9092"\n                exit 1\n            else\n                echo "Kafka está disponible"\n            fi\n        ']
+[2025-03-28T19:36:39.793+0000] {subprocess.py:86} INFO - Output:
+[2025-03-28T19:36:39.833+0000] {subprocess.py:93} INFO - Kafka no está disponible en el puerto 9092
+[2025-03-28T19:36:39.837+0000] {subprocess.py:97} INFO - Command exited with return code 1
+[2025-03-28T19:36:39.847+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2025-03-28T19:36:39.870+0000] {taskinstance.py:2890} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 465, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 432, in _execute_callable
+    return execute_callable(context=context, **execute_callable_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/baseoperator.py", line 400, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/operators/bash.py", line 243, in execute
+    raise AirflowException(
+airflow.exceptions.AirflowException: Bash command failed. The command returned a non-zero exit code 1.
+[2025-03-28T19:36:39.898+0000] {taskinstance.py:1205} INFO - Marking task as UP_FOR_RETRY. dag_id=tmdb_movie_pipeline, task_id=check_kafka, execution_date=20250327T000000, start_date=20250328T193639, end_date=20250328T193639
+[2025-03-28T19:36:39.926+0000] {standard_task_runner.py:110} ERROR - Failed to execute job 2 for task check_kafka (Bash command failed. The command returned a non-zero exit code 1.; 3463)
+[2025-03-28T19:36:39.985+0000] {local_task_job_runner.py:240} INFO - Task exited with return code 1
+[2025-03-28T19:36:40.032+0000] {taskinstance.py:3482} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2025-03-28T19:36:40.033+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

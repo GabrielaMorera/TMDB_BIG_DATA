@@ -1,0 +1,71 @@
+{
+    "adult": false,
+    "backdrop_path": "/xb9wpY31SeVZbfkevYuolhfV63w.jpg",
+    "genre_ids": [
+        10751,
+        14
+    ],
+    "id": 447273,
+    "original_language": "en",
+    "original_title": "Snow White",
+    "overview": "Una adaptación en vivo del clásico cuento de hadas sobre una hermosa joven princesa que, mientras es acosada por una reina celosa, busca refugio en la casa de siete enanos en la campiña alemana.",
+    "popularity": 151.9482,
+    "poster_path": "/7FZhpH4YasGdvY4FUGQJhCusLeg.jpg",
+    "release_date": "2025-03-19",
+    "title": "Blancanieves",
+    "video": false,
+    "vote_average": 4.6,
+    "vote_count": 494,
+    "budget": 270000000,
+    "revenue": 168362470,
+    "runtime": 99,
+    "genres": [
+        "Familia",
+        "Fantasía"
+    ],
+    "production_companies": [
+        "Walt Disney Pictures",
+        "Marc Platt Productions"
+    ],
+    "directors": [
+        "Marc Webb"
+    ],
+    "cast": [
+        "Rachel Zegler",
+        "Gal Gadot",
+        "Andrew Burnap",
+        "Jeremy Swift",
+        "Jason Kravits",
+        "Martin Klebba",
+        "George Salazar",
+        "Tituss Burgess",
+        "Andy Grotelueschen",
+        "Andrew Barth Feldman"
+    ],
+    "keywords": [
+        "princess",
+        "dwarf",
+        "fairy tale",
+        "poison",
+        "musical",
+        "apple",
+        "based on movie",
+        "evil queen",
+        "based on fairy tale",
+        "live action remake",
+        "fantasy",
+        "romantic fantasy",
+        "disheartening",
+        "distressing"
+    ],
+    "video_count": 13,
+    "similar_count": 20,
+    "roi": -0.3764352962962963,
+    "popularity_category": "Muy Alta",
+    "rating_category": "Regular",
+    "genres_str": "Familia,Fantasía",
+    "directors_str": "Marc Webb",
+    "cast_str": "Rachel Zegler,Gal Gadot,Andrew Burnap,Jeremy Swift,Jason Kravits,Martin Klebba,George Salazar,Tituss Burgess,Andy Grotelueschen,Andrew Barth Feldman",
+    "companies_str": "Walt Disney Pictures,Marc Platt Productions",
+    "keywords_str": "princess,dwarf,fairy tale,poison,musical,apple,based on movie,evil queen,based on fairy tale,live action remake,fantasy,romantic fantasy,disheartening,distressing"
+}

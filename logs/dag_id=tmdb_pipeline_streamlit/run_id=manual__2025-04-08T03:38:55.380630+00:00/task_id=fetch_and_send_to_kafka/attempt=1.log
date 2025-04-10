@@ -1,0 +1,146 @@
+[2025-04-08T03:39:08.456+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2025-04-08T03:39:08.476+0000] {taskinstance.py:2073} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: tmdb_pipeline_streamlit.fetch_and_send_to_kafka manual__2025-04-08T03:38:55.380630+00:00 [queued]>
+[2025-04-08T03:39:08.483+0000] {taskinstance.py:2073} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: tmdb_pipeline_streamlit.fetch_and_send_to_kafka manual__2025-04-08T03:38:55.380630+00:00 [queued]>
+[2025-04-08T03:39:08.484+0000] {taskinstance.py:2303} INFO - Starting attempt 1 of 2
+[2025-04-08T03:39:08.496+0000] {taskinstance.py:2327} INFO - Executing <Task(PythonOperator): fetch_and_send_to_kafka> on 2025-04-08 03:38:55.380630+00:00
+[2025-04-08T03:39:08.509+0000] {standard_task_runner.py:63} INFO - Started process 277 to run task
+[2025-04-08T03:39:08.511+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'tmdb_pipeline_streamlit', 'fetch_and_send_to_kafka', 'manual__2025-04-08T03:38:55.380630+00:00', '--job-id', '672', '--raw', '--subdir', 'DAGS_FOLDER/tmdb_pipeline.py', '--cfg-path', '/tmp/tmpbpvnumzg']
+[2025-04-08T03:39:08.514+0000] {standard_task_runner.py:91} INFO - Job 672: Subtask fetch_and_send_to_kafka
+[2025-04-08T03:39:08.558+0000] {task_command.py:426} INFO - Running <TaskInstance: tmdb_pipeline_streamlit.fetch_and_send_to_kafka manual__2025-04-08T03:38:55.380630+00:00 [running]> on host 61cd43315408
+[2025-04-08T03:39:08.662+0000] {taskinstance.py:2644} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='tmdb_pipeline_streamlit' AIRFLOW_CTX_TASK_ID='fetch_and_send_to_kafka' AIRFLOW_CTX_EXECUTION_DATE='2025-04-08T03:38:55.380630+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-04-08T03:38:55.380630+00:00'
+[2025-04-08T03:39:08.663+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2025-04-08T03:39:09.147+0000] {conn.py:395} INFO - <BrokerConnection client_id=kafka-python-producer-1, node_id=bootstrap-0 host=kafka:9093 <connecting> [IPv4 ('172.19.0.6', 9093)]>: connecting to kafka:9093 [('172.19.0.6', 9093) IPv4]
+[2025-04-08T03:39:09.450+0000] {conn.py:615} INFO - <BrokerConnection client_id=kafka-python-producer-1, node_id=bootstrap-0 host=kafka:9093 <checking_api_versions_recv> [IPv4 ('172.19.0.6', 9093)]>: Broker version identified as 2.6
+[2025-04-08T03:39:09.451+0000] {conn.py:456} INFO - <BrokerConnection client_id=kafka-python-producer-1, node_id=bootstrap-0 host=kafka:9093 <connected> [IPv4 ('172.19.0.6', 9093)]>: Connection complete.
+[2025-04-08T03:39:09.452+0000] {tmdb_pipeline.py:1586} INFO - Productor Kafka conectado a kafka:9093
+[2025-04-08T03:39:09.453+0000] {tmdb_pipeline.py:1599} INFO - Obteniendo películas populares de TMDB
+[2025-04-08T03:39:09.731+0000] {tmdb_pipeline.py:1606} INFO - Obtenidas 20 películas populares (página 1)
+[2025-04-08T03:39:09.977+0000] {tmdb_pipeline.py:1606} INFO - Obtenidas 20 películas populares (página 2)
+[2025-04-08T03:39:10.231+0000] {tmdb_pipeline.py:1606} INFO - Obtenidas 20 películas populares (página 3)
+[2025-04-08T03:39:10.621+0000] {tmdb_pipeline.py:1606} INFO - Obtenidas 20 películas populares (página 4)
+[2025-04-08T03:39:11.000+0000] {tmdb_pipeline.py:1606} INFO - Obtenidas 20 películas populares (página 5)
+[2025-04-08T03:39:11.000+0000] {tmdb_pipeline.py:1615} INFO - Obteniendo películas mejor valoradas de TMDB
+[2025-04-08T03:39:11.270+0000] {tmdb_pipeline.py:1622} INFO - Obtenidas 20 películas mejor valoradas (página 1)
+[2025-04-08T03:39:11.570+0000] {tmdb_pipeline.py:1622} INFO - Obtenidas 20 películas mejor valoradas (página 2)
+[2025-04-08T03:39:11.851+0000] {tmdb_pipeline.py:1622} INFO - Obtenidas 20 películas mejor valoradas (página 3)
+[2025-04-08T03:39:12.113+0000] {tmdb_pipeline.py:1622} INFO - Obtenidas 20 películas mejor valoradas (página 4)
+[2025-04-08T03:39:12.374+0000] {tmdb_pipeline.py:1622} INFO - Obtenidas 20 películas mejor valoradas (página 5)
+[2025-04-08T03:39:12.375+0000] {tmdb_pipeline.py:1631} INFO - Obteniendo próximos estrenos de TMDB
+[2025-04-08T03:39:12.612+0000] {tmdb_pipeline.py:1638} INFO - Obtenidos 20 próximos estrenos (página 1)
+[2025-04-08T03:39:12.864+0000] {tmdb_pipeline.py:1638} INFO - Obtenidos 20 próximos estrenos (página 2)
+[2025-04-08T03:39:13.105+0000] {tmdb_pipeline.py:1638} INFO - Obtenidos 20 próximos estrenos (página 3)
+[2025-04-08T03:39:13.105+0000] {tmdb_pipeline.py:1648} INFO - Total de 235 IDs de películas únicas recolectadas
+[2025-04-08T03:39:13.108+0000] {tmdb_pipeline.py:1654} INFO - IDs de películas guardados en /opt/***/data/movie_analytics/movie_ids_20250408.json
+[2025-04-08T03:39:13.108+0000] {tmdb_pipeline.py:1664} INFO - Obteniendo detalles de 100 películas
+[2025-04-08T03:39:13.345+0000] {conn.py:395} INFO - <BrokerConnection client_id=kafka-python-producer-1, node_id=1001 host=kafka:9093 <connecting> [IPv4 ('172.19.0.6', 9093)]>: connecting to kafka:9093 [('172.19.0.6', 9093) IPv4]
+[2025-04-08T03:39:13.345+0000] {conn.py:456} INFO - <BrokerConnection client_id=kafka-python-producer-1, node_id=1001 host=kafka:9093 <connected> [IPv4 ('172.19.0.6', 9093)]>: Connection complete.
+[2025-04-08T03:39:13.346+0000] {conn.py:936} INFO - <BrokerConnection client_id=kafka-python-producer-1, node_id=bootstrap-0 host=kafka:9093 <connected> [IPv4 ('172.19.0.6', 9093)]>: Closing connection. 
+[2025-04-08T03:39:13.650+0000] {tmdb_pipeline.py:1721} INFO - Película enviada a Kafka: Until Dawn
+[2025-04-08T03:39:14.497+0000] {tmdb_pipeline.py:1721} INFO - Película enviada a Kafka: Venom: El último baile
+[2025-04-08T03:39:15.469+0000] {tmdb_pipeline.py:1721} INFO - Película enviada a Kafka: Pabrik Gula
+[2025-04-08T03:39:16.283+0000] {tmdb_pipeline.py:1721} INFO - Película enviada a Kafka: Paddington: Aventura en la selva
+[2025-04-08T03:39:17.064+0000] {tmdb_pipeline.py:1721} INFO - Película enviada a Kafka: Here (Aquí)
+[2025-04-08T03:39:17.825+0000] {tmdb_pipeline.py:1721} INFO - Película enviada a Kafka: El maestro del crimen
+[2025-04-08T03:39:18.633+0000] {tmdb_pipeline.py:1721} INFO - Película enviada a Kafka: Como caído del cielo
+[2025-04-08T03:39:19.412+0000] {tmdb_pipeline.py:1721} INFO - Película enviada a Kafka: Peace Maker Kurogane Movie 1: Omou Michi
+[2025-04-08T03:39:20.197+0000] {tmdb_pipeline.py:1721} INFO - Película enviada a Kafka: Intocable
+[2025-04-08T03:39:21.052+0000] {tmdb_pipeline.py:1721} INFO - Película enviada a Kafka: Milagro en la celda 7
+[2025-04-08T03:39:21.801+0000] {tmdb_pipeline.py:1721} INFO - Película enviada a Kafka: Old Boy
+[2025-04-08T03:39:22.569+0000] {tmdb_pipeline.py:1721} INFO - Película enviada a Kafka: La red social
+[2025-04-08T03:39:23.442+0000] {tmdb_pipeline.py:1721} INFO - Película enviada a Kafka: Los siete samuráis
+[2025-04-08T03:39:24.258+0000] {tmdb_pipeline.py:1721} INFO - Película enviada a Kafka: Norma : Antara Mertua dan Menantu
+[2025-04-08T03:39:25.021+0000] {tmdb_pipeline.py:1721} INFO - Película enviada a Kafka: देवा
+[2025-04-08T03:39:25.773+0000] {tmdb_pipeline.py:1721} INFO - Película enviada a Kafka: El pianista
+[2025-04-08T03:39:26.556+0000] {tmdb_pipeline.py:1721} INFO - Película enviada a Kafka: Holland
+[2025-04-08T03:39:27.308+0000] {tmdb_pipeline.py:1721} INFO - Película enviada a Kafka: Una mujer y tres hombres
+[2025-04-08T03:39:28.087+0000] {tmdb_pipeline.py:1721} INFO - Película enviada a Kafka: Gabriel's Inferno
+[2025-04-08T03:39:28.900+0000] {tmdb_pipeline.py:1721} INFO - Película enviada a Kafka: Forrest Gump
+[2025-04-08T03:39:29.764+0000] {tmdb_pipeline.py:1721} INFO - Película enviada a Kafka: The End of Evangelion
+[2025-04-08T03:39:30.544+0000] {tmdb_pipeline.py:1721} INFO - Película enviada a Kafka: ยูเรนัส 2324
+[2025-04-08T03:39:31.326+0000] {tmdb_pipeline.py:1721} INFO - Película enviada a Kafka: Fight or Flight
+[2025-04-08T03:39:32.110+0000] {tmdb_pipeline.py:1721} INFO - Película enviada a Kafka: El castillo ambulante
+[2025-04-08T03:39:32.916+0000] {tmdb_pipeline.py:1721} INFO - Película enviada a Kafka: Psicosis
+[2025-04-08T03:39:33.672+0000] {tmdb_pipeline.py:1721} INFO - Película enviada a Kafka: Puri for Rent
+[2025-04-08T03:39:34.510+0000] {tmdb_pipeline.py:1721} INFO - Película enviada a Kafka: Solo Leveling: ReAwakening
+[2025-04-08T03:39:35.321+0000] {tmdb_pipeline.py:1721} INFO - Película enviada a Kafka: DJ encubierto
+[2025-04-08T03:39:36.158+0000] {tmdb_pipeline.py:1721} INFO - Película enviada a Kafka: Vengadores: Infinity War
+[2025-04-08T03:39:36.935+0000] {tmdb_pipeline.py:1721} INFO - Película enviada a Kafka: La sustancia
+[2025-04-08T03:39:37.698+0000] {tmdb_pipeline.py:1721} INFO - Película enviada a Kafka: Bastion 36
+[2025-04-08T03:39:38.470+0000] {tmdb_pipeline.py:1721} INFO - Película enviada a Kafka: Tierras perdidas
+[2025-04-08T03:39:39.265+0000] {tmdb_pipeline.py:1721} INFO - Película enviada a Kafka: xXx
+[2025-04-08T03:39:40.048+0000] {tmdb_pipeline.py:1721} INFO - Película enviada a Kafka: 365 días: Aquel día
+[2025-04-08T03:39:40.834+0000] {tmdb_pipeline.py:1721} INFO - Película enviada a Kafka: Confidencial (Black Bag)
+[2025-04-08T03:39:41.668+0000] {tmdb_pipeline.py:1721} INFO - Película enviada a Kafka: Madagascar
+[2025-04-08T03:39:42.411+0000] {tmdb_pipeline.py:1721} INFO - Película enviada a Kafka: Flow, un mundo que salvar
+[2025-04-08T03:39:43.167+0000] {tmdb_pipeline.py:1721} INFO - Película enviada a Kafka: Gladiator II
+[2025-04-08T03:39:43.925+0000] {tmdb_pipeline.py:1721} INFO - Película enviada a Kafka: Quiero comerme tu páncreas
+[2025-04-08T03:39:44.747+0000] {tmdb_pipeline.py:1721} INFO - Película enviada a Kafka: Francotirador: La batalla final
+[2025-04-08T03:39:45.496+0000] {tmdb_pipeline.py:1721} INFO - Película enviada a Kafka: Los silenciosos
+[2025-04-08T03:39:46.268+0000] {tmdb_pipeline.py:1721} INFO - Película enviada a Kafka: El crepúsculo de los dioses
+[2025-04-08T03:39:47.029+0000] {tmdb_pipeline.py:1721} INFO - Película enviada a Kafka: Novocaine
+[2025-04-08T03:39:47.767+0000] {tmdb_pipeline.py:1721} INFO - Película enviada a Kafka: Given: The Movie
+[2025-04-08T03:39:48.564+0000] {tmdb_pipeline.py:1721} INFO - Película enviada a Kafka: Toda una vida en un año
+[2025-04-08T03:39:49.346+0000] {tmdb_pipeline.py:1721} INFO - Película enviada a Kafka: En la misma clase
+[2025-04-08T03:39:50.177+0000] {tmdb_pipeline.py:1721} INFO - Película enviada a Kafka: Culpa tuya
+[2025-04-08T03:39:50.927+0000] {tmdb_pipeline.py:1721} INFO - Película enviada a Kafka: Mufasa: El rey león
+[2025-04-08T03:39:51.675+0000] {tmdb_pipeline.py:1721} INFO - Película enviada a Kafka: Sujo
+[2025-04-08T03:39:52.449+0000] {tmdb_pipeline.py:1721} INFO - Película enviada a Kafka: La evasión
+[2025-04-08T03:39:53.209+0000] {tmdb_pipeline.py:1721} INFO - Película enviada a Kafka: La vida es bella
+[2025-04-08T03:39:53.973+0000] {tmdb_pipeline.py:1721} INFO - Película enviada a Kafka: Un amor contra viento y marea
+[2025-04-08T03:39:54.898+0000] {tmdb_pipeline.py:1721} INFO - Película enviada a Kafka: Ciudad de Dios
+[2025-04-08T03:39:56.089+0000] {tmdb_pipeline.py:1721} INFO - Película enviada a Kafka: ¡Qué bello es vivir!
+[2025-04-08T03:39:56.869+0000] {tmdb_pipeline.py:1721} INFO - Película enviada a Kafka: Las crónicas de Narnia: El león, la bruja y el armario
+[2025-04-08T03:39:57.637+0000] {tmdb_pipeline.py:1721} INFO - Película enviada a Kafka: Cuando cae el otoño
+[2025-04-08T03:39:58.494+0000] {tmdb_pipeline.py:1721} INFO - Película enviada a Kafka: Origen
+[2025-04-08T03:39:59.252+0000] {tmdb_pipeline.py:1721} INFO - Película enviada a Kafka: Dalia y el libro rojo
+[2025-04-08T03:40:00.049+0000] {tmdb_pipeline.py:1721} INFO - Película enviada a Kafka: La lista de Schindler
+[2025-04-08T03:40:01.360+0000] {tmdb_pipeline.py:1721} INFO - Película enviada a Kafka: Wicked
+[2025-04-08T03:40:02.225+0000] {tmdb_pipeline.py:1721} INFO - Película enviada a Kafka: Una noche en Zoopolis
+[2025-04-08T03:40:03.002+0000] {tmdb_pipeline.py:1721} INFO - Película enviada a Kafka: La venganza de Cenicienta
+[2025-04-08T03:40:04.026+0000] {tmdb_pipeline.py:1721} INFO - Película enviada a Kafka: El rey león
+[2025-04-08T03:40:05.285+0000] {tmdb_pipeline.py:1721} INFO - Película enviada a Kafka: Blancanieves
+[2025-04-08T03:40:06.046+0000] {tmdb_pipeline.py:1721} INFO - Película enviada a Kafka: Presence
+[2025-04-08T03:40:06.812+0000] {tmdb_pipeline.py:1721} INFO - Película enviada a Kafka: Érase una vez en América
+[2025-04-08T03:40:07.571+0000] {tmdb_pipeline.py:1721} INFO - Película enviada a Kafka: La milla verde
+[2025-04-08T03:40:08.351+0000] {tmdb_pipeline.py:1721} INFO - Película enviada a Kafka: El bueno, el feo y el malo
+[2025-04-08T03:40:09.114+0000] {tmdb_pipeline.py:1721} INFO - Película enviada a Kafka: Cómo ganar millones antes de que muera la abuela
+[2025-04-08T03:40:09.911+0000] {tmdb_pipeline.py:1721} INFO - Película enviada a Kafka: Vivir
+[2025-04-08T03:40:10.655+0000] {tmdb_pipeline.py:1721} INFO - Película enviada a Kafka: Mar.IA
+[2025-04-08T03:40:11.440+0000] {tmdb_pipeline.py:1721} INFO - Película enviada a Kafka: Dark Match
+[2025-04-08T03:40:12.187+0000] {tmdb_pipeline.py:1721} INFO - Película enviada a Kafka: Amateur
+[2025-04-08T03:40:12.947+0000] {tmdb_pipeline.py:1721} INFO - Película enviada a Kafka: Luces de la ciudad
+[2025-04-08T03:40:13.736+0000] {tmdb_pipeline.py:1721} INFO - Película enviada a Kafka: Bridget Jones: Loca por él
+[2025-04-08T03:40:14.493+0000] {tmdb_pipeline.py:1721} INFO - Película enviada a Kafka: La cita
+[2025-04-08T03:40:15.252+0000] {tmdb_pipeline.py:1721} INFO - Película enviada a Kafka: La princesa Mononoke
+[2025-04-08T03:40:16.086+0000] {tmdb_pipeline.py:1721} INFO - Película enviada a Kafka: Mickey 17
+[2025-04-08T03:40:16.897+0000] {tmdb_pipeline.py:1721} INFO - Película enviada a Kafka: Estado eléctrico
+[2025-04-08T03:40:17.720+0000] {tmdb_pipeline.py:1721} INFO - Película enviada a Kafka: Uno de los nuestros
+[2025-04-08T03:40:18.492+0000] {tmdb_pipeline.py:1721} INFO - Película enviada a Kafka: Elevation
+[2025-04-08T03:40:19.326+0000] {tmdb_pipeline.py:1721} INFO - Película enviada a Kafka: Dedicada A Mi Ex
+[2025-04-08T03:40:20.067+0000] {tmdb_pipeline.py:1721} INFO - Película enviada a Kafka: El silencio de los corderos
+[2025-04-08T03:40:20.806+0000] {tmdb_pipeline.py:1721} INFO - Película enviada a Kafka: Kiskisan
+[2025-04-08T03:40:21.552+0000] {tmdb_pipeline.py:1721} INFO - Película enviada a Kafka: Hasta que llegó su hora
+[2025-04-08T03:40:22.308+0000] {tmdb_pipeline.py:1721} INFO - Película enviada a Kafka: El señor de los anillos: La comunidad del anillo
+[2025-04-08T03:40:23.092+0000] {tmdb_pipeline.py:1721} INFO - Película enviada a Kafka: Turno nocturno
+[2025-04-08T03:40:23.911+0000] {tmdb_pipeline.py:1721} INFO - Película enviada a Kafka: Gru 4. Mi villano favorito
+[2025-04-08T03:40:24.710+0000] {tmdb_pipeline.py:1721} INFO - Película enviada a Kafka: El padrino
+[2025-04-08T03:40:25.495+0000] {tmdb_pipeline.py:1721} INFO - Película enviada a Kafka: Culpa mía: Londres
+[2025-04-08T03:40:26.245+0000] {tmdb_pipeline.py:1721} INFO - Película enviada a Kafka: Los amores prohibidos de una adolescente
+[2025-04-08T03:40:26.992+0000] {tmdb_pipeline.py:1721} INFO - Película enviada a Kafka: 825 Forest Road
+[2025-04-08T03:40:27.787+0000] {tmdb_pipeline.py:1721} INFO - Película enviada a Kafka: El club de los poetas muertos
+[2025-04-08T03:40:28.539+0000] {tmdb_pipeline.py:1721} INFO - Película enviada a Kafka: Hellhound
+[2025-04-08T03:40:29.282+0000] {tmdb_pipeline.py:1721} INFO - Película enviada a Kafka: El infierno de Gabriel Parte 3
+[2025-04-08T03:40:30.096+0000] {tmdb_pipeline.py:1721} INFO - Película enviada a Kafka: Plankton, la película
+[2025-04-08T03:40:30.877+0000] {tmdb_pipeline.py:1721} INFO - Película enviada a Kafka: Gabriel's Inferno: Part II
+[2025-04-08T03:40:32.664+0000] {tmdb_pipeline.py:1721} INFO - Película enviada a Kafka: Robot salvaje
+[2025-04-08T03:40:33.431+0000] {tmdb_pipeline.py:1721} INFO - Película enviada a Kafka: Bloat
+[2025-04-08T03:40:34.234+0000] {tmdb_pipeline.py:1721} INFO - Película enviada a Kafka: Sin oxígeno
+[2025-04-08T03:40:34.737+0000] {kafka.py:511} INFO - Closing the Kafka producer with 9223372036.0 secs timeout.
+[2025-04-08T03:40:34.745+0000] {conn.py:936} INFO - <BrokerConnection client_id=kafka-python-producer-1, node_id=1001 host=kafka:9093 <connected> [IPv4 ('172.19.0.6', 9093)]>: Closing connection. 
+[2025-04-08T03:40:34.746+0000] {tmdb_pipeline.py:1748} INFO - Proceso completado. 100 películas procesadas.
+[2025-04-08T03:40:34.783+0000] {python.py:237} INFO - Done. Returned value was: 100
+[2025-04-08T03:40:34.784+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2025-04-08T03:40:34.804+0000] {taskinstance.py:1205} INFO - Marking task as SUCCESS. dag_id=tmdb_pipeline_streamlit, task_id=fetch_and_send_to_kafka, execution_date=20250408T033855, start_date=20250408T033908, end_date=20250408T034034
+[2025-04-08T03:40:34.881+0000] {local_task_job_runner.py:240} INFO - Task exited with return code 0
+[2025-04-08T03:40:34.927+0000] {taskinstance.py:3482} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2025-04-08T03:40:34.928+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

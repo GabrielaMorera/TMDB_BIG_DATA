@@ -1,0 +1,72 @@
+{
+    "adult": false,
+    "backdrop_path": "/mDfJG3LC3Dqb67AZ52x3Z0jU0uB.jpg",
+    "genre_ids": [
+        12,
+        28,
+        878
+    ],
+    "id": 299536,
+    "original_language": "en",
+    "original_title": "Avengers: Infinity War",
+    "overview": "El todopoderoso Thanos ha despertado con la promesa de arrasar con todo a su paso, portando el Guantelete del Infinito, que le confiere un poder incalculable. Los únicos capaces de pararle los pies son los Vengadores y el resto de superhéroes de la galaxia, que deberán estar dispuestos a sacrificarlo todo por un bien mayor. Capitán América e Ironman deberán limar sus diferencias, Black Panther apoyará con sus tropas desde Wakanda, Thor y los Guardianes de la Galaxia e incluso Spider-Man se unirán antes de que los planes de devastación y ruina pongan fin al universo. ¿Serán capaces de frenar el avance del titán del caos?",
+    "popularity": 37.3148,
+    "poster_path": "/ksBQ4oHQDdJwND8H90ay8CbMihU.jpg",
+    "release_date": "2018-04-25",
+    "title": "Vengadores: Infinity War",
+    "video": false,
+    "vote_average": 8.236,
+    "vote_count": 30371,
+    "budget": 300000000,
+    "revenue": 2052415039,
+    "runtime": 156,
+    "genres": [
+        "Aventura",
+        "Acción",
+        "Ciencia ficción"
+    ],
+    "production_companies": [
+        "Marvel Studios"
+    ],
+    "directors": [
+        "Joe Russo",
+        "Anthony Russo"
+    ],
+    "cast": [
+        "Robert Downey Jr.",
+        "Chris Evans",
+        "Chris Hemsworth",
+        "Josh Brolin",
+        "Mark Ruffalo",
+        "Scarlett Johansson",
+        "Don Cheadle",
+        "Benedict Cumberbatch",
+        "Tom Holland",
+        "Chadwick Boseman"
+    ],
+    "keywords": [
+        "sacrifice",
+        "magic",
+        "superhero",
+        "based on comic",
+        "space",
+        "battlefield",
+        "genocide",
+        "magical object",
+        "super power",
+        "superhero team",
+        "aftercreditsstinger",
+        "marvel cinematic universe (mcu)",
+        "cosmic"
+    ],
+    "video_count": 2,
+    "similar_count": 20,
+    "roi": 5.841383463333333,
+    "popularity_category": "Muy Alta",
+    "rating_category": "Excelente",
+    "genres_str": "Aventura,Acción,Ciencia ficción",
+    "directors_str": "Joe Russo,Anthony Russo",
+    "cast_str": "Robert Downey Jr.,Chris Evans,Chris Hemsworth,Josh Brolin,Mark Ruffalo,Scarlett Johansson,Don Cheadle,Benedict Cumberbatch,Tom Holland,Chadwick Boseman",
+    "companies_str": "Marvel Studios",
+    "keywords_str": "sacrifice,magic,superhero,based on comic,space,battlefield,genocide,magical object,super power,superhero team,aftercreditsstinger,marvel cinematic universe (mcu),cosmic"
+}

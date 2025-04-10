@@ -1,0 +1,50 @@
+{
+    "adult": false,
+    "backdrop_path": "/ipgr36Ewu2nWd4hoPkNEVgnSxtr.jpg",
+    "genre_ids": [
+        10749,
+        18
+    ],
+    "id": 1422211,
+    "original_language": "mn",
+    "original_title": "Дур тачаалын эрэлд",
+    "overview": "",
+    "popularity": 4.0357,
+    "poster_path": "/k9FAjid8aV3oq0VJmHdaW0OaQoi.jpg",
+    "release_date": "2025-01-23",
+    "title": "Дур тачаалын эрэлд",
+    "video": false,
+    "vote_average": 1.0,
+    "vote_count": 1,
+    "budget": 0,
+    "revenue": 0,
+    "runtime": 38,
+    "genres": [
+        "Romance",
+        "Drama"
+    ],
+    "production_companies": [
+        "Mongolian Film Industry Association"
+    ],
+    "directors": [
+        "Batdelger Byambasuren"
+    ],
+    "cast": [
+        "STEPINSTONE",
+        "E.KHANDMAA",
+        "E.BATKHULEG"
+    ],
+    "keywords": [
+        "softcore"
+    ],
+    "video_count": 0,
+    "similar_count": 20,
+    "roi": 0,
+    "popularity_category": "Baja",
+    "rating_category": "Mala",
+    "genres_str": "Romance,Drama",
+    "directors_str": "Batdelger Byambasuren",
+    "cast_str": "STEPINSTONE,E.KHANDMAA,E.BATKHULEG",
+    "companies_str": "Mongolian Film Industry Association",
+    "keywords_str": "softcore"
+}

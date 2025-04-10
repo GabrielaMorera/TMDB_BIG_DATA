@@ -1,0 +1,53 @@
+[2025-04-05T15:23:22.673+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2025-04-05T15:23:22.698+0000] {taskinstance.py:2073} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: tmdb_pipeline_advanced.process_kafka_data scheduled__2025-04-05T00:00:00+00:00 [queued]>
+[2025-04-05T15:23:22.711+0000] {taskinstance.py:2073} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: tmdb_pipeline_advanced.process_kafka_data scheduled__2025-04-05T00:00:00+00:00 [queued]>
+[2025-04-05T15:23:22.712+0000] {taskinstance.py:2303} INFO - Starting attempt 1 of 3
+[2025-04-05T15:23:22.739+0000] {taskinstance.py:2327} INFO - Executing <Task(PythonOperator): process_kafka_data> on 2025-04-05 00:00:00+00:00
+[2025-04-05T15:23:22.749+0000] {standard_task_runner.py:63} INFO - Started process 387 to run task
+[2025-04-05T15:23:22.753+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'tmdb_pipeline_advanced', 'process_kafka_data', 'scheduled__2025-04-05T00:00:00+00:00', '--job-id', '295', '--raw', '--subdir', 'DAGS_FOLDER/tmdb_pipeline.py', '--cfg-path', '/tmp/tmpiazskzm4']
+[2025-04-05T15:23:22.758+0000] {standard_task_runner.py:91} INFO - Job 295: Subtask process_kafka_data
+[2025-04-05T15:23:22.821+0000] {task_command.py:426} INFO - Running <TaskInstance: tmdb_pipeline_advanced.process_kafka_data scheduled__2025-04-05T00:00:00+00:00 [running]> on host 11624d9102e2
+[2025-04-05T15:23:22.915+0000] {taskinstance.py:2644} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='gabriela' AIRFLOW_CTX_DAG_ID='tmdb_pipeline_advanced' AIRFLOW_CTX_TASK_ID='process_kafka_data' AIRFLOW_CTX_EXECUTION_DATE='2025-04-05T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2025-04-05T00:00:00+00:00'
+[2025-04-05T15:23:22.916+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2025-04-05T15:23:24.436+0000] {tmdb_pipeline.py:1968} INFO - Iniciando proceso de consumo de datos de Kafka
+[2025-04-05T15:23:25.282+0000] {proxy.py:85} INFO - To route to workers diagnostics web server please install jupyter-server-proxy: python -m pip install jupyter-server-proxy
+[2025-04-05T15:23:25.322+0000] {scheduler.py:1754} INFO - State start
+[2025-04-05T15:23:25.410+0000] {scheduler.py:4209} INFO -   Scheduler at:     tcp://127.0.0.1:46697
+[2025-04-05T15:23:25.411+0000] {scheduler.py:4224} INFO -   dashboard at:  http://127.0.0.1:8787/status
+[2025-04-05T15:23:25.414+0000] {scheduler.py:8127} INFO - Registering Worker plugin shuffle
+[2025-04-05T15:23:25.451+0000] {nanny.py:368} INFO -         Start Nanny at: 'tcp://127.0.0.1:37011'
+[2025-04-05T15:23:25.467+0000] {nanny.py:368} INFO -         Start Nanny at: 'tcp://127.0.0.1:46123'
+[2025-04-05T15:23:25.469+0000] {nanny.py:454} ERROR - Failed to start process
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/distributed/nanny.py", line 452, in instantiate
+    result = await self.process.start()
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/distributed/nanny.py", line 750, in start
+    await self.process.start()
+  File "/home/airflow/.local/lib/python3.12/site-packages/distributed/process.py", line 55, in _call_and_set_future
+    res = func(*args, **kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/distributed/process.py", line 215, in _start
+    process.start()
+  File "/usr/local/lib/python3.12/multiprocessing/process.py", line 118, in start
+    assert not _current_process._config.get('daemon'), \
+AssertionError: daemonic processes are not allowed to have children
+[2025-04-05T15:23:25.472+0000] {nanny.py:611} INFO - Closing Nanny at 'tcp://127.0.0.1:37011'. Reason: nanny-instantiate-failed
+[2025-04-05T15:23:25.473+0000] {nanny.py:454} ERROR - Failed to start process
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/distributed/nanny.py", line 452, in instantiate
+    result = await self.process.start()
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/distributed/nanny.py", line 750, in start
+    await self.process.start()
+  File "/home/airflow/.local/lib/python3.12/site-packages/distributed/process.py", line 55, in _call_and_set_future
+    res = func(*args, **kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/distributed/process.py", line 215, in _start
+    process.start()
+  File "/usr/local/lib/python3.12/multiprocessing/process.py", line 118, in start
+    assert not _current_process._config.get('daemon'), \
+AssertionError: daemonic processes are not allowed to have children
+[2025-04-05T15:23:25.474+0000] {nanny.py:611} INFO - Closing Nanny at 'tcp://127.0.0.1:46123'. Reason: nanny-instantiate-failed
+[2025-04-05T16:02:04.357+0000] {core.py:608} INFO - Event loop was unresponsive in Scheduler for 347.90s.  This is often caused by long-running GIL-holding functions or moving large chunks of data. This can cause timeouts and instability.
+[2025-04-05T16:17:52.675+0000] {core.py:608} INFO - Event loop was unresponsive in Scheduler for 922.71s.  This is often caused by long-running GIL-holding functions or moving large chunks of data. This can cause timeouts and instability.

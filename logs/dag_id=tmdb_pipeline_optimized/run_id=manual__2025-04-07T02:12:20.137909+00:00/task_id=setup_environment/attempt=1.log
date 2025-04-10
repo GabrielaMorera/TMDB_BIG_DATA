@@ -1,0 +1,37 @@
+[2025-04-07T02:12:23.455+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2025-04-07T02:12:23.484+0000] {taskinstance.py:2073} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: tmdb_pipeline_optimized.setup_environment manual__2025-04-07T02:12:20.137909+00:00 [queued]>
+[2025-04-07T02:12:23.494+0000] {taskinstance.py:2073} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: tmdb_pipeline_optimized.setup_environment manual__2025-04-07T02:12:20.137909+00:00 [queued]>
+[2025-04-07T02:12:23.494+0000] {taskinstance.py:2303} INFO - Starting attempt 1 of 2
+[2025-04-07T02:12:23.514+0000] {taskinstance.py:2327} INFO - Executing <Task(PythonOperator): setup_environment> on 2025-04-07 02:12:20.137909+00:00
+[2025-04-07T02:12:23.525+0000] {warnings.py:110} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:61: DeprecationWarning: This process (pid=555) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2025-04-07T02:12:23.527+0000] {standard_task_runner.py:63} INFO - Started process 572 to run task
+[2025-04-07T02:12:23.529+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'tmdb_pipeline_optimized', 'setup_environment', 'manual__2025-04-07T02:12:20.137909+00:00', '--job-id', '370', '--raw', '--subdir', 'DAGS_FOLDER/tmdb_pipeline.py', '--cfg-path', '/tmp/tmpeo3dkgju']
+[2025-04-07T02:12:23.539+0000] {standard_task_runner.py:91} INFO - Job 370: Subtask setup_environment
+[2025-04-07T02:12:23.717+0000] {task_command.py:426} INFO - Running <TaskInstance: tmdb_pipeline_optimized.setup_environment manual__2025-04-07T02:12:20.137909+00:00 [running]> on host 9b742febb797
+[2025-04-07T02:12:23.909+0000] {taskinstance.py:2644} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='gabriela' AIRFLOW_CTX_DAG_ID='tmdb_pipeline_optimized' AIRFLOW_CTX_TASK_ID='setup_environment' AIRFLOW_CTX_EXECUTION_DATE='2025-04-07T02:12:20.137909+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-04-07T02:12:20.137909+00:00'
+[2025-04-07T02:12:23.911+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2025-04-07T02:12:23.925+0000] {tmdb_pipeline.py:1384} INFO - Preparando entorno para el pipeline TMDB...
+[2025-04-07T02:12:23.926+0000] {tmdb_pipeline.py:1388} INFO - Directorio de salida creado: /opt/***/data/movie_analytics
+[2025-04-07T02:12:23.927+0000] {tmdb_pipeline.py:1480} ERROR - Error al crear tablas en PostgreSQL: connection to server at "movie_postgres" (172.19.0.4), port 5433 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+
+[2025-04-07T02:12:23.938+0000] {tmdb_pipeline.py:1481} ERROR - Traceback (most recent call last):
+  File "/opt/***/dags/tmdb_pipeline.py", line 1393, in setup_environment
+    conn = psycopg2.connect(
+           ^^^^^^^^^^^^^^^^^
+  File "/home/***/.local/lib/python3.12/site-packages/psycopg2/__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+psycopg2.OperationalError: connection to server at "movie_postgres" (172.19.0.4), port 5433 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+
+
+[2025-04-07T02:12:23.939+0000] {tmdb_pipeline.py:1487} WARNING - Hubo problemas preparando el entorno, pero continuaremos
+[2025-04-07T02:12:23.939+0000] {python.py:237} INFO - Done. Returned value was: setup_completed
+[2025-04-07T02:12:23.940+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2025-04-07T02:12:23.964+0000] {taskinstance.py:1205} INFO - Marking task as SUCCESS. dag_id=tmdb_pipeline_optimized, task_id=setup_environment, execution_date=20250407T021220, start_date=20250407T021223, end_date=20250407T021223
+[2025-04-07T02:12:23.997+0000] {local_task_job_runner.py:240} INFO - Task exited with return code 0
+[2025-04-07T02:12:24.028+0000] {taskinstance.py:3482} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2025-04-07T02:12:24.030+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

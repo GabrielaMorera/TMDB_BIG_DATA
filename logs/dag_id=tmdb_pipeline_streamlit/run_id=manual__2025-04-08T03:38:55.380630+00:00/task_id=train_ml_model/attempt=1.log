@@ -1,0 +1,33 @@
+[2025-04-08T03:42:00.197+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2025-04-08T03:42:00.218+0000] {taskinstance.py:2073} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: tmdb_pipeline_streamlit.train_ml_model manual__2025-04-08T03:38:55.380630+00:00 [queued]>
+[2025-04-08T03:42:00.227+0000] {taskinstance.py:2073} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: tmdb_pipeline_streamlit.train_ml_model manual__2025-04-08T03:38:55.380630+00:00 [queued]>
+[2025-04-08T03:42:00.227+0000] {taskinstance.py:2303} INFO - Starting attempt 1 of 2
+[2025-04-08T03:42:00.239+0000] {taskinstance.py:2327} INFO - Executing <Task(PythonOperator): train_ml_model> on 2025-04-08 03:38:55.380630+00:00
+[2025-04-08T03:42:00.248+0000] {standard_task_runner.py:63} INFO - Started process 408 to run task
+[2025-04-08T03:42:00.251+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'tmdb_pipeline_streamlit', 'train_ml_model', 'manual__2025-04-08T03:38:55.380630+00:00', '--job-id', '676', '--raw', '--subdir', 'DAGS_FOLDER/tmdb_pipeline.py', '--cfg-path', '/tmp/tmp9og3tlp6']
+[2025-04-08T03:42:00.254+0000] {standard_task_runner.py:91} INFO - Job 676: Subtask train_ml_model
+[2025-04-08T03:42:00.297+0000] {task_command.py:426} INFO - Running <TaskInstance: tmdb_pipeline_streamlit.train_ml_model manual__2025-04-08T03:38:55.380630+00:00 [running]> on host 61cd43315408
+[2025-04-08T03:42:00.390+0000] {taskinstance.py:2644} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='tmdb_pipeline_streamlit' AIRFLOW_CTX_TASK_ID='train_ml_model' AIRFLOW_CTX_EXECUTION_DATE='2025-04-08T03:38:55.380630+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-04-08T03:38:55.380630+00:00'
+[2025-04-08T03:42:00.391+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2025-04-08T03:42:00.436+0000] {tmdb_pipeline.py:2451} INFO - Iniciando preprocesamiento de datos...
+[2025-04-08T03:42:00.469+0000] {tmdb_pipeline.py:2511} INFO - Datos de entrenamiento: 24 muestras, 7 características
+[2025-04-08T03:42:00.471+0000] {tmdb_pipeline.py:2567} INFO - Entrenando modelo: GradientBoosting
+[2025-04-08T03:42:00.810+0000] {logging_mixin.py:188} INFO - Fitting 5 folds for each of 18 candidates, totalling 90 fits
+[2025-04-08T03:42:10.352+0000] {tmdb_pipeline.py:2596} INFO - GradientBoosting - R² Score: -0.2392, MSE: 1603.5737, MAE: 34.3226
+[2025-04-08T03:42:10.353+0000] {tmdb_pipeline.py:2567} INFO - Entrenando modelo: RandomForest
+[2025-04-08T03:42:10.355+0000] {logging_mixin.py:188} INFO - Fitting 5 folds for each of 12 candidates, totalling 60 fits
+[2025-04-08T03:42:22.883+0000] {tmdb_pipeline.py:2596} INFO - RandomForest - R² Score: 0.1083, MSE: 1153.9461, MAE: 29.5617
+[2025-04-08T03:42:22.884+0000] {tmdb_pipeline.py:2567} INFO - Entrenando modelo: ElasticNet
+[2025-04-08T03:42:22.887+0000] {logging_mixin.py:188} INFO - Fitting 5 folds for each of 9 candidates, totalling 45 fits
+[2025-04-08T03:42:23.709+0000] {tmdb_pipeline.py:2596} INFO - ElasticNet - R² Score: -0.0975, MSE: 1420.3075, MAE: 31.6421
+[2025-04-08T03:42:23.710+0000] {tmdb_pipeline.py:2617} INFO - Mejor modelo: RandomForest con R² = 0.1083
+[2025-04-08T03:42:28.191+0000] {tmdb_pipeline.py:2817} INFO - Visualizaciones del modelo guardadas en /opt/***/data/movie_analytics/ensemble_model_20250408_034223
+[2025-04-08T03:42:28.192+0000] {tmdb_pipeline.py:2714} INFO - Modelo entrenado y guardado en /opt/***/data/movie_analytics/ensemble_model_20250408_034223
+[2025-04-08T03:42:28.193+0000] {tmdb_pipeline.py:2717} INFO - Reentrenando modelo final con todos los datos...
+[2025-04-08T03:42:28.373+0000] {tmdb_pipeline.py:2737} INFO - Modelo final guardado con éxito
+[2025-04-08T03:42:28.407+0000] {python.py:237} INFO - Done. Returned value was: /opt/***/data/movie_analytics/ensemble_model_20250408_034223
+[2025-04-08T03:42:28.408+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2025-04-08T03:42:28.425+0000] {taskinstance.py:1205} INFO - Marking task as SUCCESS. dag_id=tmdb_pipeline_streamlit, task_id=train_ml_model, execution_date=20250408T033855, start_date=20250408T034200, end_date=20250408T034228
+[2025-04-08T03:42:28.463+0000] {local_task_job_runner.py:240} INFO - Task exited with return code 0
+[2025-04-08T03:42:28.489+0000] {taskinstance.py:3482} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2025-04-08T03:42:28.490+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

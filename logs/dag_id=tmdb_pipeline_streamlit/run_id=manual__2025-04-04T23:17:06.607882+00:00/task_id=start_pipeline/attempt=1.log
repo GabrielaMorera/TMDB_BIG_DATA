@@ -1,0 +1,24 @@
+[2025-04-04T23:17:13.732+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2025-04-04T23:17:13.759+0000] {taskinstance.py:2073} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: tmdb_pipeline_streamlit.start_pipeline manual__2025-04-04T23:17:06.607882+00:00 [queued]>
+[2025-04-04T23:17:13.768+0000] {taskinstance.py:2073} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: tmdb_pipeline_streamlit.start_pipeline manual__2025-04-04T23:17:06.607882+00:00 [queued]>
+[2025-04-04T23:17:13.768+0000] {taskinstance.py:2303} INFO - Starting attempt 1 of 3
+[2025-04-04T23:17:13.786+0000] {taskinstance.py:2327} INFO - Executing <Task(BashOperator): start_pipeline> on 2025-04-04 23:17:06.607882+00:00
+[2025-04-04T23:17:13.793+0000] {warnings.py:110} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:61: DeprecationWarning: This process (pid=149) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2025-04-04T23:17:13.795+0000] {standard_task_runner.py:63} INFO - Started process 151 to run task
+[2025-04-04T23:17:13.796+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'tmdb_pipeline_streamlit', 'start_pipeline', 'manual__2025-04-04T23:17:06.607882+00:00', '--job-id', '201', '--raw', '--subdir', 'DAGS_FOLDER/tmdb_pipeline.py', '--cfg-path', '/tmp/tmp9yujy14r']
+[2025-04-04T23:17:13.798+0000] {standard_task_runner.py:91} INFO - Job 201: Subtask start_pipeline
+[2025-04-04T23:17:13.852+0000] {task_command.py:426} INFO - Running <TaskInstance: tmdb_pipeline_streamlit.start_pipeline manual__2025-04-04T23:17:06.607882+00:00 [running]> on host 42f37fa3b40e
+[2025-04-04T23:17:13.948+0000] {taskinstance.py:2644} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='gabriela' AIRFLOW_CTX_DAG_ID='tmdb_pipeline_streamlit' AIRFLOW_CTX_TASK_ID='start_pipeline' AIRFLOW_CTX_EXECUTION_DATE='2025-04-04T23:17:06.607882+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-04-04T23:17:06.607882+00:00'
+[2025-04-04T23:17:13.949+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2025-04-04T23:17:13.962+0000] {subprocess.py:63} INFO - Tmp dir root location: /tmp
+[2025-04-04T23:17:13.963+0000] {subprocess.py:75} INFO - Running command: ['/usr/bin/bash', '-c', 'echo "Iniciando pipeline de datos de TMDB con Streamlit" && mkdir -p /opt/***/data/movie_analytics']
+[2025-04-04T23:17:13.975+0000] {subprocess.py:86} INFO - Output:
+[2025-04-04T23:17:13.977+0000] {subprocess.py:93} INFO - Iniciando pipeline de datos de TMDB con Streamlit
+[2025-04-04T23:17:13.983+0000] {subprocess.py:97} INFO - Command exited with return code 0
+[2025-04-04T23:17:13.984+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2025-04-04T23:17:14.006+0000] {taskinstance.py:1205} INFO - Marking task as SUCCESS. dag_id=tmdb_pipeline_streamlit, task_id=start_pipeline, execution_date=20250404T231706, start_date=20250404T231713, end_date=20250404T231714
+[2025-04-04T23:17:14.060+0000] {local_task_job_runner.py:240} INFO - Task exited with return code 0
+[2025-04-04T23:17:14.087+0000] {taskinstance.py:3482} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2025-04-04T23:17:14.088+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

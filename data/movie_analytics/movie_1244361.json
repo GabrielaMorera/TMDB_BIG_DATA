@@ -1,0 +1,59 @@
+{
+    "adult": false,
+    "backdrop_path": "/Kj14WdD0Xqk7wZ5jXqHiyBMKtv.jpg",
+    "genre_ids": [
+        27,
+        28,
+        53
+    ],
+    "id": 1244361,
+    "original_language": "th",
+    "original_title": "ช.พ.๑ สมรภูมิคืนชีพ",
+    "overview": "Los soldados tailandeses inexpertos luchan contra una creciente amenaza de muertos vivientes en este horrible horror de supervivencia. Un experimento militar japonés que convierte a los hombres en monstruos escapa de contención, depende de estas tropas salvar a su nación de la aniquilación.",
+    "popularity": 36.0432,
+    "poster_path": "/CmoQBKGLt8bWSlVjLL57TbQ3WR.jpg",
+    "release_date": "2024-07-20",
+    "title": "Operación Zombie: Resurrección",
+    "video": false,
+    "vote_average": 3.8,
+    "vote_count": 12,
+    "budget": 0,
+    "revenue": 0,
+    "runtime": 110,
+    "genres": [
+        "Terror",
+        "Acción",
+        "Suspense"
+    ],
+    "production_companies": [
+        "IFA Media",
+        "Kongkiat Production",
+        "Black Dragon Entertainment"
+    ],
+    "directors": [
+        "ก้องเกียรติ โขมศิริ"
+    ],
+    "cast": [
+        "ชานน สันตินธรกุล",
+        "อวัช รัตนปิณฑะ",
+        "Guntapat Kasemsan Na Ayudhya",
+        "Thawatchanin Darayon",
+        "ธนดล เอื้อพงษ์",
+        "ธนกร ติยานนท์",
+        "Tanatwut Rodpai",
+        "Jakkrit Sakuldech",
+        "Thanapat Suk-im",
+        "Teethat Teerakitkarnkul"
+    ],
+    "keywords": [],
+    "video_count": 1,
+    "similar_count": 0,
+    "roi": 0,
+    "popularity_category": "Muy Alta",
+    "rating_category": "Mala",
+    "genres_str": "Terror,Acción,Suspense",
+    "directors_str": "ก้องเกียรติ โขมศิริ",
+    "cast_str": "ชานน สันตินธรกุล,อวัช รัตนปิณฑะ,Guntapat Kasemsan Na Ayudhya,Thawatchanin Darayon,ธนดล เอื้อพงษ์,ธนกร ติยานนท์,Tanatwut Rodpai,Jakkrit Sakuldech,Thanapat Suk-im,Teethat Teerakitkarnkul",
+    "companies_str": "IFA Media,Kongkiat Production,Black Dragon Entertainment",
+    "keywords_str": ""
+}

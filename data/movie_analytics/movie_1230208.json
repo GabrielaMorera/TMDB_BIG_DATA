@@ -1,0 +1,63 @@
+{
+    "adult": false,
+    "backdrop_path": "/8qXc6OLHoLHBxOFIjsfbZwWDFYH.jpg",
+    "genre_ids": [
+        28,
+        80,
+        18,
+        53
+    ],
+    "id": 1230208,
+    "original_language": "fr",
+    "original_title": "Bastion 36",
+    "overview": "Cuando lo expulsan de su unidad, un agente conflictivo investiga, por su cuenta y de forma clandestina, quién es el responsable del misterioso asesinato de sus excompañeros.",
+    "popularity": 39.8255,
+    "poster_path": "/56hPHYFZMafbPw6ORxrUWG7Qxad.jpg",
+    "release_date": "2025-02-27",
+    "title": "Bastion 36",
+    "video": false,
+    "vote_average": 6.336,
+    "vote_count": 116,
+    "budget": 0,
+    "revenue": 0,
+    "runtime": 124,
+    "genres": [
+        "Acción",
+        "Crimen",
+        "Drama",
+        "Suspense"
+    ],
+    "production_companies": [
+        "Gaumont"
+    ],
+    "directors": [
+        "Olivier Marchal"
+    ],
+    "cast": [
+        "Victor Belmondo",
+        "Tewfik Jallab",
+        "Soufiane Guerrab",
+        "Juliette Dol",
+        "Yvan Attal",
+        "Ludovic Faure",
+        "Lydia Andrei",
+        "Jean-Michel Correia",
+        "Moussa Mansaly",
+        "Erika Sainte"
+    ],
+    "keywords": [
+        "based on novel or book",
+        "organized crime",
+        "police procedural"
+    ],
+    "video_count": 0,
+    "similar_count": 20,
+    "roi": 0,
+    "popularity_category": "Muy Alta",
+    "rating_category": "Buena",
+    "genres_str": "Acción,Crimen,Drama,Suspense",
+    "directors_str": "Olivier Marchal",
+    "cast_str": "Victor Belmondo,Tewfik Jallab,Soufiane Guerrab,Juliette Dol,Yvan Attal,Ludovic Faure,Lydia Andrei,Jean-Michel Correia,Moussa Mansaly,Erika Sainte",
+    "companies_str": "Gaumont",
+    "keywords_str": "based on novel or book,organized crime,police procedural"
+}

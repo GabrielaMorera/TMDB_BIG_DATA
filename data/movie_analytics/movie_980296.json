@@ -1,0 +1,62 @@
+{
+    "adult": false,
+    "backdrop_path": "/fOGTvPtALsehlUFYUoZPUoRIHhd.jpg",
+    "genre_ids": [
+        18
+    ],
+    "id": 980296,
+    "original_language": "en",
+    "original_title": "Los Frikis",
+    "overview": "",
+    "popularity": 50.9207,
+    "poster_path": "/kCGWNd8yFQ3E695kYuaUUv62pJP.jpg",
+    "release_date": "2024-12-20",
+    "title": "Los Frikis",
+    "video": false,
+    "vote_average": 6.0,
+    "vote_count": 1,
+    "budget": 0,
+    "revenue": 142723,
+    "runtime": 105,
+    "genres": [
+        "Drama"
+    ],
+    "production_companies": [
+        "Lord Miller",
+        "New Slate Ventures"
+    ],
+    "directors": [
+        "Tyler Nilson",
+        "Michael Schwartz"
+    ],
+    "cast": [
+        "Adria Arjona",
+        "Héctor Medina",
+        "Eros de la Puente",
+        "Luis Alberto García",
+        "Jorge Perugorría",
+        "Manuel Alejandro Rodríguez Gomez",
+        "Pedro Martínez",
+        "Jorge Enrique Caballero",
+        "Alexis Valdés",
+        "Orestes Amador"
+    ],
+    "keywords": [
+        "cuba",
+        "hiv",
+        "punk band",
+        "1990s",
+        "brother brother relationship",
+        "based on real events"
+    ],
+    "video_count": 0,
+    "similar_count": 20,
+    "roi": 0,
+    "popularity_category": "Muy Alta",
+    "rating_category": "Buena",
+    "genres_str": "Drama",
+    "directors_str": "Tyler Nilson,Michael Schwartz",
+    "cast_str": "Adria Arjona,Héctor Medina,Eros de la Puente,Luis Alberto García,Jorge Perugorría,Manuel Alejandro Rodríguez Gomez,Pedro Martínez,Jorge Enrique Caballero,Alexis Valdés,Orestes Amador",
+    "companies_str": "Lord Miller,New Slate Ventures",
+    "keywords_str": "cuba,hiv,punk band,1990s,brother brother relationship,based on real events"
+}

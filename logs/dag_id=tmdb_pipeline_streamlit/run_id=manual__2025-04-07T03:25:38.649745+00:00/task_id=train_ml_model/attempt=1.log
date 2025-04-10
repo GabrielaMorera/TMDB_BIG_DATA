@@ -1,0 +1,25 @@
+[2025-04-07T03:26:14.320+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2025-04-07T03:26:14.341+0000] {taskinstance.py:2073} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: tmdb_pipeline_streamlit.train_ml_model manual__2025-04-07T03:25:38.649745+00:00 [queued]>
+[2025-04-07T03:26:14.348+0000] {taskinstance.py:2073} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: tmdb_pipeline_streamlit.train_ml_model manual__2025-04-07T03:25:38.649745+00:00 [queued]>
+[2025-04-07T03:26:14.348+0000] {taskinstance.py:2303} INFO - Starting attempt 1 of 3
+[2025-04-07T03:26:14.359+0000] {taskinstance.py:2327} INFO - Executing <Task(PythonOperator): train_ml_model> on 2025-04-07 03:25:38.649745+00:00
+[2025-04-07T03:26:14.365+0000] {warnings.py:110} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:61: DeprecationWarning: This process (pid=205) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2025-04-07T03:26:14.366+0000] {standard_task_runner.py:63} INFO - Started process 207 to run task
+[2025-04-07T03:26:14.367+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'tmdb_pipeline_streamlit', 'train_ml_model', 'manual__2025-04-07T03:25:38.649745+00:00', '--job-id', '416', '--raw', '--subdir', 'DAGS_FOLDER/tmdb_pipeline.py', '--cfg-path', '/tmp/tmplth51r8b']
+[2025-04-07T03:26:14.369+0000] {standard_task_runner.py:91} INFO - Job 416: Subtask train_ml_model
+[2025-04-07T03:26:14.410+0000] {task_command.py:426} INFO - Running <TaskInstance: tmdb_pipeline_streamlit.train_ml_model manual__2025-04-07T03:25:38.649745+00:00 [running]> on host 5f40dfabaa88
+[2025-04-07T03:26:14.499+0000] {taskinstance.py:2644} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='gabriela' AIRFLOW_CTX_DAG_ID='tmdb_pipeline_streamlit' AIRFLOW_CTX_TASK_ID='train_ml_model' AIRFLOW_CTX_EXECUTION_DATE='2025-04-07T03:25:38.649745+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-04-07T03:25:38.649745+00:00'
+[2025-04-07T03:26:14.500+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2025-04-07T03:26:15.763+0000] {warnings.py:110} WARNING - /opt/***/dags/tmdb_pipeline.py:1836: UserWarning: pandas only supports SQLAlchemy connectable (engine/connection) or database string URI or sqlite3 DBAPI2 connection. Other DBAPI2 objects are not tested. Please consider using SQLAlchemy.
+  df = pd.read_sql(query, conn)
+
+[2025-04-07T03:26:16.325+0000] {tmdb_pipeline.py:1911} INFO - Modelo ML entrenado y guardado en /opt/***/data/movie_analytics/ml_model_v3_20250407_032615
+[2025-04-07T03:26:16.326+0000] {tmdb_pipeline.py:1912} INFO - Métricas del modelo - MSE: 6406.3696, R²: -0.0530
+[2025-04-07T03:26:16.350+0000] {python.py:237} INFO - Done. Returned value was: /opt/***/data/movie_analytics/ml_model_v3_20250407_032615
+[2025-04-07T03:26:16.350+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2025-04-07T03:26:16.371+0000] {taskinstance.py:1205} INFO - Marking task as SUCCESS. dag_id=tmdb_pipeline_streamlit, task_id=train_ml_model, execution_date=20250407T032538, start_date=20250407T032614, end_date=20250407T032616
+[2025-04-07T03:26:16.399+0000] {local_task_job_runner.py:240} INFO - Task exited with return code 0
+[2025-04-07T03:26:16.424+0000] {taskinstance.py:3482} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2025-04-07T03:26:16.426+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

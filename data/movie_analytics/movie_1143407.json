@@ -1,0 +1,63 @@
+{
+    "adult": false,
+    "backdrop_path": "/pwfXx2O3eFXi5dtWCV5XJPQJgqN.jpg",
+    "genre_ids": [
+        28,
+        53
+    ],
+    "id": 1143407,
+    "original_language": "hi",
+    "original_title": "स्काई फ़ोर्स",
+    "overview": "",
+    "popularity": 67.146,
+    "poster_path": "/f1KLUpaW7rbXhUm5SxG1lpPFFCJ.jpg",
+    "release_date": "2025-01-24",
+    "title": "स्काई फ़ोर्स",
+    "video": false,
+    "vote_average": 6.98,
+    "vote_count": 25,
+    "budget": 0,
+    "revenue": 0,
+    "runtime": 125,
+    "genres": [
+        "Acción",
+        "Suspense"
+    ],
+    "production_companies": [
+        "Maddock Films",
+        "Jio Studios"
+    ],
+    "directors": [
+        "Sandeep Kewlani",
+        "Abhishek Kapur"
+    ],
+    "cast": [
+        "Akshay Kumar",
+        "Veer Pahariya",
+        "Nimrat Kaur",
+        "Sara Ali Khan",
+        "Sharad Kelkar",
+        "Mohit Chauhan",
+        "Manish Chaudhary",
+        "Naisha Khanna",
+        "Soham Majumdar",
+        "Varun Badola"
+    ],
+    "keywords": [
+        "historical epic",
+        "bollywood",
+        "indian air force",
+        "inspired by true story",
+        "pakistani air force"
+    ],
+    "video_count": 0,
+    "similar_count": 20,
+    "roi": 0,
+    "popularity_category": "Muy Alta",
+    "rating_category": "Buena",
+    "genres_str": "Acción,Suspense",
+    "directors_str": "Sandeep Kewlani,Abhishek Kapur",
+    "cast_str": "Akshay Kumar,Veer Pahariya,Nimrat Kaur,Sara Ali Khan,Sharad Kelkar,Mohit Chauhan,Manish Chaudhary,Naisha Khanna,Soham Majumdar,Varun Badola",
+    "companies_str": "Maddock Films,Jio Studios",
+    "keywords_str": "historical epic,bollywood,indian air force,inspired by true story,pakistani air force"
+}

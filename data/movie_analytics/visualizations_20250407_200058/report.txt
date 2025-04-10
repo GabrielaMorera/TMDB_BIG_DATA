@@ -1,0 +1,11 @@
+ANÁLISIS DE PELÍCULAS (Versión 3)
+==================================================
+
+Informe generado el 2025-04-07 20:01:05
+
+Visualizaciones generadas:
+- top_movies.png
+- genre_distribution.png
+- correlacion_presupuesto_ingresos.png
+- distribucion_por_año.png
+- peliculas_mayor_impacto.png

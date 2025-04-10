@@ -1,0 +1,63 @@
+{
+    "adult": false,
+    "backdrop_path": "/bWKzdvrsrUoSt9btMESUipZ6SBf.jpg",
+    "genre_ids": [
+        16,
+        12
+    ],
+    "id": 1229646,
+    "original_language": "es",
+    "original_title": "Robotia, la película",
+    "overview": "En un mundo habitado por androides, una chica sueña con jugar al fútbol, pese a la prohibición de su familia. Sus amigos van a acudir en su ayuda para ayudarle a cumplir su deseo, y demostrarle a todos lo que son capaces de hacer, dentro y fuera de un campo de juego.",
+    "popularity": 41.7839,
+    "poster_path": "/ch09yqv7K628OyITentI9LDQQCy.jpg",
+    "release_date": "2024-06-07",
+    "title": "Robotia, la película",
+    "video": false,
+    "vote_average": 6.0,
+    "vote_count": 4,
+    "budget": 0,
+    "revenue": 0,
+    "runtime": 86,
+    "genres": [
+        "Animación",
+        "Aventura"
+    ],
+    "production_companies": [
+        "Malabar Animation Studio",
+        "Dibulitoon Studio",
+        "Paycom Cinema",
+        "Tropics Creative"
+    ],
+    "directors": [
+        "Diego Cagide",
+        "Diego Lucero"
+    ],
+    "cast": [
+        "Annabel Gallardo",
+        "Ariel Cister",
+        "Ana María Picchio",
+        "Valeria Stilman",
+        "Diego Recagno",
+        "Melina Macaggi",
+        "Andrés Ciavaglia",
+        "Lucía Baya Casal",
+        "Xavier Castañer",
+        "María Romeu"
+    ],
+    "keywords": [
+        "friendship",
+        "football (soccer)",
+        "robot"
+    ],
+    "video_count": 1,
+    "similar_count": 20,
+    "roi": 0,
+    "popularity_category": "Muy Alta",
+    "rating_category": "Buena",
+    "genres_str": "Animación,Aventura",
+    "directors_str": "Diego Cagide,Diego Lucero",
+    "cast_str": "Annabel Gallardo,Ariel Cister,Ana María Picchio,Valeria Stilman,Diego Recagno,Melina Macaggi,Andrés Ciavaglia,Lucía Baya Casal,Xavier Castañer,María Romeu",
+    "companies_str": "Malabar Animation Studio,Dibulitoon Studio,Paycom Cinema,Tropics Creative",
+    "keywords_str": "friendship,football (soccer),robot"
+}

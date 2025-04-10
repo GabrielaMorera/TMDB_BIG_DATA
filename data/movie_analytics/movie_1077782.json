@@ -1,0 +1,68 @@
+{
+    "adult": false,
+    "backdrop_path": "/AtciHGgpOU7ngsVhXbS2S5Spdlv.jpg",
+    "genre_ids": [
+        28,
+        35
+    ],
+    "id": 1077782,
+    "original_language": "en",
+    "original_title": "Old Guy",
+    "overview": "Danny Dolinski (Christoph Waltz) es un veterano sicario que, pese a estar a punto de retirarse, está convencido de que sigue siendo el mejor en su trabajo. La compañía para la que trabajaba vuelve a llamarlo con una nueva misión: entrenar a Wihlborg (Cooper Hoffman), un joven prodigio recién llegado. Aunque al principio no lograrán entenderse, tendrán que unir sus habilidades para descubrir la verdad que se esconde tras la organización para la que trabajan.",
+    "popularity": 80.37,
+    "poster_path": "/uO7d83mC6Jvdg5G1GShN5uOnFfo.jpg",
+    "release_date": "2024-12-13",
+    "title": "El maestro del crimen",
+    "video": false,
+    "vote_average": 5.639,
+    "vote_count": 72,
+    "budget": 0,
+    "revenue": 0,
+    "runtime": 93,
+    "genres": [
+        "Acción",
+        "Comedia"
+    ],
+    "production_companies": [
+        "23ten",
+        "Source Management + Production",
+        "Aperture Media Partners",
+        "Pfaff & Pfaff Productions",
+        "LB Entertainment",
+        "Wee Buns Films",
+        "Northern Ireland Screen",
+        "Highland Film Group",
+        "Yellow Moon",
+        "Dark Castle Entertainment"
+    ],
+    "directors": [
+        "Simon West"
+    ],
+    "cast": [
+        "Christoph Waltz",
+        "Lucy Liu",
+        "Cooper Hoffman",
+        "Karishma Navekar",
+        "Desmond Edwards",
+        "Ryan McParland",
+        "Ann Akinjirin",
+        "Charlie Hamblett",
+        "Tamara Chanel White",
+        "Jason Done"
+    ],
+    "keywords": [
+        "mentor protégé relationship",
+        "contract killer",
+        "gen z"
+    ],
+    "video_count": 1,
+    "similar_count": 20,
+    "roi": 0,
+    "popularity_category": "Muy Alta",
+    "rating_category": "Regular",
+    "genres_str": "Acción,Comedia",
+    "directors_str": "Simon West",
+    "cast_str": "Christoph Waltz,Lucy Liu,Cooper Hoffman,Karishma Navekar,Desmond Edwards,Ryan McParland,Ann Akinjirin,Charlie Hamblett,Tamara Chanel White,Jason Done",
+    "companies_str": "23ten,Source Management + Production,Aperture Media Partners,Pfaff & Pfaff Productions,LB Entertainment,Wee Buns Films,Northern Ireland Screen,Highland Film Group,Yellow Moon,Dark Castle Entertainment",
+    "keywords_str": "mentor protégé relationship,contract killer,gen z"
+}

@@ -1,0 +1,73 @@
+{
+    "adult": false,
+    "backdrop_path": "/by8z9Fe8y7p4jo2YlW2SZDnptyT.jpg",
+    "genre_ids": [
+        28,
+        35,
+        878
+    ],
+    "id": 533535,
+    "original_language": "en",
+    "original_title": "Deadpool & Wolverine",
+    "overview": "Un apático Wade Wilson se afana en la vida civil tras dejar atrás sus días como Deadpool, un mercenario moralmente flexible. Pero cuando su mundo natal se enfrenta a una amenaza existencial, Wade debe volver a vestirse a regañadientes con un Lobezno aún más reacio a ayudar.",
+    "popularity": 61.4447,
+    "poster_path": "/9TFSqghEHrlBMRR63yTx80Orxva.jpg",
+    "release_date": "2024-07-24",
+    "title": "Deadpool y Lobezno",
+    "video": false,
+    "vote_average": 7.608,
+    "vote_count": 7004,
+    "budget": 200000000,
+    "revenue": 1338073645,
+    "runtime": 127,
+    "genres": [
+        "Acción",
+        "Comedia",
+        "Ciencia ficción"
+    ],
+    "production_companies": [
+        "Marvel Studios",
+        "Maximum Effort",
+        "21 Laps Entertainment",
+        "20th Century Studios",
+        "Kevin Feige Productions",
+        "TSG Entertainment"
+    ],
+    "directors": [
+        "Shawn Levy"
+    ],
+    "cast": [
+        "Ryan Reynolds",
+        "Hugh Jackman",
+        "Emma Corrin",
+        "Matthew Macfadyen",
+        "Dafne Keen",
+        "Jon Favreau",
+        "Morena Baccarin",
+        "Rob Delaney",
+        "Leslie Uggams",
+        "Jennifer Garner"
+    ],
+    "keywords": [
+        "hero",
+        "superhero",
+        "anti hero",
+        "mutant",
+        "breaking the fourth wall",
+        "aftercreditsstinger",
+        "duringcreditsstinger",
+        "marvel cinematic universe (mcu)",
+        "mutants",
+        "superhero teamup"
+    ],
+    "video_count": 31,
+    "similar_count": 20,
+    "roi": 5.690368225,
+    "popularity_category": "Muy Alta",
+    "rating_category": "Buena",
+    "genres_str": "Acción,Comedia,Ciencia ficción",
+    "directors_str": "Shawn Levy",
+    "cast_str": "Ryan Reynolds,Hugh Jackman,Emma Corrin,Matthew Macfadyen,Dafne Keen,Jon Favreau,Morena Baccarin,Rob Delaney,Leslie Uggams,Jennifer Garner",
+    "companies_str": "Marvel Studios,Maximum Effort,21 Laps Entertainment,20th Century Studios,Kevin Feige Productions,TSG Entertainment",
+    "keywords_str": "hero,superhero,anti hero,mutant,breaking the fourth wall,aftercreditsstinger,duringcreditsstinger,marvel cinematic universe (mcu),mutants,superhero teamup"
+}

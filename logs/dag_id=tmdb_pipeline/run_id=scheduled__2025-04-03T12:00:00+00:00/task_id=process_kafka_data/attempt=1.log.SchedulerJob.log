@@ -1,0 +1,2 @@
+[2025-04-04T00:29:34.567+0000] {task_context_logger.py:104} WARNING - Marking task instance <TaskInstance: tmdb_pipeline.process_kafka_data scheduled__2025-04-03T12:00:00+00:00 [queued]> stuck in queued as failed. If the task instance has available retries, it will be retried.
+[2025-04-04T00:29:35.697+0000] {task_context_logger.py:104} ERROR - Executor reports task instance <TaskInstance: tmdb_pipeline.process_kafka_data scheduled__2025-04-03T12:00:00+00:00 [queued]> finished (failed) although the task says it's queued. (Info: None) Was the task killed externally?

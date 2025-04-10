@@ -1,0 +1,47 @@
+{
+    "adult": false,
+    "backdrop_path": "/ibF5XVxTzf1ayzZrmiJqgeQ39Qk.jpg",
+    "genre_ids": [
+        28,
+        10752
+    ],
+    "id": 1373723,
+    "original_language": "en",
+    "original_title": "The Codes of War",
+    "overview": "Las historias de guerra sobre la familia, la ética y el honor incluyen la historia real de dos marines estadounidenses que, en un lapso de seis segundos, deben mantenerse firmes para detener un camión bomba suicida, un soldado de la Marina que intenta aferrarse a su humanidad y un soldado de la Segunda Guerra Mundial que se separa de su escuadrón y se ve obligado a reevaluar su código.",
+    "popularity": 218.6954,
+    "poster_path": "/oXeiQAfRK90pxxhP5iKPXQqAIN1.jpg",
+    "release_date": "2025-03-20",
+    "title": "Códigos de Guerra",
+    "video": false,
+    "vote_average": 7.328,
+    "vote_count": 29,
+    "budget": 0,
+    "revenue": 0,
+    "runtime": 92,
+    "genres": [
+        "Acción",
+        "Bélica"
+    ],
+    "production_companies": [],
+    "directors": [
+        "Paul Anderson",
+        "Joshua DeFour",
+        "Marielle Woods"
+    ],
+    "cast": [
+        "Noah Gray-Cabey",
+        "Michael Grant"
+    ],
+    "keywords": [],
+    "video_count": 0,
+    "similar_count": 19,
+    "roi": 0,
+    "popularity_category": "Muy Alta",
+    "rating_category": "Buena",
+    "genres_str": "Acción,Bélica",
+    "directors_str": "Paul Anderson,Joshua DeFour,Marielle Woods",
+    "cast_str": "Noah Gray-Cabey,Michael Grant",
+    "companies_str": "",
+    "keywords_str": ""
+}

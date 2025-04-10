@@ -1,0 +1,61 @@
+{
+    "adult": false,
+    "backdrop_path": "/sulUXRukzh7WSK34y8mnaUcHo3y.jpg",
+    "genre_ids": [
+        10749,
+        35,
+        18
+    ],
+    "id": 1254786,
+    "original_language": "en",
+    "original_title": "The Life List",
+    "overview": "Cuando su madre la envía a una misión para completar su lista de deseos de la adolescencia, una joven desvela secretos familiares, encuentra el amor... y se redescubre.",
+    "popularity": 153.886,
+    "poster_path": "/a3IFeDHSCIkMLmoBzaOcD60BOoR.jpg",
+    "release_date": "2025-03-27",
+    "title": "Mi lista de deseos",
+    "video": false,
+    "vote_average": 7.101,
+    "vote_count": 169,
+    "budget": 0,
+    "revenue": 0,
+    "runtime": 123,
+    "genres": [
+        "Romance",
+        "Comedia",
+        "Drama"
+    ],
+    "production_companies": [
+        "3dot Productions"
+    ],
+    "directors": [
+        "Adam Brooks"
+    ],
+    "cast": [
+        "Sofia Carson",
+        "Kyle Allen",
+        "Sebastian de Souza",
+        "Connie Britton",
+        "José Zúñiga",
+        "Jordi Mollà",
+        "Dario Ladani Sanchez",
+        "Federico Rodriguez",
+        "Marianne Rendón",
+        "Michael Rowland"
+    ],
+    "keywords": [
+        "bucket list",
+        "inspirational",
+        "lighthearted"
+    ],
+    "video_count": 0,
+    "similar_count": 20,
+    "roi": 0,
+    "popularity_category": "Muy Alta",
+    "rating_category": "Buena",
+    "genres_str": "Romance,Comedia,Drama",
+    "directors_str": "Adam Brooks",
+    "cast_str": "Sofia Carson,Kyle Allen,Sebastian de Souza,Connie Britton,José Zúñiga,Jordi Mollà,Dario Ladani Sanchez,Federico Rodriguez,Marianne Rendón,Michael Rowland",
+    "companies_str": "3dot Productions",
+    "keywords_str": "bucket list,inspirational,lighthearted"
+}

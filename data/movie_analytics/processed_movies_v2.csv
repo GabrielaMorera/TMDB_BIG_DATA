@@ -1,0 +1,2 @@
+id,title,original_title,overview,release_date,popularity,vote_average,vote_count,budget,revenue,runtime,genres,directors,cast,genres_str,directors_str,cast_str,roi,popularity_category,rating_category
+123456,Película de ejemplo,Sample Movie,Esta es una película de ejemplo para probar el DAG.,2025-04-01,8.5,7.8,1000,1000000,5000000,120,"['Acción', 'Comedia']",['Director Ejemplo'],"['Actor 1', 'Actor 2']","Acción,Comedia",Director Ejemplo,"Actor 1,Actor 2",4.0,Media,Buena

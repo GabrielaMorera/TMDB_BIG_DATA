@@ -1,0 +1,20 @@
+[2025-04-08T03:22:29.044+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2025-04-08T03:22:29.067+0000] {taskinstance.py:2073} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: tmdb_pipeline_streamlit.setup_streamlit_app manual__2025-04-08T03:18:53.409025+00:00 [queued]>
+[2025-04-08T03:22:29.077+0000] {taskinstance.py:2073} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: tmdb_pipeline_streamlit.setup_streamlit_app manual__2025-04-08T03:18:53.409025+00:00 [queued]>
+[2025-04-08T03:22:29.078+0000] {taskinstance.py:2303} INFO - Starting attempt 1 of 2
+[2025-04-08T03:22:29.092+0000] {taskinstance.py:2327} INFO - Executing <Task(PythonOperator): setup_streamlit_app> on 2025-04-08 03:18:53.409025+00:00
+[2025-04-08T03:22:29.102+0000] {standard_task_runner.py:63} INFO - Started process 575 to run task
+[2025-04-08T03:22:29.105+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'tmdb_pipeline_streamlit', 'setup_streamlit_app', 'manual__2025-04-08T03:18:53.409025+00:00', '--job-id', '665', '--raw', '--subdir', 'DAGS_FOLDER/tmdb_pipeline.py', '--cfg-path', '/tmp/tmpyjvlbpkf']
+[2025-04-08T03:22:29.108+0000] {standard_task_runner.py:91} INFO - Job 665: Subtask setup_streamlit_app
+[2025-04-08T03:22:29.156+0000] {task_command.py:426} INFO - Running <TaskInstance: tmdb_pipeline_streamlit.setup_streamlit_app manual__2025-04-08T03:18:53.409025+00:00 [running]> on host 5030177be47f
+[2025-04-08T03:22:29.242+0000] {taskinstance.py:2644} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='tmdb_pipeline_streamlit' AIRFLOW_CTX_TASK_ID='setup_streamlit_app' AIRFLOW_CTX_EXECUTION_DATE='2025-04-08T03:18:53.409025+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-04-08T03:18:53.409025+00:00'
+[2025-04-08T03:22:29.244+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2025-04-08T03:22:29.258+0000] {tmdb_pipeline.py:1355} INFO - Aplicación Streamlit creada en /opt/***/data/tmdb_streamlit_app.py
+[2025-04-08T03:22:29.259+0000] {tmdb_pipeline.py:1359} INFO - Verificado: El archivo Streamlit existe
+[2025-04-08T03:22:29.260+0000] {tmdb_pipeline.py:1362} INFO - Permisos de ejecución otorgados al script Streamlit
+[2025-04-08T03:22:29.260+0000] {python.py:237} INFO - Done. Returned value was: /opt/***/data/tmdb_streamlit_app.py
+[2025-04-08T03:22:29.260+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2025-04-08T03:22:29.282+0000] {taskinstance.py:1205} INFO - Marking task as SUCCESS. dag_id=tmdb_pipeline_streamlit, task_id=setup_streamlit_app, execution_date=20250408T031853, start_date=20250408T032229, end_date=20250408T032229
+[2025-04-08T03:22:29.327+0000] {local_task_job_runner.py:240} INFO - Task exited with return code 0
+[2025-04-08T03:22:29.354+0000] {taskinstance.py:3482} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2025-04-08T03:22:29.355+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

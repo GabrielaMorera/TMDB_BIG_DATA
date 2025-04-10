@@ -1,0 +1,8 @@
+ANÁLISIS DE PELÍCULAS
+==================================================
+
+Informe generado el 2025-04-04 00:32:38
+
+Visualizaciones generadas:
+- top_movies.png
+- genre_distribution.png

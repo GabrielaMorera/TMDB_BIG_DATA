@@ -1,0 +1,28 @@
+[2025-04-09T05:30:31.443+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2025-04-09T05:30:31.463+0000] {taskinstance.py:2073} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: tmdb_pipeline_streamlit.generate_visualizations manual__2025-04-09T05:27:33.581003+00:00 [queued]>
+[2025-04-09T05:30:31.470+0000] {taskinstance.py:2073} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: tmdb_pipeline_streamlit.generate_visualizations manual__2025-04-09T05:27:33.581003+00:00 [queued]>
+[2025-04-09T05:30:31.470+0000] {taskinstance.py:2303} INFO - Starting attempt 1 of 2
+[2025-04-09T05:30:31.481+0000] {taskinstance.py:2327} INFO - Executing <Task(PythonOperator): generate_visualizations> on 2025-04-09 05:27:33.581003+00:00
+[2025-04-09T05:30:31.489+0000] {standard_task_runner.py:63} INFO - Started process 384 to run task
+[2025-04-09T05:30:31.493+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'tmdb_pipeline_streamlit', 'generate_visualizations', 'manual__2025-04-09T05:27:33.581003+00:00', '--job-id', '970', '--raw', '--subdir', 'DAGS_FOLDER/tmdb_pipeline.py', '--cfg-path', '/tmp/tmpe940stlv']
+[2025-04-09T05:30:31.496+0000] {standard_task_runner.py:91} INFO - Job 970: Subtask generate_visualizations
+[2025-04-09T05:30:31.537+0000] {task_command.py:426} INFO - Running <TaskInstance: tmdb_pipeline_streamlit.generate_visualizations manual__2025-04-09T05:27:33.581003+00:00 [running]> on host a24902f77b45
+[2025-04-09T05:30:31.618+0000] {taskinstance.py:2644} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='tmdb_pipeline_streamlit' AIRFLOW_CTX_TASK_ID='generate_visualizations' AIRFLOW_CTX_EXECUTION_DATE='2025-04-09T05:27:33.581003+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-04-09T05:27:33.581003+00:00'
+[2025-04-09T05:30:31.619+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2025-04-09T05:30:31.647+0000] {tmdb_pipeline.py:1249} INFO - Consulta 'top_movies' completada: 10 filas
+[2025-04-09T05:30:31.652+0000] {tmdb_pipeline.py:1249} INFO - Consulta 'genre_distribution' completada: 10 filas
+[2025-04-09T05:30:31.654+0000] {tmdb_pipeline.py:1249} INFO - Consulta 'correlacion_presupuesto_ingresos' completada: 25 filas
+[2025-04-09T05:30:31.666+0000] {tmdb_pipeline.py:1249} INFO - Consulta 'distribucion_por_año' completada: 5 filas
+[2025-04-09T05:30:31.668+0000] {tmdb_pipeline.py:1249} INFO - Consulta 'peliculas_mayor_impacto' completada: 15 filas
+[2025-04-09T05:30:32.862+0000] {tmdb_pipeline.py:1331} INFO - Gráfico 'Top 10 películas por popularidad' guardado
+[2025-04-09T05:30:34.018+0000] {tmdb_pipeline.py:1349} INFO - Gráfico de distribución de géneros guardado
+[2025-04-09T05:30:35.983+0000] {tmdb_pipeline.py:1366} INFO - Nube de palabras de géneros guardada
+[2025-04-09T05:30:37.549+0000] {tmdb_pipeline.py:1401} INFO - Gráfico de correlación presupuesto-ingresos guardado
+[2025-04-09T05:30:38.713+0000] {tmdb_pipeline.py:1431} INFO - Gráfico de películas de mayor impacto guardado
+[2025-04-09T05:30:38.715+0000] {tmdb_pipeline.py:1444} INFO - Visualizaciones guardadas en /opt/***/data/movie_analytics/visualizations_20250409_053031
+[2025-04-09T05:30:38.728+0000] {python.py:237} INFO - Done. Returned value was: /opt/***/data/movie_analytics/visualizations_20250409_053031
+[2025-04-09T05:30:38.728+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2025-04-09T05:30:38.745+0000] {taskinstance.py:1205} INFO - Marking task as SUCCESS. dag_id=tmdb_pipeline_streamlit, task_id=generate_visualizations, execution_date=20250409T052733, start_date=20250409T053031, end_date=20250409T053038
+[2025-04-09T05:30:38.803+0000] {local_task_job_runner.py:240} INFO - Task exited with return code 0
+[2025-04-09T05:30:38.831+0000] {taskinstance.py:3482} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2025-04-09T05:30:38.832+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

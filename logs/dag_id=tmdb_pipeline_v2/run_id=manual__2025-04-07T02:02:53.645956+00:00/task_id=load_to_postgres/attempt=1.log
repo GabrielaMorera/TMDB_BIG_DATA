@@ -1,0 +1,32 @@
+[2025-04-07T02:03:31.903+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2025-04-07T02:03:31.947+0000] {taskinstance.py:2073} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: tmdb_pipeline_v2.load_to_postgres manual__2025-04-07T02:02:53.645956+00:00 [queued]>
+[2025-04-07T02:03:31.981+0000] {taskinstance.py:2073} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: tmdb_pipeline_v2.load_to_postgres manual__2025-04-07T02:02:53.645956+00:00 [queued]>
+[2025-04-07T02:03:31.992+0000] {taskinstance.py:2303} INFO - Starting attempt 1 of 3
+[2025-04-07T02:03:32.093+0000] {taskinstance.py:2327} INFO - Executing <Task(PythonOperator): load_to_postgres> on 2025-04-07 02:02:53.645956+00:00
+[2025-04-07T02:03:32.109+0000] {warnings.py:110} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:61: DeprecationWarning: This process (pid=295) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2025-04-07T02:03:32.114+0000] {standard_task_runner.py:63} INFO - Started process 297 to run task
+[2025-04-07T02:03:32.112+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'tmdb_pipeline_v2', 'load_to_postgres', 'manual__2025-04-07T02:02:53.645956+00:00', '--job-id', '362', '--raw', '--subdir', 'DAGS_FOLDER/dag_tmdb.py', '--cfg-path', '/tmp/tmp839z_ge0']
+[2025-04-07T02:03:32.117+0000] {standard_task_runner.py:91} INFO - Job 362: Subtask load_to_postgres
+[2025-04-07T02:03:32.222+0000] {task_command.py:426} INFO - Running <TaskInstance: tmdb_pipeline_v2.load_to_postgres manual__2025-04-07T02:02:53.645956+00:00 [running]> on host 9b742febb797
+[2025-04-07T02:03:32.378+0000] {taskinstance.py:2644} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='gabriela' AIRFLOW_CTX_DAG_ID='tmdb_pipeline_v2' AIRFLOW_CTX_TASK_ID='load_to_postgres' AIRFLOW_CTX_EXECUTION_DATE='2025-04-07T02:02:53.645956+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-04-07T02:02:53.645956+00:00'
+[2025-04-07T02:03:32.384+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2025-04-07T02:03:32.656+0000] {dag_tmdb.py:466} INFO - Leyendo 20 registros procesados para cargar en PostgreSQL
+[2025-04-07T02:03:32.667+0000] {dag_tmdb.py:137} INFO - Tablas verificadas y creadas en PostgreSQL
+[2025-04-07T02:03:32.677+0000] {dag_tmdb.py:142} INFO - Tablas existentes:
+[2025-04-07T02:03:32.678+0000] {dag_tmdb.py:144} INFO - - movies
+[2025-04-07T02:03:32.678+0000] {dag_tmdb.py:144} INFO - - genres
+[2025-04-07T02:03:32.679+0000] {dag_tmdb.py:144} INFO - - directors
+[2025-04-07T02:03:32.679+0000] {dag_tmdb.py:144} INFO - - actors
+[2025-04-07T02:03:32.679+0000] {dag_tmdb.py:144} INFO - - movie_data_warehouse
+[2025-04-07T02:03:32.684+0000] {dag_tmdb.py:482} INFO - Conexión establecida con PostgreSQL
+[2025-04-07T02:03:32.704+0000] {dag_tmdb.py:634} INFO - Total de películas en la base de datos: 61
+[2025-04-07T02:03:32.705+0000] {dag_tmdb.py:635} INFO - Insertadas 0 nuevas películas en esta ejecución
+[2025-04-07T02:03:32.705+0000] {dag_tmdb.py:641} INFO - Datos cargados correctamente en PostgreSQL
+[2025-04-07T02:03:32.706+0000] {python.py:237} INFO - Done. Returned value was: 20
+[2025-04-07T02:03:32.706+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2025-04-07T02:03:32.732+0000] {taskinstance.py:1205} INFO - Marking task as SUCCESS. dag_id=tmdb_pipeline_v2, task_id=load_to_postgres, execution_date=20250407T020253, start_date=20250407T020331, end_date=20250407T020332
+[2025-04-07T02:03:32.790+0000] {local_task_job_runner.py:240} INFO - Task exited with return code 0
+[2025-04-07T02:03:32.820+0000] {taskinstance.py:3482} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2025-04-07T02:03:32.822+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

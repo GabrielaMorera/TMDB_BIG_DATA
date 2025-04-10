@@ -1,0 +1,70 @@
+{
+    "adult": false,
+    "backdrop_path": "/lgkPzcOSnTvjeMnuFzozRO5HHw1.jpg",
+    "genre_ids": [
+        16,
+        10751,
+        35,
+        878
+    ],
+    "id": 519182,
+    "original_language": "en",
+    "original_title": "Despicable Me 4",
+    "overview": "Gru, Lucy y las niñas -Margo, Edith y Agnes- dan la bienvenida a un nuevo miembro en la familia: Gru Junior, que parece llegar con el propósito de ser un suplicio para su padre. Gru tendrá que enfrentarse en esta ocasión a su nueva némesis Maxime Le Mal y su sofisticada y malévola novia Valentina, lo que obligará a la familia a tener que darse a la fuga. Cuarta entrega de 'Gru, mi villano favorito'.",
+    "popularity": 62.0002,
+    "poster_path": "/wTpzSDfbUuHPEgqgt5vwVtPHhrb.jpg",
+    "release_date": "2024-06-20",
+    "title": "Gru 4. Mi villano favorito",
+    "video": false,
+    "vote_average": 7.1,
+    "vote_count": 2671,
+    "budget": 100000000,
+    "revenue": 969280910,
+    "runtime": 94,
+    "genres": [
+        "Animación",
+        "Familia",
+        "Comedia",
+        "Ciencia ficción"
+    ],
+    "production_companies": [
+        "Universal Pictures",
+        "Illumination"
+    ],
+    "directors": [
+        "Chris Renaud"
+    ],
+    "cast": [
+        "Steve Carell",
+        "Kristen Wiig",
+        "Will Ferrell",
+        "Sofía Vergara",
+        "Miranda Cosgrove",
+        "Dana Gaier",
+        "Madison Polan",
+        "Pierre Coffin",
+        "Chris Renaud",
+        "Steve Coogan"
+    ],
+    "keywords": [
+        "superhero",
+        "villain",
+        "sequel",
+        "super villain",
+        "aftercreditsstinger",
+        "duringcreditsstinger",
+        "kids",
+        "calm",
+        "illumination"
+    ],
+    "video_count": 10,
+    "similar_count": 20,
+    "roi": 8.6928091,
+    "popularity_category": "Muy Alta",
+    "rating_category": "Buena",
+    "genres_str": "Animación,Familia,Comedia,Ciencia ficción",
+    "directors_str": "Chris Renaud",
+    "cast_str": "Steve Carell,Kristen Wiig,Will Ferrell,Sofía Vergara,Miranda Cosgrove,Dana Gaier,Madison Polan,Pierre Coffin,Chris Renaud,Steve Coogan",
+    "companies_str": "Universal Pictures,Illumination",
+    "keywords_str": "superhero,villain,sequel,super villain,aftercreditsstinger,duringcreditsstinger,kids,calm,illumination"
+}

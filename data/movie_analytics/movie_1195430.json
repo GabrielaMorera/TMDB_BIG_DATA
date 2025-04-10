@@ -1,0 +1,64 @@
+{
+    "adult": false,
+    "backdrop_path": "/lqHt4icP1GTaNBeVTxTrwTZdoAW.jpg",
+    "genre_ids": [
+        28,
+        53,
+        9648,
+        80
+    ],
+    "id": 1195430,
+    "original_language": "hi",
+    "original_title": "देवा",
+    "overview": "",
+    "popularity": 286.6674,
+    "poster_path": "/4wKpglgZYMYpISMdThgdqS1TSQc.jpg",
+    "release_date": "2025-01-31",
+    "title": "देवा",
+    "video": false,
+    "vote_average": 6.8,
+    "vote_count": 5,
+    "budget": 9895000,
+    "revenue": 0,
+    "runtime": 155,
+    "genres": [
+        "Acción",
+        "Suspense",
+        "Misterio",
+        "Crimen"
+    ],
+    "production_companies": [
+        "Zee Studios",
+        "Roy Kapur Films"
+    ],
+    "directors": [
+        "Rosshan Andrrews"
+    ],
+    "cast": [
+        "Shahid Kapoor",
+        "Pooja Hegde",
+        "Pavail Gulati",
+        "Pravessh Rana",
+        "Girish Kulkarni",
+        "Kubbra Sait",
+        "Sahidur Rahaman",
+        "Meenal Sahu",
+        "Shivraj Walvekar",
+        "Upendra Limaye"
+    ],
+    "keywords": [
+        "remake",
+        "based on movie",
+        "bollywood"
+    ],
+    "video_count": 0,
+    "similar_count": 20,
+    "roi": -1.0,
+    "popularity_category": "Muy Alta",
+    "rating_category": "Buena",
+    "genres_str": "Acción,Suspense,Misterio,Crimen",
+    "directors_str": "Rosshan Andrrews",
+    "cast_str": "Shahid Kapoor,Pooja Hegde,Pavail Gulati,Pravessh Rana,Girish Kulkarni,Kubbra Sait,Sahidur Rahaman,Meenal Sahu,Shivraj Walvekar,Upendra Limaye",
+    "companies_str": "Zee Studios,Roy Kapur Films",
+    "keywords_str": "remake,based on movie,bollywood"
+}

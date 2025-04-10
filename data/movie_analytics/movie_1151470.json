@@ -1,0 +1,55 @@
+{
+    "adult": false,
+    "backdrop_path": "/nYQJYdfoy7Tkx6bPzUpmCMmyJ4y.jpg",
+    "genre_ids": [
+        53,
+        28
+    ],
+    "id": 1151470,
+    "original_language": "en",
+    "original_title": "The Vigilante",
+    "overview": "Al regresar de Afganistán, Jessica, una marine de Spec OPS, se encuentra en una guerra que nunca imaginó y descubre que los suburbios del centro de Estados Unidos han cambiado cuando su hermana de trece años, Aimee, es secuestrada por traficantes sexuales.",
+    "popularity": 59.4611,
+    "poster_path": "/i6ZO28AmFatUHKwW3LYzBsJvUSs.jpg",
+    "release_date": "2023-09-08",
+    "title": "El último disparo",
+    "video": false,
+    "vote_average": 5.9,
+    "vote_count": 20,
+    "budget": 0,
+    "revenue": 0,
+    "runtime": 100,
+    "genres": [
+        "Suspense",
+        "Acción"
+    ],
+    "production_companies": [
+        "Shattered Images Films"
+    ],
+    "directors": [
+        "Lee Whittaker"
+    ],
+    "cast": [
+        "Jet Jandreau",
+        "Alison Jaye Horowitz",
+        "Ana Alexander",
+        "Eric Pierce",
+        "Jamie Timmons",
+        "Julien Cesario",
+        "Laur Allen",
+        "Terence J. Rotolo",
+        "Emma Malouff",
+        "Alondra Delgado"
+    ],
+    "keywords": [],
+    "video_count": 0,
+    "similar_count": 0,
+    "roi": 0,
+    "popularity_category": "Muy Alta",
+    "rating_category": "Regular",
+    "genres_str": "Suspense,Acción",
+    "directors_str": "Lee Whittaker",
+    "cast_str": "Jet Jandreau,Alison Jaye Horowitz,Ana Alexander,Eric Pierce,Jamie Timmons,Julien Cesario,Laur Allen,Terence J. Rotolo,Emma Malouff,Alondra Delgado",
+    "companies_str": "Shattered Images Films",
+    "keywords_str": ""
+}

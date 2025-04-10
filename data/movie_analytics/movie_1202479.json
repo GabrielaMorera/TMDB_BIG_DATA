@@ -1,0 +1,65 @@
+{
+    "adult": false,
+    "backdrop_path": "/3kzw6Rw7TBujqtchJS2TSP3O2US.jpg",
+    "genre_ids": [
+        27,
+        9648,
+        53
+    ],
+    "id": 1202479,
+    "original_language": "en",
+    "original_title": "Opus",
+    "overview": "",
+    "popularity": 108.203,
+    "poster_path": "/m0du9dsiOVeb0SgfqR8ZAEPRxww.jpg",
+    "release_date": "2025-03-13",
+    "title": "Opus",
+    "video": false,
+    "vote_average": 5.49,
+    "vote_count": 50,
+    "budget": 10000000,
+    "revenue": 2183539,
+    "runtime": 104,
+    "genres": [
+        "Terror",
+        "Misterio",
+        "Suspense"
+    ],
+    "production_companies": [
+        "A24",
+        "Makeready",
+        "MACRO"
+    ],
+    "directors": [
+        "Mark Anthony Green"
+    ],
+    "cast": [
+        "Ayo Edebiri",
+        "John Malkovich",
+        "Juliette Lewis",
+        "Murray Bartlett",
+        "Melissa Chambers",
+        "Tony Hale",
+        "Stephanie Suganami",
+        "Mark Sivertsen",
+        "Amber Midthunder",
+        "Tatanka Means"
+    ],
+    "keywords": [
+        "pop star",
+        "cult",
+        "psychological thriller",
+        "cult of celebrity",
+        "mysterious disappearance"
+    ],
+    "video_count": 0,
+    "similar_count": 20,
+    "roi": -0.7816461,
+    "popularity_category": "Muy Alta",
+    "rating_category": "Regular",
+    "genres_str": "Terror,Misterio,Suspense",
+    "directors_str": "Mark Anthony Green",
+    "cast_str": "Ayo Edebiri,John Malkovich,Juliette Lewis,Murray Bartlett,Melissa Chambers,Tony Hale,Stephanie Suganami,Mark Sivertsen,Amber Midthunder,Tatanka Means",
+    "companies_str": "A24,Makeready,MACRO",
+    "keywords_str": "pop star,cult,psychological thriller,cult of celebrity,mysterious disappearance"
+}

@@ -1,0 +1,70 @@
+{
+    "adult": false,
+    "backdrop_path": "/ag66gJCiZ06q1GSJuQlhGLi3Udx.jpg",
+    "genre_ids": [
+        27,
+        53
+    ],
+    "id": 1138194,
+    "original_language": "en",
+    "original_title": "Heretic",
+    "overview": "Dos jóvenes misioneras se ven obligadas a demostrar su fe cuando llaman a la puerta equivocada y son recibidas por el diabólico Sr. Reed (Hugh Grant). Los tres se verán envueltos en un brutal juego del gato y el ratón durante una larga noche de tormenta.",
+    "popularity": 41.9174,
+    "poster_path": "/rpo3DJFMOSAz27gDwxJ5LIwIFni.jpg",
+    "release_date": "2024-10-31",
+    "title": "Heretic",
+    "video": false,
+    "vote_average": 7.077,
+    "vote_count": 1475,
+    "budget": 10000000,
+    "revenue": 51913394,
+    "runtime": 110,
+    "genres": [
+        "Terror",
+        "Suspense"
+    ],
+    "production_companies": [
+        "A24",
+        "Beck/Woods",
+        "Shiny Penny Productions",
+        "CatchLight Studios"
+    ],
+    "directors": [
+        "Scott Beck",
+        "Bryan Woods"
+    ],
+    "cast": [
+        "Hugh Grant",
+        "Sophie Thatcher",
+        "Chloe East",
+        "Topher Grace",
+        "Elle Young",
+        "Julie Lynn-Mortensen",
+        "Haylie Hansen",
+        "Elle McKinnon",
+        "Hanna Huffman",
+        "Anesha Bailey"
+    ],
+    "keywords": [
+        "faith",
+        "affectation",
+        "religion",
+        "cat and mouse",
+        "mormon missionary",
+        "eccentric man",
+        "women of faith",
+        "appreciative",
+        "excited",
+        "frightened"
+    ],
+    "video_count": 1,
+    "similar_count": 20,
+    "roi": 4.1913394,
+    "popularity_category": "Muy Alta",
+    "rating_category": "Buena",
+    "genres_str": "Terror,Suspense",
+    "directors_str": "Scott Beck,Bryan Woods",
+    "cast_str": "Hugh Grant,Sophie Thatcher,Chloe East,Topher Grace,Elle Young,Julie Lynn-Mortensen,Haylie Hansen,Elle McKinnon,Hanna Huffman,Anesha Bailey",
+    "companies_str": "A24,Beck/Woods,Shiny Penny Productions,CatchLight Studios",
+    "keywords_str": "faith,affectation,religion,cat and mouse,mormon missionary,eccentric man,women of faith,appreciative,excited,frightened"
+}

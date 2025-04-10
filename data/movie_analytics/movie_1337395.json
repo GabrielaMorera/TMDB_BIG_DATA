@@ -1,0 +1,56 @@
+{
+    "adult": false,
+    "backdrop_path": "/ibpjFkCB4klvDOmmFhgmLnPNqAF.jpg",
+    "genre_ids": [
+        18
+    ],
+    "id": 1337395,
+    "original_language": "tl",
+    "original_title": "Kiskisan",
+    "overview": "",
+    "popularity": 41.143,
+    "poster_path": "/zs7UlTjgUy0VfUC0qJPklLmpPnY.jpg",
+    "release_date": "2024-09-27",
+    "title": "Kiskisan",
+    "video": false,
+    "vote_average": 7.5,
+    "vote_count": 2,
+    "budget": 0,
+    "revenue": 0,
+    "runtime": 60,
+    "genres": [
+        "Drama"
+    ],
+    "production_companies": [
+        "Vivamax"
+    ],
+    "directors": [
+        "Bobby Bonifacio"
+    ],
+    "cast": [
+        "Apple Dy",
+        "Skye Gonzaga",
+        "Juan Calma",
+        "Robb Guinto",
+        "Tabs Sumulong"
+    ],
+    "keywords": [
+        "softcore",
+        "lgbt",
+        "lesbian",
+        "girls love",
+        "sexy",
+        "adoring",
+        "adult"
+    ],
+    "video_count": 0,
+    "similar_count": 20,
+    "roi": 0,
+    "popularity_category": "Muy Alta",
+    "rating_category": "Buena",
+    "genres_str": "Drama",
+    "directors_str": "Bobby Bonifacio",
+    "cast_str": "Apple Dy,Skye Gonzaga,Juan Calma,Robb Guinto,Tabs Sumulong",
+    "companies_str": "Vivamax",
+    "keywords_str": "softcore,lgbt,lesbian,girls love,sexy,adoring,adult"
+}

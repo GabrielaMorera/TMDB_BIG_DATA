@@ -1,0 +1,67 @@
+{
+    "adult": false,
+    "backdrop_path": "/dGULFnPJKPh0sdu3F64YmQ0qcym.jpg",
+    "genre_ids": [
+        53,
+        18
+    ],
+    "id": 972533,
+    "original_language": "en",
+    "original_title": "Last Breath",
+    "overview": "La increíble historia real de Chris Lemons (Finn Cole), un buzo profesional que, tras un extraño accidente, queda atrapado en el fondo del Mar del Norte. Con tan solo 10 minutos de oxígeno de emergencia y a más de media hora de cualquier esperanza de rescate, esta es la lucha imposible de un hombre por sobrevivir a 90 metros de profundidad. Mientras tanto, en la superficie, sus compañeros Duncan (Woody Harrelson) y Dave (Simu Liu) lucharán contra una feroz tormenta y harán todo lo posible por rescatarlo con vida.",
+    "popularity": 40.9493,
+    "poster_path": "/52JG1uJcULACAEWmUmxp1U7uFMP.jpg",
+    "release_date": "2025-02-27",
+    "title": "Sin oxígeno",
+    "video": false,
+    "vote_average": 6.53,
+    "vote_count": 134,
+    "budget": 23800000,
+    "revenue": 22761967,
+    "runtime": 93,
+    "genres": [
+        "Suspense",
+        "Drama"
+    ],
+    "production_companies": [
+        "Dark Castle Entertainment",
+        "MetFilm Production",
+        "Longshot Films",
+        "Floating Harbour",
+        "FilmNation Entertainment",
+        "Thing 44",
+        "Aperture Media Partners"
+    ],
+    "directors": [
+        "Alex Parkinson"
+    ],
+    "cast": [
+        "Woody Harrelson",
+        "Simu Liu",
+        "Finn Cole",
+        "Cliff Curtis",
+        "Mark Bonnar",
+        "MyAnna Buring",
+        "Josef Altin",
+        "Bobby Rainsbury",
+        "Connor Reed",
+        "Nick Biadon"
+    ],
+    "keywords": [
+        "based on true story",
+        "dive",
+        "suspenseful",
+        "based on documentary",
+        "deep-sea"
+    ],
+    "video_count": 0,
+    "similar_count": 20,
+    "roi": -0.04361483193277311,
+    "popularity_category": "Muy Alta",
+    "rating_category": "Buena",
+    "genres_str": "Suspense,Drama",
+    "directors_str": "Alex Parkinson",
+    "cast_str": "Woody Harrelson,Simu Liu,Finn Cole,Cliff Curtis,Mark Bonnar,MyAnna Buring,Josef Altin,Bobby Rainsbury,Connor Reed,Nick Biadon",
+    "companies_str": "Dark Castle Entertainment,MetFilm Production,Longshot Films,Floating Harbour,FilmNation Entertainment,Thing 44,Aperture Media Partners",
+    "keywords_str": "based on true story,dive,suspenseful,based on documentary,deep-sea"
+}

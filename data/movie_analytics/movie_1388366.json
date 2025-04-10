@@ -1,0 +1,60 @@
+{
+    "adult": false,
+    "backdrop_path": "/xkjWiRQtrenqGRWO2Enry2JIl4d.jpg",
+    "genre_ids": [
+        27
+    ],
+    "id": 1388366,
+    "original_language": "pt",
+    "original_title": "Popeye the Slayer Man",
+    "overview": "",
+    "popularity": 154.547,
+    "poster_path": "/nVwu3mN7hr1yF467pGct3yQFM41.jpg",
+    "release_date": "2025-03-21",
+    "title": "Popeye the Slayer Man",
+    "video": false,
+    "vote_average": 6.745,
+    "vote_count": 51,
+    "budget": 0,
+    "revenue": 0,
+    "runtime": 88,
+    "genres": [
+        "Terror"
+    ],
+    "production_companies": [
+        "Millman Productions",
+        "Otsego Media",
+        "Ron Lee Productions",
+        "Salem House Films"
+    ],
+    "directors": [
+        "Robert Michael Ryan"
+    ],
+    "cast": [
+        "Sarah Nicklin",
+        "Scott Swope",
+        "Angela Relucio",
+        "Steven McCormack",
+        "Mabel Thomas",
+        "Rich Lounello",
+        "Sean Michael Conway",
+        "Joel Frometa",
+        "Nathan Todaro",
+        "Elena Juliano"
+    ],
+    "keywords": [
+        "legend",
+        "slasher",
+        "haunt"
+    ],
+    "video_count": 0,
+    "similar_count": 20,
+    "roi": 0,
+    "popularity_category": "Muy Alta",
+    "rating_category": "Buena",
+    "genres_str": "Terror",
+    "directors_str": "Robert Michael Ryan",
+    "cast_str": "Sarah Nicklin,Scott Swope,Angela Relucio,Steven McCormack,Mabel Thomas,Rich Lounello,Sean Michael Conway,Joel Frometa,Nathan Todaro,Elena Juliano",
+    "companies_str": "Millman Productions,Otsego Media,Ron Lee Productions,Salem House Films",
+    "keywords_str": "legend,slasher,haunt"
+}

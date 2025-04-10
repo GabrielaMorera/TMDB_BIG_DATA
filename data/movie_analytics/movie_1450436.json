@@ -1,0 +1,56 @@
+{
+    "adult": false,
+    "backdrop_path": "/jHeoDYaoMs004f0feNo0eGBKVw1.jpg",
+    "genre_ids": [
+        18,
+        10749
+    ],
+    "id": 1450436,
+    "original_language": "tl",
+    "original_title": "Puri for Rent",
+    "overview": "",
+    "popularity": 52.1317,
+    "poster_path": "/ry9AWnoAABgxAEzc3BwLHgf1H1b.jpg",
+    "release_date": "2025-04-04",
+    "title": "Puri for Rent",
+    "video": false,
+    "vote_average": 0.0,
+    "vote_count": 0,
+    "budget": 0,
+    "revenue": 0,
+    "runtime": 0,
+    "genres": [
+        "Drama",
+        "Romance"
+    ],
+    "production_companies": [
+        "Vivamax"
+    ],
+    "directors": [],
+    "cast": [
+        "Aiko Garcia",
+        "Van Allen Ong",
+        "Marlon Marcia",
+        "Roxanne De Vera",
+        "Mhack Morales",
+        "Tabs Sumulong",
+        "Alex Espartero",
+        "Daniela Carolino",
+        "Erick Padrones",
+        "Neneth Denoso"
+    ],
+    "keywords": [
+        "softcore",
+        "sexy"
+    ],
+    "video_count": 0,
+    "similar_count": 20,
+    "roi": 0,
+    "popularity_category": "Muy Alta",
+    "rating_category": "Mala",
+    "genres_str": "Drama,Romance",
+    "directors_str": "",
+    "cast_str": "Aiko Garcia,Van Allen Ong,Marlon Marcia,Roxanne De Vera,Mhack Morales,Tabs Sumulong,Alex Espartero,Daniela Carolino,Erick Padrones,Neneth Denoso",
+    "companies_str": "Vivamax",
+    "keywords_str": "softcore,sexy"
+}

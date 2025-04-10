@@ -1,0 +1,71 @@
+{
+    "adult": false,
+    "backdrop_path": "/hD2SN5bbqxk0kcRmsATJkXObgnZ.jpg",
+    "genre_ids": [
+        28,
+        80,
+        14,
+        53
+    ],
+    "id": 1405338,
+    "original_language": "ja",
+    "original_title": "Demon City 鬼ゴロシ",
+    "overview": "Un asesino a sueldo retirado no se detiene ante nada para vengarse de los enmascarados que han tomado la ciudad tras inculparlo de matar a su propia familia y darlo por muerto.",
+    "popularity": 95.2785,
+    "poster_path": "/cU6InMc8NYc54Ok4NnNHdjipqCQ.jpg",
+    "release_date": "2025-02-26",
+    "title": "Oni-Goroshi: Ciudad de los demonios",
+    "video": false,
+    "vote_average": 6.913,
+    "vote_count": 200,
+    "budget": 0,
+    "revenue": 0,
+    "runtime": 106,
+    "genres": [
+        "Acción",
+        "Crimen",
+        "Fantasía",
+        "Suspense"
+    ],
+    "production_companies": [
+        "Netflix",
+        "AMUSE",
+        "Digital Frontier"
+    ],
+    "directors": [
+        "Seiji Tanaka"
+    ],
+    "cast": [
+        "Tōma Ikuta",
+        "Masahiro Higashide",
+        "Mio Tanaka",
+        "Ami Touma",
+        "駿河太郎",
+        "木竜麻生",
+        "竹中直人",
+        "音尾琢真",
+        "二代目 尾上松也",
+        "高嶋政伸"
+    ],
+    "keywords": [
+        "hitman",
+        "supernatural",
+        "revenge",
+        "organized crime",
+        "based on manga",
+        "demon",
+        "criminal",
+        "based on graphic novel",
+        "suspense"
+    ],
+    "video_count": 1,
+    "similar_count": 20,
+    "roi": 0,
+    "popularity_category": "Muy Alta",
+    "rating_category": "Buena",
+    "genres_str": "Acción,Crimen,Fantasía,Suspense",
+    "directors_str": "Seiji Tanaka",
+    "cast_str": "Tōma Ikuta,Masahiro Higashide,Mio Tanaka,Ami Touma,駿河太郎,木竜麻生,竹中直人,音尾琢真,二代目 尾上松也,高嶋政伸",
+    "companies_str": "Netflix,AMUSE,Digital Frontier",
+    "keywords_str": "hitman,supernatural,revenge,organized crime,based on manga,demon,criminal,based on graphic novel,suspense"
+}

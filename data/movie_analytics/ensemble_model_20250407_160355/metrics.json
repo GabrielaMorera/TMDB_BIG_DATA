@@ -1,0 +1,42 @@
+{
+    "model_type": "RandomForest",
+    "r2": 0.1082960880007271,
+    "mse": 1153.9460684583712,
+    "mae": 29.561717649886873,
+    "feature_importance": [
+        {
+            "feature": "vote_count",
+            "importance": 0.2827229949928415
+        },
+        {
+            "feature": "budget_million",
+            "importance": 0.2137499544243338
+        },
+        {
+            "feature": "runtime",
+            "importance": 0.17897510996967583
+        },
+        {
+            "feature": "vote_average",
+            "importance": 0.1540574724036771
+        },
+        {
+            "feature": "revenue_million",
+            "importance": 0.10141984696002204
+        },
+        {
+            "feature": "release_year",
+            "importance": 0.06907462124944978
+        },
+        {
+            "feature": "main_genre_Unknown",
+            "importance": 0.0
+        }
+    ],
+    "params": {
+        "model__max_depth": "None",
+        "model__min_samples_split": "2",
+        "model__n_estimators": "100"
+    },
+    "timestamp": "20250407_160355"
+}

@@ -1,0 +1,67 @@
+{
+    "adult": false,
+    "backdrop_path": "/lsgT602GYV8ts97sKH1gWFtQs1k.jpg",
+    "genre_ids": [
+        16,
+        12,
+        35,
+        10751,
+        14
+    ],
+    "id": 1104845,
+    "original_language": "en",
+    "original_title": "Plankton: The Movie",
+    "overview": "La complicada historia de amor de Plankton con su esposa computarizada Karen se complica cuando ella decide destruir el mundo sin él.",
+    "popularity": 73.981,
+    "poster_path": "/fCvwQJVcbjNub2PiKzZmQXR7i1I.jpg",
+    "release_date": "2025-03-08",
+    "title": "Plankton, la película",
+    "video": false,
+    "vote_average": 7.0,
+    "vote_count": 69,
+    "budget": 0,
+    "revenue": 0,
+    "runtime": 83,
+    "genres": [
+        "Animación",
+        "Aventura",
+        "Comedia",
+        "Familia",
+        "Fantasía"
+    ],
+    "production_companies": [
+        "Nickelodeon Movies"
+    ],
+    "directors": [
+        "Dave Needham"
+    ],
+    "cast": [
+        "Mr. Lawrence",
+        "Jill Talley",
+        "Tom Kenny",
+        "Bill Fagerbakke",
+        "Rodger Bumpass",
+        "Carolyn Lawrence",
+        "Clancy Brown",
+        "Mary Jo Catlett",
+        "Lori Alan",
+        "Dee Bradley Baker"
+    ],
+    "keywords": [
+        "based on cartoon",
+        "based on tv series",
+        "3d animation",
+        "hilarious",
+        "indifferent"
+    ],
+    "video_count": 1,
+    "similar_count": 20,
+    "roi": 0,
+    "popularity_category": "Muy Alta",
+    "rating_category": "Buena",
+    "genres_str": "Animación,Aventura,Comedia,Familia,Fantasía",
+    "directors_str": "Dave Needham",
+    "cast_str": "Mr. Lawrence,Jill Talley,Tom Kenny,Bill Fagerbakke,Rodger Bumpass,Carolyn Lawrence,Clancy Brown,Mary Jo Catlett,Lori Alan,Dee Bradley Baker",
+    "companies_str": "Nickelodeon Movies",
+    "keywords_str": "based on cartoon,based on tv series,3d animation,hilarious,indifferent"
+}

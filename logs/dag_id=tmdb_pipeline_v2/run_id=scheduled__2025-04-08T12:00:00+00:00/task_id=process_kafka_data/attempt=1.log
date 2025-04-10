@@ -1,0 +1,233 @@
+[2025-04-09T00:00:26.838+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2025-04-09T00:00:26.860+0000] {taskinstance.py:2073} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: tmdb_pipeline_v2.process_kafka_data scheduled__2025-04-08T12:00:00+00:00 [queued]>
+[2025-04-09T00:00:26.868+0000] {taskinstance.py:2073} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: tmdb_pipeline_v2.process_kafka_data scheduled__2025-04-08T12:00:00+00:00 [queued]>
+[2025-04-09T00:00:26.869+0000] {taskinstance.py:2303} INFO - Starting attempt 1 of 3
+[2025-04-09T00:00:26.882+0000] {taskinstance.py:2327} INFO - Executing <Task(PythonOperator): process_kafka_data> on 2025-04-08 12:00:00+00:00
+[2025-04-09T00:00:26.888+0000] {warnings.py:110} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:61: DeprecationWarning: This process (pid=1302) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2025-04-09T00:00:26.890+0000] {standard_task_runner.py:63} INFO - Started process 1304 to run task
+[2025-04-09T00:00:26.891+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'tmdb_pipeline_v2', 'process_kafka_data', 'scheduled__2025-04-08T12:00:00+00:00', '--job-id', '909', '--raw', '--subdir', 'DAGS_FOLDER/dag_tmdb.py', '--cfg-path', '/tmp/tmpw6arl10r']
+[2025-04-09T00:00:26.894+0000] {standard_task_runner.py:91} INFO - Job 909: Subtask process_kafka_data
+[2025-04-09T00:00:26.938+0000] {task_command.py:426} INFO - Running <TaskInstance: tmdb_pipeline_v2.process_kafka_data scheduled__2025-04-08T12:00:00+00:00 [running]> on host 4658e95262ac
+[2025-04-09T00:00:27.027+0000] {taskinstance.py:2644} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='gabriela' AIRFLOW_CTX_DAG_ID='tmdb_pipeline_v2' AIRFLOW_CTX_TASK_ID='process_kafka_data' AIRFLOW_CTX_EXECUTION_DATE='2025-04-08T12:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2025-04-08T12:00:00+00:00'
+[2025-04-09T00:00:27.029+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2025-04-09T00:00:27.144+0000] {dag_tmdb.py:283} INFO - Iniciando proceso de consumo de datos de Kafka
+[2025-04-09T00:00:27.146+0000] {conn.py:395} INFO - <BrokerConnection client_id=kafka-python-2.1.5, node_id=bootstrap-0 host=kafka:9093 <connecting> [IPv4 ('172.19.0.6', 9093)]>: connecting to kafka:9093 [('172.19.0.6', 9093) IPv4]
+[2025-04-09T00:00:27.166+0000] {conn.py:615} INFO - <BrokerConnection client_id=kafka-python-2.1.5, node_id=bootstrap-0 host=kafka:9093 <checking_api_versions_recv> [IPv4 ('172.19.0.6', 9093)]>: Broker version identified as 2.6
+[2025-04-09T00:00:27.167+0000] {conn.py:456} INFO - <BrokerConnection client_id=kafka-python-2.1.5, node_id=bootstrap-0 host=kafka:9093 <connected> [IPv4 ('172.19.0.6', 9093)]>: Connection complete.
+[2025-04-09T00:00:27.168+0000] {subscription_state.py:182} INFO - Updating subscribed topics to: ('tmdb_data',)
+[2025-04-09T00:00:27.169+0000] {dag_tmdb.py:295} INFO - Consumidor conectado a Kafka, esperando mensajes en 'tmdb_data'...
+[2025-04-09T00:00:27.169+0000] {dag_tmdb.py:339} INFO - Intento 1/3 de obtener mensajes
+[2025-04-09T00:00:27.171+0000] {conn.py:395} INFO - <BrokerConnection client_id=kafka-python-2.1.5, node_id=1001 host=kafka:9093 <connecting> [IPv4 ('172.19.0.6', 9093)]>: connecting to kafka:9093 [('172.19.0.6', 9093) IPv4]
+[2025-04-09T00:00:27.173+0000] {conn.py:456} INFO - <BrokerConnection client_id=kafka-python-2.1.5, node_id=1001 host=kafka:9093 <connected> [IPv4 ('172.19.0.6', 9093)]>: Connection complete.
+[2025-04-09T00:00:27.173+0000] {conn.py:936} INFO - <BrokerConnection client_id=kafka-python-2.1.5, node_id=bootstrap-0 host=kafka:9093 <connected> [IPv4 ('172.19.0.6', 9093)]>: Closing connection. 
+[2025-04-09T00:00:27.291+0000] {cluster.py:393} INFO - Group coordinator for ***_consumer_group_v2 is ('coordinator-1001', 'kafka', 9093, None)
+[2025-04-09T00:00:27.292+0000] {base.py:729} INFO - Discovered coordinator coordinator-1001 for group ***_consumer_group_v2
+[2025-04-09T00:00:27.293+0000] {base.py:780} INFO - Starting new heartbeat thread
+[2025-04-09T00:00:27.294+0000] {consumer.py:361} INFO - Revoking previously assigned partitions () for group ***_consumer_group_v2
+[2025-04-09T00:00:27.295+0000] {conn.py:395} INFO - <BrokerConnection client_id=kafka-python-2.1.5, node_id=coordinator-1001 host=kafka:9093 <connecting> [IPv4 ('172.19.0.6', 9093)]>: connecting to kafka:9093 [('172.19.0.6', 9093) IPv4]
+[2025-04-09T00:00:27.296+0000] {conn.py:456} INFO - <BrokerConnection client_id=kafka-python-2.1.5, node_id=coordinator-1001 host=kafka:9093 <connected> [IPv4 ('172.19.0.6', 9093)]>: Connection complete.
+[2025-04-09T00:00:27.397+0000] {base.py:489} INFO - (Re-)joining group ***_consumer_group_v2
+[2025-04-09T00:00:27.472+0000] {base.py:552} INFO - Elected group leader -- performing partition assignments using range
+[2025-04-09T00:00:27.505+0000] {base.py:380} INFO - Successfully joined group ***_consumer_group_v2 with generation 1
+[2025-04-09T00:00:27.506+0000] {subscription_state.py:254} INFO - Updated partition assignment: [('tmdb_data', 0)]
+[2025-04-09T00:00:27.507+0000] {consumer.py:252} INFO - Setting newly assigned partitions (('tmdb_data', 0),) for group ***_consumer_group_v2
+[2025-04-09T00:00:27.619+0000] {dag_tmdb.py:346} INFO - Recibido mensaje: La sustancia
+[2025-04-09T00:00:27.620+0000] {dag_tmdb.py:346} INFO - Recibido mensaje: Psicosis
+[2025-04-09T00:00:27.620+0000] {dag_tmdb.py:346} INFO - Recibido mensaje: El caballero oscuro
+[2025-04-09T00:00:27.621+0000] {dag_tmdb.py:346} INFO - Recibido mensaje: Gladiator II
+[2025-04-09T00:00:27.621+0000] {dag_tmdb.py:346} INFO - Recibido mensaje: El señor de los anillos: La comunidad del anillo
+[2025-04-09T00:00:27.621+0000] {dag_tmdb.py:346} INFO - Recibido mensaje: La tumba de las luciérnagas
+[2025-04-09T00:00:27.621+0000] {dag_tmdb.py:346} INFO - Recibido mensaje: Radical
+[2025-04-09T00:00:27.622+0000] {dag_tmdb.py:346} INFO - Recibido mensaje: ยูเรนัส 2324
+[2025-04-09T00:00:27.622+0000] {dag_tmdb.py:346} INFO - Recibido mensaje: Z Zone
+[2025-04-09T00:00:27.622+0000] {dag_tmdb.py:346} INFO - Recibido mensaje: Criminales de lujo
+[2025-04-09T00:00:27.623+0000] {dag_tmdb.py:346} INFO - Recibido mensaje: Flow, un mundo que salvar
+[2025-04-09T00:00:27.623+0000] {dag_tmdb.py:346} INFO - Recibido mensaje: Seishun Buta Yarou wa Yumemiru Shoujo no Yume wo Minai
+[2025-04-09T00:00:27.623+0000] {dag_tmdb.py:346} INFO - Recibido mensaje: Emmanuelle
+[2025-04-09T00:00:27.624+0000] {dag_tmdb.py:346} INFO - Recibido mensaje: El contable 2
+[2025-04-09T00:00:27.624+0000] {dag_tmdb.py:346} INFO - Recibido mensaje: El imperio contraataca
+[2025-04-09T00:00:27.624+0000] {dag_tmdb.py:346} INFO - Recibido mensaje: American History X
+[2025-04-09T00:00:27.624+0000] {dag_tmdb.py:346} INFO - Recibido mensaje: Plankton, la película
+[2025-04-09T00:00:27.625+0000] {dag_tmdb.py:346} INFO - Recibido mensaje: Milagro en la celda 7
+[2025-04-09T00:00:27.625+0000] {dag_tmdb.py:346} INFO - Recibido mensaje: Violet Evergarden: La película
+[2025-04-09T00:00:27.625+0000] {dag_tmdb.py:346} INFO - Recibido mensaje: Until Dawn
+[2025-04-09T00:00:27.625+0000] {dag_tmdb.py:346} INFO - Recibido mensaje: Canario Negro
+[2025-04-09T00:00:27.626+0000] {dag_tmdb.py:346} INFO - Recibido mensaje: Henry Danger: La película
+[2025-04-09T00:00:27.626+0000] {dag_tmdb.py:346} INFO - Recibido mensaje: Dark Match
+[2025-04-09T00:00:27.627+0000] {dag_tmdb.py:346} INFO - Recibido mensaje: Novocaine
+[2025-04-09T00:00:27.627+0000] {dag_tmdb.py:346} INFO - Recibido mensaje: xXx
+[2025-04-09T00:00:27.627+0000] {dag_tmdb.py:346} INFO - Recibido mensaje: Forrest Gump
+[2025-04-09T00:00:27.627+0000] {dag_tmdb.py:346} INFO - Recibido mensaje: La acompañante
+[2025-04-09T00:00:27.628+0000] {dag_tmdb.py:346} INFO - Recibido mensaje: Apocalypse Now
+[2025-04-09T00:00:27.628+0000] {dag_tmdb.py:346} INFO - Recibido mensaje: Perfect Blue
+[2025-04-09T00:00:27.628+0000] {dag_tmdb.py:346} INFO - Recibido mensaje: El pianista
+[2025-04-09T00:00:27.628+0000] {dag_tmdb.py:346} INFO - Recibido mensaje: Opus
+[2025-04-09T00:00:27.629+0000] {dag_tmdb.py:346} INFO - Recibido mensaje: La chica de la aguja
+[2025-04-09T00:00:27.629+0000] {dag_tmdb.py:346} INFO - Recibido mensaje: Madagascar
+[2025-04-09T00:00:27.629+0000] {dag_tmdb.py:346} INFO - Recibido mensaje: Cómo ganar millones antes de que muera la abuela
+[2025-04-09T00:00:27.630+0000] {dag_tmdb.py:346} INFO - Recibido mensaje: Hereje
+[2025-04-09T00:00:27.630+0000] {dag_tmdb.py:346} INFO - Recibido mensaje: Una mujer y tres hombres
+[2025-04-09T00:00:27.630+0000] {dag_tmdb.py:346} INFO - Recibido mensaje: Un amor contra viento y marea
+[2025-04-09T00:00:27.630+0000] {dag_tmdb.py:346} INFO - Recibido mensaje: O Auto da Compadecida
+[2025-04-09T00:00:27.631+0000] {dag_tmdb.py:346} INFO - Recibido mensaje: Los silenciosos
+[2025-04-09T00:00:27.631+0000] {dag_tmdb.py:346} INFO - Recibido mensaje: Dalia y el libro rojo
+[2025-04-09T00:00:27.631+0000] {dag_tmdb.py:346} INFO - Recibido mensaje: Estado eléctrico
+[2025-04-09T00:00:27.631+0000] {dag_tmdb.py:346} INFO - Recibido mensaje: Thunderbolts*
+[2025-04-09T00:00:27.632+0000] {dag_tmdb.py:346} INFO - Recibido mensaje: Norma: Antara Mertua dan Menantu
+[2025-04-09T00:00:27.632+0000] {dag_tmdb.py:346} INFO - Recibido mensaje: Vengadores: Infinity War
+[2025-04-09T00:00:27.632+0000] {dag_tmdb.py:346} INFO - Recibido mensaje: Oni-Goroshi: Ciudad de los demonios
+[2025-04-09T00:00:27.632+0000] {dag_tmdb.py:346} INFO - Recibido mensaje: Los Goonies
+[2025-04-09T00:00:27.633+0000] {dag_tmdb.py:346} INFO - Recibido mensaje: La red social
+[2025-04-09T00:00:27.633+0000] {dag_tmdb.py:346} INFO - Recibido mensaje: Minecraft: The Story of Mojang
+[2025-04-09T00:00:27.633+0000] {dag_tmdb.py:346} INFO - Recibido mensaje: Peace Maker Kurogane Movie 1: Omou Michi
+[2025-04-09T00:00:27.633+0000] {dag_tmdb.py:346} INFO - Recibido mensaje: El señor de los anillos: El retorno del rey
+[2025-04-09T00:00:27.634+0000] {dag_tmdb.py:346} INFO - Recibido mensaje: Better Man
+[2025-04-09T00:00:27.634+0000] {dag_tmdb.py:346} INFO - Recibido mensaje: Érase una vez en América
+[2025-04-09T00:00:27.634+0000] {dag_tmdb.py:346} INFO - Recibido mensaje: Robot salvaje
+[2025-04-09T00:00:27.635+0000] {dag_tmdb.py:346} INFO - Recibido mensaje: Algo le pasa a mi yerno
+[2025-04-09T00:00:27.635+0000] {dag_tmdb.py:346} INFO - Recibido mensaje: Ven y mira
+[2025-04-09T00:00:27.635+0000] {dag_tmdb.py:346} INFO - Recibido mensaje: Culpa tuya
+[2025-04-09T00:00:27.636+0000] {dag_tmdb.py:346} INFO - Recibido mensaje: Vaiana 2
+[2025-04-09T00:00:27.636+0000] {dag_tmdb.py:346} INFO - Recibido mensaje: Enfermera para todo
+[2025-04-09T00:00:27.636+0000] {dag_tmdb.py:346} INFO - Recibido mensaje: Este amor sí que duele
+[2025-04-09T00:00:27.636+0000] {dag_tmdb.py:346} INFO - Recibido mensaje: 825 Forest Road
+[2025-04-09T00:00:27.637+0000] {dag_tmdb.py:346} INFO - Recibido mensaje: Gru 4. Mi villano favorito
+[2025-04-09T00:00:27.637+0000] {dag_tmdb.py:346} INFO - Recibido mensaje: El señor de los anillos: Las dos torres
+[2025-04-09T00:00:27.637+0000] {dag_tmdb.py:346} INFO - Recibido mensaje: Senderos de gloria
+[2025-04-09T00:00:27.637+0000] {dag_tmdb.py:346} INFO - Recibido mensaje: Giro final
+[2025-04-09T00:00:27.637+0000] {dag_tmdb.py:346} INFO - Recibido mensaje: El Conde de Montecristo
+[2025-04-09T00:00:27.638+0000] {dag_tmdb.py:346} INFO - Recibido mensaje: La leyenda de Hei
+[2025-04-09T00:00:27.638+0000] {dag_tmdb.py:346} INFO - Recibido mensaje: Orgullo y prejuicio
+[2025-04-09T00:00:27.638+0000] {dag_tmdb.py:346} INFO - Recibido mensaje: Blancanieves
+[2025-04-09T00:00:27.638+0000] {dag_tmdb.py:346} INFO - Recibido mensaje: 12 hombres sin piedad
+[2025-04-09T00:00:27.639+0000] {dag_tmdb.py:346} INFO - Recibido mensaje: Peter Pan: Pesadilla en Nunca Jamás
+[2025-04-09T00:00:27.639+0000] {dag_tmdb.py:346} INFO - Recibido mensaje: Cadena perpetua
+[2025-04-09T00:00:27.639+0000] {dag_tmdb.py:346} INFO - Recibido mensaje: देवा
+[2025-04-09T00:00:27.639+0000] {dag_tmdb.py:346} INFO - Recibido mensaje: Buffalo Kids
+[2025-04-09T00:00:27.640+0000] {dag_tmdb.py:346} INFO - Recibido mensaje: El Club de la Lucha
+[2025-04-09T00:00:27.640+0000] {dag_tmdb.py:346} INFO - Recibido mensaje: Capitán América: Brave New World
+[2025-04-09T00:00:27.640+0000] {dag_tmdb.py:346} INFO - Recibido mensaje: Vivir
+[2025-04-09T00:00:27.641+0000] {dag_tmdb.py:346} INFO - Recibido mensaje: Cinema Paradiso
+[2025-04-09T00:00:27.641+0000] {dag_tmdb.py:346} INFO - Recibido mensaje: Green Book
+[2025-04-09T00:00:27.641+0000] {dag_tmdb.py:346} INFO - Recibido mensaje: Sin oxígeno
+[2025-04-09T00:00:27.641+0000] {dag_tmdb.py:346} INFO - Recibido mensaje: Fast & Furious 7
+[2025-04-09T00:00:27.642+0000] {dag_tmdb.py:346} INFO - Recibido mensaje: Contraataque
+[2025-04-09T00:00:27.642+0000] {dag_tmdb.py:346} INFO - Recibido mensaje: A Working Man
+[2025-04-09T00:00:27.642+0000] {dag_tmdb.py:346} INFO - Recibido mensaje: Pídeme lo que quieras
+[2025-04-09T00:00:27.642+0000] {dag_tmdb.py:346} INFO - Recibido mensaje: Luces de la ciudad
+[2025-04-09T00:00:27.643+0000] {dag_tmdb.py:346} INFO - Recibido mensaje: Culpa mía
+[2025-04-09T00:00:27.643+0000] {dag_tmdb.py:346} INFO - Recibido mensaje: En la misma clase
+[2025-04-09T00:00:27.643+0000] {dag_tmdb.py:346} INFO - Recibido mensaje: La lista de Schindler
+[2025-04-09T00:00:27.643+0000] {dag_tmdb.py:346} INFO - Recibido mensaje: Popeye the Slayer Man
+[2025-04-09T00:00:27.644+0000] {dag_tmdb.py:346} INFO - Recibido mensaje: Kraven the Hunter
+[2025-04-09T00:00:27.644+0000] {dag_tmdb.py:346} INFO - Recibido mensaje: Uno de los nuestros
+[2025-04-09T00:00:27.644+0000] {dag_tmdb.py:346} INFO - Recibido mensaje: So Won
+[2025-04-09T00:00:27.644+0000] {dag_tmdb.py:346} INFO - Recibido mensaje: El padrino
+[2025-04-09T00:00:27.645+0000] {dag_tmdb.py:346} INFO - Recibido mensaje: Parthenope
+[2025-04-09T00:00:27.645+0000] {dag_tmdb.py:346} INFO - Recibido mensaje: Confidencial (Black Bag)
+[2025-04-09T00:00:27.645+0000] {dag_tmdb.py:346} INFO - Recibido mensaje: Hasta que llegó su hora
+[2025-04-09T00:00:27.645+0000] {dag_tmdb.py:346} INFO - Recibido mensaje: Culpa mía: Londres
+[2025-04-09T00:00:27.646+0000] {dag_tmdb.py:346} INFO - Recibido mensaje: El bueno, el feo y el malo
+[2025-04-09T00:00:27.646+0000] {dag_tmdb.py:346} INFO - Recibido mensaje: Queer
+[2025-04-09T00:00:27.646+0000] {dag_tmdb.py:346} INFO - Recibido mensaje: El abismo secreto
+[2025-04-09T00:00:27.646+0000] {dag_tmdb.py:346} INFO - Recibido mensaje: G20
+[2025-04-09T00:00:27.647+0000] {dag_tmdb.py:346} INFO - Recibido mensaje: Una película de Minecraft
+[2025-04-09T00:00:27.647+0000] {dag_tmdb.py:346} INFO - Recibido mensaje: देवा
+[2025-04-09T00:00:27.647+0000] {dag_tmdb.py:346} INFO - Recibido mensaje: Criminales de lujo
+[2025-04-09T00:00:27.647+0000] {dag_tmdb.py:346} INFO - Recibido mensaje: Cleaner
+[2025-04-09T00:00:27.648+0000] {dag_tmdb.py:346} INFO - Recibido mensaje: Capitán América: Brave New World
+[2025-04-09T00:00:27.648+0000] {dag_tmdb.py:346} INFO - Recibido mensaje: Fight or Flight
+[2025-04-09T00:00:27.648+0000] {dag_tmdb.py:346} INFO - Recibido mensaje: La vida es bella
+[2025-04-09T00:00:27.648+0000] {dag_tmdb.py:346} INFO - Recibido mensaje: A Working Man
+[2025-04-09T00:00:27.648+0000] {dag_tmdb.py:346} INFO - Recibido mensaje: Códigos de Guerra
+[2025-04-09T00:00:27.649+0000] {dag_tmdb.py:346} INFO - Recibido mensaje: Pídeme lo que quieras
+[2025-04-09T00:00:27.649+0000] {dag_tmdb.py:346} INFO - Recibido mensaje: Quiero comerme tu páncreas
+[2025-04-09T00:00:27.649+0000] {dag_tmdb.py:346} INFO - Recibido mensaje: Una mujer y tres hombres
+[2025-04-09T00:00:27.649+0000] {dag_tmdb.py:346} INFO - Recibido mensaje: Los silenciosos
+[2025-04-09T00:00:27.650+0000] {dag_tmdb.py:346} INFO - Recibido mensaje: En la misma clase
+[2025-04-09T00:00:27.650+0000] {dag_tmdb.py:346} INFO - Recibido mensaje: Códigos de Guerra
+[2025-04-09T00:00:27.650+0000] {dag_tmdb.py:346} INFO - Recibido mensaje: Escape
+[2025-04-09T00:00:27.650+0000] {dag_tmdb.py:346} INFO - Recibido mensaje: Doble espionaje
+[2025-04-09T00:00:27.651+0000] {dag_tmdb.py:346} INFO - Recibido mensaje: Sin oxígeno
+[2025-04-09T00:00:27.651+0000] {dag_tmdb.py:346} INFO - Recibido mensaje: Estragos
+[2025-04-09T00:00:27.651+0000] {dag_tmdb.py:349} INFO - Recibidos 119 mensajes, procediendo a procesar
+[2025-04-09T00:00:27.651+0000] {dag_tmdb.py:378} INFO - Procesando 119 mensajes con Pandas
+[2025-04-09T00:00:27.677+0000] {dag_tmdb.py:439} ERROR - Error en el procesamiento: sequence item 0: expected str instance, dict found
+[2025-04-09T00:00:27.698+0000] {dag_tmdb.py:440} ERROR - Traceback (most recent call last):
+  File "/opt/***/dags/dag_tmdb.py", line 401, in process_kafka_data
+    df['cast_str'] = df['cast'].apply(lambda x: ','.join(x) if isinstance(x, list) else '')
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/***/.local/lib/python3.12/site-packages/pandas/core/series.py", line 4764, in apply
+    ).apply()
+      ^^^^^^^
+  File "/home/***/.local/lib/python3.12/site-packages/pandas/core/apply.py", line 1209, in apply
+    return self.apply_standard()
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/***/.local/lib/python3.12/site-packages/pandas/core/apply.py", line 1289, in apply_standard
+    mapped = obj._map_values(
+             ^^^^^^^^^^^^^^^^
+  File "/home/***/.local/lib/python3.12/site-packages/pandas/core/base.py", line 921, in _map_values
+    return algorithms.map_array(arr, mapper, na_action=na_action, convert=convert)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/***/.local/lib/python3.12/site-packages/pandas/core/algorithms.py", line 1814, in map_array
+    return lib.map_infer(values, mapper, convert=convert)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "lib.pyx", line 2926, in pandas._libs.lib.map_infer
+  File "/opt/***/dags/dag_tmdb.py", line 401, in <lambda>
+    df['cast_str'] = df['cast'].apply(lambda x: ','.join(x) if isinstance(x, list) else '')
+                                                ^^^^^^^^^^^
+TypeError: sequence item 0: expected str instance, dict found
+
+[2025-04-09T00:00:27.713+0000] {base.py:794} INFO - Stopping heartbeat thread
+[2025-04-09T00:00:30.714+0000] {base.py:995} WARNING - Heartbeat thread did not fully terminate during close
+[2025-04-09T00:00:30.715+0000] {base.py:823} INFO - Leaving consumer group (***_consumer_group_v2).
+[2025-04-09T00:00:30.753+0000] {conn.py:936} INFO - <BrokerConnection client_id=kafka-python-2.1.5, node_id=1001 host=kafka:9093 <connected> [IPv4 ('172.19.0.6', 9093)]>: Closing connection. 
+[2025-04-09T00:00:30.754+0000] {conn.py:936} INFO - <BrokerConnection client_id=kafka-python-2.1.5, node_id=coordinator-1001 host=kafka:9093 <connected> [IPv4 ('172.19.0.6', 9093)]>: Closing connection. 
+[2025-04-09T00:00:30.754+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2025-04-09T00:00:30.755+0000] {taskinstance.py:2890} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 465, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 432, in _execute_callable
+    return execute_callable(context=context, **execute_callable_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/baseoperator.py", line 400, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/operators/python.py", line 235, in execute
+    return_value = self.execute_callable()
+                   ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/operators/python.py", line 252, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/airflow/dags/dag_tmdb.py", line 401, in process_kafka_data
+    df['cast_str'] = df['cast'].apply(lambda x: ','.join(x) if isinstance(x, list) else '')
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/pandas/core/series.py", line 4764, in apply
+    ).apply()
+      ^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/pandas/core/apply.py", line 1209, in apply
+    return self.apply_standard()
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/pandas/core/apply.py", line 1289, in apply_standard
+    mapped = obj._map_values(
+             ^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/pandas/core/base.py", line 921, in _map_values
+    return algorithms.map_array(arr, mapper, na_action=na_action, convert=convert)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/pandas/core/algorithms.py", line 1814, in map_array
+    return lib.map_infer(values, mapper, convert=convert)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "lib.pyx", line 2926, in pandas._libs.lib.map_infer
+  File "/opt/airflow/dags/dag_tmdb.py", line 401, in <lambda>
+    df['cast_str'] = df['cast'].apply(lambda x: ','.join(x) if isinstance(x, list) else '')
+                                                ^^^^^^^^^^^
+TypeError: sequence item 0: expected str instance, dict found
+[2025-04-09T00:00:30.768+0000] {taskinstance.py:1205} INFO - Marking task as UP_FOR_RETRY. dag_id=tmdb_pipeline_v2, task_id=process_kafka_data, execution_date=20250408T120000, start_date=20250409T000026, end_date=20250409T000030
+[2025-04-09T00:00:30.786+0000] {standard_task_runner.py:110} ERROR - Failed to execute job 909 for task process_kafka_data (sequence item 0: expected str instance, dict found; 1304)
+[2025-04-09T00:00:30.800+0000] {local_task_job_runner.py:240} INFO - Task exited with return code 1
+[2025-04-09T00:00:30.840+0000] {taskinstance.py:3482} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2025-04-09T00:00:30.842+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

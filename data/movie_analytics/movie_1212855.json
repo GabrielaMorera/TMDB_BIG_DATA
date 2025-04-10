@@ -1,0 +1,62 @@
+{
+    "adult": false,
+    "backdrop_path": "/AlpDRp3Qaf2JvlQDzXS8kiYxTf8.jpg",
+    "genre_ids": [
+        28,
+        53
+    ],
+    "id": 1212855,
+    "original_language": "en",
+    "original_title": "Fight or Flight",
+    "overview": "Un mercenario acepta el encargo de localizar a un objetivo en un avión, pero debe protegerla cuando se ven rodeados de gente que intentan matarlos a ambos.",
+    "popularity": 195.3115,
+    "poster_path": "/x4nWnfgJvL045rcUCSJzfgIIY9i.jpg",
+    "release_date": "2025-04-03",
+    "title": "Fight or Flight",
+    "video": false,
+    "vote_average": 5.821,
+    "vote_count": 14,
+    "budget": 0,
+    "revenue": 0,
+    "runtime": 102,
+    "genres": [
+        "Acción",
+        "Suspense"
+    ],
+    "production_companies": [
+        "The Royal Budapest Film Company",
+        "Asbury Park Pictures",
+        "Thunder Road",
+        "F or F Films",
+        "Liam Jay Films"
+    ],
+    "directors": [
+        "James Madigan"
+    ],
+    "cast": [
+        "Josh Hartnett",
+        "Katee Sackhoff",
+        "Marko Zaror",
+        "Julian Kostov",
+        "Charithra Chandran",
+        "JuJu Chan",
+        "Sanjeev Kohli",
+        "Rebecka Johnston",
+        "Nóra Trokán",
+        "Sarah Lam"
+    ],
+    "keywords": [
+        "mercenary",
+        "fight or flight"
+    ],
+    "video_count": 0,
+    "similar_count": 20,
+    "roi": 0,
+    "popularity_category": "Muy Alta",
+    "rating_category": "Regular",
+    "genres_str": "Acción,Suspense",
+    "directors_str": "James Madigan",
+    "cast_str": "Josh Hartnett,Katee Sackhoff,Marko Zaror,Julian Kostov,Charithra Chandran,JuJu Chan,Sanjeev Kohli,Rebecka Johnston,Nóra Trokán,Sarah Lam",
+    "companies_str": "The Royal Budapest Film Company,Asbury Park Pictures,Thunder Road,F or F Films,Liam Jay Films",
+    "keywords_str": "mercenary,fight or flight"
+}

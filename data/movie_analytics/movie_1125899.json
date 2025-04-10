@@ -1,0 +1,56 @@
+{
+    "adult": false,
+    "backdrop_path": "/gsQJOfeW45KLiQeEIsom94QPQwb.jpg",
+    "genre_ids": [
+        28,
+        53
+    ],
+    "id": 1125899,
+    "original_language": "en",
+    "original_title": "Cleaner",
+    "overview": "Después de que un grupo de activistas se apodere de la gala anual de una compañía energética para denunciar su corrupción, su justa causa es secuestrada por un extremista dispuesto a asesinar a las 300 personas presentes en el edificio para transmitir su mensaje anárquico. Una ex soldado convertida en limpiacristales, suspendida 50 pisos en el exterior del rascacielos londinense, es la encargada de intentar salvar a los que están atrapados dentro, incluido su hermano pequeño.",
+    "popularity": 336.5277,
+    "poster_path": "/76Xvdqiv8ufGkerQunOpcy98oT7.jpg",
+    "release_date": "2025-02-19",
+    "title": "Cleaner",
+    "video": false,
+    "vote_average": 6.776,
+    "vote_count": 161,
+    "budget": 0,
+    "revenue": 0,
+    "runtime": 96,
+    "genres": [
+        "Acción",
+        "Suspense"
+    ],
+    "production_companies": [
+        "Anton",
+        "Qwerty Films"
+    ],
+    "directors": [
+        "Martin Campbell"
+    ],
+    "cast": [
+        "Daisy Ridley",
+        "Clive Owen",
+        "Taz Skylar",
+        "Flavia Watson",
+        "Ray Fearon",
+        "Rufus Jones",
+        "Richard Hope",
+        "Lee Boardman",
+        "Stella Stocker",
+        "Atanas Srebrev"
+    ],
+    "keywords": [],
+    "video_count": 0,
+    "similar_count": 0,
+    "roi": 0,
+    "popularity_category": "Muy Alta",
+    "rating_category": "Buena",
+    "genres_str": "Acción,Suspense",
+    "directors_str": "Martin Campbell",
+    "cast_str": "Daisy Ridley,Clive Owen,Taz Skylar,Flavia Watson,Ray Fearon,Rufus Jones,Richard Hope,Lee Boardman,Stella Stocker,Atanas Srebrev",
+    "companies_str": "Anton,Qwerty Films",
+    "keywords_str": ""
+}

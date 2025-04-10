@@ -1,0 +1,35 @@
+[2025-04-10T13:37:05.738+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2025-04-10T13:37:05.782+0000] {taskinstance.py:2073} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: tmdb_pipeline_v2.load_to_postgres scheduled__2025-04-10T00:00:00+00:00 [queued]>
+[2025-04-10T13:37:05.795+0000] {taskinstance.py:2073} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: tmdb_pipeline_v2.load_to_postgres scheduled__2025-04-10T00:00:00+00:00 [queued]>
+[2025-04-10T13:37:05.799+0000] {taskinstance.py:2303} INFO - Starting attempt 1 of 3
+[2025-04-10T13:37:05.814+0000] {taskinstance.py:2327} INFO - Executing <Task(PythonOperator): load_to_postgres> on 2025-04-10 00:00:00+00:00
+[2025-04-10T13:37:05.824+0000] {warnings.py:110} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:61: DeprecationWarning: This process (pid=7778) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2025-04-10T13:37:05.827+0000] {standard_task_runner.py:63} INFO - Started process 7780 to run task
+[2025-04-10T13:37:05.833+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'tmdb_pipeline_v2', 'load_to_postgres', 'scheduled__2025-04-10T00:00:00+00:00', '--job-id', '1025', '--raw', '--subdir', 'DAGS_FOLDER/dag_tmdb.py', '--cfg-path', '/tmp/tmpylw_va1b']
+[2025-04-10T13:37:05.841+0000] {standard_task_runner.py:91} INFO - Job 1025: Subtask load_to_postgres
+[2025-04-10T13:37:06.028+0000] {task_command.py:426} INFO - Running <TaskInstance: tmdb_pipeline_v2.load_to_postgres scheduled__2025-04-10T00:00:00+00:00 [running]> on host a24902f77b45
+[2025-04-10T13:37:06.263+0000] {taskinstance.py:2644} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='gabriela' AIRFLOW_CTX_DAG_ID='tmdb_pipeline_v2' AIRFLOW_CTX_TASK_ID='load_to_postgres' AIRFLOW_CTX_EXECUTION_DATE='2025-04-10T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2025-04-10T00:00:00+00:00'
+[2025-04-10T13:37:06.265+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2025-04-10T13:37:06.324+0000] {dag_tmdb.py:466} INFO - Leyendo 1 registros procesados para cargar en PostgreSQL
+[2025-04-10T13:37:06.342+0000] {dag_tmdb.py:137} INFO - Tablas verificadas y creadas en PostgreSQL
+[2025-04-10T13:37:06.368+0000] {dag_tmdb.py:142} INFO - Tablas existentes:
+[2025-04-10T13:37:06.370+0000] {dag_tmdb.py:144} INFO - - movie_data_warehouse
+[2025-04-10T13:37:06.371+0000] {dag_tmdb.py:144} INFO - - movies
+[2025-04-10T13:37:06.372+0000] {dag_tmdb.py:144} INFO - - movie_genres
+[2025-04-10T13:37:06.372+0000] {dag_tmdb.py:144} INFO - - genres
+[2025-04-10T13:37:06.373+0000] {dag_tmdb.py:144} INFO - - movie_directors
+[2025-04-10T13:37:06.373+0000] {dag_tmdb.py:144} INFO - - directors
+[2025-04-10T13:37:06.374+0000] {dag_tmdb.py:144} INFO - - movie_actors
+[2025-04-10T13:37:06.375+0000] {dag_tmdb.py:144} INFO - - actors
+[2025-04-10T13:37:06.393+0000] {dag_tmdb.py:482} INFO - Conexión establecida con PostgreSQL
+[2025-04-10T13:37:06.398+0000] {dag_tmdb.py:634} INFO - Total de películas en la base de datos: 63
+[2025-04-10T13:37:06.419+0000] {dag_tmdb.py:635} INFO - Insertadas 0 nuevas películas en esta ejecución
+[2025-04-10T13:37:06.423+0000] {dag_tmdb.py:641} INFO - Datos cargados correctamente en PostgreSQL
+[2025-04-10T13:37:06.425+0000] {python.py:237} INFO - Done. Returned value was: 1
+[2025-04-10T13:37:06.425+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2025-04-10T13:37:06.522+0000] {taskinstance.py:1205} INFO - Marking task as SUCCESS. dag_id=tmdb_pipeline_v2, task_id=load_to_postgres, execution_date=20250410T000000, start_date=20250410T133705, end_date=20250410T133706
+[2025-04-10T13:37:06.626+0000] {local_task_job_runner.py:240} INFO - Task exited with return code 0
+[2025-04-10T13:37:06.759+0000] {taskinstance.py:3482} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2025-04-10T13:37:06.761+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

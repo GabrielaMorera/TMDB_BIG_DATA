@@ -1,0 +1,105 @@
+[2025-03-29T00:12:29.357+0000] {processor.py:161} INFO - Started process (PID=1779) to work on /opt/airflow/dags/tmdb_pipeline_dag.py
+[2025-03-29T00:12:29.360+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/tmdb_pipeline_dag.py for tasks to queue
+[2025-03-29T00:12:29.370+0000] {logging_mixin.py:188} INFO - [2025-03-29T00:12:29.364+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/tmdb_pipeline_dag.py
+[2025-03-29T00:12:29.420+0000] {processor.py:840} INFO - DAG(s) 'tmdb_movie_pipeline' retrieved from /opt/airflow/dags/tmdb_pipeline_dag.py
+[2025-03-29T00:12:30.877+0000] {logging_mixin.py:188} INFO - [2025-03-29T00:12:30.876+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-03-29T00:12:30.946+0000] {logging_mixin.py:188} INFO - [2025-03-29T00:12:30.945+0000] {dag.py:3954} INFO - Setting next_dagrun for tmdb_movie_pipeline to 2025-03-28 00:00:00+00:00, run_after=2025-03-29 00:00:00+00:00
+[2025-03-29T00:12:31.027+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/tmdb_pipeline_dag.py took 1.714 seconds
+[2025-03-29T00:13:01.723+0000] {processor.py:161} INFO - Started process (PID=1792) to work on /opt/airflow/dags/tmdb_pipeline_dag.py
+[2025-03-29T00:13:01.771+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/tmdb_pipeline_dag.py for tasks to queue
+[2025-03-29T00:13:01.830+0000] {logging_mixin.py:188} INFO - [2025-03-29T00:13:01.795+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/tmdb_pipeline_dag.py
+[2025-03-29T00:13:02.117+0000] {processor.py:840} INFO - DAG(s) 'tmdb_movie_pipeline' retrieved from /opt/airflow/dags/tmdb_pipeline_dag.py
+[2025-03-29T00:13:02.641+0000] {logging_mixin.py:188} INFO - [2025-03-29T00:13:02.636+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-03-29T00:13:02.922+0000] {logging_mixin.py:188} INFO - [2025-03-29T00:13:02.921+0000] {dag.py:3954} INFO - Setting next_dagrun for tmdb_movie_pipeline to 2025-03-28 00:00:00+00:00, run_after=2025-03-29 00:00:00+00:00
+[2025-03-29T00:13:03.204+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/tmdb_pipeline_dag.py took 1.683 seconds
+[2025-03-29T00:48:43.958+0000] {processor.py:161} INFO - Started process (PID=1798) to work on /opt/airflow/dags/tmdb_pipeline_dag.py
+[2025-03-29T00:48:43.961+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/tmdb_pipeline_dag.py for tasks to queue
+[2025-03-29T00:48:43.967+0000] {logging_mixin.py:188} INFO - [2025-03-29T00:48:43.965+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/tmdb_pipeline_dag.py
+[2025-03-29T00:48:44.039+0000] {processor.py:840} INFO - DAG(s) 'tmdb_movie_pipeline' retrieved from /opt/airflow/dags/tmdb_pipeline_dag.py
+[2025-03-29T00:48:44.198+0000] {logging_mixin.py:188} INFO - [2025-03-29T00:48:44.197+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-03-29T00:48:44.347+0000] {logging_mixin.py:188} INFO - [2025-03-29T00:48:44.341+0000] {dag.py:3954} INFO - Setting next_dagrun for tmdb_movie_pipeline to 2025-03-28 00:00:00+00:00, run_after=2025-03-29 00:00:00+00:00
+[2025-03-29T00:48:44.432+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/tmdb_pipeline_dag.py took 0.515 seconds
+[2025-03-29T00:51:07.837+0000] {processor.py:161} INFO - Started process (PID=1799) to work on /opt/airflow/dags/tmdb_pipeline_dag.py
+[2025-03-29T00:51:07.839+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/tmdb_pipeline_dag.py for tasks to queue
+[2025-03-29T00:51:07.844+0000] {logging_mixin.py:188} INFO - [2025-03-29T00:51:07.842+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/tmdb_pipeline_dag.py
+[2025-03-29T00:51:07.881+0000] {processor.py:840} INFO - DAG(s) 'tmdb_movie_pipeline' retrieved from /opt/airflow/dags/tmdb_pipeline_dag.py
+[2025-03-29T00:51:07.976+0000] {logging_mixin.py:188} INFO - [2025-03-29T00:51:07.975+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-03-29T00:51:08.036+0000] {logging_mixin.py:188} INFO - [2025-03-29T00:51:08.036+0000] {dag.py:3954} INFO - Setting next_dagrun for tmdb_movie_pipeline to 2025-03-28 00:00:00+00:00, run_after=2025-03-29 00:00:00+00:00
+[2025-03-29T00:51:08.078+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/tmdb_pipeline_dag.py took 0.269 seconds
+[2025-03-29T01:52:21.713+0000] {processor.py:161} INFO - Started process (PID=1805) to work on /opt/airflow/dags/tmdb_pipeline_dag.py
+[2025-03-29T01:52:21.716+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/tmdb_pipeline_dag.py for tasks to queue
+[2025-03-29T01:52:21.720+0000] {logging_mixin.py:188} INFO - [2025-03-29T01:52:21.718+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/tmdb_pipeline_dag.py
+[2025-03-29T01:52:21.764+0000] {processor.py:840} INFO - DAG(s) 'tmdb_movie_pipeline' retrieved from /opt/airflow/dags/tmdb_pipeline_dag.py
+[2025-03-29T01:52:21.897+0000] {logging_mixin.py:188} INFO - [2025-03-29T01:52:21.897+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-03-29T01:52:21.977+0000] {logging_mixin.py:188} INFO - [2025-03-29T01:52:21.976+0000] {dag.py:3954} INFO - Setting next_dagrun for tmdb_movie_pipeline to 2025-03-28 00:00:00+00:00, run_after=2025-03-29 00:00:00+00:00
+[2025-03-29T01:52:22.050+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/tmdb_pipeline_dag.py took 0.361 seconds
+[2025-03-29T01:52:52.236+0000] {processor.py:161} INFO - Started process (PID=1818) to work on /opt/airflow/dags/tmdb_pipeline_dag.py
+[2025-03-29T01:52:52.237+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/tmdb_pipeline_dag.py for tasks to queue
+[2025-03-29T01:52:52.238+0000] {logging_mixin.py:188} INFO - [2025-03-29T01:52:52.238+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/tmdb_pipeline_dag.py
+[2025-03-29T01:52:52.246+0000] {processor.py:840} INFO - DAG(s) 'tmdb_movie_pipeline' retrieved from /opt/airflow/dags/tmdb_pipeline_dag.py
+[2025-03-29T01:52:52.279+0000] {logging_mixin.py:188} INFO - [2025-03-29T01:52:52.279+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-03-29T01:52:52.300+0000] {logging_mixin.py:188} INFO - [2025-03-29T01:52:52.300+0000] {dag.py:3954} INFO - Setting next_dagrun for tmdb_movie_pipeline to 2025-03-28 00:00:00+00:00, run_after=2025-03-29 00:00:00+00:00
+[2025-03-29T01:52:52.319+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/tmdb_pipeline_dag.py took 0.089 seconds
+[2025-03-29T01:53:22.409+0000] {processor.py:161} INFO - Started process (PID=1824) to work on /opt/airflow/dags/tmdb_pipeline_dag.py
+[2025-03-29T01:53:22.409+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/tmdb_pipeline_dag.py for tasks to queue
+[2025-03-29T01:53:22.410+0000] {logging_mixin.py:188} INFO - [2025-03-29T01:53:22.410+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/tmdb_pipeline_dag.py
+[2025-03-29T01:53:22.419+0000] {processor.py:840} INFO - DAG(s) 'tmdb_movie_pipeline' retrieved from /opt/airflow/dags/tmdb_pipeline_dag.py
+[2025-03-29T01:53:22.450+0000] {logging_mixin.py:188} INFO - [2025-03-29T01:53:22.450+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-03-29T01:53:22.471+0000] {logging_mixin.py:188} INFO - [2025-03-29T01:53:22.471+0000] {dag.py:3954} INFO - Setting next_dagrun for tmdb_movie_pipeline to 2025-03-28 00:00:00+00:00, run_after=2025-03-29 00:00:00+00:00
+[2025-03-29T01:53:22.489+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/tmdb_pipeline_dag.py took 0.086 seconds
+[2025-03-29T01:53:52.630+0000] {processor.py:161} INFO - Started process (PID=1831) to work on /opt/airflow/dags/tmdb_pipeline_dag.py
+[2025-03-29T01:53:52.631+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/tmdb_pipeline_dag.py for tasks to queue
+[2025-03-29T01:53:52.632+0000] {logging_mixin.py:188} INFO - [2025-03-29T01:53:52.631+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/tmdb_pipeline_dag.py
+[2025-03-29T01:53:52.640+0000] {processor.py:840} INFO - DAG(s) 'tmdb_movie_pipeline' retrieved from /opt/airflow/dags/tmdb_pipeline_dag.py
+[2025-03-29T01:53:52.671+0000] {logging_mixin.py:188} INFO - [2025-03-29T01:53:52.670+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-03-29T01:53:52.691+0000] {logging_mixin.py:188} INFO - [2025-03-29T01:53:52.691+0000] {dag.py:3954} INFO - Setting next_dagrun for tmdb_movie_pipeline to 2025-03-28 00:00:00+00:00, run_after=2025-03-29 00:00:00+00:00
+[2025-03-29T01:53:52.708+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/tmdb_pipeline_dag.py took 0.085 seconds
+[2025-03-29T01:54:22.856+0000] {processor.py:161} INFO - Started process (PID=1838) to work on /opt/airflow/dags/tmdb_pipeline_dag.py
+[2025-03-29T01:54:22.857+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/tmdb_pipeline_dag.py for tasks to queue
+[2025-03-29T01:54:22.858+0000] {logging_mixin.py:188} INFO - [2025-03-29T01:54:22.858+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/tmdb_pipeline_dag.py
+[2025-03-29T01:54:22.866+0000] {processor.py:840} INFO - DAG(s) 'tmdb_movie_pipeline' retrieved from /opt/airflow/dags/tmdb_pipeline_dag.py
+[2025-03-29T01:54:22.901+0000] {logging_mixin.py:188} INFO - [2025-03-29T01:54:22.901+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-03-29T01:54:22.929+0000] {logging_mixin.py:188} INFO - [2025-03-29T01:54:22.929+0000] {dag.py:3954} INFO - Setting next_dagrun for tmdb_movie_pipeline to 2025-03-28 00:00:00+00:00, run_after=2025-03-29 00:00:00+00:00
+[2025-03-29T01:54:22.950+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/tmdb_pipeline_dag.py took 0.100 seconds
+[2025-03-29T01:54:53.048+0000] {processor.py:161} INFO - Started process (PID=1845) to work on /opt/airflow/dags/tmdb_pipeline_dag.py
+[2025-03-29T01:54:53.049+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/tmdb_pipeline_dag.py for tasks to queue
+[2025-03-29T01:54:53.050+0000] {logging_mixin.py:188} INFO - [2025-03-29T01:54:53.050+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/tmdb_pipeline_dag.py
+[2025-03-29T01:54:53.059+0000] {processor.py:840} INFO - DAG(s) 'tmdb_movie_pipeline' retrieved from /opt/airflow/dags/tmdb_pipeline_dag.py
+[2025-03-29T01:54:53.091+0000] {logging_mixin.py:188} INFO - [2025-03-29T01:54:53.091+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-03-29T01:54:53.111+0000] {logging_mixin.py:188} INFO - [2025-03-29T01:54:53.111+0000] {dag.py:3954} INFO - Setting next_dagrun for tmdb_movie_pipeline to 2025-03-28 00:00:00+00:00, run_after=2025-03-29 00:00:00+00:00
+[2025-03-29T01:54:53.127+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/tmdb_pipeline_dag.py took 0.085 seconds
+[2025-03-29T01:55:23.276+0000] {processor.py:161} INFO - Started process (PID=1852) to work on /opt/airflow/dags/tmdb_pipeline_dag.py
+[2025-03-29T01:55:23.277+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/tmdb_pipeline_dag.py for tasks to queue
+[2025-03-29T01:55:23.278+0000] {logging_mixin.py:188} INFO - [2025-03-29T01:55:23.278+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/tmdb_pipeline_dag.py
+[2025-03-29T01:55:23.287+0000] {processor.py:840} INFO - DAG(s) 'tmdb_movie_pipeline' retrieved from /opt/airflow/dags/tmdb_pipeline_dag.py
+[2025-03-29T01:55:23.317+0000] {logging_mixin.py:188} INFO - [2025-03-29T01:55:23.317+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-03-29T01:55:23.337+0000] {logging_mixin.py:188} INFO - [2025-03-29T01:55:23.337+0000] {dag.py:3954} INFO - Setting next_dagrun for tmdb_movie_pipeline to 2025-03-28 00:00:00+00:00, run_after=2025-03-29 00:00:00+00:00
+[2025-03-29T01:55:23.356+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/tmdb_pipeline_dag.py took 0.086 seconds
+[2025-03-29T01:55:53.507+0000] {processor.py:161} INFO - Started process (PID=1859) to work on /opt/airflow/dags/tmdb_pipeline_dag.py
+[2025-03-29T01:55:53.508+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/tmdb_pipeline_dag.py for tasks to queue
+[2025-03-29T01:55:53.509+0000] {logging_mixin.py:188} INFO - [2025-03-29T01:55:53.509+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/tmdb_pipeline_dag.py
+[2025-03-29T01:55:53.518+0000] {processor.py:840} INFO - DAG(s) 'tmdb_movie_pipeline' retrieved from /opt/airflow/dags/tmdb_pipeline_dag.py
+[2025-03-29T01:55:53.547+0000] {logging_mixin.py:188} INFO - [2025-03-29T01:55:53.547+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-03-29T01:55:53.568+0000] {logging_mixin.py:188} INFO - [2025-03-29T01:55:53.568+0000] {dag.py:3954} INFO - Setting next_dagrun for tmdb_movie_pipeline to 2025-03-28 00:00:00+00:00, run_after=2025-03-29 00:00:00+00:00
+[2025-03-29T01:55:53.586+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/tmdb_pipeline_dag.py took 0.085 seconds
+[2025-03-29T02:53:16.187+0000] {processor.py:161} INFO - Started process (PID=1866) to work on /opt/airflow/dags/tmdb_pipeline_dag.py
+[2025-03-29T02:53:16.190+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/tmdb_pipeline_dag.py for tasks to queue
+[2025-03-29T02:53:16.196+0000] {logging_mixin.py:188} INFO - [2025-03-29T02:53:16.193+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/tmdb_pipeline_dag.py
+[2025-03-29T02:53:16.247+0000] {processor.py:840} INFO - DAG(s) 'tmdb_movie_pipeline' retrieved from /opt/airflow/dags/tmdb_pipeline_dag.py
+[2025-03-29T02:53:16.373+0000] {logging_mixin.py:188} INFO - [2025-03-29T02:53:16.372+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-03-29T02:53:16.449+0000] {logging_mixin.py:188} INFO - [2025-03-29T02:53:16.449+0000] {dag.py:3954} INFO - Setting next_dagrun for tmdb_movie_pipeline to 2025-03-28 00:00:00+00:00, run_after=2025-03-29 00:00:00+00:00
+[2025-03-29T02:53:16.514+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/tmdb_pipeline_dag.py took 0.370 seconds
+[2025-03-29T04:55:30.028+0000] {processor.py:161} INFO - Started process (PID=1872) to work on /opt/airflow/dags/tmdb_pipeline_dag.py
+[2025-03-29T04:55:30.040+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/tmdb_pipeline_dag.py for tasks to queue
+[2025-03-29T04:55:30.062+0000] {logging_mixin.py:188} INFO - [2025-03-29T04:55:30.050+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/tmdb_pipeline_dag.py
+[2025-03-29T04:55:30.182+0000] {processor.py:840} INFO - DAG(s) 'tmdb_movie_pipeline' retrieved from /opt/airflow/dags/tmdb_pipeline_dag.py
+[2025-03-29T04:55:30.375+0000] {logging_mixin.py:188} INFO - [2025-03-29T04:55:30.375+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-03-29T04:55:30.483+0000] {logging_mixin.py:188} INFO - [2025-03-29T04:55:30.482+0000] {dag.py:3954} INFO - Setting next_dagrun for tmdb_movie_pipeline to 2025-03-28 00:00:00+00:00, run_after=2025-03-29 00:00:00+00:00
+[2025-03-29T04:55:30.569+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/tmdb_pipeline_dag.py took 0.637 seconds
+[2025-03-29T06:55:51.778+0000] {processor.py:161} INFO - Started process (PID=1874) to work on /opt/airflow/dags/tmdb_pipeline_dag.py
+[2025-03-29T06:55:51.780+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/tmdb_pipeline_dag.py for tasks to queue
+[2025-03-29T06:55:51.783+0000] {logging_mixin.py:188} INFO - [2025-03-29T06:55:51.782+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/tmdb_pipeline_dag.py
+[2025-03-29T06:55:51.838+0000] {processor.py:840} INFO - DAG(s) 'tmdb_movie_pipeline' retrieved from /opt/airflow/dags/tmdb_pipeline_dag.py
+[2025-03-29T06:55:51.983+0000] {logging_mixin.py:188} INFO - [2025-03-29T06:55:51.982+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-03-29T06:55:52.079+0000] {logging_mixin.py:188} INFO - [2025-03-29T06:55:52.077+0000] {dag.py:3954} INFO - Setting next_dagrun for tmdb_movie_pipeline to 2025-03-28 00:00:00+00:00, run_after=2025-03-29 00:00:00+00:00
+[2025-03-29T06:55:52.152+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/tmdb_pipeline_dag.py took 0.393 seconds

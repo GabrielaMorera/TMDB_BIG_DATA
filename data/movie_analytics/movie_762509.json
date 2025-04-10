@@ -1,0 +1,71 @@
+{
+    "adult": false,
+    "backdrop_path": "/1w8kutrRucTd3wlYyu5QlUDMiG1.jpg",
+    "genre_ids": [
+        12,
+        10751,
+        16
+    ],
+    "id": 762509,
+    "original_language": "en",
+    "original_title": "Mufasa: The Lion King",
+    "overview": "Rafiki debe transmitir la leyenda de Mufasa a la joven cachorro de león Kiara, hija de Simba y Nala, y con Timón y Pumba prestando su estilo característico. Mufasa, un cachorro huérfano, perdido y solo, conoce a un simpático león llamado Taka, heredero de un linaje real. Este encuentro casual pone en marcha un viaje de un extraordinario grupo de inadaptados que buscan su destino.",
+    "popularity": 181.448,
+    "poster_path": "/dmw74cWIEKaEgl5Dv3kUTcCob6D.jpg",
+    "release_date": "2024-12-18",
+    "title": "Mufasa: El rey león",
+    "video": false,
+    "vote_average": 7.442,
+    "vote_count": 1868,
+    "budget": 200000000,
+    "revenue": 721046090,
+    "runtime": 118,
+    "genres": [
+        "Aventura",
+        "Familia",
+        "Animación"
+    ],
+    "production_companies": [
+        "Walt Disney Pictures"
+    ],
+    "directors": [
+        "Barry Jenkins"
+    ],
+    "cast": [
+        "Aaron Pierre",
+        "Kelvin Harrison, Jr.",
+        "Tiffany Boone",
+        "Kagiso Lediga",
+        "Preston Nyman",
+        "Blue Ivy Carter",
+        "John Kani",
+        "Mads Mikkelsen",
+        "Seth Rogen",
+        "Billy Eichner"
+    ],
+    "keywords": [
+        "friendship",
+        "paradise",
+        "lion",
+        "musical",
+        "prequel",
+        "jungle",
+        "told in flashback",
+        "betrayal by friend",
+        "chance meeting",
+        "live action remake",
+        "found family",
+        "lost",
+        "awestruck"
+    ],
+    "video_count": 28,
+    "similar_count": 20,
+    "roi": 2.60523045,
+    "popularity_category": "Muy Alta",
+    "rating_category": "Buena",
+    "genres_str": "Aventura,Familia,Animación",
+    "directors_str": "Barry Jenkins",
+    "cast_str": "Aaron Pierre,Kelvin Harrison, Jr.,Tiffany Boone,Kagiso Lediga,Preston Nyman,Blue Ivy Carter,John Kani,Mads Mikkelsen,Seth Rogen,Billy Eichner",
+    "companies_str": "Walt Disney Pictures",
+    "keywords_str": "friendship,paradise,lion,musical,prequel,jungle,told in flashback,betrayal by friend,chance meeting,live action remake,found family,lost,awestruck"
+}

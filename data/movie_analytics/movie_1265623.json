@@ -1,0 +1,60 @@
+{
+    "adult": false,
+    "backdrop_path": "/oDvBfDVgF6uthIPdRfC6zqqbvcE.jpg",
+    "genre_ids": [
+        35,
+        10402
+    ],
+    "id": 1265623,
+    "original_language": "fr",
+    "original_title": "Banger",
+    "overview": "Cuando la policía le contrata para desmantelar una peculiar banda de delincuentes vinculada a su rival, un DJ en horas bajas ve la ocasión de volver a lo más alto con un temazo.",
+    "popularity": 83.7257,
+    "poster_path": "/x2pegSby27ebOwW361GJb1aKcxa.jpg",
+    "release_date": "2025-04-01",
+    "title": "DJ encubierto",
+    "video": false,
+    "vote_average": 4.381,
+    "vote_count": 21,
+    "budget": 0,
+    "revenue": 0,
+    "runtime": 90,
+    "genres": [
+        "Comedia",
+        "Música"
+    ],
+    "production_companies": [
+        "Iconoclast"
+    ],
+    "directors": [
+        "So-Me"
+    ],
+    "cast": [
+        "Vincent Cassel",
+        "Yvick Letexier",
+        "Laura Felpin",
+        "Alexis Manenti",
+        "Nina Zem",
+        "Déborah Lukumuena",
+        "Philippe Katerine",
+        "Paul Mirabel",
+        "Tom Dingler",
+        "Alice Moitié"
+    ],
+    "keywords": [
+        "intelligence agency",
+        "dj",
+        "artistic rivalry",
+        "based on short"
+    ],
+    "video_count": 0,
+    "similar_count": 20,
+    "roi": 0,
+    "popularity_category": "Muy Alta",
+    "rating_category": "Regular",
+    "genres_str": "Comedia,Música",
+    "directors_str": "So-Me",
+    "cast_str": "Vincent Cassel,Yvick Letexier,Laura Felpin,Alexis Manenti,Nina Zem,Déborah Lukumuena,Philippe Katerine,Paul Mirabel,Tom Dingler,Alice Moitié",
+    "companies_str": "Iconoclast",
+    "keywords_str": "intelligence agency,dj,artistic rivalry,based on short"
+}

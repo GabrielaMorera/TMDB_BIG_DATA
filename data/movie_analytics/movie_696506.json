@@ -1,0 +1,79 @@
+{
+    "adult": false,
+    "backdrop_path": "/qUc0Hol3eP74dbW4YyqT6oRLYgT.jpg",
+    "genre_ids": [
+        878,
+        35,
+        12
+    ],
+    "id": 696506,
+    "original_language": "en",
+    "original_title": "Mickey 17",
+    "overview": "Mickey 17, un miembro de la tripulación 'expendable' (prescindible) enviado a un planeta helado para colonizarlo, se niega a dejar que su clon de reemplazo, Mickey 18, tome su lugar... Adaptación del libro original de Edward Ashton.",
+    "popularity": 168.9037,
+    "poster_path": "/fjIHkLGIZdjKIKe252gSFt5QzVK.jpg",
+    "release_date": "2025-02-28",
+    "title": "Mickey 17",
+    "video": false,
+    "vote_average": 6.975,
+    "vote_count": 1162,
+    "budget": 118000000,
+    "revenue": 122908117,
+    "runtime": 137,
+    "genres": [
+        "Ciencia ficción",
+        "Comedia",
+        "Aventura"
+    ],
+    "production_companies": [
+        "Warner Bros. Pictures",
+        "Plan B Entertainment",
+        "Offscreen",
+        "Kate Street Picture Company",
+        "Domain Entertainment"
+    ],
+    "directors": [
+        "Bong Joon-ho"
+    ],
+    "cast": [
+        "Robert Pattinson",
+        "Naomi Ackie",
+        "Steven Yeun",
+        "Mark Ruffalo",
+        "Toni Collette",
+        "Anamaria Vartolomei",
+        "Daniel Henshall",
+        "Patsy Ferran",
+        "Steve Park",
+        "Tim Key"
+    ],
+    "keywords": [
+        "based on novel or book",
+        "dark comedy",
+        "space travel",
+        "space colony",
+        "alien planet",
+        "creature",
+        "space adventure",
+        "human cloning",
+        "spaceship",
+        "casual",
+        "ambivalent",
+        "amused",
+        "conceited",
+        "space sci-fi",
+        "black comedy",
+        "perjalanan luar angkasa",
+        "fiksi ilmiah"
+    ],
+    "video_count": 6,
+    "similar_count": 20,
+    "roi": 0.04159421186440678,
+    "popularity_category": "Muy Alta",
+    "rating_category": "Buena",
+    "genres_str": "Ciencia ficción,Comedia,Aventura",
+    "directors_str": "Bong Joon-ho",
+    "cast_str": "Robert Pattinson,Naomi Ackie,Steven Yeun,Mark Ruffalo,Toni Collette,Anamaria Vartolomei,Daniel Henshall,Patsy Ferran,Steve Park,Tim Key",
+    "companies_str": "Warner Bros. Pictures,Plan B Entertainment,Offscreen,Kate Street Picture Company,Domain Entertainment",
+    "keywords_str": "based on novel or book,dark comedy,space travel,space colony,alien planet,creature,space adventure,human cloning,spaceship,casual,ambivalent,amused,conceited,space sci-fi,black comedy,perjalanan luar angkasa,fiksi ilmiah"
+}

@@ -1,0 +1,86 @@
+[2025-04-06T19:39:45.677+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2025-04-06T19:39:45.699+0000] {taskinstance.py:2073} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: tmdb_pipeline_optimized.load_to_postgres manual__2025-04-06T19:38:46.634467+00:00 [queued]>
+[2025-04-06T19:39:45.707+0000] {taskinstance.py:2073} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: tmdb_pipeline_optimized.load_to_postgres manual__2025-04-06T19:38:46.634467+00:00 [queued]>
+[2025-04-06T19:39:45.707+0000] {taskinstance.py:2303} INFO - Starting attempt 1 of 2
+[2025-04-06T19:39:45.720+0000] {taskinstance.py:2327} INFO - Executing <Task(PythonOperator): load_to_postgres> on 2025-04-06 19:38:46.634467+00:00
+[2025-04-06T19:39:45.729+0000] {warnings.py:110} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:61: DeprecationWarning: This process (pid=360) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2025-04-06T19:39:45.730+0000] {standard_task_runner.py:63} INFO - Started process 377 to run task
+[2025-04-06T19:39:45.731+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'tmdb_pipeline_optimized', 'load_to_postgres', 'manual__2025-04-06T19:38:46.634467+00:00', '--job-id', '331', '--raw', '--subdir', 'DAGS_FOLDER/tmdb_pipeline.py', '--cfg-path', '/tmp/tmpaswlgn14']
+[2025-04-06T19:39:45.733+0000] {standard_task_runner.py:91} INFO - Job 331: Subtask load_to_postgres
+[2025-04-06T19:39:45.783+0000] {task_command.py:426} INFO - Running <TaskInstance: tmdb_pipeline_optimized.load_to_postgres manual__2025-04-06T19:38:46.634467+00:00 [running]> on host 6daf0988e59d
+[2025-04-06T19:39:45.867+0000] {taskinstance.py:2644} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='gabriela' AIRFLOW_CTX_DAG_ID='tmdb_pipeline_optimized' AIRFLOW_CTX_TASK_ID='load_to_postgres' AIRFLOW_CTX_EXECUTION_DATE='2025-04-06T19:38:46.634467+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-04-06T19:38:46.634467+00:00'
+[2025-04-06T19:39:45.869+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2025-04-06T19:39:45.909+0000] {tmdb_pipeline.py:1895} INFO - Leyendo 60 registros procesados para cargar en PostgreSQL
+[2025-04-06T19:39:45.917+0000] {tmdb_pipeline.py:1902} INFO - Conexión establecida con PostgreSQL usando configuración: {'dbname': 'postgres', 'user': 'postgres', 'password': 'Villeta-11', 'host': 'movie_postgres', 'port': '5432'}
+[2025-04-06T19:39:45.947+0000] {tmdb_pipeline.py:1988} INFO - Películas existentes en la base de datos: 57
+[2025-04-06T19:39:45.953+0000] {tmdb_pipeline.py:2003} INFO - Película ya existe: Una película de Minecraft
+[2025-04-06T19:39:45.954+0000] {tmdb_pipeline.py:2003} INFO - Película ya existe: Criminales de lujo
+[2025-04-06T19:39:45.954+0000] {tmdb_pipeline.py:2003} INFO - Película ya existe: A Working Man
+[2025-04-06T19:39:45.955+0000] {tmdb_pipeline.py:2003} INFO - Película ya existe: Cleaner
+[2025-04-06T19:39:45.956+0000] {tmdb_pipeline.py:2003} INFO - Película ya existe: Capitán América: Brave New World
+[2025-04-06T19:39:45.956+0000] {tmdb_pipeline.py:2003} INFO - Película ya existe: देवा
+[2025-04-06T19:39:45.957+0000] {tmdb_pipeline.py:2003} INFO - Película ya existe: Pídeme lo que quieras
+[2025-04-06T19:39:45.957+0000] {tmdb_pipeline.py:2003} INFO - Película ya existe: Los silenciosos
+[2025-04-06T19:39:45.958+0000] {tmdb_pipeline.py:2003} INFO - Película ya existe: Peter Pan: Pesadilla en Nunca Jamás
+[2025-04-06T19:39:45.959+0000] {tmdb_pipeline.py:2003} INFO - Película ya existe: Códigos de Guerra
+[2025-04-06T19:39:45.959+0000] {tmdb_pipeline.py:2003} INFO - Película ya existe: Relatos Fantásticos
+[2025-04-06T19:39:45.960+0000] {tmdb_pipeline.py:2003} INFO - Película ya existe: Fight or Flight
+[2025-04-06T19:39:45.961+0000] {tmdb_pipeline.py:2003} INFO - Película ya existe: Vaiana 2
+[2025-04-06T19:39:45.961+0000] {tmdb_pipeline.py:2003} INFO - Película ya existe: Mufasa: El rey león
+[2025-04-06T19:39:45.962+0000] {tmdb_pipeline.py:2003} INFO - Película ya existe: Confidencial (Black Bag)
+[2025-04-06T19:39:45.962+0000] {tmdb_pipeline.py:2003} INFO - Película ya existe: Mickey 17
+[2025-04-06T19:39:45.963+0000] {tmdb_pipeline.py:2003} INFO - Película ya existe: Popeye the Slayer Man
+[2025-04-06T19:39:45.963+0000] {tmdb_pipeline.py:2003} INFO - Película ya existe: Mi lista de deseos
+[2025-04-06T19:39:45.964+0000] {tmdb_pipeline.py:2003} INFO - Película ya existe: Ghost Game
+[2025-04-06T19:39:45.965+0000] {tmdb_pipeline.py:2003} INFO - Película ya existe: Blancanieves
+[2025-04-06T19:39:45.965+0000] {tmdb_pipeline.py:2003} INFO - Película ya existe: La venganza de Cenicienta
+[2025-04-06T19:39:45.966+0000] {tmdb_pipeline.py:2003} INFO - Película ya existe: Sonic 3: La película
+[2025-04-06T19:39:45.966+0000] {tmdb_pipeline.py:2003} INFO - Película ya existe: Amenaza en el aire
+[2025-04-06T19:39:45.967+0000] {tmdb_pipeline.py:2003} INFO - Película ya existe: Contraataque
+[2025-04-06T19:39:45.967+0000] {tmdb_pipeline.py:2003} INFO - Película ya existe: Batman Ninja vs. Yakuza League
+[2025-04-06T19:39:45.968+0000] {tmdb_pipeline.py:2003} INFO - Película ya existe: El abismo secreto
+[2025-04-06T19:39:45.968+0000] {tmdb_pipeline.py:2003} INFO - Película ya existe: Breathing In
+[2025-04-06T19:39:45.969+0000] {tmdb_pipeline.py:2003} INFO - Película ya existe: Holland
+[2025-04-06T19:39:45.969+0000] {tmdb_pipeline.py:2003} INFO - Película ya existe: Opus
+[2025-04-06T19:39:45.970+0000] {tmdb_pipeline.py:2003} INFO - Película ya existe: ยูเรนัส 2324
+[2025-04-06T19:39:45.970+0000] {tmdb_pipeline.py:2003} INFO - Película ya existe: Oni-Goroshi: Ciudad de los demonios
+[2025-04-06T19:39:45.971+0000] {tmdb_pipeline.py:2003} INFO - Película ya existe: Hellhound
+[2025-04-06T19:39:45.972+0000] {tmdb_pipeline.py:2003} INFO - Película ya existe: Z Zone
+[2025-04-06T19:39:45.972+0000] {tmdb_pipeline.py:2003} INFO - Película ya existe: Kraven the Hunter
+[2025-04-06T19:39:45.973+0000] {tmdb_pipeline.py:2003} INFO - Película ya existe: DJ encubierto
+[2025-04-06T19:39:45.973+0000] {tmdb_pipeline.py:2003} INFO - Película ya existe: Amaran
+[2025-04-06T19:39:45.974+0000] {tmdb_pipeline.py:2003} INFO - Película ya existe: El maestro del crimen
+[2025-04-06T19:39:45.974+0000] {tmdb_pipeline.py:2003} INFO - Película ya existe: Venom: El último baile
+[2025-04-06T19:39:45.975+0000] {tmdb_pipeline.py:2003} INFO - Película ya existe: The Monkey
+[2025-04-06T19:39:45.975+0000] {tmdb_pipeline.py:2003} INFO - Película ya existe: Plankton, la película
+[2025-04-06T19:39:45.976+0000] {tmdb_pipeline.py:2003} INFO - Película ya existe: Plankton, la película
+[2025-04-06T19:39:45.977+0000] {tmdb_pipeline.py:2003} INFO - Película ya existe: El ejecutor
+[2025-04-06T19:39:45.977+0000] {tmdb_pipeline.py:2003} INFO - Película ya existe: स्काई फ़ोर्स
+[2025-04-06T19:39:45.978+0000] {tmdb_pipeline.py:2003} INFO - Película ya existe: Puri for Rent
+[2025-04-06T19:39:45.978+0000] {tmdb_pipeline.py:2003} INFO - Película ya existe: Flow, un mundo que salvar
+[2025-04-06T19:39:45.979+0000] {tmdb_pipeline.py:2003} INFO - Película ya existe: La venganza de Cenicienta
+[2025-04-06T19:39:45.979+0000] {tmdb_pipeline.py:2003} INFO - Película ya existe: Estado eléctrico
+[2025-04-06T19:39:45.980+0000] {tmdb_pipeline.py:2003} INFO - Película ya existe: Robot salvaje
+[2025-04-06T19:39:45.980+0000] {tmdb_pipeline.py:2003} INFO - Película ya existe: Deadpool y Lobezno
+[2025-04-06T19:39:45.981+0000] {tmdb_pipeline.py:2003} INFO - Película ya existe: Gru 4. Mi villano favorito
+[2025-04-06T19:39:45.981+0000] {tmdb_pipeline.py:2003} INFO - Película ya existe: Frogman
+[2025-04-06T19:39:45.982+0000] {tmdb_pipeline.py:2003} INFO - Película ya existe: Memorias de un caracol
+[2025-04-06T19:39:45.982+0000] {tmdb_pipeline.py:2003} INFO - Película ya existe: Dark Match
+[2025-04-06T19:39:45.983+0000] {tmdb_pipeline.py:2003} INFO - Película ya existe: Solo Leveling: ReAwakening
+[2025-04-06T19:39:45.984+0000] {tmdb_pipeline.py:2003} INFO - Película ya existe: El último disparo
+[2025-04-06T19:39:45.985+0000] {tmdb_pipeline.py:2003} INFO - Película ya existe: xXx
+[2025-04-06T19:39:45.985+0000] {tmdb_pipeline.py:2003} INFO - Película ya existe: Panda Plan
+[2025-04-06T19:39:45.986+0000] {tmdb_pipeline.py:2003} INFO - Película ya existe: Culpa mía
+[2025-04-06T19:39:45.987+0000] {tmdb_pipeline.py:2003} INFO - Película ya existe: Breathing In
+[2025-04-06T19:39:45.987+0000] {tmdb_pipeline.py:2003} INFO - Película ya existe: Anora
+[2025-04-06T19:39:45.988+0000] {tmdb_pipeline.py:2150} INFO - Total de películas en la base de datos después de la inserción: 57
+[2025-04-06T19:39:45.988+0000] {tmdb_pipeline.py:2151} INFO - Insertadas 0 nuevas películas en esta ejecución, con 0 errores
+[2025-04-06T19:39:45.988+0000] {tmdb_pipeline.py:2157} INFO - Datos cargados correctamente en PostgreSQL
+[2025-04-06T19:39:45.989+0000] {python.py:237} INFO - Done. Returned value was: 0
+[2025-04-06T19:39:45.989+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2025-04-06T19:39:46.205+0000] {taskinstance.py:1205} INFO - Marking task as SUCCESS. dag_id=tmdb_pipeline_optimized, task_id=load_to_postgres, execution_date=20250406T193846, start_date=20250406T193945, end_date=20250406T193946
+[2025-04-06T19:39:46.242+0000] {local_task_job_runner.py:240} INFO - Task exited with return code 0
+[2025-04-06T19:39:46.271+0000] {taskinstance.py:3482} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2025-04-06T19:39:46.273+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

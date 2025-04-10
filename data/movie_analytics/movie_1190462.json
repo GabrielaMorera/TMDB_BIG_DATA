@@ -1,0 +1,51 @@
+{
+    "adult": false,
+    "backdrop_path": "/qgIloYWwLdDBOVeoPUQj6sHkg5s.jpg",
+    "genre_ids": [
+        27,
+        53,
+        18
+    ],
+    "id": 1190462,
+    "original_language": "en",
+    "original_title": "Breathing In",
+    "overview": "1901, Sudáfrica. A medida que avanza la Segunda Guerra Anglo-Bóer, un general herido busca refugio en la pequeña casa de una mujer y su pequeña hija. A medida que el hombre herido se instala, comienza a notar que algo anda mal con las dos mujeres, particularmente con la hija, y en poco tiempo, aprenderá la verdadera razón por la que lo han invitado y por cómo han sobrevivido solos durante tanto tiempo.",
+    "popularity": 110.4009,
+    "poster_path": "/yy2dmnBlPhx21GUMUJUPxA9QUFp.jpg",
+    "release_date": "2023-10-18",
+    "title": "Breathing In",
+    "video": false,
+    "vote_average": 4.9,
+    "vote_count": 10,
+    "budget": 0,
+    "revenue": 0,
+    "runtime": 105,
+    "genres": [
+        "Terror",
+        "Suspense",
+        "Drama"
+    ],
+    "production_companies": [
+        "Kaapland Films"
+    ],
+    "directors": [
+        "Jaco Bouwer"
+    ],
+    "cast": [
+        "Michele Burgers",
+        "Sven Ruygrok",
+        "Jamie-Lee Money",
+        "Lionel Newton"
+    ],
+    "keywords": [],
+    "video_count": 0,
+    "similar_count": 0,
+    "roi": 0,
+    "popularity_category": "Muy Alta",
+    "rating_category": "Regular",
+    "genres_str": "Terror,Suspense,Drama",
+    "directors_str": "Jaco Bouwer",
+    "cast_str": "Michele Burgers,Sven Ruygrok,Jamie-Lee Money,Lionel Newton",
+    "companies_str": "Kaapland Films",
+    "keywords_str": ""
+}

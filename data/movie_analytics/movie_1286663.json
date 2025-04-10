@@ -1,0 +1,55 @@
+{
+    "adult": false,
+    "backdrop_path": "/AflLdFIPKGQFVWhDSyedLo6aAR6.jpg",
+    "genre_ids": [
+        27
+    ],
+    "id": 1286663,
+    "original_language": "en",
+    "original_title": "Control Freak",
+    "overview": "Después de que una conferenciante motivacional contraiga una misteriosa infección procedente de su tierra natal, intentará desesperadamente detener el tortuoso control de la criatura parasitaria sobre su mente y su cuerpo.",
+    "popularity": 35.7068,
+    "poster_path": "/kmQb07CrOddVGV0Q73aeU4e8I18.jpg",
+    "release_date": "2025-03-13",
+    "title": "Control Freak",
+    "video": false,
+    "vote_average": 5.6,
+    "vote_count": 41,
+    "budget": 0,
+    "revenue": 0,
+    "runtime": 110,
+    "genres": [
+        "Terror"
+    ],
+    "production_companies": [
+        "WorthenBrooks"
+    ],
+    "directors": [
+        "Shal Ngo"
+    ],
+    "cast": [
+        "Kelly Marie Tran",
+        "Miles Robbins",
+        "Kieu Chinh",
+        "Toan Le",
+        "Callie Johnson",
+        "Sabrina Davi",
+        "Stanley White Jr.",
+        "Phu Quoc",
+        "Scott Takeda",
+        "Samantha Coppola"
+    ],
+    "keywords": [
+        "parasite"
+    ],
+    "video_count": 0,
+    "similar_count": 20,
+    "roi": 0,
+    "popularity_category": "Muy Alta",
+    "rating_category": "Regular",
+    "genres_str": "Terror",
+    "directors_str": "Shal Ngo",
+    "cast_str": "Kelly Marie Tran,Miles Robbins,Kieu Chinh,Toan Le,Callie Johnson,Sabrina Davi,Stanley White Jr.,Phu Quoc,Scott Takeda,Samantha Coppola",
+    "companies_str": "WorthenBrooks",
+    "keywords_str": "parasite"
+}

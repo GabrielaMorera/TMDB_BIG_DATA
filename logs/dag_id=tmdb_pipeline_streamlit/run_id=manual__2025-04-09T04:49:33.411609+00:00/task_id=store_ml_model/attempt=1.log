@@ -1,0 +1,23 @@
+[2025-04-09T04:53:05.770+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2025-04-09T04:53:05.793+0000] {taskinstance.py:2073} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: tmdb_pipeline_streamlit.store_ml_model manual__2025-04-09T04:49:33.411609+00:00 [queued]>
+[2025-04-09T04:53:05.803+0000] {taskinstance.py:2073} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: tmdb_pipeline_streamlit.store_ml_model manual__2025-04-09T04:49:33.411609+00:00 [queued]>
+[2025-04-09T04:53:05.803+0000] {taskinstance.py:2303} INFO - Starting attempt 1 of 2
+[2025-04-09T04:53:05.817+0000] {taskinstance.py:2327} INFO - Executing <Task(PythonOperator): store_ml_model> on 2025-04-09 04:49:33.411609+00:00
+[2025-04-09T04:53:05.829+0000] {standard_task_runner.py:63} INFO - Started process 496 to run task
+[2025-04-09T04:53:05.833+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'tmdb_pipeline_streamlit', 'store_ml_model', 'manual__2025-04-09T04:49:33.411609+00:00', '--job-id', '959', '--raw', '--subdir', 'DAGS_FOLDER/tmdb_pipeline.py', '--cfg-path', '/tmp/tmp81vbc3s_']
+[2025-04-09T04:53:05.838+0000] {standard_task_runner.py:91} INFO - Job 959: Subtask store_ml_model
+[2025-04-09T04:53:05.892+0000] {task_command.py:426} INFO - Running <TaskInstance: tmdb_pipeline_streamlit.store_ml_model manual__2025-04-09T04:49:33.411609+00:00 [running]> on host 74a727a75474
+[2025-04-09T04:53:05.988+0000] {taskinstance.py:2644} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='tmdb_pipeline_streamlit' AIRFLOW_CTX_TASK_ID='store_ml_model' AIRFLOW_CTX_EXECUTION_DATE='2025-04-09T04:49:33.411609+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-04-09T04:49:33.411609+00:00'
+[2025-04-09T04:53:05.989+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2025-04-09T04:53:06.018+0000] {tmdb_pipeline.py:177} INFO - Removed previous file: /opt/***/data/latest_xgboost_model/model_final.pkl
+[2025-04-09T04:53:06.019+0000] {tmdb_pipeline.py:177} INFO - Removed previous file: /opt/***/data/latest_xgboost_model/metrics.json
+[2025-04-09T04:53:06.020+0000] {tmdb_pipeline.py:177} INFO - Removed previous file: /opt/***/data/latest_xgboost_model/feature_importance.csv
+[2025-04-09T04:53:06.021+0000] {tmdb_pipeline.py:177} INFO - Removed previous file: /opt/***/data/latest_xgboost_model/model.pkl
+[2025-04-09T04:53:06.027+0000] {tmdb_pipeline.py:184} INFO - Latest model copied to: /opt/***/data/latest_xgboost_model/model.pkl
+[2025-04-09T04:53:06.029+0000] {tmdb_pipeline.py:191} INFO - Model location file created: /opt/***/data/model_location.txt
+[2025-04-09T04:53:06.029+0000] {python.py:237} INFO - Done. Returned value was: /opt/***/data/latest_xgboost_model
+[2025-04-09T04:53:06.030+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2025-04-09T04:53:06.052+0000] {taskinstance.py:1205} INFO - Marking task as SUCCESS. dag_id=tmdb_pipeline_streamlit, task_id=store_ml_model, execution_date=20250409T044933, start_date=20250409T045305, end_date=20250409T045306
+[2025-04-09T04:53:06.096+0000] {local_task_job_runner.py:240} INFO - Task exited with return code 0
+[2025-04-09T04:53:06.124+0000] {taskinstance.py:3482} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2025-04-09T04:53:06.126+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

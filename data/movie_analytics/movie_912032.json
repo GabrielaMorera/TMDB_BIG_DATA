@@ -1,0 +1,58 @@
+{
+    "adult": false,
+    "backdrop_path": "/jheQytrDFQGlXtnwWyHPXbP3swS.jpg",
+    "genre_ids": [
+        27,
+        53,
+        878
+    ],
+    "id": 912032,
+    "original_language": "es",
+    "original_title": "Mar.IA",
+    "overview": "Alina es la sonidista de una película erótica. Cuando la protagonista de su film muere en el set, y los productores deciden no llamar a la policía, se desencadenaran una serie de siniestros eventos que pondrán en peligro la vida de todos.",
+    "popularity": 51.9169,
+    "poster_path": "/cGkYqV8Z6hagqpSYaBB3qPsYffi.jpg",
+    "release_date": "2024-06-13",
+    "title": "Mar.IA",
+    "video": false,
+    "vote_average": 0.0,
+    "vote_count": 0,
+    "budget": 0,
+    "revenue": 0,
+    "runtime": 81,
+    "genres": [
+        "Terror",
+        "Suspense",
+        "Ciencia ficción"
+    ],
+    "production_companies": [],
+    "directors": [
+        "Gabriel Grieco",
+        "Nicanor Loreti"
+    ],
+    "cast": [
+        "Malena Sánchez",
+        "Sofía Gala Castiglione",
+        "Juan Palomino",
+        "Gabriel Grieco",
+        "Demián Salomón",
+        "Ezequiel de Almeida",
+        "William Prociuk",
+        "Daria Panchenko",
+        "Sergio Boris",
+        "Ezequiel Rodríguez"
+    ],
+    "keywords": [
+        "argentina"
+    ],
+    "video_count": 0,
+    "similar_count": 20,
+    "roi": 0,
+    "popularity_category": "Muy Alta",
+    "rating_category": "Mala",
+    "genres_str": "Terror,Suspense,Ciencia ficción",
+    "directors_str": "Gabriel Grieco,Nicanor Loreti",
+    "cast_str": "Malena Sánchez,Sofía Gala Castiglione,Juan Palomino,Gabriel Grieco,Demián Salomón,Ezequiel de Almeida,William Prociuk,Daria Panchenko,Sergio Boris,Ezequiel Rodríguez",
+    "companies_str": "",
+    "keywords_str": "argentina"
+}

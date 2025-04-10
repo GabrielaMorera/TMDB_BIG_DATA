@@ -1,0 +1,70 @@
+{
+    "adult": false,
+    "backdrop_path": "/99XoA625Gl9Q5tBKGX1nf2g11yJ.jpg",
+    "genre_ids": [
+        27,
+        14
+    ],
+    "id": 1139937,
+    "original_language": "en",
+    "original_title": "Frogman",
+    "overview": "",
+    "popularity": 55.2223,
+    "poster_path": "/wFCM4SKsBQIpKXhcCGgkVf7DK2F.jpg",
+    "release_date": "2024-09-26",
+    "title": "Frogman",
+    "video": false,
+    "vote_average": 5.0,
+    "vote_count": 10,
+    "budget": 0,
+    "revenue": 0,
+    "runtime": 81,
+    "genres": [
+        "Terror",
+        "Fantasía"
+    ],
+    "production_companies": [
+        "Feral Child Films",
+        "Rotting Press",
+        "Shock Treatment Productions"
+    ],
+    "directors": [
+        "Anthony Cousins"
+    ],
+    "cast": [
+        "Nathan Tymoshuk",
+        "Chelsey Grant",
+        "Benny Barrett",
+        "Toussaint Morrison",
+        "Ali Daniels",
+        "Chris Canfield",
+        "Brandon Santiago",
+        "Michael Paul Levin",
+        "Jack Neveaux",
+        "Chari Eckmann"
+    ],
+    "keywords": [
+        "monster",
+        "cult",
+        "based on true story",
+        "creature",
+        "creature feature",
+        "fake documentary",
+        "found footage",
+        "documentary filmmaking",
+        "cryptid",
+        "frog",
+        "filmmaker",
+        "horror"
+    ],
+    "video_count": 0,
+    "similar_count": 20,
+    "roi": 0,
+    "popularity_category": "Muy Alta",
+    "rating_category": "Regular",
+    "genres_str": "Terror,Fantasía",
+    "directors_str": "Anthony Cousins",
+    "cast_str": "Nathan Tymoshuk,Chelsey Grant,Benny Barrett,Toussaint Morrison,Ali Daniels,Chris Canfield,Brandon Santiago,Michael Paul Levin,Jack Neveaux,Chari Eckmann",
+    "companies_str": "Feral Child Films,Rotting Press,Shock Treatment Productions",
+    "keywords_str": "monster,cult,based on true story,creature,creature feature,fake documentary,found footage,documentary filmmaking,cryptid,frog,filmmaker,horror"
+}

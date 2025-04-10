@@ -1,0 +1,2 @@
+id,title,release_date,popularity,vote_average,vote_count,budget,revenue,runtime,genre,main_genre,genres_str,director,directors_str,cast_str,companies_str,roi,popularity_category,rating_category,popularity_level,rating_level,is_profitable,release_year,budget_million,revenue_million
+1,Película de Ejemplo (Error),2023-01-01,10.0,5.0,100,1000000,2000000,120,Drama,Drama,Drama,Director Ejemplo,Director Ejemplo,"Actor 1, Actor 2",Estudio Ejemplo,1.0,Media,Regular,Media,Regular,True,2023,1.0,2.0

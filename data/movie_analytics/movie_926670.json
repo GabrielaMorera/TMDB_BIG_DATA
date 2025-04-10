@@ -1,0 +1,64 @@
+{
+    "adult": false,
+    "backdrop_path": "/x8Kdi1OJbewkeGuijcSmUWrYyk2.jpg",
+    "genre_ids": [
+        28,
+        35,
+        10751,
+        878
+    ],
+    "id": 926670,
+    "original_language": "en",
+    "original_title": "Henry Danger: The Movie",
+    "overview": "Henry Hart se convierte en un héroe local en Dystopia después de dejar atrás Swellview. Cuando las trampas de la fama comienzan a pasar factura, se produce un giro con la presentación de Missy, una superfan que pone su mundo patas arriba.",
+    "popularity": 46.3345,
+    "poster_path": "/dTHEq2PIRAIq4COayxraiGiaajX.jpg",
+    "release_date": "2025-01-17",
+    "title": "Henry Danger: La película",
+    "video": false,
+    "vote_average": 7.763,
+    "vote_count": 192,
+    "budget": 0,
+    "revenue": 0,
+    "runtime": 86,
+    "genres": [
+        "Acción",
+        "Comedia",
+        "Familia",
+        "Ciencia ficción"
+    ],
+    "production_companies": [
+        "Yes, Yes Coffee.",
+        "Nickelodeon Productions"
+    ],
+    "directors": [
+        "Joe Menendez"
+    ],
+    "cast": [
+        "Jace Norman",
+        "Sean Ryan Fox",
+        "Ella Anderson",
+        "Michael D. Cohen",
+        "Frankie Grande",
+        "Glee Dango",
+        "Andre Tricoteux",
+        "Cooper Barnes",
+        "Eric Mazimpaka",
+        "Rachel Drance"
+    ],
+    "keywords": [
+        "superhero",
+        "supervillain",
+        "based on tv series"
+    ],
+    "video_count": 0,
+    "similar_count": 20,
+    "roi": 0,
+    "popularity_category": "Muy Alta",
+    "rating_category": "Buena",
+    "genres_str": "Acción,Comedia,Familia,Ciencia ficción",
+    "directors_str": "Joe Menendez",
+    "cast_str": "Jace Norman,Sean Ryan Fox,Ella Anderson,Michael D. Cohen,Frankie Grande,Glee Dango,Andre Tricoteux,Cooper Barnes,Eric Mazimpaka,Rachel Drance",
+    "companies_str": "Yes, Yes Coffee.,Nickelodeon Productions",
+    "keywords_str": "superhero,supervillain,based on tv series"
+}

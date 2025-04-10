@@ -1,0 +1,63 @@
+{
+    "adult": false,
+    "backdrop_path": "/gxiAac3FWYJXiBmK5eGhu1OGBsD.jpg",
+    "genre_ids": [
+        18,
+        53
+    ],
+    "id": 1391385,
+    "original_language": "en",
+    "original_title": "Uppercut",
+    "overview": "",
+    "popularity": 37.5156,
+    "poster_path": "/xcXq6q0p6QEXZC1o8UIFHt3L1EE.jpg",
+    "release_date": "2025-01-23",
+    "title": "Uppercut",
+    "video": false,
+    "vote_average": 4.2,
+    "vote_count": 7,
+    "budget": 0,
+    "revenue": 0,
+    "runtime": 104,
+    "genres": [
+        "Drama",
+        "Suspense"
+    ],
+    "production_companies": [
+        "Hello Moment Productions",
+        "Goodweird Studios",
+        "Penned Pictures",
+        "It's Just Us Productions",
+        "HowRU? Entertainment",
+        "Huffman Creative",
+        "GroupM Motion Entertainment"
+    ],
+    "directors": [
+        "Torsten Rüther"
+    ],
+    "cast": [
+        "Ving Rhames",
+        "Luise Großmann",
+        "Jordan E. Cooper",
+        "Joanna Cassidy",
+        "Scott Monahan",
+        "Andrew Ibach",
+        "Lynn Favin",
+        "Jaime Wallace",
+        "Manny Ayala",
+        "Fermin Padilla III"
+    ],
+    "keywords": [
+        "boxing"
+    ],
+    "video_count": 0,
+    "similar_count": 20,
+    "roi": 0,
+    "popularity_category": "Muy Alta",
+    "rating_category": "Regular",
+    "genres_str": "Drama,Suspense",
+    "directors_str": "Torsten Rüther",
+    "cast_str": "Ving Rhames,Luise Großmann,Jordan E. Cooper,Joanna Cassidy,Scott Monahan,Andrew Ibach,Lynn Favin,Jaime Wallace,Manny Ayala,Fermin Padilla III",
+    "companies_str": "Hello Moment Productions,Goodweird Studios,Penned Pictures,It's Just Us Productions,HowRU? Entertainment,Huffman Creative,GroupM Motion Entertainment",
+    "keywords_str": "boxing"
+}

@@ -1,0 +1,60 @@
+{
+    "model_type": "XGBoost Classifier",
+    "accuracy": 0.9047619047619048,
+    "precision": 0.8571428571428571,
+    "recall": 0.8571428571428571,
+    "f1": 0.8571428571428571,
+    "feature_importance": [
+        {
+            "feature": "budget_million",
+            "importance": 0.1111111111111111
+        },
+        {
+            "feature": "runtime",
+            "importance": 0.1111111111111111
+        },
+        {
+            "feature": "main_genre",
+            "importance": 0.1111111111111111
+        },
+        {
+            "feature": "vote_average",
+            "importance": 0.1111111111111111
+        },
+        {
+            "feature": "optimal_runtime",
+            "importance": 0.1111111111111111
+        },
+        {
+            "feature": "runtime_budget_ratio",
+            "importance": 0.1111111111111111
+        },
+        {
+            "feature": "release_season",
+            "importance": 0.1111111111111111
+        },
+        {
+            "feature": "release_year",
+            "importance": 0.1111111111111111
+        },
+        {
+            "feature": "budget_category",
+            "importance": 0.1111111111111111
+        }
+    ],
+    "timestamp": "20250410_140425",
+    "samples_count": 104,
+    "features_used": [
+        "budget_million",
+        "runtime",
+        "main_genre",
+        "vote_average",
+        "optimal_runtime",
+        "runtime_budget_ratio",
+        "release_season",
+        "release_year",
+        "budget_category"
+    ],
+    "target": "high_roi (ROI >= 3)",
+    "positive_class_ratio": 0.3173076923076923
+}

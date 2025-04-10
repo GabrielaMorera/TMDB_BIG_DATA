@@ -1,0 +1,65 @@
+{
+    "adult": false,
+    "backdrop_path": "/hwlyY7LJdEFbCPaGNXiskKKmJ5X.jpg",
+    "genre_ids": [
+        28,
+        80,
+        53
+    ],
+    "id": 1126166,
+    "original_language": "en",
+    "original_title": "Flight Risk",
+    "overview": "En este claustrofóbico thriller, un piloto (Mark Wahlberg) transporta en su avioneta a una teniente general (Michelle Dockery) que custodia a un testigo (Topher Grace) que va a testificar en un juicio contra la mafia. A medida que atraviesan las montañas de Alaska, las tensiones se disparan, ya que no todo el mundo a bordo es quien parece ser. Y a 3.000 metros de altura no hay escapatoria posible.",
+    "popularity": 122.291,
+    "poster_path": "/8T6nkYb4W8BIeafmFffyfsRciTL.jpg",
+    "release_date": "2025-01-22",
+    "title": "Amenaza en el aire",
+    "video": false,
+    "vote_average": 6.135,
+    "vote_count": 579,
+    "budget": 25000000,
+    "revenue": 40420193,
+    "runtime": 91,
+    "genres": [
+        "Acción",
+        "Crimen",
+        "Suspense"
+    ],
+    "production_companies": [
+        "Davis Entertainment",
+        "Icon Productions",
+        "Hammerstone Studios",
+        "Media Capital Technologies"
+    ],
+    "directors": [
+        "Mel Gibson"
+    ],
+    "cast": [
+        "Mark Wahlberg",
+        "Michelle Dockery",
+        "Topher Grace",
+        "Leah Remini",
+        "Maaz Ali",
+        "Paul Ben-Victor",
+        "Eilise Patton",
+        "Senor Pablo",
+        "Savanah Joeckel",
+        "Mark 'Cowboy' Schotz"
+    ],
+    "keywords": [
+        "airplane",
+        "pilot",
+        "flight",
+        "airplane accident"
+    ],
+    "video_count": 0,
+    "similar_count": 20,
+    "roi": 0.61680772,
+    "popularity_category": "Muy Alta",
+    "rating_category": "Buena",
+    "genres_str": "Acción,Crimen,Suspense",
+    "directors_str": "Mel Gibson",
+    "cast_str": "Mark Wahlberg,Michelle Dockery,Topher Grace,Leah Remini,Maaz Ali,Paul Ben-Victor,Eilise Patton,Senor Pablo,Savanah Joeckel,Mark 'Cowboy' Schotz",
+    "companies_str": "Davis Entertainment,Icon Productions,Hammerstone Studios,Media Capital Technologies",
+    "keywords_str": "airplane,pilot,flight,airplane accident"
+}

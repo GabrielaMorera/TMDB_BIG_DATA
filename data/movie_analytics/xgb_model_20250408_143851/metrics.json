@@ -1,0 +1,37 @@
+{
+    "model_type": "XGBoost",
+    "r2": -0.14571097700305757,
+    "mse": 1939.2838386861902,
+    "mae": 34.12876455535716,
+    "feature_importance": [
+        {
+            "feature": "vote_average",
+            "importance": 0.3859843909740448
+        },
+        {
+            "feature": "vote_count",
+            "importance": 0.19024574756622314
+        },
+        {
+            "feature": "release_year",
+            "importance": 0.16464439034461975
+        },
+        {
+            "feature": "runtime",
+            "importance": 0.11657227575778961
+        },
+        {
+            "feature": "revenue_million",
+            "importance": 0.07806074619293213
+        },
+        {
+            "feature": "budget_million",
+            "importance": 0.06449247151613235
+        },
+        {
+            "feature": "main_genre_Unknown",
+            "importance": 0.0
+        }
+    ],
+    "timestamp": "20250408_143851"
+}

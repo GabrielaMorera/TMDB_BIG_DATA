@@ -1,0 +1,62 @@
+[2025-04-06T19:14:53.758+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2025-04-06T19:14:53.778+0000] {taskinstance.py:2073} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: tmdb_pipeline_optimized.generate_visualizations manual__2025-04-06T19:11:45.394411+00:00 [queued]>
+[2025-04-06T19:14:53.786+0000] {taskinstance.py:2073} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: tmdb_pipeline_optimized.generate_visualizations manual__2025-04-06T19:11:45.394411+00:00 [queued]>
+[2025-04-06T19:14:53.786+0000] {taskinstance.py:2303} INFO - Starting attempt 2 of 2
+[2025-04-06T19:14:53.799+0000] {taskinstance.py:2327} INFO - Executing <Task(PythonOperator): generate_visualizations> on 2025-04-06 19:11:45.394411+00:00
+[2025-04-06T19:14:53.819+0000] {warnings.py:110} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:61: DeprecationWarning: This process (pid=422) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2025-04-06T19:14:53.821+0000] {standard_task_runner.py:63} INFO - Started process 439 to run task
+[2025-04-06T19:14:53.821+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'tmdb_pipeline_optimized', 'generate_visualizations', 'manual__2025-04-06T19:11:45.394411+00:00', '--job-id', '325', '--raw', '--subdir', 'DAGS_FOLDER/tmdb_pipeline.py', '--cfg-path', '/tmp/tmpu820h0su']
+[2025-04-06T19:14:53.824+0000] {standard_task_runner.py:91} INFO - Job 325: Subtask generate_visualizations
+[2025-04-06T19:14:53.869+0000] {task_command.py:426} INFO - Running <TaskInstance: tmdb_pipeline_optimized.generate_visualizations manual__2025-04-06T19:11:45.394411+00:00 [running]> on host 58862a20d0b3
+[2025-04-06T19:14:53.971+0000] {taskinstance.py:2644} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='gabriela' AIRFLOW_CTX_DAG_ID='tmdb_pipeline_optimized' AIRFLOW_CTX_TASK_ID='generate_visualizations' AIRFLOW_CTX_EXECUTION_DATE='2025-04-06T19:11:45.394411+00:00' AIRFLOW_CTX_TRY_NUMBER='2' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-04-06T19:11:45.394411+00:00'
+[2025-04-06T19:14:53.972+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2025-04-06T19:14:54.760+0000] {tmdb_pipeline.py:2299} ERROR - Error al generar visualizaciones: connection to server at "movie_postgres" (172.19.0.5), port 5433 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+
+[2025-04-06T19:14:54.764+0000] {tmdb_pipeline.py:2300} ERROR - Traceback (most recent call last):
+  File "/opt/***/dags/tmdb_pipeline.py", line 2183, in generate_visualizations
+    conn = psycopg2.connect(
+           ^^^^^^^^^^^^^^^^^
+  File "/home/***/.local/lib/python3.12/site-packages/psycopg2/__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+psycopg2.OperationalError: connection to server at "movie_postgres" (172.19.0.5), port 5433 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+
+
+[2025-04-06T19:14:54.766+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2025-04-06T19:14:54.770+0000] {taskinstance.py:2890} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 465, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 432, in _execute_callable
+    return execute_callable(context=context, **execute_callable_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/baseoperator.py", line 400, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/operators/python.py", line 235, in execute
+    return_value = self.execute_callable()
+                   ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/operators/python.py", line 252, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/airflow/dags/tmdb_pipeline.py", line 2183, in generate_visualizations
+    conn = psycopg2.connect(
+           ^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/psycopg2/__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+psycopg2.OperationalError: connection to server at "movie_postgres" (172.19.0.5), port 5433 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+
+[2025-04-06T19:14:54.786+0000] {taskinstance.py:1205} INFO - Marking task as FAILED. dag_id=tmdb_pipeline_optimized, task_id=generate_visualizations, execution_date=20250406T191145, start_date=20250406T191453, end_date=20250406T191454
+[2025-04-06T19:14:54.804+0000] {standard_task_runner.py:110} ERROR - Failed to execute job 325 for task generate_visualizations (connection to server at "movie_postgres" (172.19.0.5), port 5433 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+; 439)
+[2025-04-06T19:14:54.867+0000] {local_task_job_runner.py:240} INFO - Task exited with return code 1
+[2025-04-06T19:14:54.891+0000] {taskinstance.py:3482} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2025-04-06T19:14:54.895+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

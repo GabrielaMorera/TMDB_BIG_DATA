@@ -1,0 +1,72 @@
+{
+    "adult": false,
+    "backdrop_path": "/hjm1i9ZyueTaw7xCcpJmjKpb8Sv.jpg",
+    "genre_ids": [
+        16,
+        36,
+        28,
+        18,
+        14,
+        10749
+    ],
+    "id": 483456,
+    "original_language": "ja",
+    "original_title": "PEACE MAKER 鐵 前篇 想道~オモウミチ~",
+    "overview": "",
+    "popularity": 56.9247,
+    "poster_path": "/qg3aU4yELluvHmvmL7V7r6HACf4.jpg",
+    "release_date": "2018-06-02",
+    "title": "Peace Maker Kurogane Movie 1: Omou Michi",
+    "video": false,
+    "vote_average": 5.5,
+    "vote_count": 2,
+    "budget": 0,
+    "revenue": 0,
+    "runtime": 109,
+    "genres": [
+        "Animación",
+        "Historia",
+        "Acción",
+        "Drama",
+        "Fantasía",
+        "Romance"
+    ],
+    "production_companies": [
+        "White Fox",
+        "Frontier Works",
+        "KADOKAWA",
+        "Hakuhodo DY Music & Pictures",
+        "Bandai Namco Arts",
+        "AT-X",
+        "Sony Music Communications",
+        "Adores",
+        "Contents Seed",
+        "GYAO"
+    ],
+    "directors": [
+        "木宮茂"
+    ],
+    "cast": [
+        "中田譲治",
+        "Yūji Ueda",
+        "Mitsuki Saiga",
+        "Takahiro Sakurai",
+        "Yuki Kaji",
+        "Shinnosuke Tachibana",
+        "Takaya Hashi",
+        "Kappei Yamaguchi",
+        "Takashi Matsuyama",
+        "Mikako Takahashi"
+    ],
+    "keywords": [],
+    "video_count": 0,
+    "similar_count": 0,
+    "roi": 0,
+    "popularity_category": "Muy Alta",
+    "rating_category": "Regular",
+    "genres_str": "Animación,Historia,Acción,Drama,Fantasía,Romance",
+    "directors_str": "木宮茂",
+    "cast_str": "中田譲治,Yūji Ueda,Mitsuki Saiga,Takahiro Sakurai,Yuki Kaji,Shinnosuke Tachibana,Takaya Hashi,Kappei Yamaguchi,Takashi Matsuyama,Mikako Takahashi",
+    "companies_str": "White Fox,Frontier Works,KADOKAWA,Hakuhodo DY Music & Pictures,Bandai Namco Arts,AT-X,Sony Music Communications,Adores,Contents Seed,GYAO",
+    "keywords_str": ""
+}

@@ -1,0 +1,24 @@
+[2025-03-28T19:59:40.669+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2025-03-28T19:59:40.774+0000] {taskinstance.py:2073} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: tmdb_movie_pipeline.start_consumer manual__2025-03-28T19:57:02.578006+00:00 [queued]>
+[2025-03-28T19:59:40.803+0000] {taskinstance.py:2073} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: tmdb_movie_pipeline.start_consumer manual__2025-03-28T19:57:02.578006+00:00 [queued]>
+[2025-03-28T19:59:40.804+0000] {taskinstance.py:2303} INFO - Starting attempt 1 of 4
+[2025-03-28T19:59:40.877+0000] {taskinstance.py:2327} INFO - Executing <Task(PythonOperator): start_consumer> on 2025-03-28 19:57:02.578006+00:00
+[2025-03-28T19:59:41.289+0000] {warnings.py:110} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:61: DeprecationWarning: This process (pid=271) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2025-03-28T19:59:41.310+0000] {standard_task_runner.py:63} INFO - Started process 272 to run task
+[2025-03-28T19:59:41.319+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'tmdb_movie_pipeline', 'start_consumer', 'manual__2025-03-28T19:57:02.578006+00:00', '--job-id', '9', '--raw', '--subdir', 'DAGS_FOLDER/tmdb_pipeline_dag.py', '--cfg-path', '/tmp/tmpmf64dti6']
+[2025-03-28T19:59:41.370+0000] {standard_task_runner.py:91} INFO - Job 9: Subtask start_consumer
+[2025-03-28T19:59:41.747+0000] {task_command.py:426} INFO - Running <TaskInstance: tmdb_movie_pipeline.start_consumer manual__2025-03-28T19:57:02.578006+00:00 [running]> on host a98be7556e4b
+[2025-03-28T19:59:42.156+0000] {taskinstance.py:2644} INFO - Exporting env vars: AIRFLOW_CTX_DAG_EMAIL='moreragabriela1@gmail.com' AIRFLOW_CTX_DAG_OWNER='gabriela' AIRFLOW_CTX_DAG_ID='tmdb_movie_pipeline' AIRFLOW_CTX_TASK_ID='start_consumer' AIRFLOW_CTX_EXECUTION_DATE='2025-03-28T19:57:02.578006+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-03-28T19:57:02.578006+00:00'
+[2025-03-28T19:59:42.159+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2025-03-28T19:59:43.305+0000] {logging_mixin.py:188} INFO - Salida del consumidor:
+[2025-03-28T19:59:43.306+0000] {logging_mixin.py:188} INFO - Errores del consumidor:
+[2025-03-28T19:59:43.308+0000] {logging_mixin.py:188} INFO - /home/***/.local/bin/python: can't open file '/Users/mariagabrielamoreramurcia/Desktop/1er semestre MINE/Big Data/Trabajo_Final/data/consumer.py': [Errno 2] No such file or directory
+[2025-03-28T19:59:43.310+0000] {logging_mixin.py:188} INFO - El consumidor terminó con código 2, pero se considera exitoso para continuar el pipeline.
+[2025-03-28T19:59:43.310+0000] {python.py:237} INFO - Done. Returned value was: 0
+[2025-03-28T19:59:43.311+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2025-03-28T19:59:43.343+0000] {taskinstance.py:1205} INFO - Marking task as SUCCESS. dag_id=tmdb_movie_pipeline, task_id=start_consumer, execution_date=20250328T195702, start_date=20250328T195940, end_date=20250328T195943
+[2025-03-28T19:59:43.396+0000] {local_task_job_runner.py:240} INFO - Task exited with return code 0
+[2025-03-28T19:59:43.436+0000] {taskinstance.py:3482} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2025-03-28T19:59:43.438+0000] {local_task_job_runner.py:222} INFO - ::endgroup::
