@@ -13,3 +13,4 @@ plotly
 streamlit
 urllib3
 sqlalchemy
+WordCloud
