@@ -1,0 +1,76 @@
+[2025-04-12T14:47:19.596+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2025-04-12T14:47:19.617+0000] {taskinstance.py:2073} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: tmdb_pipeline_streamlit.process_kafka_data scheduled__2025-04-12T00:00:00+00:00 [queued]>
+[2025-04-12T14:47:19.624+0000] {taskinstance.py:2073} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: tmdb_pipeline_streamlit.process_kafka_data scheduled__2025-04-12T00:00:00+00:00 [queued]>
+[2025-04-12T14:47:19.625+0000] {taskinstance.py:2303} INFO - Starting attempt 1 of 2
+[2025-04-12T14:47:19.636+0000] {taskinstance.py:2327} INFO - Executing <Task(PythonOperator): process_kafka_data> on 2025-04-12 00:00:00+00:00
+[2025-04-12T14:47:19.648+0000] {standard_task_runner.py:63} INFO - Started process 10952 to run task
+[2025-04-12T14:47:19.650+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'tmdb_pipeline_streamlit', 'process_kafka_data', 'scheduled__2025-04-12T00:00:00+00:00', '--job-id', '1120', '--raw', '--subdir', 'DAGS_FOLDER/tmdb_pipeline.py', '--cfg-path', '/tmp/tmppdc6op7o']
+[2025-04-12T14:47:19.653+0000] {standard_task_runner.py:91} INFO - Job 1120: Subtask process_kafka_data
+[2025-04-12T14:47:19.703+0000] {task_command.py:426} INFO - Running <TaskInstance: tmdb_pipeline_streamlit.process_kafka_data scheduled__2025-04-12T00:00:00+00:00 [running]> on host d6f276a13019
+[2025-04-12T14:47:19.804+0000] {taskinstance.py:2644} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='tmdb_pipeline_streamlit' AIRFLOW_CTX_TASK_ID='process_kafka_data' AIRFLOW_CTX_EXECUTION_DATE='2025-04-12T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2025-04-12T00:00:00+00:00'
+[2025-04-12T14:47:19.806+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2025-04-12T14:47:19.983+0000] {conn.py:395} INFO - <BrokerConnection client_id=kafka-python-2.1.5, node_id=bootstrap-0 host=kafka:9093 <connecting> [IPv4 ('172.19.0.6', 9093)]>: connecting to kafka:9093 [('172.19.0.6', 9093) IPv4]
+[2025-04-12T14:47:19.990+0000] {conn.py:615} INFO - <BrokerConnection client_id=kafka-python-2.1.5, node_id=bootstrap-0 host=kafka:9093 <checking_api_versions_recv> [IPv4 ('172.19.0.6', 9093)]>: Broker version identified as 2.6
+[2025-04-12T14:47:19.991+0000] {conn.py:456} INFO - <BrokerConnection client_id=kafka-python-2.1.5, node_id=bootstrap-0 host=kafka:9093 <connected> [IPv4 ('172.19.0.6', 9093)]>: Connection complete.
+[2025-04-12T14:47:19.992+0000] {subscription_state.py:182} INFO - Updating subscribed topics to: ('tmdb_data',)
+[2025-04-12T14:47:19.993+0000] {tmdb_pipeline.py:645} INFO - Consumidor Kafka conectado a kafka:9093, tema tmdb_data
+[2025-04-12T14:47:19.996+0000] {conn.py:395} INFO - <BrokerConnection client_id=kafka-python-2.1.5, node_id=1001 host=kafka:9093 <connecting> [IPv4 ('172.19.0.6', 9093)]>: connecting to kafka:9093 [('172.19.0.6', 9093) IPv4]
+[2025-04-12T14:47:19.998+0000] {conn.py:456} INFO - <BrokerConnection client_id=kafka-python-2.1.5, node_id=1001 host=kafka:9093 <connected> [IPv4 ('172.19.0.6', 9093)]>: Connection complete.
+[2025-04-12T14:47:19.998+0000] {conn.py:936} INFO - <BrokerConnection client_id=kafka-python-2.1.5, node_id=bootstrap-0 host=kafka:9093 <connected> [IPv4 ('172.19.0.6', 9093)]>: Closing connection. 
+[2025-04-12T14:47:20.102+0000] {cluster.py:393} INFO - Group coordinator for movie_analytics_group is ('coordinator-1001', 'kafka', 9093, None)
+[2025-04-12T14:47:20.103+0000] {base.py:729} INFO - Discovered coordinator coordinator-1001 for group movie_analytics_group
+[2025-04-12T14:47:20.103+0000] {base.py:780} INFO - Starting new heartbeat thread
+[2025-04-12T14:47:20.105+0000] {consumer.py:361} INFO - Revoking previously assigned partitions () for group movie_analytics_group
+[2025-04-12T14:47:20.106+0000] {conn.py:395} INFO - <BrokerConnection client_id=kafka-python-2.1.5, node_id=coordinator-1001 host=kafka:9093 <connecting> [IPv4 ('172.19.0.6', 9093)]>: connecting to kafka:9093 [('172.19.0.6', 9093) IPv4]
+[2025-04-12T14:47:20.108+0000] {conn.py:456} INFO - <BrokerConnection client_id=kafka-python-2.1.5, node_id=coordinator-1001 host=kafka:9093 <connected> [IPv4 ('172.19.0.6', 9093)]>: Connection complete.
+[2025-04-12T14:47:20.209+0000] {base.py:489} INFO - (Re-)joining group movie_analytics_group
+[2025-04-12T14:47:20.220+0000] {base.py:552} INFO - Elected group leader -- performing partition assignments using range
+[2025-04-12T14:47:20.226+0000] {base.py:380} INFO - Successfully joined group movie_analytics_group with generation 7
+[2025-04-12T14:47:20.227+0000] {subscription_state.py:254} INFO - Updated partition assignment: [('tmdb_data', 0)]
+[2025-04-12T14:47:20.227+0000] {consumer.py:252} INFO - Setting newly assigned partitions (('tmdb_data', 0),) for group movie_analytics_group
+[2025-04-12T14:47:20.246+0000] {tmdb_pipeline.py:654} INFO - Película recibida de Kafka: Una película de Minecraft
+[2025-04-12T14:47:20.246+0000] {tmdb_pipeline.py:654} INFO - Película recibida de Kafka: Tierras perdidas
+[2025-04-12T14:47:20.247+0000] {tmdb_pipeline.py:654} INFO - Película recibida de Kafka: G20
+[2025-04-12T14:47:20.247+0000] {tmdb_pipeline.py:654} INFO - Película recibida de Kafka: Novocaine
+[2025-04-12T14:47:20.248+0000] {tmdb_pipeline.py:654} INFO - Película recibida de Kafka: देवा
+[2025-04-12T14:47:20.248+0000] {tmdb_pipeline.py:654} INFO - Película recibida de Kafka: Criminales de lujo
+[2025-04-12T14:47:20.248+0000] {tmdb_pipeline.py:654} INFO - Película recibida de Kafka: Una película de Minecraft
+[2025-04-12T14:47:20.249+0000] {tmdb_pipeline.py:654} INFO - Película recibida de Kafka: Tierras perdidas
+[2025-04-12T14:47:20.249+0000] {tmdb_pipeline.py:654} INFO - Película recibida de Kafka: G20
+[2025-04-12T14:47:20.249+0000] {tmdb_pipeline.py:654} INFO - Película recibida de Kafka: Novocaine
+[2025-04-12T14:47:20.249+0000] {tmdb_pipeline.py:654} INFO - Película recibida de Kafka: देवा
+[2025-04-12T14:47:20.250+0000] {tmdb_pipeline.py:654} INFO - Película recibida de Kafka: Scream
+[2025-04-12T14:47:20.250+0000] {tmdb_pipeline.py:654} INFO - Película recibida de Kafka: Criminales de lujo
+[2025-04-12T14:47:20.250+0000] {tmdb_pipeline.py:654} INFO - Película recibida de Kafka: El día que la Tierra explotó: Una película de los Looney Tunes
+[2025-04-12T14:47:20.250+0000] {tmdb_pipeline.py:654} INFO - Película recibida de Kafka: El último disparo
+[2025-04-12T14:47:20.251+0000] {tmdb_pipeline.py:654} INFO - Película recibida de Kafka: Capitán América: Brave New World
+[2025-04-12T14:47:20.251+0000] {tmdb_pipeline.py:654} INFO - Película recibida de Kafka: Evangelion: 3.0+1.01 Thrice Upon a Time
+[2025-04-12T14:47:20.251+0000] {tmdb_pipeline.py:654} INFO - Película recibida de Kafka: The Hard Hit
+[2025-04-12T14:47:20.252+0000] {tmdb_pipeline.py:654} INFO - Película recibida de Kafka: Relatos Fantásticos
+[2025-04-12T14:47:20.252+0000] {tmdb_pipeline.py:654} INFO - Película recibida de Kafka: Un amor contra viento y marea
+[2025-04-12T14:47:20.252+0000] {tmdb_pipeline.py:654} INFO - Película recibida de Kafka: Cleaner
+[2025-04-12T14:47:20.252+0000] {tmdb_pipeline.py:654} INFO - Película recibida de Kafka: Hereje
+[2025-04-12T14:47:20.253+0000] {tmdb_pipeline.py:654} INFO - Película recibida de Kafka: Mickey 17
+[2025-04-12T14:47:20.253+0000] {tmdb_pipeline.py:654} INFO - Película recibida de Kafka: Amenaza en el aire
+[2025-04-12T14:47:20.253+0000] {tmdb_pipeline.py:654} INFO - Película recibida de Kafka: Batman Ninja vs. Yakuza League
+[2025-04-12T14:47:20.254+0000] {tmdb_pipeline.py:654} INFO - Película recibida de Kafka: Culpa tuya
+[2025-04-12T14:47:20.254+0000] {tmdb_pipeline.py:654} INFO - Película recibida de Kafka: Culpa mía: Londres
+[2025-04-12T14:47:54.336+0000] {base.py:1051} WARNING - Heartbeat session expired, marking coordinator dead
+[2025-04-12T14:47:54.666+0000] {base.py:751} WARNING - Marking the coordinator dead (node coordinator-1001) for group movie_analytics_group: Heartbeat session expired.
+[2025-04-12T14:47:54.800+0000] {cluster.py:393} INFO - Group coordinator for movie_analytics_group is ('coordinator-1001', 'kafka', 9093, None)
+[2025-04-12T14:47:54.840+0000] {base.py:729} INFO - Discovered coordinator coordinator-1001 for group movie_analytics_group
+[2025-04-12T14:47:55.479+0000] {consumer.py:361} INFO - Revoking previously assigned partitions (('tmdb_data', 0),) for group movie_analytics_group
+[2025-04-12T14:47:55.556+0000] {base.py:489} INFO - (Re-)joining group movie_analytics_group
+[2025-04-12T14:47:55.633+0000] {base.py:552} INFO - Elected group leader -- performing partition assignments using range
+[2025-04-12T14:47:55.651+0000] {base.py:380} INFO - Successfully joined group movie_analytics_group with generation 9
+[2025-04-12T14:47:55.673+0000] {subscription_state.py:254} INFO - Updated partition assignment: [('tmdb_data', 0)]
+[2025-04-12T14:47:55.693+0000] {consumer.py:252} INFO - Setting newly assigned partitions (('tmdb_data', 0),) for group movie_analytics_group
+[2025-04-12T14:48:10.728+0000] {local_task_job_runner.py:310} WARNING - State of this instance has been externally set to upstream_failed. Terminating instance.
+[2025-04-12T14:48:10.756+0000] {local_task_job_runner.py:222} INFO - ::endgroup::
+[2025-04-12T14:48:10.784+0000] {process_utils.py:132} INFO - Sending 15 to group 10952. PIDs of all processes in the group: [10952]
+[2025-04-12T14:48:10.786+0000] {process_utils.py:87} INFO - Sending the signal 15 to group 10952
+[2025-04-12T14:48:10.788+0000] {taskinstance.py:2607} ERROR - Received SIGTERM. Terminating subprocesses.
+[2025-04-12T14:48:10.791+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2025-04-12T14:48:10.916+0000] {base.py:794} INFO - Stopping heartbeat thread
+[2025-04-12T15:05:31.414+0000] {base.py:995} WARNING - Heartbeat thread did not fully terminate during close
+[2025-04-12T15:05:31.541+0000] {process_utils.py:80} INFO - Process psutil.Process(pid=10952, status='terminated', exitcode=0, started='14:47:19') (10952) terminated with exit code 0

@@ -12,13 +12,13 @@
         "original_language": "en",
         "original_title": "A Minecraft Movie",
         "overview": "Cuatro inadaptados se encuentran luchando con problemas ordinarios cuando de repente se ven arrastrados a través de un misterioso portal al Mundo Exterior: un extraño país de las maravillas cúbico que se nutre de la imaginación. Para volver a casa, tendrán que dominar este mundo mientras se embarcan en una búsqueda mágica con un inesperado experto artesano, Steve.",
-        "popularity": 990.9442,
+        "popularity": 900.608,
         "poster_path": "/mFjtmmh4RtK9tLv1aPnUsl6st3m.jpg",
         "release_date": "2025-03-31",
         "title": "Una película de Minecraft",
         "video": false,
-        "vote_average": 6.134,
-        "vote_count": 354,
+        "vote_average": 6.0,
+        "vote_count": 404,
         "budget": 150000000,
         "revenue": 323380122,
         "runtime": 101,
@@ -49,6 +49,140 @@
     },
     {
         "adult": false,
+        "backdrop_path": "/op3qmNhvwEvyT7UFyPbIfQmKriB.jpg",
+        "genre_ids": [
+            14,
+            12,
+            28
+        ],
+        "id": 324544,
+        "original_language": "en",
+        "original_title": "In the Lost Lands",
+        "overview": "Basada en el relato de George R. R. Martin. Una reina (Amara Okereke), desesperada por encontrar la felicidad en el amor, envía a la poderosa bruja Gray Alys (Milla Jovovich) a las Tierras Perdidas, en busca de un poder mágico que permite a una persona transformarse en un hombre lobo. Con el misterioso cazador Boyce (Dave Bautista), que la apoya en la lucha contra criaturas oscuras y despiadadas, Gray deambula por un mundo inquietante y peligroso. Pero solo ella sabe que, cada deseo que se concede, tiene consecuencias inimaginables.",
+        "popularity": 739.9548,
+        "poster_path": "/sLDxndoqFWwJEq7iEdYQBzPjUDQ.jpg",
+        "release_date": "2025-02-27",
+        "title": "Tierras perdidas",
+        "video": false,
+        "vote_average": 5.7,
+        "vote_count": 75,
+        "budget": 55000000,
+        "revenue": 4755330,
+        "runtime": 102,
+        "genres": [
+            "Fantasía",
+            "Aventura",
+            "Acción"
+        ],
+        "production_companies": [
+            "Constantin Film",
+            "Spark Productions"
+        ],
+        "directors": [
+            "Paul W. S. Anderson"
+        ],
+        "cast": [
+            "Milla Jovovich",
+            "Dave Bautista",
+            "Arly Jover",
+            "Amara Okereke",
+            "Fraser James"
+        ]
+    },
+    {
+        "adult": false,
+        "backdrop_path": "/k32XKMjmXMGeydykD32jfER3BVI.jpg",
+        "genre_ids": [
+            28,
+            9648,
+            18
+        ],
+        "id": 1045938,
+        "original_language": "en",
+        "original_title": "G20",
+        "overview": "Cuando la cumbre del G20 sufre un ataque, la presidenta de EE. UU. Danielle Sutton se convierte en el objetivo número uno. Tras evitar ser capturada por los atacantes, debe derrotar al enemigo para proteger a su familia, defender a su país y poner a salvo a los líderes del mundo en esta trepidante película cargada de acción.",
+        "popularity": 671.099,
+        "poster_path": "/xihssRPgRDZ7xwIjx3xuPTnqPfU.jpg",
+        "release_date": "2025-04-09",
+        "title": "G20",
+        "video": false,
+        "vote_average": 6.328,
+        "vote_count": 58,
+        "budget": 0,
+        "revenue": 0,
+        "runtime": 110,
+        "genres": [
+            "Acción",
+            "Misterio",
+            "Drama"
+        ],
+        "production_companies": [
+            "JuVee Productions",
+            "Mad Chance",
+            "MRC",
+            "Amazon MGM Studios"
+        ],
+        "directors": [
+            "Patricia Riggen"
+        ],
+        "cast": [
+            "Viola Davis",
+            "Anthony Anderson",
+            "Ramón Rodríguez",
+            "Marsai Martin",
+            "Antony Starr"
+        ]
+    },
+    {
+        "adult": false,
+        "backdrop_path": "/bYVygxg5enGs89V5qgejbWl0Oq6.jpg",
+        "genre_ids": [
+            28,
+            35,
+            53
+        ],
+        "id": 1195506,
+        "original_language": "en",
+        "original_title": "Novocaine",
+        "overview": "Cuando la chica de sus sueños es secuestrada, Nate, un chico corriente, convierte su incapacidad para sentir dolor en una fuerza inesperada en su lucha por recuperarla.",
+        "popularity": 482.0451,
+        "poster_path": "/ljTarS50b3L08SNyWvmb2ZQTvMP.jpg",
+        "release_date": "2025-03-12",
+        "title": "Novocaine",
+        "video": false,
+        "vote_average": 6.826,
+        "vote_count": 265,
+        "budget": 18000000,
+        "revenue": 32254000,
+        "runtime": 110,
+        "genres": [
+            "Acción",
+            "Comedia",
+            "Suspense"
+        ],
+        "production_companies": [
+            "Circle of Confusion",
+            "Safehouse Pictures",
+            "Paramount Pictures",
+            "Infrared Pictures",
+            "Domain Entertainment",
+            "FilmNation Entertainment",
+            "Mediaflix"
+        ],
+        "directors": [
+            "Dan Berk",
+            "Robert Olsen"
+        ],
+        "cast": [
+            "Jack Quaid",
+            "Amber Midthunder",
+            "Ray Nicholson",
+            "Jacob Batalon",
+            "Betty Gabriel"
+        ]
+    },
+    {
+        "adult": false,
         "backdrop_path": "/lqHt4icP1GTaNBeVTxTrwTZdoAW.jpg",
         "genre_ids": [
             28,
@@ -60,13 +194,13 @@
         "original_language": "hi",
         "original_title": "देवा",
         "overview": "",
-        "popularity": 353.3204,
+        "popularity": 359.6858,
         "poster_path": "/4wKpglgZYMYpISMdThgdqS1TSQc.jpg",
         "release_date": "2025-01-31",
         "title": "देवा",
         "video": false,
-        "vote_average": 5.2,
-        "vote_count": 21,
+        "vote_average": 5.431,
+        "vote_count": 29,
         "budget": 9895000,
         "revenue": 0,
         "runtime": 155,
@@ -102,13 +236,13 @@
         "original_language": "fr",
         "original_title": "Carjackers",
         "overview": "Por el día, son invisibles: aparcacoches, recepcionistas y camareros de un hotel de lujo. Por la noche, son criminales, una banda de conductores expertos que asalta a clientes ricos en sus coches. Justo cuando planean su último golpe, la directora del hotel contrata a un sicario despiadado para detenerlos. El peligro les acecha, ¿conseguirán Nora, Zoé, Steve y Prestance dar su mayor golpe?",
-        "popularity": 297.0009,
+        "popularity": 314.1096,
         "poster_path": "/rpAbueORafYSgTk2oSc2t6ayktb.jpg",
         "release_date": "2025-03-27",
         "title": "Criminales de lujo",
         "video": false,
-        "vote_average": 6.2,
-        "vote_count": 95,
+        "vote_average": 6.178,
+        "vote_count": 101,
         "budget": 0,
         "revenue": 0,
         "runtime": 97,
@@ -142,13 +276,13 @@
         "original_language": "en",
         "original_title": "Captain America: Brave New World",
         "overview": "Tras reunirse con el recién elegido presidente de los EE. UU., Thaddeus Ross, Sam se encuentra en medio de un incidente internacional. Debe descubrir el motivo que se esconde tras un perverso complot global, antes de que su verdadero artífice enfurezca al mundo entero.",
-        "popularity": 283.1613,
+        "popularity": 300.9673,
         "poster_path": "/im71UJzBqY03swuGYVR28j0JFM2.jpg",
         "release_date": "2025-02-12",
         "title": "Capitán América: Brave New World",
         "video": false,
-        "vote_average": 6.096,
-        "vote_count": 1251,
+        "vote_average": 6.1,
+        "vote_count": 1260,
         "budget": 180000000,
         "revenue": 411409721,
         "runtime": 119,
@@ -174,6 +308,51 @@
     },
     {
         "adult": false,
+        "backdrop_path": "/fzv87rT0jlAkh5Uf9PpIlUj6Nj8.jpg",
+        "genre_ids": [
+            28,
+            53,
+            80
+        ],
+        "id": 1195585,
+        "original_language": "en",
+        "original_title": "The Hard Hit",
+        "overview": "",
+        "popularity": 306.9282,
+        "poster_path": "/cQVLFGqzQwFTesSdKsQy1no0Wf4.jpg",
+        "release_date": "2023-10-20",
+        "title": "The Hard Hit",
+        "video": false,
+        "vote_average": 6.833,
+        "vote_count": 5,
+        "budget": 0,
+        "revenue": 0,
+        "runtime": 76,
+        "genres": [
+            "Acción",
+            "Suspense",
+            "Crimen"
+        ],
+        "production_companies": [
+            "Dbuck Films",
+            "Irish Productions",
+            "Ohlsen Productions",
+            "Tc Photography"
+        ],
+        "directors": [
+            "Darien Smith",
+            "Omie Blue"
+        ],
+        "cast": [
+            "Brian Ronan Mulroy",
+            "Jamie Ohlsen",
+            "Malachi Durant",
+            "Rob LaColla Jr.",
+            "Trae Ireland"
+        ]
+    },
+    {
+        "adult": false,
         "backdrop_path": "/gsQJOfeW45KLiQeEIsom94QPQwb.jpg",
         "genre_ids": [
             28,
@@ -183,13 +362,13 @@
         "original_language": "en",
         "original_title": "Cleaner",
         "overview": "Después de que un grupo de activistas se apodere de la gala anual de una compañía energética para denunciar su corrupción, su justa causa es secuestrada por un extremista dispuesto a asesinar a las 300 personas presentes en el edificio para transmitir su mensaje anárquico. Una ex soldado convertida en limpiacristales, suspendida 50 pisos en el exterior del rascacielos londinense, es la encargada de intentar salvar a los que están atrapados dentro, incluido su hermano pequeño.",
-        "popularity": 263.1996,
+        "popularity": 296.3199,
         "poster_path": "/76Xvdqiv8ufGkerQunOpcy98oT7.jpg",
         "release_date": "2025-02-19",
         "title": "Cleaner",
         "video": false,
-        "vote_average": 6.503,
-        "vote_count": 179,
+        "vote_average": 6.548,
+        "vote_count": 189,
         "budget": 0,
         "revenue": 0,
         "runtime": 96,
@@ -214,137 +393,6 @@
     },
     {
         "adult": false,
-        "backdrop_path": "/op3qmNhvwEvyT7UFyPbIfQmKriB.jpg",
-        "genre_ids": [
-            14,
-            12,
-            28
-        ],
-        "id": 324544,
-        "original_language": "en",
-        "original_title": "In the Lost Lands",
-        "overview": "Basada en el relato de George R. R. Martin. Una reina (Amara Okereke), desesperada por encontrar la felicidad en el amor, envía a la poderosa bruja Gray Alys (Milla Jovovich) a las Tierras Perdidas, en busca de un poder mágico que permite a una persona transformarse en un hombre lobo. Con el misterioso cazador Boyce (Dave Bautista), que la apoya en la lucha contra criaturas oscuras y despiadadas, Gray deambula por un mundo inquietante y peligroso. Pero solo ella sabe que, cada deseo que se concede, tiene consecuencias inimaginables.",
-        "popularity": 534.2664,
-        "poster_path": "/sLDxndoqFWwJEq7iEdYQBzPjUDQ.jpg",
-        "release_date": "2025-02-27",
-        "title": "Tierras perdidas",
-        "video": false,
-        "vote_average": 6.1,
-        "vote_count": 49,
-        "budget": 55000000,
-        "revenue": 4755330,
-        "runtime": 102,
-        "genres": [
-            "Fantasía",
-            "Aventura",
-            "Acción"
-        ],
-        "production_companies": [
-            "Constantin Film",
-            "Spark Productions"
-        ],
-        "directors": [
-            "Paul W. S. Anderson"
-        ],
-        "cast": [
-            "Milla Jovovich",
-            "Dave Bautista",
-            "Arly Jover",
-            "Amara Okereke",
-            "Fraser James"
-        ]
-    },
-    {
-        "adult": false,
-        "backdrop_path": "/qiVrapzgrDO7c6yQTSvn0dhwsn8.jpg",
-        "genre_ids": [
-            10749,
-            18
-        ],
-        "id": 1252309,
-        "original_language": "es",
-        "original_title": "Pídeme lo que quieras",
-        "overview": "Judith Flores es una chica normal. Tiene un trabajo que le apasiona, muy buenos amigos y un padre encantador. Pero su vida cambia radicalmente cuando conoce a Eric Zimmerman, dueño de la empresa donde ella trabaja. Su relación con Eric está a punto de dinamitar su vida por completo.",
-        "popularity": 257.2234,
-        "poster_path": "/76qnVxU2rPdVvipBN3DPQH6fVYB.jpg",
-        "release_date": "2024-11-29",
-        "title": "Pídeme lo que quieras",
-        "video": false,
-        "vote_average": 5.754,
-        "vote_count": 124,
-        "budget": 0,
-        "revenue": 0,
-        "runtime": 114,
-        "genres": [
-            "Romance",
-            "Drama"
-        ],
-        "production_companies": [
-            "Versus Entertainment",
-            "LyO Media",
-            "Warner Bros. Entertainment España",
-            "4 Cats Pictures"
-        ],
-        "directors": [
-            "Lucía Alemany"
-        ],
-        "cast": [
-            "Gabriela Andrada",
-            "Mario Ermito",
-            "Celia Freijeiro",
-            "David Solans",
-            "Alba Ribas"
-        ]
-    },
-    {
-        "adult": false,
-        "backdrop_path": "/xBrx6O1RIhjtWmVthZIANuQz7Z2.jpg",
-        "genre_ids": [
-            28,
-            80,
-            53
-        ],
-        "id": 1197306,
-        "original_language": "en",
-        "original_title": "A Working Man",
-        "overview": "Levon Cade dejó atrás una condecorada carrera militar en las operaciones encubiertas para vivir una vida sencilla trabajando en la construcción. Pero cuando la hija de su jefe, que para él es como de la familia, es secuestrada por traficantes de personas, su búsqueda para traerla a casa descubre un mundo de corrupción mucho mayor de lo que jamás podría haber imaginado.",
-        "popularity": 215.8897,
-        "poster_path": "/aG50Ad3UV8cCQWpNWSHHUqgKGNB.jpg",
-        "release_date": "2025-03-26",
-        "title": "A Working Man",
-        "video": false,
-        "vote_average": 6.402,
-        "vote_count": 169,
-        "budget": 40000000,
-        "revenue": 44417000,
-        "runtime": 116,
-        "genres": [
-            "Acción",
-            "Crimen",
-            "Suspense"
-        ],
-        "production_companies": [
-            "Cedar Park Entertainment",
-            "BlockFilm",
-            "Punch Palace Productions",
-            "Balboa Productions",
-            "Black Bear Pictures",
-            "Fifth Season",
-            "CAT5"
-        ],
-        "directors": [
-            "David Ayer"
-        ],
-        "cast": [
-            "Jason Statham",
-            "David Harbour",
-            "Michael Peña",
-            "Jason Flemyng",
-            "Arianna Rivas"
-        ]
-    },
-    {
-        "adult": false,
         "backdrop_path": "/hGLywNhy1Fo1rNFHsNZsXGS69B8.jpg",
         "genre_ids": [
             878,
@@ -355,13 +403,13 @@
         "original_language": "en",
         "original_title": "Mickey 17",
         "overview": "Mickey 17, un miembro de la tripulación 'expendable' (prescindible) enviado a un planeta helado para colonizarlo, se niega a dejar que su clon de reemplazo, Mickey 18, tome su lugar... Adaptación del libro original de Edward Ashton.",
-        "popularity": 241.9858,
-        "poster_path": "/fjIHkLGIZdjKIKe252gSFt5QzVK.jpg",
+        "popularity": 233.7293,
+        "poster_path": "/3ZMGC839jsKNAweGeQDBZDmu6ka.jpg",
         "release_date": "2025-02-28",
         "title": "Mickey 17",
         "video": false,
-        "vote_average": 7.0,
-        "vote_count": 1328,
+        "vote_average": 6.951,
+        "vote_count": 1381,
         "budget": 118000000,
         "revenue": 122908117,
         "runtime": 137,
@@ -386,51 +434,6 @@
             "Steven Yeun",
             "Mark Ruffalo",
             "Toni Collette"
-        ]
-    },
-    {
-        "adult": false,
-        "backdrop_path": "/fzv87rT0jlAkh5Uf9PpIlUj6Nj8.jpg",
-        "genre_ids": [
-            28,
-            53,
-            80
-        ],
-        "id": 1195585,
-        "original_language": "en",
-        "original_title": "The Hard Hit",
-        "overview": "",
-        "popularity": 230.7625,
-        "poster_path": "/cQVLFGqzQwFTesSdKsQy1no0Wf4.jpg",
-        "release_date": "2023-10-20",
-        "title": "The Hard Hit",
-        "video": false,
-        "vote_average": 7.5,
-        "vote_count": 4,
-        "budget": 0,
-        "revenue": 0,
-        "runtime": 76,
-        "genres": [
-            "Acción",
-            "Suspense",
-            "Crimen"
-        ],
-        "production_companies": [
-            "Dbuck Films",
-            "Irish Productions",
-            "Ohlsen Productions",
-            "Tc Photography"
-        ],
-        "directors": [
-            "Omie Blue",
-            "Darien Smith"
-        ],
-        "cast": [
-            "Brian Ronan Mulroy",
-            "Jamie Ohlsen",
-            "Malachi Durant",
-            "Rob LaColla Jr.",
-            "Trae Ireland"
         ]
     }
 ]

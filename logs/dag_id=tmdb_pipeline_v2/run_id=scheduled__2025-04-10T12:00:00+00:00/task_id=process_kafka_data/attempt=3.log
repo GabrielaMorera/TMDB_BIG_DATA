@@ -1,0 +1,54 @@
+[2025-04-11T01:31:21.658+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2025-04-11T01:31:21.680+0000] {taskinstance.py:2073} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: tmdb_pipeline_v2.process_kafka_data scheduled__2025-04-10T12:00:00+00:00 [queued]>
+[2025-04-11T01:31:21.688+0000] {taskinstance.py:2073} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: tmdb_pipeline_v2.process_kafka_data scheduled__2025-04-10T12:00:00+00:00 [queued]>
+[2025-04-11T01:31:21.689+0000] {taskinstance.py:2303} INFO - Starting attempt 3 of 3
+[2025-04-11T01:31:21.702+0000] {taskinstance.py:2327} INFO - Executing <Task(PythonOperator): process_kafka_data> on 2025-04-10 12:00:00+00:00
+[2025-04-11T01:31:21.709+0000] {warnings.py:110} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:61: DeprecationWarning: This process (pid=733) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2025-04-11T01:31:21.710+0000] {standard_task_runner.py:63} INFO - Started process 735 to run task
+[2025-04-11T01:31:21.711+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'tmdb_pipeline_v2', 'process_kafka_data', 'scheduled__2025-04-10T12:00:00+00:00', '--job-id', '1063', '--raw', '--subdir', 'DAGS_FOLDER/dag_tmdb.py', '--cfg-path', '/tmp/tmpso42efqm']
+[2025-04-11T01:31:21.714+0000] {standard_task_runner.py:91} INFO - Job 1063: Subtask process_kafka_data
+[2025-04-11T01:31:21.759+0000] {task_command.py:426} INFO - Running <TaskInstance: tmdb_pipeline_v2.process_kafka_data scheduled__2025-04-10T12:00:00+00:00 [running]> on host d6f276a13019
+[2025-04-11T01:31:21.852+0000] {taskinstance.py:2644} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='gabriela' AIRFLOW_CTX_DAG_ID='tmdb_pipeline_v2' AIRFLOW_CTX_TASK_ID='process_kafka_data' AIRFLOW_CTX_EXECUTION_DATE='2025-04-10T12:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='3' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2025-04-10T12:00:00+00:00'
+[2025-04-11T01:31:21.853+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2025-04-11T01:31:21.969+0000] {dag_tmdb.py:283} INFO - Iniciando proceso de consumo de datos de Kafka
+[2025-04-11T01:31:21.971+0000] {conn.py:395} INFO - <BrokerConnection client_id=kafka-python-2.1.5, node_id=bootstrap-0 host=kafka:9093 <connecting> [IPv4 ('172.19.0.6', 9093)]>: connecting to kafka:9093 [('172.19.0.6', 9093) IPv4]
+[2025-04-11T01:31:21.975+0000] {conn.py:615} INFO - <BrokerConnection client_id=kafka-python-2.1.5, node_id=bootstrap-0 host=kafka:9093 <checking_api_versions_recv> [IPv4 ('172.19.0.6', 9093)]>: Broker version identified as 2.6
+[2025-04-11T01:31:21.975+0000] {conn.py:456} INFO - <BrokerConnection client_id=kafka-python-2.1.5, node_id=bootstrap-0 host=kafka:9093 <connected> [IPv4 ('172.19.0.6', 9093)]>: Connection complete.
+[2025-04-11T01:31:21.976+0000] {subscription_state.py:182} INFO - Updating subscribed topics to: ('tmdb_data',)
+[2025-04-11T01:31:21.977+0000] {dag_tmdb.py:295} INFO - Consumidor conectado a Kafka, esperando mensajes en 'tmdb_data'...
+[2025-04-11T01:31:21.977+0000] {dag_tmdb.py:339} INFO - Intento 1/3 de obtener mensajes
+[2025-04-11T01:31:21.981+0000] {conn.py:395} INFO - <BrokerConnection client_id=kafka-python-2.1.5, node_id=1001 host=kafka:9093 <connecting> [IPv4 ('172.19.0.6', 9093)]>: connecting to kafka:9093 [('172.19.0.6', 9093) IPv4]
+[2025-04-11T01:31:21.982+0000] {conn.py:456} INFO - <BrokerConnection client_id=kafka-python-2.1.5, node_id=1001 host=kafka:9093 <connected> [IPv4 ('172.19.0.6', 9093)]>: Connection complete.
+[2025-04-11T01:31:21.982+0000] {conn.py:936} INFO - <BrokerConnection client_id=kafka-python-2.1.5, node_id=bootstrap-0 host=kafka:9093 <connected> [IPv4 ('172.19.0.6', 9093)]>: Closing connection. 
+[2025-04-11T01:31:22.086+0000] {cluster.py:393} INFO - Group coordinator for ***_consumer_group_v2 is ('coordinator-1001', 'kafka', 9093, None)
+[2025-04-11T01:31:22.087+0000] {base.py:729} INFO - Discovered coordinator coordinator-1001 for group ***_consumer_group_v2
+[2025-04-11T01:31:22.088+0000] {base.py:780} INFO - Starting new heartbeat thread
+[2025-04-11T01:31:22.089+0000] {consumer.py:361} INFO - Revoking previously assigned partitions () for group ***_consumer_group_v2
+[2025-04-11T01:31:22.090+0000] {conn.py:395} INFO - <BrokerConnection client_id=kafka-python-2.1.5, node_id=coordinator-1001 host=kafka:9093 <connecting> [IPv4 ('172.19.0.6', 9093)]>: connecting to kafka:9093 [('172.19.0.6', 9093) IPv4]
+[2025-04-11T01:31:22.091+0000] {conn.py:456} INFO - <BrokerConnection client_id=kafka-python-2.1.5, node_id=coordinator-1001 host=kafka:9093 <connected> [IPv4 ('172.19.0.6', 9093)]>: Connection complete.
+[2025-04-11T01:31:22.192+0000] {base.py:489} INFO - (Re-)joining group ***_consumer_group_v2
+[2025-04-11T01:31:22.200+0000] {base.py:552} INFO - Elected group leader -- performing partition assignments using range
+[2025-04-11T01:31:22.204+0000] {base.py:380} INFO - Successfully joined group ***_consumer_group_v2 with generation 5
+[2025-04-11T01:31:22.205+0000] {subscription_state.py:254} INFO - Updated partition assignment: [('tmdb_data', 0)]
+[2025-04-11T01:31:22.206+0000] {consumer.py:252} INFO - Setting newly assigned partitions (('tmdb_data', 0),) for group ***_consumer_group_v2
+[2025-04-11T01:31:26.979+0000] {dag_tmdb.py:352} INFO - No se recibieron suficientes mensajes, esperando... (0 hasta ahora)
+[2025-04-11T01:31:28.981+0000] {dag_tmdb.py:339} INFO - Intento 2/3 de obtener mensajes
+[2025-04-11T01:31:33.983+0000] {dag_tmdb.py:352} INFO - No se recibieron suficientes mensajes, esperando... (0 hasta ahora)
+[2025-04-11T01:31:36.013+0000] {dag_tmdb.py:339} INFO - Intento 3/3 de obtener mensajes
+[2025-04-11T01:31:41.016+0000] {dag_tmdb.py:352} INFO - No se recibieron suficientes mensajes, esperando... (0 hasta ahora)
+[2025-04-11T01:31:43.017+0000] {dag_tmdb.py:357} WARNING - No se recibieron mensajes de Kafka. Usando datos de ejemplo.
+[2025-04-11T01:31:43.017+0000] {dag_tmdb.py:378} INFO - Procesando 1 mensajes con Pandas
+[2025-04-11T01:31:43.038+0000] {dag_tmdb.py:427} INFO - Datos procesados guardados en /opt/***/data/movie_analytics/processed_movies_v2.csv
+[2025-04-11T01:31:43.072+0000] {base.py:794} INFO - Stopping heartbeat thread
+[2025-04-11T01:31:46.074+0000] {base.py:995} WARNING - Heartbeat thread did not fully terminate during close
+[2025-04-11T01:31:46.075+0000] {base.py:823} INFO - Leaving consumer group (***_consumer_group_v2).
+[2025-04-11T01:31:46.079+0000] {conn.py:936} INFO - <BrokerConnection client_id=kafka-python-2.1.5, node_id=1001 host=kafka:9093 <connected> [IPv4 ('172.19.0.6', 9093)]>: Closing connection. 
+[2025-04-11T01:31:46.080+0000] {conn.py:936} INFO - <BrokerConnection client_id=kafka-python-2.1.5, node_id=coordinator-1001 host=kafka:9093 <connected> [IPv4 ('172.19.0.6', 9093)]>: Closing connection. 
+[2025-04-11T01:31:46.081+0000] {python.py:237} INFO - Done. Returned value was: 1
+[2025-04-11T01:31:46.081+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2025-04-11T01:31:46.109+0000] {taskinstance.py:1205} INFO - Marking task as SUCCESS. dag_id=tmdb_pipeline_v2, task_id=process_kafka_data, execution_date=20250410T120000, start_date=20250411T013121, end_date=20250411T013146
+[2025-04-11T01:31:46.138+0000] {local_task_job_runner.py:240} INFO - Task exited with return code 0
+[2025-04-11T01:31:46.170+0000] {taskinstance.py:3482} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2025-04-11T01:31:46.172+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

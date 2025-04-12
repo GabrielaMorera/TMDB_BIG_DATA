@@ -1,4 +1,4 @@
 /opt/airflow/data/latest_xgboost_model/model_final.pkl
-2025-04-10 14:04:25
+2025-04-12 00:12:34
 xgboost
 /opt/airflow/data/public_models/model_final.pkl
