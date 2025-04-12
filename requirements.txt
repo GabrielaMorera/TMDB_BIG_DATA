@@ -1,0 +1,15 @@
+dask[complete]
+distributed
+scikit-learn
+matplotlib
+seaborn
+pandas
+psycopg2-binary
+kafka-python
+xgboost
+shap
+joblib
+plotly
+streamlit
+urllib3
+sqlalchemy
